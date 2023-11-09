@@ -1,7 +1,9 @@
+import DriverList from "../components/Drivers/DriverList";
+
 const DriverPage = () => {
   return (
     <section>
-      <h3>Hei</h3>
+      <DriverList />
     </section>
   );
 };
