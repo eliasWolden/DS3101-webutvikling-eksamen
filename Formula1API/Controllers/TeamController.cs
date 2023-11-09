@@ -16,7 +16,7 @@ public TeamController(Formula1Context _context)
     context = _context;
 }
 
-
+// Get all
 [HttpGet]
 public async Task<ActionResult<List<Team>>> Get()
 {
@@ -28,6 +28,52 @@ public async Task<ActionResult<List<Team>>> Get()
     else
     {
         return NotFound();
+    }
+}
+
+// Get by name
+[HttpGet("name/{name}")]
+public async Task<ActionResult<List<Team>>> GetByName(string name)
+{
+    try
+    {
+        Team? teams = await context.Teams.FindAsync(name);
+        if (teams != null)
+        {
+            return Ok(teams);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
+}
+
+// Get by id
+[HttpGet]
+[Route("id/{id}")]
+
+public async Task<ActionResult<List<Team>>> GetById(int id)
+{
+    try
+    {
+        Team? teams = await context.Teams.FindAsync(id);
+        if (teams != null)
+        {
+            return Ok(teams);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
     }
 }
 }

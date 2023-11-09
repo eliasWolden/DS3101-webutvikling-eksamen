@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o/MtZ486jcS5dZZZLtGzXP9TR3PbHFQIde6obu/ji4k=",
+  "Hash": "vP4XekpNF+uOGB/91mtQpbaix0DXW59S4lvVguCY7/E=",
   "Source": "Formula1Api",
   "BasePath": "_content/Formula1Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Formula1Api/wwwroot",
       "Source": "Formula1Api",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/.DS_Store",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/.DS_Store",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/index.html",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/index.html",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/index.html"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/.DS_Store",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/.DS_Store",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/.DS_Store",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/photos/.DS_Store"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/.DS_Store",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/.DS_Store",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/.DS_Store",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/.DS_Store"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/alexander-albon.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/alexander-albon.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/alexander-albon.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/alexander-albon.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/carlos-sainz.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/carlos-sainz.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/carlos-sainz.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/carlos-sainz.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/charles-leclerc.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/charles-leclerc.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/charles-leclerc.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/charles-leclerc.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/daniel-ricciardo.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/daniel-ricciardo.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/daniel-ricciardo.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/daniel-ricciardo.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/esteban-ocon.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/esteban-ocon.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/esteban-ocon.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/esteban-ocon.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/fernando-alonso.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/fernando-alonso.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/fernando-alonso.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/fernando-alonso.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/george-russel.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/george-russel.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/george-russel.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/george-russel.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/kevin-magnussen.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/kevin-magnussen.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/kevin-magnussen.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/kevin-magnussen.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lance-stroll.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lance-stroll.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/lance-stroll.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/lance-stroll.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lando.norris.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lando.norris.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/lando.norris.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/lando.norris.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lewis-hamilton.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lewis-hamilton.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/lewis-hamilton.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/lewis-hamilton.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/liam-lawson.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/liam-lawson.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/liam-lawson.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/liam-lawson.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/logan-sargeant.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/logan-sargeant.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/logan-sargeant.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/logan-sargeant.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/max-verstappen.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/max-verstappen.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/max-verstappen.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/max-verstappen.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/nico-hulkenberg.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/nico-hulkenberg.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/nico-hulkenberg.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/nico-hulkenberg.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/nyck-de-vries.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/nyck-de-vries.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/nyck-de-vries.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/nyck-de-vries.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/oscar-piastri.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/oscar-piastri.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/oscar-piastri.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/oscar-piastri.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/pierre-gasly.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/pierre-gasly.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/pierre-gasly.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/pierre-gasly.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/sergio-perez.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/sergio-perez.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/sergio-perez.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/sergio-perez.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/valtteri-bottas.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/valtteri-bottas.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/valtteri-bottas.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/valtteri-bottas.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/yuki-tsunoda.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/yuki-tsunoda.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/yuki-tsunoda.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/yuki-tsunoda.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/zhou-guanyu.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/zhou-guanyu.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/driver-photos/zhou-guanyu.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/zhou-guanyu.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Abu_Dhabi_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Abu_Dhabi_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Abu_Dhabi_Grand_Prix.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Abu_Dhabi_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Australian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Australian_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Australian_Grand_Prix.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Australian_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Austrian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Austrian_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Austrian_Grand_Prix.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Austrian_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Azerbaijan_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Azerbaijan_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Azerbaijan_Grand_Prix.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Azerbaijan_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Bahrain_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Bahrain_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Bahrain_Grand_Prix.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Bahrain_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Belgian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Belgian_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Belgian_Grand_Prix.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Belgian_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/British_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/British_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/British_Grand_Prix.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/British_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Canadian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Canadian_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Canadian_Grand_Prix.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Canadian_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Dutch_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Dutch_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Dutch_Grand_Prix.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Dutch_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Emilia_Romagna_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Emilia_Romagna_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Emilia_Romagna_Grand_Prix.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Emilia_Romagna_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Hungarian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Hungarian_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Hungarian_Grand_Prix.png",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Hungarian_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Italian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Italian_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Italian_Grand_Prix.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Italian_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Japanese_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Japanese_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Japanese_Grand_Prix.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Japanese_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Las_Vegas_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Las_Vegas_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Las_Vegas_Grand_Prix.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Las_Vegas_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Mexico_City_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Mexico_City_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Mexico_City_Grand_Prix.png",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Mexico_City_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Miami_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Miami_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Miami_Grand_Prix.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Miami_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Monaco_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Monaco_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Monaco_Grand_Prix.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Monaco_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Qatar_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Qatar_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Qatar_Grand_Prix.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Qatar_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/SÃ£o_Paulo_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/SÃ£o_Paulo_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/SÃ£o_Paulo_Grand_Prix.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/SÃ£o_Paulo_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Saudi_Arabian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Saudi_Arabian_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Saudi_Arabian_Grand_Prix.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Saudi_Arabian_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Singapore_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Singapore_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Singapore_Grand_Prix.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Singapore_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Spanish_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Spanish_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/Spanish_Grand_Prix.png",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/Spanish_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/United_States_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/United_States_Grand_Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/race-photos/United_States_Grand_Prix.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot/photos/race-photos/United_States_Grand_Prix.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/.DS_Store",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/.DS_Store",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/.DS_Store",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/.DS_Store"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/alfa-romeo-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/alfa-romeo-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/alfa-romeo-car.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/alfa-romeo-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/aplhatauri-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/aplhatauri-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/aplhatauri-car.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/aplhatauri-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/apline-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/apline-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/apline-car.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/apline-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/aston-martin-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/aston-martin-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/aston-martin-car.png",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/aston-martin-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/ferrari-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/ferrari-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/ferrari-car.png",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/ferrari-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/haas-f1-team-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/haas-f1-team-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/haas-f1-team-car.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/haas-f1-team-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/mclaren-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/mclaren-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/mclaren-car.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/mclaren-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/mercedes-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/mercedes-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/mercedes-car.png",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/mercedes-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/red-bull-racing-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/red-bull-racing-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/red-bull-racing-car.png",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/red-bull-racing-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/williams-car.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/williams-car.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-car-photos/williams-car.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-car-photos/williams-car.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/alfa-romeo-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/alfa-romeo-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/alfa-romeo-emblem.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/alfa-romeo-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/alphatauri-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/alphatauri-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/alphatauri-emblem.png",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/alphatauri-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/apline-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/apline-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/apline-emblem.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/apline-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/aston-martin-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/aston-martin-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/aston-martin-emblem.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/aston-martin-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/ferrari-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/ferrari-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/ferrari-emblem.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/ferrari-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/haas-f1-team-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/haas-f1-team-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/haas-f1-team-emblem.png",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/haas-f1-team-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/mclaren-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/mclaren-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/mclaren-emblem.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/mclaren-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/mercedes-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/mercedes-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/mercedes-emblem.png",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/mercedes-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/red-bull-racing-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/red-bull-racing-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/red-bull-racing-emblem.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/red-bull-racing-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/williams-emblem.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-emblem-photo/williams-emblem.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "photos/team-emblem-photo/williams-emblem.png",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot/photos/team-emblem-photo/williams-emblem.png"
     },
     {
-      "Identity": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/scripts/index.js",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/scripts/index.js",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "scripts/index.js",
       "AssetKind": "All",

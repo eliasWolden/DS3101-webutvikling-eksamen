@@ -16,7 +16,7 @@ public DriverController(Formula1Context _context)
     context = _context;
 }
 
-// GetAll
+// Get all
 [HttpGet]
 public async Task<ActionResult<List<Driver>>> Get()
 {
@@ -40,7 +40,7 @@ public async Task<ActionResult<List<Driver>>> Get()
 
 // Get by name
 [HttpGet("name/{name}")]
-public async Task<ActionResult<List<Driver>>> GetById(string name)
+public async Task<ActionResult<List<Driver>>> GetByName(string name)
 {
     try
     {
@@ -58,18 +58,22 @@ public async Task<ActionResult<List<Driver>>> GetById(string name)
     {
         return StatusCode(500);
     }
-
+    
 }
+
+// Get by Id:
+// Using [Route]
 [HttpGet]
 [Route("id/{id}")]
+
 public async Task<ActionResult<List<Driver>>> GetById(int id)
 {
     try
     {
-        Driver? driver = await context.Drivers.FindAsync(id);
-        if (driver != null)
+        Driver? drivers = await context.Drivers.FindAsync(id);
+        if (drivers != null)
         {
-            return Ok(driver);
+            return Ok(drivers);
         }
         else
         {
@@ -82,4 +86,25 @@ public async Task<ActionResult<List<Driver>>> GetById(int id)
     }
 }
 
+// Delete by name 
+/* [HttpDelete("{name}")]
+public async Task<ActionResult<List<Driver>>> DeleteByName(string name)
+{
+    
+} */
+
+
+// Create (image) (POST)
+
+
+// Update (POST)
+/* [HttpPost]
+public IActionResult Post(Driver newDriver)
+{
+    Formula1Context.Driver.Add(newDriver);
+    Formula1Context.SaveChanges();
+    return Ok();
+} */
+
 }
+

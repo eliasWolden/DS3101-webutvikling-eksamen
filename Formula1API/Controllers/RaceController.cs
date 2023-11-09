@@ -16,6 +16,7 @@ public RaceController(Formula1Context _context)
     context = _context;
 }
 
+// Get all
 [HttpGet]
 public async Task<ActionResult<List<Race>>> Get()
 {
@@ -37,12 +38,51 @@ public async Task<ActionResult<List<Race>>> Get()
     }
 }
 
-/* [HttpDelete]
-public async Task<ActionResult<List<Race>>> Delete()
+// Get by name
+[HttpGet("name/{name}")]
+public async Task<ActionResult<List<Race>>> GetByName(string name)
 {
-   List<Race> races = await context.Races. 
-} */
+    try
+    {
+        Race? races = await context.Races.FindAsync(name);
+        if (races != null)
+        {
+            return Ok(races);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
+}
 
+//Get by Id:
+[HttpGet]
+[Route("id/{id}")]
+
+public async Task<ActionResult<List<Race>>> GetById(int id)
+{
+    try
+    {
+        Race? races = await context.Races.FindAsync(id);
+        if (races != null)
+        {
+            return Ok(races);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
+}
 
 
 }

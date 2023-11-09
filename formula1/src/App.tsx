@@ -1,5 +1,4 @@
-import Routing from "./components/RoutingContent/Routing";
-import React from "react";
+import Routing from "./components/RoutingContent/Routing.jsx";
 
 function App() {
   return (

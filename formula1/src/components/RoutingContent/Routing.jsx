@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { DriverPage, HomePage, RacePage, TeamPage } from "./pages";
+import { DriverPage, HomePage, RacePage, TeamPage } from "./pages/index.jsx";
 
 function Routing() {
   return (
