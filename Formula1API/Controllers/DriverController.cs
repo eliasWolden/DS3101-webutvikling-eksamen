@@ -39,7 +39,7 @@ public async Task<ActionResult<List<Driver>>> Get()
 }
 
 // Get by name
-[HttpGet("{name}")]
+[HttpGet("name/{name}")]
 public async Task<ActionResult<List<Driver>>> GetById(string name)
 {
     try
@@ -60,4 +60,26 @@ public async Task<ActionResult<List<Driver>>> GetById(string name)
     }
 
 }
+[HttpGet]
+[Route("id/{id}")]
+public async Task<ActionResult<List<Driver>>> GetById(int id)
+{
+    try
+    {
+        Driver? driver = await context.Drivers.FindAsync(id);
+        if (driver != null)
+        {
+            return Ok(driver);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
+}
+
 }
