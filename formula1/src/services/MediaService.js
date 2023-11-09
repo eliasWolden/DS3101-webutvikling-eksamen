@@ -1,44 +1,37 @@
-import axios, { HttpStatusCode } from "axios";
+import axios from "axios";
 
 const MediaService = (() => {
   const driverController = "http://localhost:5257/api/Driver";
-  const raceController = "http://localhost:5257/api/Race";
-  const teamController = "http://localhost:5257/api/Team";
-
-  const imageUploadController = "";
-
+  const imageController = "http://localhost:5257/api/ImageUpload";
+/* henter bilder fra imageupload apiet */
+  const getImage = async (imageName) => {
+    try {
+      const imageResponse = await axios.get(`${imageController}/${imageName}`);
+      return imageResponse.data;
+    } catch {
+      return null;
+    }
+  };
+/* henter alle sjaførene fra driver apiet ved bruk av driver controller */
   const getAll = async () => {
     try {
-      const [driverResponse, raceResponse, teamResponse] = await axios.all([
-        axios.get(driverController),
-        axios.get(raceController),
-        axios.get(teamController),
-      ]);
+      const driverResponse = await axios.get(driverController);
+      const drivers = driverResponse.data;
 
       return {
-        drivers: driverResponse.data,
-        races: raceResponse.data,
-        teams: teamResponse.data,
+        drivers,
       };
-    } catch (error) {
-      console.error("Error:", error.message);
-      return HttpStatusCode(500);
+    } catch {
+      return {
+        drivers: [],
+      };
     }
   };
 
-  const getById = async (id) => {
-    const result = await axios.get(
-      `${(driverController, raceController, teamController)}/${id}`
-    );
-    return result.data;
+  return {
+    getAll,
+    getImage
   };
-
-  const deleteById = async (id) => {
-    const result = await axios.delete(
-      `${(driverController, raceController, teamController)}/${id}`
-    );
-    return result.data;
-  };
-
-  //const update
 })();
+
+export default MediaService;

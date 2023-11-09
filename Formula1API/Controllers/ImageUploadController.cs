@@ -1,31 +1,37 @@
-/* namespace Formula1Api.Controllers;
-
 using Microsoft.AspNetCore.Mvc;
 
-[ApiController]
-[Route("api/[controller]")]
-
-public class ImageUploadController : ControllerBase
+namespace Formula1Api.Controllers
 {
-    private readonly IWebHostEnvironment environment;
-
-    public ImageUploadController(IWebHostEnvironment _environment)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ImageUploadController : ControllerBase
     {
-        environment = _environment;
-    }
+        private readonly IWebHostEnvironment environment;
 
-    //bildeuthenting:
-    [HttpPost]
-    public IActionResult PostImage(IFormFile formfile)
-    {
-        string webRootPath = environment.WebRootPath;
-        string absolutePath = Path.Combine($"{webRootPath}/images/{formFile.FileName}");
-
-        using(var fileStream = new FileStream(absolutePath, FileMode.Create))
+        public ImageUploadController(IWebHostEnvironment _environment)
         {
-            formFile.CopyTo(fileStream);
+            environment = _environment;
         }
 
-        return Ok();
+        [HttpPost]
+        public IActionResult PostImage(IFormFile formfile)
+        {
+            try
+            {
+                string webRootPath = environment.WebRootPath;
+                string absolutePath = Path.Combine($"{webRootPath}/images/{formfile.FileName}");
+
+                using (var fileStream = new FileStream(absolutePath, FileMode.Create))
+                {
+                    formfile.CopyTo(fileStream);
+                }
+
+                return Ok();
+            }
+            catch
+            {
+                return StatusCode(500);
+            }
+        }
     }
-} */
+}
