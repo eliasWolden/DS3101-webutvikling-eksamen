@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj": {}
+    "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj": {}
   },
   "projects": {
-    "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj": {
+    "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
+        "projectUniqueName": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
         "projectName": "Formula1Api",
-        "projectPath": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
-        "packagesPath": "/Users/eliaswolden/.nuget/packages/",
-        "outputPath": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/obj/",
+        "projectPath": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
+        "packagesPath": "/Users/Apple/.nuget/packages/",
+        "outputPath": "/Users/Apple/Desktop/Eksamen final/DS3101-webutvikling-eksamen/Formula1API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/eliaswolden/.nuget/NuGet/NuGet.Config"
+          "/Users/Apple/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
