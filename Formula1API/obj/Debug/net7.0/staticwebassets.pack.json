@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/scripts/index.js",
+      "PackagePath": "staticwebassets/scripts/index.js"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Formula1Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.Formula1Api.props",
+      "PackagePath": "build\\Formula1Api.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Formula1Api.props",
+      "PackagePath": "buildMultiTargeting\\Formula1Api.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Formula1Api.props",
+      "PackagePath": "buildTransitive\\Formula1Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

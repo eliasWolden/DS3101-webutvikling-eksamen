@@ -19,14 +19,30 @@ public RaceController(Formula1Context _context)
 [HttpGet]
 public async Task<ActionResult<List<Race>>> Get()
 {
-    List<Race> races = await context.Races.ToListAsync();
-    if (races != null)
+    try
     {
-        return Ok(races);
+        List<Race> races = await context.Races.ToListAsync();
+        if (races != null)
+        {
+            return Ok(races);
+        }
+        else
+        {
+            return NotFound();
+        }
     }
-    else
+    catch
     {
-        return NotFound();
+        return StatusCode(500);
     }
 }
+
+/* [HttpDelete]
+public async Task<ActionResult<List<Race>>> Delete()
+{
+   List<Race> races = await context.Races. 
+} */
+
+
+
 }

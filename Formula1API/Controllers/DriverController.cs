@@ -16,10 +16,12 @@ public DriverController(Formula1Context _context)
     context = _context;
 }
 
-
+// GetAll
 [HttpGet]
 public async Task<ActionResult<List<Driver>>> Get()
 {
+    try
+    {
     List<Driver> drivers = await context.Drivers.ToListAsync();
     if (drivers != null)
     {
@@ -29,20 +31,33 @@ public async Task<ActionResult<List<Driver>>> Get()
     {
         return NotFound();
     }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
 }
 
-/* 
-[HttpGet("{id}")]
-public async Task<ActionResult<List<Driver>>> GetById(int id)
+// Get by name
+[HttpGet("{name}")]
+public async Task<ActionResult<List<Driver>>> GetById(string name)
 {
-    List<Driver> drivers = await context.Drivers.FindAsync(id);
-     if (drivers != null)
-     {
-        return Ok(drivers);
-     }
-     else
-     {
-        return NotFound();
-     }
-} */
+    try
+    {
+        Driver? drivers = await context.Drivers.FindAsync(name);
+        if (drivers != null)
+        {
+            return Ok(drivers);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
+
+}
 }
