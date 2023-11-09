@@ -41,8 +41,12 @@
       "PackagePath": "staticwebassets/photos/driver-photos/fernando-alonso.png"
     },
     {
-      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/george-russel.png",
-      "PackagePath": "staticwebassets/photos/driver-photos/george-russel.png"
+      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/george-russell.png",
+      "PackagePath": "staticwebassets/photos/driver-photos/george-russell.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/guanyu-zhou.png",
+      "PackagePath": "staticwebassets/photos/driver-photos/guanyu-zhou.png"
     },
     {
       "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/kevin-magnussen.png",
@@ -53,8 +57,8 @@
       "PackagePath": "staticwebassets/photos/driver-photos/lance-stroll.png"
     },
     {
-      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lando.norris.png",
-      "PackagePath": "staticwebassets/photos/driver-photos/lando.norris.png"
+      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lando-norris.png",
+      "PackagePath": "staticwebassets/photos/driver-photos/lando-norris.png"
     },
     {
       "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lewis-hamilton.png",
@@ -99,10 +103,6 @@
     {
       "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/yuki-tsunoda.png",
       "PackagePath": "staticwebassets/photos/driver-photos/yuki-tsunoda.png"
-    },
-    {
-      "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/zhou-guanyu.png",
-      "PackagePath": "staticwebassets/photos/driver-photos/zhou-guanyu.png"
     },
     {
       "Id": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Abu_Dhabi_Grand_Prix.png",

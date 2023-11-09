@@ -1,34 +1,58 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Formula1Api.Controllers
+namespace SeriesAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class ImageUploadController : ControllerBase
     {
-        private readonly IWebHostEnvironment environment;
+        private readonly IWebHostEnvironment _environment;
 
-        public ImageUploadController(IWebHostEnvironment _environment)
+        public ImageUploadController(IWebHostEnvironment environment)
         {
-            environment = _environment;
+            _environment = environment;
         }
 
         [HttpPost]
-        public IActionResult PostImage(IFormFile formfile)
+        public IActionResult PostImage(IFormFile formFile)
         {
             try
             {
-                string webRootPath = environment.WebRootPath;
-                string absolutePath = Path.Combine($"{webRootPath}/images/{formfile.FileName}");
+                if (formFile == null || formFile.Length == 0)
+                    return BadRequest();
 
-                using (var fileStream = new FileStream(absolutePath, FileMode.Create))
-                {
-                    formfile.CopyTo(fileStream);
-                }
+                string webRootPath = _environment.WebRootPath;
+                string imagePath = Path.Combine(webRootPath, "photos", "driver-photos", formFile.FileName);
+                Directory.CreateDirectory(Path.GetDirectoryName(imagePath));
+
+                using (var fileStream = new FileStream(imagePath, FileMode.Create))
+                    formFile.CopyTo(fileStream);
 
                 return Ok();
             }
-            catch
+            catch (Exception ex)
+            {
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("{imageName}")]
+        public IActionResult GetImage(string imageName)
+        {
+            try
+            {
+                string webRootPath = _environment.WebRootPath;
+                string imagePath = Path.Combine(webRootPath, "photos", "driver-photos", imageName);
+
+                if (System.IO.File.Exists(imagePath))
+                {
+                    var imageBytes = System.IO.File.ReadAllBytes(imagePath);
+                    return File(imageBytes, "image/png"); // You might need to adjust the content type based on the image format
+                }
+
+                return NotFound();
+            }
+            catch (Exception ex)
             {
                 return StatusCode(500);
             }

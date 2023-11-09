@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vP4XekpNF+uOGB/91mtQpbaix0DXW59S4lvVguCY7/E=",
+  "Hash": "9u3FOCP//zC4fRUjRYGZbnIWwzS6/6yIcxOy2UmBPIg=",
   "Source": "Formula1Api",
   "BasePath": "_content/Formula1Api",
   "Mode": "Default",
@@ -187,12 +187,12 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/fernando-alonso.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/george-russel.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/george-russell.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/driver-photos/george-russel.png",
+      "RelativePath": "photos/driver-photos/george-russell.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,7 +201,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/driver-photos/george-russel.png"
+      "OriginalItemSpec": "wwwroot/photos/driver-photos/george-russell.png"
+    },
+    {
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/guanyu-zhou.png",
+      "SourceId": "Formula1Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "BasePath": "_content/Formula1Api",
+      "RelativePath": "photos/driver-photos/guanyu-zhou.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/photos/driver-photos/guanyu-zhou.png"
     },
     {
       "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/kevin-magnussen.png",
@@ -238,12 +255,12 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/lance-stroll.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lando.norris.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lando-norris.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/driver-photos/lando.norris.png",
+      "RelativePath": "photos/driver-photos/lando-norris.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,7 +269,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/driver-photos/lando.norris.png"
+      "OriginalItemSpec": "wwwroot/photos/driver-photos/lando-norris.png"
     },
     {
       "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/lewis-hamilton.png",
@@ -440,23 +457,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/photos/driver-photos/yuki-tsunoda.png"
-    },
-    {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/driver-photos/zhou-guanyu.png",
-      "SourceId": "Formula1Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
-      "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/driver-photos/zhou-guanyu.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/driver-photos/zhou-guanyu.png"
     },
     {
       "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Abu_Dhabi_Grand_Prix.png",
