@@ -1,5 +1,6 @@
+import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { DriverPage, HomePage, RacePage, TeamPage } from "./pages/index.jsx";
+import { DriverPage, HomePage, RacePage, TeamPage } from "../../pages";
 
 function Routing() {
   return (
@@ -22,10 +23,10 @@ function Routing() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="DriverPage" element={<DriverPage />}></Route>
-          <Route path="RacePage" element={<RacePage />}></Route>
-          <Route path="TeamPage" element={<TeamPage />}></Route>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/DriverPage" element={<DriverPage />} />
+          <Route path="/RacePage" element={<RacePage />} />
+          <Route path="/TeamPage" element={<TeamPage />} />
         </Routes>
       </BrowserRouter>
     </>
