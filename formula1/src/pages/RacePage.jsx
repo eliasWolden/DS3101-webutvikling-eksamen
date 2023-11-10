@@ -1,7 +1,9 @@
+import RaceList from "../components/Races/RaceList";
+
 const RacePage = () => {
   return (
     <section>
-      <h3>Hei</h3>
+      <RaceList/>
     </section>
   );
 };
