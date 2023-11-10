@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9u3FOCP//zC4fRUjRYGZbnIWwzS6/6yIcxOy2UmBPIg=",
+  "Hash": "8k70V4SoVwGc+a3RvGiJF7m/JHCPcCvDwraGuOCTTQg=",
   "Source": "Formula1Api",
   "BasePath": "_content/Formula1Api",
   "Mode": "Default",
@@ -459,12 +459,12 @@
       "OriginalItemSpec": "wwwroot/photos/driver-photos/yuki-tsunoda.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Abu_Dhabi_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Abu-Dhabi-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Abu_Dhabi_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Abu-Dhabi-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -473,15 +473,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Abu_Dhabi_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Abu-Dhabi-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Australian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Australian-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Australian_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Australian-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -490,15 +490,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Australian_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Australian-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Austrian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Austrian-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Austrian_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Austrian-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -507,15 +507,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Austrian_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Austrian-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Azerbaijan_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Azerbaijan-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Azerbaijan_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Azerbaijan-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -524,15 +524,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Azerbaijan_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Azerbaijan-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Bahrain_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Bahrain-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Bahrain_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Bahrain-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -541,15 +541,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Bahrain_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Bahrain-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Belgian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Belgian-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Belgian_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Belgian-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -558,15 +558,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Belgian_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Belgian-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/British_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Brazil-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/British_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Brazil-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -575,15 +575,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/British_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Brazil-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Canadian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/British-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Canadian_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/British-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -592,15 +592,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Canadian_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/British-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Dutch_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Canadian-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Dutch_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Canadian-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -609,15 +609,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Dutch_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Canadian-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Emilia_Romagna_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Dutch-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Emilia_Romagna_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Dutch-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -626,15 +626,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Emilia_Romagna_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Dutch-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Hungarian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Emilia-Romagna-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Hungarian_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Emilia-Romagna-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -643,15 +643,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Hungarian_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Emilia-Romagna-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Italian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Hungarian-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Italian_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Hungarian-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -660,15 +660,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Italian_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Hungarian-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Japanese_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Italian-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Japanese_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Italian-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -677,15 +677,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Japanese_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Italian-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Las_Vegas_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Japanese-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Las_Vegas_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Japanese-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -694,15 +694,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Las_Vegas_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Japanese-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Mexico_City_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Las-Vegas-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Mexico_City_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Las-Vegas-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -711,15 +711,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Mexico_City_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Las-Vegas-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Miami_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Mexico-City-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Miami_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Mexico-City-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -728,15 +728,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Miami_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Mexico-City-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Monaco_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Miami-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Monaco_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Miami-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -745,15 +745,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Monaco_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Miami-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Qatar_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Monaco-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Qatar_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Monaco-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -762,15 +762,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Qatar_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Monaco-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/SÃ£o_Paulo_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Qatar-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/SÃ£o_Paulo_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Qatar-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -779,15 +779,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/SÃ£o_Paulo_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Qatar-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Saudi_Arabian_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Saudi-Arabian-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Saudi_Arabian_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Saudi-Arabian-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -796,15 +796,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Saudi_Arabian_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Saudi-Arabian-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Singapore_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Singapore-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Singapore_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Singapore-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -813,15 +813,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Singapore_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Singapore-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Spanish_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/Spanish-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/Spanish_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/Spanish-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -830,15 +830,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/Spanish_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/Spanish-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/United_States_Grand_Prix.png",
+      "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/race-photos/United-States-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "photos/race-photos/United_States_Grand_Prix.png",
+      "RelativePath": "photos/race-photos/United-States-Grand-Prix.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -847,7 +847,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/photos/race-photos/United_States_Grand_Prix.png"
+      "OriginalItemSpec": "wwwroot/photos/race-photos/United-States-Grand-Prix.png"
     },
     {
       "Identity": "/Users/eliaswolden/Desktop/eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/photos/team-car-photos/.DS_Store",

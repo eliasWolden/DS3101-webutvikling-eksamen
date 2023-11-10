@@ -1,4 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System;
 
 namespace SeriesAPI.Controllers
 {
@@ -13,8 +17,31 @@ namespace SeriesAPI.Controllers
             _environment = environment;
         }
 
-        [HttpPost]
-        public IActionResult PostImage(IFormFile formFile)
+        [HttpPost("driver")]
+        public IActionResult PostDriverImage(IFormFile formFile)
+        {
+            return PostImage(formFile, "driver-photos");
+        }
+
+        [HttpGet("driver/{imageName}")]
+        public IActionResult GetDriverImage(string imageName)
+        {
+            return GetImage(imageName, "driver-photos");
+        }
+
+        [HttpPost("race")]
+        public IActionResult PostRaceImage(IFormFile formFile)
+        {
+            return PostImage(formFile, "race-photos");
+        }
+
+        [HttpGet("race/{imageName}")]
+        public IActionResult GetRaceImage(string imageName)
+        {
+            return GetImage(imageName, "race-photos");
+        }
+
+        private IActionResult PostImage(IFormFile formFile, string subfolder)
         {
             try
             {
@@ -22,7 +49,7 @@ namespace SeriesAPI.Controllers
                     return BadRequest();
 
                 string webRootPath = _environment.WebRootPath;
-                string imagePath = Path.Combine(webRootPath, "photos", "driver-photos", formFile.FileName);
+                string imagePath = Path.Combine(webRootPath, "photos", subfolder, formFile.FileName);
                 Directory.CreateDirectory(Path.GetDirectoryName(imagePath));
 
                 using (var fileStream = new FileStream(imagePath, FileMode.Create))
@@ -36,13 +63,12 @@ namespace SeriesAPI.Controllers
             }
         }
 
-        [HttpGet("{imageName}")]
-        public IActionResult GetImage(string imageName)
+        private IActionResult GetImage(string imageName, string subfolder)
         {
             try
             {
                 string webRootPath = _environment.WebRootPath;
-                string imagePath = Path.Combine(webRootPath, "photos", "driver-photos", imageName);
+                string imagePath = Path.Combine(webRootPath, "photos", subfolder, imageName);
 
                 if (System.IO.File.Exists(imagePath))
                 {
