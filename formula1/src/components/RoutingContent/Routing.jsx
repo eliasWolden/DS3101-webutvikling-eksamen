@@ -2,11 +2,14 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { DriverPage, HomePage, RacePage, TeamPage } from "../../pages";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { DriverProvider } from "../../contexts/DriverContext";
 
 function Routing() {
   return (
     <>
       <BrowserRouter>
+      <DriverProvider>
+
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <Link to="/" className="navbar-brand">
@@ -50,6 +53,7 @@ function Routing() {
           <Route path="/RacePage" element={<RacePage />} />
           <Route path="/TeamPage" element={<TeamPage />} />
         </Routes>
+        </DriverProvider>
       </BrowserRouter>
     </>
   );
