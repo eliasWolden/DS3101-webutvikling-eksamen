@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../css/DriverCarousel.css';
 
 const DriverItem = ({ name, age, nationality, image }) => {
