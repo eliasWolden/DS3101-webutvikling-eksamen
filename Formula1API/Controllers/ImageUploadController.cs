@@ -1,8 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using System.IO;
-using System;
+
 
 namespace SeriesAPI.Controllers
 {
@@ -20,25 +17,25 @@ namespace SeriesAPI.Controllers
         [HttpPost("driver")]
         public IActionResult PostDriverImage(IFormFile formFile)
         {
-            return PostImage(formFile, "driver-photos");
+            return PostImage(formFile, "Drivers");
         }
 
         [HttpGet("driver/{imageName}")]
         public IActionResult GetDriverImage(string imageName)
         {
-            return GetImage(imageName, "driver-photos");
+            return GetImage(imageName, "Drivers");
         }
 
         [HttpPost("race")]
         public IActionResult PostRaceImage(IFormFile formFile)
         {
-            return PostImage(formFile, "race-photos");
+            return PostImage(formFile, "Races");
         }
 
         [HttpGet("race/{imageName}")]
         public IActionResult GetRaceImage(string imageName)
         {
-            return GetImage(imageName, "race-photos");
+            return GetImage(imageName, "Races");
         }
 
         private IActionResult PostImage(IFormFile formFile, string subfolder)
@@ -49,7 +46,7 @@ namespace SeriesAPI.Controllers
                     return BadRequest();
 
                 string webRootPath = _environment.WebRootPath;
-                string imagePath = Path.Combine(webRootPath, "photos", subfolder, formFile.FileName);
+                string imagePath = Path.Combine(webRootPath, "images", subfolder, formFile.FileName);
                 Directory.CreateDirectory(Path.GetDirectoryName(imagePath));
 
                 using (var fileStream = new FileStream(imagePath, FileMode.Create))
@@ -68,7 +65,7 @@ namespace SeriesAPI.Controllers
             try
             {
                 string webRootPath = _environment.WebRootPath;
-                string imagePath = Path.Combine(webRootPath, "photos", subfolder, imageName);
+                string imagePath = Path.Combine(webRootPath, "images", subfolder, imageName);
 
                 if (System.IO.File.Exists(imagePath))
                 {
