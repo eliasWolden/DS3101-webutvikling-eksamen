@@ -31,7 +31,7 @@ public async Task<ActionResult<List<Team>>> Get()
     }
 }
 
-// Get by name
+/* // Get by name
 [HttpGet("name/{name}")]
 public async Task<ActionResult<List<Team>>> GetByName(string name)
 {
@@ -52,7 +52,7 @@ public async Task<ActionResult<List<Team>>> GetByName(string name)
         return StatusCode(500);
     }
 }
-
+ */
 // Get by id
 [HttpGet]
 [Route("id/{id}")]

@@ -41,7 +41,7 @@ namespace SeriesAPI.Controllers
                 case "race":
                     return "Races";
                 case "emblem":
-                    return "emblems";
+                    return "Emblems";
                 case "car":
                     return "Cars";
                 default:

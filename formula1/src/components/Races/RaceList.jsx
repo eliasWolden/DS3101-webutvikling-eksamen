@@ -1,4 +1,3 @@
-// RaceList.js
 import React, { useContext } from "react";
 import MediaService from "../../services/MediaService";
 import RaceItem from "./RaceItem";

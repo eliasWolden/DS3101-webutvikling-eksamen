@@ -4,13 +4,15 @@ import { DriverPage, HomePage, RacePage, TeamPage } from "../../pages";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { DriverProvider } from "../../contexts/DriverContext";
 import { RaceProvider } from "../../contexts/RaceContext";
+import { TeamProvider } from "../../contexts/TeamContext";
 
 function Routing() {
   return (
     <>
       <BrowserRouter>
-      <DriverProvider>
-      <RaceProvider>
+        <DriverProvider>
+        <RaceProvider>
+        <TeamProvider>
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
@@ -55,8 +57,9 @@ function Routing() {
           <Route path="/RacePage" element={<RacePage />} />
           <Route path="/TeamPage" element={<TeamPage />} />
         </Routes>
-        </RaceProvider>
-        </DriverProvider>
+          </TeamProvider>
+          </RaceProvider>
+          </DriverProvider>
       </BrowserRouter>
     </>
   );

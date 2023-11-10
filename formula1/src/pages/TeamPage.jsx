@@ -1,7 +1,9 @@
+import TeamList from "../components/Teams/TeamList";
+
 const TeamPage = () => {
   return (
     <section>
-      <h3>Hei</h3>
+      <TeamList/>
     </section>
   );
 };
