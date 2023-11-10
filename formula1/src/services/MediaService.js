@@ -1,4 +1,3 @@
-// MediaService.js
 import axios from "axios";
 
 const MediaService = (() => {
@@ -25,7 +24,7 @@ const MediaService = (() => {
 
   const getAllRaces = async () => {
     try {
-      const raceResponse = await axios.get(raceController); // Updated this line
+      const raceResponse = await axios.get(raceController);
       const races = raceResponse.data;
 
       return {

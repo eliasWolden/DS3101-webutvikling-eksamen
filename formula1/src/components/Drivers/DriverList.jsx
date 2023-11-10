@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "../../css/DriverCarousel.css";
 import { DriverContext } from "../../contexts/DriverContext";
 import DriverItem from "./DriverItem";
+import "react-multi-carousel/lib/styles.css";
+import "../../css/DriverCarousel.css";
 
 const DriverList = () => {
   const { drivers } = useContext(DriverContext);

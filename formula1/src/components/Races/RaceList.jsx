@@ -1,44 +1,29 @@
 // RaceList.js
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import MediaService from "../../services/MediaService";
-import RaceItem from "./RaceItem"; // Assuming you have a RaceItem component
+import RaceItem from "./RaceItem";
+import { RaceContext } from "../../contexts/RaceContext";
 
 const RaceList = () => {
-  const [races, setRaces] = useState([]);
+  const { races } = useContext(RaceContext);
+  //getRacesJSX henter inn race fra context og lager en liste med races som blir burkt av item
+  const getRacesJSX = () => 
+    races.map((race, i) => (
+      <RaceItem
+        key={`race-item-${i}`}
+        winnerName={race.winnerName}
+        winnerTime={race.winnerTime}
+        grandPrix={race.grandPrix}
+        numberOfLaps={race.numberOfLaps}
+        image={`http://localhost:5257/api/ImageUpload/race/${race.image}`}
+      />
+    ));
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const result = await MediaService.getAllRaces();
-        if (result.races) {
-          setRaces(result.races);
-        }
-      } catch (error) {
-        console.error("Error fetching race data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const getRaceItems = () => {
-    return races.map((race, i) => {
-      console.log("Race Object:", race); // Log the race object to the console for debugging
-
-      return (
-        <RaceItem
-          key={`race-item-${i}`}
-          winnerName={race.winnerName}
-          winnerTime={race.winnerTime}
-          grandPrix={race.grandPrix}
-          numberOfLaps={race.numberOfLaps}
-          image={`http://localhost:5257/api/ImageUpload/race/${race.image}`}
-        />
-      );
-    });
-  };
-
-  return <div>{getRaceItems()}</div>;
+  return (
+    <section>
+      {getRacesJSX()}
+    </section>
+  );
 };
 
 export default RaceList;

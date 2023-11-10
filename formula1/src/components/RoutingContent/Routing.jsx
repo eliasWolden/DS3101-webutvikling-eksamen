@@ -1,14 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { DriverPage, HomePage, RacePage, TeamPage } from "../../pages";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { DriverProvider } from "../../contexts/DriverContext";
+import { RaceProvider } from "../../contexts/RaceContext";
 
 function Routing() {
   return (
     <>
       <BrowserRouter>
       <DriverProvider>
+      <RaceProvider>
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
@@ -53,6 +55,7 @@ function Routing() {
           <Route path="/RacePage" element={<RacePage />} />
           <Route path="/TeamPage" element={<TeamPage />} />
         </Routes>
+        </RaceProvider>
         </DriverProvider>
       </BrowserRouter>
     </>
