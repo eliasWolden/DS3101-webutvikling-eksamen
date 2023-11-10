@@ -15,7 +15,7 @@ const DriverList = () => {
         name={driver.name}
         age={driver.age}
         nationality={driver.nationality}
-        image={`http://localhost:5257/api/ImageUpload/driver/${driver.image}`}
+        image={`http://localhost:5257/api/Image/driver/${driver.image}`}
       />
     ));
 

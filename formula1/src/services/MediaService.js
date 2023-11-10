@@ -4,24 +4,6 @@ const MediaService = (() => {
   const driverController = "http://localhost:5257/api/Driver";
   const raceController = "http://localhost:5257/api/Race";
 
-  const getDriverImage = async (imageName) => {
-    try {
-      const imageResponse = await axios.get(`http://localhost:5257/api/ImageUpload/driver-photos/${imageName}`);
-      return imageResponse.data;
-    } catch {
-      return null;
-    }
-  };
-
-  const getRaceImage = async (imageName) => {
-    try {
-      const imageResponse = await axios.get(`http://localhost:5257/api/ImageUpload/race-photos/${imageName}`);
-      return imageResponse.data;
-    } catch {
-      return null;
-    }
-  };
-
   const getAllRaces = async () => {
     try {
       const raceResponse = await axios.get(raceController);
@@ -55,8 +37,6 @@ const MediaService = (() => {
   return {
     getAllDrivers,
     getAllRaces,
-    getDriverImage,
-    getRaceImage
   };
 })();
 

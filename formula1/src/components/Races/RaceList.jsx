@@ -15,7 +15,7 @@ const RaceList = () => {
         winnerTime={race.winnerTime}
         grandPrix={race.grandPrix}
         numberOfLaps={race.numberOfLaps}
-        image={`http://localhost:5257/api/ImageUpload/race/${race.image}`}
+        image={`http://localhost:5257/api/Image/race/${race.image}`}
       />
     ));
 
