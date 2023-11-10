@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import MediaService from "../../services/MediaService";
 import DriverItem from "./DriverItem";
 import Carousel from "react-multi-carousel";
@@ -6,44 +6,25 @@ import "react-multi-carousel/lib/styles.css";
 import "../../css/DriverCarousel.css";
 
 const DriverList = () => {
-  const [drivers, setDrivers] = useContext([]);
-
-  useEffect(() => {
+  const [drivers, setDrivers] = useState([]);
+    useEffect(() => {
     getDriversFromService();
-  }, [])
+  }, []);
 
-  const getDriversFromService = async () => {
-    const driversFromService = await MediaService.getAllDrivers();
-    setDrivers(driversFromService);
-  }
 
-  const getDriversJSX = () => {
-    const driversJSX = drivers.map((driver, i) => (
-      <DriverItem
-        key={`driver-${i}`}
-        name={driver.name}
-        age={driver.age}
-        nationality={driver.nationality}
-        image={`http://localhost:5257/api/ImageUpload/driver/${driver.image}`}
-      />
-    ));
-  }
-
-/*   useEffect(() => {
-    const fetchData = async () => {
+    const getDriversFromService = async () => {
       try {
-        const result = await MediaService.getAllDrivers();
-        if (result.drivers) {
-          setDrivers(result.drivers);
-        }
+        const driversFromService = await MediaService.getAllDrivers();
+          if (driversFromService.drivers) {
+          setDrivers(driversFromService.drivers);
+          }
       } catch {
-        console.log("error");      }
+        console.log("error");      
+      }
     };
 
-    fetchData();
-  }, []); */
-
- /*   const getDrivers = () => {
+   
+  const getDriversJSX = () => {
     return drivers.map((driver, i) => (
       <DriverItem
         key={`driver-${i}`}
@@ -53,7 +34,7 @@ const DriverList = () => {
         image={`http://localhost:5257/api/ImageUpload/driver/${driver.image}`}
       />
     ));
-  }; */
+  };
   
   // carousel:
   const responsive = {
