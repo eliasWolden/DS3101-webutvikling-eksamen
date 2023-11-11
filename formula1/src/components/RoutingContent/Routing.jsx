@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { DriverProvider } from "../../contexts/DriverContext";
 import { RaceProvider } from "../../contexts/RaceContext";
 import { TeamProvider } from "../../contexts/TeamContext";
+import CreateDriverPage from "../../pages/CreateDriverPage";
 
 function Routing() {
   return (
@@ -47,6 +48,11 @@ function Routing() {
                     Team
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link to="/CreateDriverPage" className="nav-link">
+                    DriverPage
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -56,6 +62,7 @@ function Routing() {
           <Route path="/DriverPage" element={<DriverPage />} />
           <Route path="/RacePage" element={<RacePage />} />
           <Route path="/TeamPage" element={<TeamPage />} />
+          <Route path="/CreateDriverPage" element={<CreateDriverPage />} />
         </Routes>
           </TeamProvider>
           </RaceProvider>
