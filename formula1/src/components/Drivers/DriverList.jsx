@@ -5,7 +5,7 @@ import DriverItem from "./DriverItem";
 import "react-multi-carousel/lib/styles.css";
 import "../../css/DriverCarousel.css";
 
-const DriverList = () => {
+const DriverList = ({ onSelectDriver }) => {
   const { drivers } = useContext(DriverContext);
 //getDriversJSX henter inn sjafører fra context og lager en liste med sjafører som blir burkt av item i carousel
   const getDriversJSX = () =>
@@ -16,9 +16,10 @@ const DriverList = () => {
         age={driver.age}
         nationality={driver.nationality}
         image={`http://localhost:5257/api/Image/driver/${driver.image}`}
+        teamid={driver.teamId}
+        onClick={() => onSelectDriver(driver)} // kaller på utvalgt sjafør
       />
     ));
-
   // Carousel konfigurasjon
   const responsive = {
     superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },

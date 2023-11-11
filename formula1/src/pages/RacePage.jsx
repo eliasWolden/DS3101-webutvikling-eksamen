@@ -2,7 +2,12 @@ import RaceList from "../components/Races/RaceList";
 
 const RacePage = () => {
   return (
-      <RaceList/>
+    <div>
+      <br />
+      <section>
+        <RaceList/>
+      </section>
+    </div>
   );
 };
 

@@ -1,13 +1,15 @@
 import React from "react";
 import '../../css/DriverCarousel.css';
 
-const DriverItem = ({ name, age, nationality, image }) => {
+// oppbygging av sjaførkort som blir brukt i carousel gjør det mulig å bruke onclick for å velge sjafør
+const DriverItem = ({ name, age, nationality, image, teamid, onClick }) => {
+  
   return (
-    <div className="card p-3 border-0 rounded shadow text-center driver-card">
+    <div className="p-3 border-0 shadow text-center driver-card" onClick={onClick}>
       <img
         src={image}
         alt="bilde av sjafør"
-        className="card-img-top mx-auto d-block rounded-circle driver-image"
+        className="card-img-top mx-auto d-block driver-image"
       />
       <div className="card-body">
         <h2 className="card-title-driver">{name}</h2>

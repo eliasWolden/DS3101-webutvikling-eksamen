@@ -1,16 +1,12 @@
-.race-card-container{
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
-}
-.card-article{
+.race-card-article{
     position: relative;
     overflow: hidden;
 }
-.card-image-size-race{
+.race-card-image-size-race{
     width: 100%;
     border-radius: 1rem;
 }
-.card-info{
+.race-card-info{
     width: 280px;
     background-color: white;
     padding: 1.5rem 2rem;
@@ -24,28 +20,28 @@
     opacity: 0;
     transition: opacity 1s 1s;
 }
-.card-description{
+.race-card-description{
     display: block;
     margin-bottom: .25rem;
 }
-.card-text-info{
+.race-card-text-info{
     font-weight: 500;
     margin-bottom: .75rem;
 }
 
 /* animasjonsnavm */
-.card-article:hover .card-info{
+.race-card-article:hover .race-card-info{
     animation: show-info 1s forwards;
     opacity: 1;
     transition: opacity .3s;
 }
-.card-article:hover{
+.race-card-article:hover{
     animation: remove-overflow 2s forwards;
 }
-.card-article:not(:hover){
+.race-card-article:not(:hover){
     animation: show-overflow 2s forwards;
 }
-.card-article:not(:hover) .card-info{
+.race-card-article:not(:hover) .race-card-info{
     animation: remove-info 1s forwards;
 }
 

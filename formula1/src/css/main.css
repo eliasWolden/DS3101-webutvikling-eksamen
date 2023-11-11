@@ -1,8 +1,11 @@
-.image-size-small{
+.image-size-emblem{
     width: 50px;
     object-fit: cover;
 }
 .image-size-car{
-    width: 200px;
+    width: 400px;
     object-fit: cover;
 }
+.selected-team {
+    width: 800px;
+  }
