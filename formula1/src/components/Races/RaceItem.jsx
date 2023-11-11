@@ -1,5 +1,6 @@
 import React from "react";
 import '../../css/RacePage.css';
+import boostrap from 'bootstrap/dist/css/bootstrap.min.css';
 
 const RaceItem = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
   return (
@@ -11,7 +12,7 @@ const RaceItem = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) =>
             <span className="card-description">{winnerName}</span>
             <p className="card-text-info">Winner Time: {winnerTime} seconds</p>
             <p className="card-text-info">Number of Laps: {numberOfLaps}</p>
-            <a href="#" className="card-button">Les mer om {winnerName}</a>
+            <a href="#" className="btn btn-success card-button">Les mer om {winnerName}</a>
           </div>
         </article>
       </div>
