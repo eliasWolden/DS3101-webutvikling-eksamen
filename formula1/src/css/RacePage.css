@@ -1,17 +1,12 @@
-.container{
+.race-card-container{
     margin-inline: 1.5rem;
     padding-block: 5rem;
-}
-.card-container{
-    display: grid;
-    row-gap: 3.5rem;
-
 }
 .card-article{
     position: relative;
     overflow: hidden;
 }
-.card-image{
+.card-image-size-race{
     width: 100%;
     border-radius: 1rem;
 }

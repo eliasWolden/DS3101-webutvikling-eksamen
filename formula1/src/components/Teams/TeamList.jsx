@@ -27,7 +27,7 @@ const TeamList = () => {
   };
 
   return (
-    <section>
+    <section className="row g-3">
       {getTeamsJSX()}
     </section>
   );

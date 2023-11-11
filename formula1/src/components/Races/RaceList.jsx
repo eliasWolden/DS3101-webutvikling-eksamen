@@ -19,7 +19,7 @@ const RaceList = () => {
     ));
 
   return (
-    <section className="row">
+    <section className="row g-3">
       {getRacesJSX()}
     </section>
   );
