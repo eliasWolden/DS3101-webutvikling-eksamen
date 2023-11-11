@@ -29,14 +29,15 @@ const DriverList = ({ onSelectDriver }) => {
   };
 
   return (
-    <Carousel
-      responsive={responsive}
-      infinite={true}
-      containerClass="carousel-container center"
-      showDots={true}
-    >
-      {getDriversJSX()}
-    </Carousel>
+    <div className="p-5">
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        containerClass="carousel-container center"
+        showDots={true}>
+        {getDriversJSX()}
+      </Carousel>
+    </div>
   );
 };
 
