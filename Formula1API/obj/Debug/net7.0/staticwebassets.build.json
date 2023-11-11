@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VsR7otgEk2SJcZNkiZV1Nf6C0FplY6HceLafnFFk0Cg=",
+  "Hash": "/1jJAVicXh4zn5amFPv+AvUxQKEJJeRt9JqXspLSj84=",
   "Source": "Formula1Api",
   "BasePath": "_content/Formula1Api",
   "Mode": "Default",
@@ -68,12 +68,12 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-alfa-romeo.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-aplhatauri.png",
+      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alphatauri.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "images/Cars/car-aplhatauri.png",
+      "RelativePath": "images/Cars/car-alphatauri.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,15 +82,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Cars/car-aplhatauri.png"
+      "OriginalItemSpec": "wwwroot/images/Cars/car-alphatauri.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-apline.png",
+      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alpine.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
-      "RelativePath": "images/Cars/car-apline.png",
+      "RelativePath": "images/Cars/car-alpine.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +99,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Cars/car-apline.png"
+      "OriginalItemSpec": "wwwroot/images/Cars/car-alpine.png"
     },
     {
       "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-aston-martin.png",

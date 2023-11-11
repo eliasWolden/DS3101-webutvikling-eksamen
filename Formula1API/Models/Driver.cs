@@ -7,4 +7,5 @@ public class Driver : IDriver
     public int Age {get; set;}
     public string? Nationality {get; set;}
     public string? Image {get; set;}
+    public int TeamId {get; set;}
 }

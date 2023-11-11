@@ -1,8 +1,16 @@
 import DriverList from "../components/Drivers/DriverList";
+import TeamList from "../components/Teams/TeamList";
 
 const DriverPage = () => {
   return (
-      <DriverList />
+    <div>
+      <section>
+        <DriverList />
+      </section>
+      <section>
+        <TeamList />
+      </section>
+    </div>
   );
 };
 

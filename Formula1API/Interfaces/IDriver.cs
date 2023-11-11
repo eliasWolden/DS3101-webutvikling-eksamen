@@ -6,4 +6,5 @@ public interface IDriver
     int Age {get; set;}
     string? Nationality {get; set;}
     string? Image {get; set;}
+    int TeamId {get; set;}
 }
