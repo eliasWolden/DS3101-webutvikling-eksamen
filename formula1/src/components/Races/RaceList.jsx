@@ -7,9 +7,9 @@ const RaceList = () => {
   const { races } = useContext(RaceContext);
   //getRacesJSX henter inn race fra context og lager en liste med races som blir burkt av item
   const getRacesJSX = () => 
-    races.map((race, i) => (
+    races.map((race) => (
       <RaceItem
-        key={`race-item-${i}`}
+        key={`race-item-${race.id}`}
         winnerName={race.winnerName}
         winnerTime={race.winnerTime}
         grandPrix={race.grandPrix}

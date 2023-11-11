@@ -9,9 +9,9 @@ const DriverList = () => {
   const { drivers } = useContext(DriverContext);
 //getDriversJSX henter inn sjafører fra context og lager en liste med sjafører som blir burkt av item i carousel
   const getDriversJSX = () =>
-    drivers.map((driver, i) => (
+    drivers.map((driver) => (
       <DriverItem
-        key={`driver-${i}`}
+        key={`driver-${driver.id}`}
         name={driver.name}
         age={driver.age}
         nationality={driver.nationality}

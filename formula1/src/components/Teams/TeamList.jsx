@@ -6,17 +6,18 @@ const TeamList = () => {
   const { teams, getTeamsFromService } = useContext(TeamContext);
 
   useEffect(() => {
-    // Fetch teams when the component mounts
     getTeamsFromService();
   }, []);
+  
   const getTeamsJSX = () => {
     if (teams.length === 0) {
       return <p>No teams available.</p>;
     }
 
-    return teams.map((team, i) => (
+    return teams.map((team) => (
       <TeamItem
-        key={`team-item-${i}`}
+        key={`team-item-${team.id}`}
+        id={`http://localhost:5257/api/Image/emblem/${team.id}.png`}
         manufacturer={team.manufacturer}
         driver1={team.driver1}
         driver2={team.driver2}
