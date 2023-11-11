@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import MediaService from "../../services/MediaService";
 import RaceItem from "./RaceItem";
 import { RaceContext } from "../../contexts/RaceContext";
-
 const RaceList = () => {
   const { races } = useContext(RaceContext);
   //getRacesJSX henter inn race fra context og lager en liste med races som blir burkt av item

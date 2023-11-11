@@ -1,14 +1,21 @@
 import React from "react";
+import '../../css/RacePage.css';
 
 const RaceItem = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
   return (
-    <article>
-      <h2>{grandPrix}</h2>
-      <p>Winner: {winnerName}</p>
-      <p>Winner Time: {winnerTime} seconds</p>
-      <p>Number of Laps: {numberOfLaps}</p>
-      {image && <img src={image} alt={grandPrix}/>}
-    </article>
+    <div className="container container d-flex align-items-center justify-content-center">
+      <div className="card-container">
+        <article className="card-article">
+          <img className="card-image" src={image} alt={grandPrix}/>
+          <div className="card-info">
+            <span className="card-description">{winnerName}</span>
+            <p className="card-text-info">Winner Time: {winnerTime} seconds</p>
+            <p className="card-text-info">Number of Laps: {numberOfLaps}</p>
+            <a href="#" className="card-button">Les mer om {winnerName}</a>
+          </div>
+        </article>
+      </div>
+    </div>
   );
 };
 
