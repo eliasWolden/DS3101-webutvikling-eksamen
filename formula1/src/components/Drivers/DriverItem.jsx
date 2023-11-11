@@ -10,9 +10,9 @@ const DriverItem = ({ name, age, nationality, image }) => {
         className="card-img-top mx-auto d-block rounded-circle driver-image"
       />
       <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <p className="card-text">{nationality}</p>
-        <p className="card-text">Age: {age}</p>
+        <h2 className="card-title-driver">{name}</h2>
+        <p className="card-text-driver">{nationality}</p>
+        <p className="card-text-driver">Age: {age}</p>
       </div>
     </div>
   );

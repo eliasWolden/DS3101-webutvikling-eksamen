@@ -13,8 +13,8 @@
     object-fit: cover;
   }
   
-  .card-title,
-  .card-text {
+  .card-title-driver,
+  .card-text-driver {
     color: #fff; /* White text color for better readability on dark red background */
   }
   

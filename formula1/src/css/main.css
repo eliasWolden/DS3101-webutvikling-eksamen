@@ -1,0 +1,8 @@
+.image-size-small{
+    width: 50px;
+    object-fit: cover;
+}
+.image-size-car{
+    width: 200px;
+    object-fit: cover;
+}
