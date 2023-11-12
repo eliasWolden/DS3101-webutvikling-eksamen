@@ -1,0 +1,301 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alfa-romeo.png",
+      "PackagePath": "staticwebassets/images/Cars/car-alfa-romeo.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alphatauri.png",
+      "PackagePath": "staticwebassets/images/Cars/car-alphatauri.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alpine.png",
+      "PackagePath": "staticwebassets/images/Cars/car-alpine.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-aston-martin.png",
+      "PackagePath": "staticwebassets/images/Cars/car-aston-martin.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-ferrari.png",
+      "PackagePath": "staticwebassets/images/Cars/car-ferrari.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-haas-f1-team.png",
+      "PackagePath": "staticwebassets/images/Cars/car-haas-f1-team.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-mclaren.png",
+      "PackagePath": "staticwebassets/images/Cars/car-mclaren.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-mercedes.png",
+      "PackagePath": "staticwebassets/images/Cars/car-mercedes.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-red-bull.png",
+      "PackagePath": "staticwebassets/images/Cars/car-red-bull.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-williams.png",
+      "PackagePath": "staticwebassets/images/Cars/car-williams.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/.DS_Store",
+      "PackagePath": "staticwebassets/images/Drivers/.DS_Store"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/alexander-albon.png",
+      "PackagePath": "staticwebassets/images/Drivers/alexander-albon.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/carlos-sainz.png",
+      "PackagePath": "staticwebassets/images/Drivers/carlos-sainz.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/charles-leclerc.png",
+      "PackagePath": "staticwebassets/images/Drivers/charles-leclerc.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/daniel-ricciardo.png",
+      "PackagePath": "staticwebassets/images/Drivers/daniel-ricciardo.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/esteban-ocon.png",
+      "PackagePath": "staticwebassets/images/Drivers/esteban-ocon.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/fernando-alonso.png",
+      "PackagePath": "staticwebassets/images/Drivers/fernando-alonso.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/george-russell.png",
+      "PackagePath": "staticwebassets/images/Drivers/george-russell.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/guanyu-zhou.png",
+      "PackagePath": "staticwebassets/images/Drivers/guanyu-zhou.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/kevin-magnussen.png",
+      "PackagePath": "staticwebassets/images/Drivers/kevin-magnussen.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lance-stroll.png",
+      "PackagePath": "staticwebassets/images/Drivers/lance-stroll.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lando-norris.png",
+      "PackagePath": "staticwebassets/images/Drivers/lando-norris.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lewis-hamilton.png",
+      "PackagePath": "staticwebassets/images/Drivers/lewis-hamilton.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/liam-lawson.png",
+      "PackagePath": "staticwebassets/images/Drivers/liam-lawson.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/logan-sargeant.png",
+      "PackagePath": "staticwebassets/images/Drivers/logan-sargeant.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/max-verstappen.png",
+      "PackagePath": "staticwebassets/images/Drivers/max-verstappen.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/nico-hulkenberg.png",
+      "PackagePath": "staticwebassets/images/Drivers/nico-hulkenberg.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/nyck-de-vries.png",
+      "PackagePath": "staticwebassets/images/Drivers/nyck-de-vries.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/oscar-piastri.png",
+      "PackagePath": "staticwebassets/images/Drivers/oscar-piastri.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/pierre-gasly.png",
+      "PackagePath": "staticwebassets/images/Drivers/pierre-gasly.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/sergio-perez.png",
+      "PackagePath": "staticwebassets/images/Drivers/sergio-perez.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/valtteri-bottas.png",
+      "PackagePath": "staticwebassets/images/Drivers/valtteri-bottas.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/yuki-tsunoda.png",
+      "PackagePath": "staticwebassets/images/Drivers/yuki-tsunoda.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/1.png",
+      "PackagePath": "staticwebassets/images/Emblems/1.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/10.png",
+      "PackagePath": "staticwebassets/images/Emblems/10.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/2.png",
+      "PackagePath": "staticwebassets/images/Emblems/2.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/3.png",
+      "PackagePath": "staticwebassets/images/Emblems/3.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/4.png",
+      "PackagePath": "staticwebassets/images/Emblems/4.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/5.png",
+      "PackagePath": "staticwebassets/images/Emblems/5.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/6.png",
+      "PackagePath": "staticwebassets/images/Emblems/6.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/7.png",
+      "PackagePath": "staticwebassets/images/Emblems/7.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/8.png",
+      "PackagePath": "staticwebassets/images/Emblems/8.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/9.png",
+      "PackagePath": "staticwebassets/images/Emblems/9.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Abu-Dhabi-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Abu-Dhabi-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Australia-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Australia-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Austria-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Austria-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Azerbaijan-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Azerbaijan-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Bahrain-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Bahrain-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Belgium-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Belgium-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Brazil-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Brazil-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Canada-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Canada-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Emilia-Romagna-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Emilia-Romagna-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Great-Britain-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Great-Britain-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Hungary-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Hungary-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Italy-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Italy-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Japan-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Japan-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Las-Vegas-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Las-Vegas-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Mexico-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Mexico-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Miami-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Miami-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Monaco-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Monaco-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Netherlands-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Netherlands-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Qatar-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Qatar-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Saudi-Arabia-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Saudi-Arabia-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Singapore-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Singapore-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Spain-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/Spain-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/United-States-Grand-Prix.png",
+      "PackagePath": "staticwebassets/images/Races/United-States-Grand-Prix.png"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/scripts/index.js",
+      "PackagePath": "staticwebassets/scripts/index.js"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Formula1Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.Formula1Api.props",
+      "PackagePath": "build\\Formula1Api.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Formula1Api.props",
+      "PackagePath": "buildMultiTargeting\\Formula1Api.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Formula1Api.props",
+      "PackagePath": "buildTransitive\\Formula1Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
