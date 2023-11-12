@@ -11,6 +11,11 @@ lerna-debug.log*
 bin/
 obj/
 
+# Exclude Formula1API database files
+Formula1API/Databases/Formula1Db.db-shm
+Formula1API/Databases/Formula1Db.db-wal
+
+
 # Node.js
 node_modules/
 
