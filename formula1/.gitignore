@@ -7,10 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Build output
+bin/
+obj/
+
+# Node.js
+node_modules/
+
+# React build
+build/
+dist/
+*.local/
 
 # Editor directories and files
 .vscode/*

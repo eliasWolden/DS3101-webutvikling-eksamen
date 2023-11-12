@@ -1723,19 +1723,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/malinakre/.nuget/packages/": {}
+    "/Users/eliaswolden/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
+      "projectUniqueName": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
       "projectName": "Formula1Api",
-      "projectPath": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
-      "packagesPath": "/Users/malinakre/.nuget/packages/",
-      "outputPath": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/obj/",
+      "projectPath": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/Formula1Api.csproj",
+      "packagesPath": "/Users/eliaswolden/.nuget/packages/",
+      "outputPath": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/malinakre/.nuget/NuGet/NuGet.Config"
+        "/Users/eliaswolden/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
