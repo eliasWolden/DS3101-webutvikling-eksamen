@@ -31,31 +31,10 @@ public async Task<ActionResult<List<Team>>> Get()
     }
 }
 
-/* // Get by name
-[HttpGet("name/{name}")]
-public async Task<ActionResult<List<Team>>> GetByName(string name)
-{
-    try
-    {
-        Team? teams = await context.Teams.FindAsync(name);
-        if (teams != null)
-        {
-            return Ok(teams);
-        }
-        else
-        {
-            return NotFound();
-        }
-    }
-    catch
-    {
-        return StatusCode(500);
-    }
-}
- */
+
+
 // Get by id
-[HttpGet]
-[Route("id/{id}")]
+[HttpGet("id/{id}")]
 
 public async Task<ActionResult<List<Team>>> GetById(int id)
 {
@@ -76,4 +55,59 @@ public async Task<ActionResult<List<Team>>> GetById(int id)
         return StatusCode(500);
     }
 }
+
+
+// Get by name
+[HttpGet]
+[Route("manufacturer/{manufacturer}")]
+public async Task<ActionResult<List<Team>>> GetByName(string manufacturer)
+{
+    try
+    {
+        Team team = await context.Teams.FirstOrDefaultAsync(t => t.Manufacturer == manufacturer);
+        if (team != null)
+        {
+            return Ok(team);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
+}
+
+
+// Delete by name 
+[HttpDelete("{manufacturer}")]
+public async Task<ActionResult<TeamController>> DeleteByName(string manufacturer)
+{
+    try
+    {
+        // Find the driver by name
+        Team team = await context.Teams.FirstOrDefaultAsync(t => t.Manufacturer == manufacturer);
+
+        if (team != null)
+        {
+            context.Teams.Remove(team);
+
+            await context.SaveChangesAsync();
+
+            return Ok(team);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, $"Internal Server Error: {ex.Message}");
+    }
+}
+
+
 }

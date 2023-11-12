@@ -38,31 +38,9 @@ public async Task<ActionResult<List<Race>>> Get()
     }
 }
 
-// Get by name
-[HttpGet("name/{name}")]
-public async Task<ActionResult<List<Race>>> GetByName(string name)
-{
-    try
-    {
-        Race? races = await context.Races.FindAsync(name);
-        if (races != null)
-        {
-            return Ok(races);
-        }
-        else
-        {
-            return NotFound();
-        }
-    }
-    catch
-    {
-        return StatusCode(500);
-    }
-}
 
 //Get by Id:
-[HttpGet]
-[Route("id/{id}")]
+[HttpGet("id/{id}")]
 
 public async Task<ActionResult<List<Race>>> GetById(int id)
 {
@@ -81,6 +59,61 @@ public async Task<ActionResult<List<Race>>> GetById(int id)
     catch
     {
         return StatusCode(500);
+    }
+}
+
+// Get by name
+[HttpGet]
+[Route("grandPrix/{grandPrix}")]
+public async Task<ActionResult<List<Race>>> GetByName(string grandPrix)
+{
+    try
+    {
+        Race race = await context.Races.FirstOrDefaultAsync(r => r.GrandPrix == grandPrix);
+        if (race != null)
+        {
+            return Ok(race);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch
+    {
+        return StatusCode(500);
+    }
+}
+
+// Delete by name 
+[HttpDelete("{grandPrix}")]
+public async Task<ActionResult<Race>> DeleteByName(string grandPrix)
+{
+    try
+    {
+        // Find the driver by name
+        Race race = await context.Races.FirstOrDefaultAsync(r => r.GrandPrix == grandPrix);
+
+        if (race != null)
+        {
+            // Remove the driver from the context
+            context.Races.Remove(race);
+
+            // Save changes to the database
+            await context.SaveChangesAsync();
+
+            // Return the deleted driver
+            return Ok(race);
+        }
+        else
+        {
+            return NotFound();
+        }
+    }
+    catch (Exception ex)
+    {
+        // If an exception occurs, return a 500 Internal Server Error with the exception message
+        return StatusCode(500, $"Internal Server Error: {ex.Message}");
     }
 }
 

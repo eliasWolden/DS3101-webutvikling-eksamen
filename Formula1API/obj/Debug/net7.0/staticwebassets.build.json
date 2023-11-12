@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/1jJAVicXh4zn5amFPv+AvUxQKEJJeRt9JqXspLSj84=",
+  "Hash": "aR9hJl1VAEtfeQQZGpgP5chjHN5SV8AWcJkdeT+ptWk=",
   "Source": "Formula1Api",
   "BasePath": "_content/Formula1Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Formula1Api/wwwroot",
       "Source": "Formula1Api",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/.DS_Store",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/.DS_Store",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/.DS_Store",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/.DS_Store",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/.DS_Store",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/images/.DS_Store"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alfa-romeo.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alfa-romeo.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-alfa-romeo.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-alfa-romeo.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alphatauri.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alphatauri.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-alphatauri.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-alphatauri.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alpine.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-alpine.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-alpine.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-alpine.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-aston-martin.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-aston-martin.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-aston-martin.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-aston-martin.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-ferrari.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-ferrari.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-ferrari.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-ferrari.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-haas-f1-team.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-haas-f1-team.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-haas-f1-team.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-haas-f1-team.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-mclaren.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-mclaren.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-mclaren.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-mclaren.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-mercedes.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-mercedes.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-mercedes.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-mercedes.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-red-bull.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-red-bull.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-red-bull.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-red-bull.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-williams.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Cars/car-williams.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Cars/car-williams.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/images/Cars/car-williams.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/.DS_Store",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/.DS_Store",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/.DS_Store",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/.DS_Store"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/alexander-albon.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/alexander-albon.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/alexander-albon.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/alexander-albon.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/carlos-sainz.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/carlos-sainz.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/carlos-sainz.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/carlos-sainz.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/charles-leclerc.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/charles-leclerc.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/charles-leclerc.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/charles-leclerc.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/daniel-ricciardo.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/daniel-ricciardo.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/daniel-ricciardo.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/daniel-ricciardo.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/esteban-ocon.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/esteban-ocon.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/esteban-ocon.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/esteban-ocon.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/fernando-alonso.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/fernando-alonso.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/fernando-alonso.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/fernando-alonso.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/george-russell.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/george-russell.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/george-russell.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/george-russell.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/guanyu-zhou.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/guanyu-zhou.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/guanyu-zhou.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/guanyu-zhou.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/kevin-magnussen.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/kevin-magnussen.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/kevin-magnussen.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/kevin-magnussen.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lance-stroll.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lance-stroll.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/lance-stroll.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/lance-stroll.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lando-norris.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lando-norris.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/lando-norris.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/lando-norris.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lewis-hamilton.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/lewis-hamilton.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/lewis-hamilton.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/lewis-hamilton.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/liam-lawson.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/liam-lawson.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/liam-lawson.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/liam-lawson.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/logan-sargeant.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/logan-sargeant.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/logan-sargeant.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/logan-sargeant.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/max-verstappen.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/max-verstappen.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/max-verstappen.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/max-verstappen.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/nico-hulkenberg.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/nico-hulkenberg.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/nico-hulkenberg.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/nico-hulkenberg.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/nyck-de-vries.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/nyck-de-vries.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/nyck-de-vries.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/nyck-de-vries.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/oscar-piastri.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/oscar-piastri.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/oscar-piastri.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/oscar-piastri.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/pierre-gasly.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/pierre-gasly.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/pierre-gasly.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/pierre-gasly.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/sergio-perez.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/sergio-perez.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/sergio-perez.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/sergio-perez.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/valtteri-bottas.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/valtteri-bottas.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/valtteri-bottas.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/valtteri-bottas.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/yuki-tsunoda.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Drivers/yuki-tsunoda.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Drivers/yuki-tsunoda.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot/images/Drivers/yuki-tsunoda.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/1.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/1.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/1.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/1.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/10.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/10.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/10.png",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/10.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/2.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/2.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/2.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/2.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/3.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/3.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/3.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/3.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/4.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/4.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/4.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/4.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/5.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/5.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/5.png",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/5.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/6.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/6.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/6.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/6.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/7.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/7.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/7.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/7.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/8.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/8.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/8.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/8.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/9.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Emblems/9.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Emblems/9.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot/images/Emblems/9.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Abu-Dhabi-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Abu-Dhabi-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Abu-Dhabi-Grand-Prix.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Abu-Dhabi-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Australia-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Australia-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Australia-Grand-Prix.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Australia-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Austria-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Austria-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Austria-Grand-Prix.png",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Austria-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Azerbaijan-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Azerbaijan-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Azerbaijan-Grand-Prix.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Azerbaijan-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Bahrain-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Bahrain-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Bahrain-Grand-Prix.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Bahrain-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Belgium-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Belgium-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Belgium-Grand-Prix.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Belgium-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Brazil-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Brazil-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Brazil-Grand-Prix.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Brazil-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Canada-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Canada-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Canada-Grand-Prix.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Canada-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Emilia-Romagna-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Emilia-Romagna-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Emilia-Romagna-Grand-Prix.png",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Emilia-Romagna-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Great-Britain-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Great-Britain-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Great-Britain-Grand-Prix.png",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Great-Britain-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Hungary-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Hungary-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Hungary-Grand-Prix.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Hungary-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Italy-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Italy-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Italy-Grand-Prix.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Italy-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Japan-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Japan-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Japan-Grand-Prix.png",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Japan-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Las-Vegas-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Las-Vegas-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Las-Vegas-Grand-Prix.png",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Las-Vegas-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Mexico-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Mexico-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Mexico-Grand-Prix.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Mexico-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Miami-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Miami-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Miami-Grand-Prix.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Miami-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Monaco-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Monaco-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Monaco-Grand-Prix.png",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Monaco-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Netherlands-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Netherlands-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Netherlands-Grand-Prix.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Netherlands-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Qatar-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Qatar-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Qatar-Grand-Prix.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Qatar-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Saudi-Arabia-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Saudi-Arabia-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Saudi-Arabia-Grand-Prix.png",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Saudi-Arabia-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Singapore-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Singapore-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Singapore-Grand-Prix.png",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Singapore-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Spain-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/Spain-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/Spain-Grand-Prix.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/Spain-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/United-States-Grand-Prix.png",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/images/Races/United-States-Grand-Prix.png",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "images/Races/United-States-Grand-Prix.png",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot/images/Races/United-States-Grand-Prix.png"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/index.html",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/index.html",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot/index.html"
     },
     {
-      "Identity": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/scripts/index.js",
+      "Identity": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/scripts/index.js",
       "SourceId": "Formula1Api",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/eliaswolden/Desktop/siste eksamen nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
+      "ContentRoot": "/Users/malinakre/Desktop/eksamen web nå/DS3101-webutvikling-eksamen/Formula1API/wwwroot/",
       "BasePath": "_content/Formula1Api",
       "RelativePath": "scripts/index.js",
       "AssetKind": "All",

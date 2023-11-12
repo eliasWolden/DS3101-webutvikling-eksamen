@@ -16,18 +16,18 @@ namespace SeriesAPI.Controllers
             _environment = environment;
         }
 
-        // [HttpPost("driver")]
-        // public IActionResult PostDriverImage(IFormFile formFile)
-        // {
-        //     return PostImage(formFile, "Drivers");
-        // }
+        /*  [HttpPost("driver")]
+         public IActionResult PostDriverImage(IFormFile formFile)
+         {
+           return PostImage(formFile, "Drivers");
+         } */
 
         [HttpGet("{imageType}/{imageName}")]
         public IActionResult GetImage(string imageType, string imageName)
         {
             string subfolder = GetSubfolder(imageType);
             if (subfolder == null)
-                return BadRequest("Invalid image type.");
+                return NotFound("Invalid image type.");
 
             return GetImageFromFile(imageName, subfolder);
         }
@@ -38,15 +38,17 @@ namespace SeriesAPI.Controllers
             {
                 case "driver":
                     return "Drivers";
+        
                 case "race":
                     return "Races";
+
                 case "emblem":
                     return "Emblems";
+
                 case "car":
                     return "Cars";
-                default:
-                    return null;
             }
+            throw new ArgumentException("Not found");
         }
 
         private IActionResult GetImageFromFile(string imageName, string subfolder)
