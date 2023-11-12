@@ -1,4 +1,4 @@
-import CreateDriver from "../components/CreateDriver/CreateDriver";
+import CreateDriver from "../../src/components/CRUD/Driver/CreateDriver";
 
 const CreateDriverPage = () => {
     return (
