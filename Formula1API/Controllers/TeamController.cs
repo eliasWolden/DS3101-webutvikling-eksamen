@@ -109,5 +109,56 @@ public async Task<ActionResult<TeamController>> DeleteByName(string manufacturer
     }
 }
 
+// Create Team (POST)
+[HttpPost]
+public async Task<IActionResult> CreateTeam([FromBody] Team newTeam)
+//The [FromBody] attribute tells ASP.NET Core to deserialize this JSON data into a Driver object and bind it to the newDriver parameter
+{
+    try
+    {
+        // Add the new driver to the context
+        context.Teams.Add(newTeam);
+
+        // Save changes to the database
+        await context.SaveChangesAsync();
+
+        // Return a 201 Created status with the newly created driver
+        return Created($"/api/Team/{newTeam.Id}", newTeam);
+    }
+    catch (Exception ex)
+    {
+        // If an exception occurs, return a 500 Internal Server Error with the exception message
+        return StatusCode(500, $"Error: {ex.Message}");
+    }
+}
+
+// Update (PUT)
+[HttpPut("{id}")]
+public async Task<ActionResult<Race>> UpdateTeam(int id, [FromBody] Team updatedTeam)
+{
+    try
+    {
+        Team currentTeam = await context.Teams.FindAsync(id);
+
+        if (currentTeam == null)
+        {
+            return NotFound();
+        }
+
+        // Update the properties of the existing driver with the values from the updatedDriver
+        currentTeam.Manufacturer = updatedTeam.Manufacturer;
+        //existingDriver.Team = updatedDriver.Team;
+        // Update other properties as needed
+
+        await context.SaveChangesAsync();
+
+        return Ok(currentTeam);
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, $"Error: {ex.Message}");
+    }
+}
+
 
 }

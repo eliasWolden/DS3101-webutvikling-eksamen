@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImageService from '../../services/ImageService';
+import ImageService from '../../../services/ImageService';
 
 const CreateDriver = () => {
   const [image, setImage] = useState(null);
@@ -47,22 +47,24 @@ const CreateDriver = () => {
 
   return (
     <section>
-      <h3>Last opp bilde</h3>
+      <h3>Upload an image of your Driver</h3>
 
-      <label>Bilde</label>
+      <label>Image</label>
       <input type="file" onChange={setDriverImage} />
 
-      <label>Navn</label>
+      <label>Name</label>
       <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
 
-      <label>Etternavn</label>
+      <label>LastName</label>
       <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} />
 
-      <label>Alder</label>
+      <label>Age</label>
       <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
 
-      <label>Nasjonalitet</label>
+      <label>Nationality</label>
       <input type="text" value={nationality} onChange={(e) => setNationality(e.target.value)} />
+
+      <br />
       
       <label>Team</label>
       <select value={team} onChange={(e) => setTeam(e.target.value)}>
@@ -77,7 +79,7 @@ const CreateDriver = () => {
         <option value="9">Alfa Romeo</option>
         <option value="10">Haas F1</option>
       </select>
-      <input type="button" onClick={uploadImage} value="Last opp bilde" />
+      <input type="button" onClick={uploadImage} value="Upload image" />
     </section>
   );
 }

@@ -117,23 +117,66 @@ public async Task<ActionResult<Driver>> DeleteByName(string name)
     catch (Exception ex)
     {
         // If an exception occurs, return a 500 Internal Server Error with the exception message
-        return StatusCode(500, $"Internal Server Error: {ex.Message}");
+        return StatusCode(500, $"Error: {ex.Message}");
     }
 }
 
 
 
-// Create (image) (POST)
-
-
-// Update (POST)
-/* [HttpPost]
-public IActionResult Post(Driver newDriver)
+// Create Driver (POST)
+[HttpPost]
+public async Task<IActionResult> CreateDriver([FromBody] Driver newDriver)
+//The [FromBody] attribute tells ASP.NET Core to deserialize this JSON data into a Driver object and bind it to the newDriver parameter
 {
-    Formula1Context.Driver.Add(newDriver);
-    Formula1Context.SaveChanges();
-    return Ok();
-} */
+    try
+    {
+        // Add the new driver to the context
+        context.Drivers.Add(newDriver);
 
+        // Save changes to the database
+        await context.SaveChangesAsync();
+
+        // Return a 201 Created status with the newly created driver
+        return Created($"/api/Driver/{newDriver.Id}", newDriver);
+    }
+    catch (Exception ex)
+    {
+        // If an exception occurs, return a 500 Internal Server Error with the exception message
+        return StatusCode(500, $"Error: {ex.Message}");
+    }
 }
 
+
+// Update (PUT)
+[HttpPut("{id}")]
+public async Task<ActionResult<Driver>> UpdateDriver(int id, [FromBody] Driver updatedDriver)
+{
+    try
+    {
+        // Find the existing driver by ID
+        Driver currentDriver = await context.Drivers.FindAsync(id);
+
+        if (currentDriver == null)
+        {
+            // If the driver with the given ID is not found, return a 404 Not Found response
+            return NotFound();
+        }
+
+        // Update the properties of the existing driver with the values from the updatedDriver
+        currentDriver.Name = updatedDriver.Name;
+        //existingDriver.Team = updatedDriver.Team;
+        // Update other properties as needed
+
+        // Save changes to the database
+        await context.SaveChangesAsync();
+
+        // Return the updated driver along with a 200 OK status
+        return Ok(currentDriver);
+    }
+    catch (Exception ex)
+    {
+        // If an exception occurs, return a 500 Internal Server Error with the exception message
+        return StatusCode(500, $"Error: {ex.Message}");
+    }
+}
+}
