@@ -13,9 +13,9 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
 
   const getAllDriversFromService = async () => {
     try {
-      const driversData = await MediaService.getAllDrivers();
-      if (driversData && driversData.drivers) {
-        setDrivers(driversData.drivers);
+      const driversFromService = await MediaService.getAllDrivers();
+      if (driversFromService.drivers) {
+        setDrivers(driversFromService.drivers);
       }
     } catch (error) {
       console.error('Error fetching drivers:', error);
