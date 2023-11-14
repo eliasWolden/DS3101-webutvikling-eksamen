@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { DriverPage, HomePage, RacePage, TeamPage } from "../../pages";
 import 'bootstrap/dist/css/bootstrap.min.css';

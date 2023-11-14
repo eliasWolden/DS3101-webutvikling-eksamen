@@ -1,6 +1,4 @@
 import { useState } from "react";
-import axios from "axios";
-import bootstrap from 'bootstrap/dist/css/bootstrap.css';
 
 const DeleteDriver = () => {
     const [firstName, setFirstName] = useState('');
@@ -8,7 +6,7 @@ const DeleteDriver = () => {
     
 
 return (
-    <form class="bg-light p-4 m-4 border rounded shadow-lg">
+    <form className="bg-light p-4 m-4 border rounded shadow-lg">
         <h2>Delete driver</h2>
 
         <div className="form-group col-md-4">

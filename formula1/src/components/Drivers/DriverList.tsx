@@ -1,26 +1,28 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Carousel from "react-multi-carousel";
 import { DriverContext } from "../../contexts/DriverContext";
 import DriverItem from "./DriverItem";
 import "react-multi-carousel/lib/styles.css";
 import "../../css/DriverCarousel.css";
+import {IDriver} from "../../interfaces/Drivers/IDriver";
+import { IDriverContext } from "../../interfaces/Drivers/IDriverContext";
 
-const DriverList = ({ onSelectDriver }) => {
-  const { drivers } = useContext(DriverContext);
-//getDriversJSX henter inn sjafører fra context og lager en liste med sjafører som blir burkt av item i carousel
+const DriverList = () => {
+  const { drivers } = useContext(DriverContext) as IDriverContext;
+
   const getDriversJSX = () =>
-    drivers.map((driver) => (
+    drivers.map((driver: IDriver) => (
       <DriverItem
-        key={`driver-${driver.id}`}
+        key={driver.id}
+        id={driver.id}
         name={driver.name}
         age={driver.age}
         nationality={driver.nationality}
         image={`http://localhost:5257/api/Image/driver/${driver.image}`}
-        teamid={driver.teamId}
-        onClick={() => onSelectDriver(driver)} // kaller på utvalgt sjafør
+        teamid={driver.teamid}
       />
     ));
-  // Carousel konfigurasjon
+
   const responsive = {
     superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5, step: 3 },
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3, step: 3 },
@@ -36,7 +38,7 @@ const DriverList = ({ onSelectDriver }) => {
         containerClass="carousel-container center"
         showDots={true}
         draggable={false}
-        >
+      >
         {getDriversJSX()}
       </Carousel>
     </div>

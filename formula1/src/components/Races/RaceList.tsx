@@ -1,15 +1,17 @@
-import React, { useContext } from "react";
-import MediaService from "../../services/MediaService";
+import { useContext } from "react";
 import RaceItem from "./RaceItem";
 import { RaceContext } from "../../contexts/RaceContext";
+import { IRaceContext } from "../../interfaces/Races/IRaceContext";
+import { IRace } from "../../interfaces/Races/IRace";
 
 const RaceList = () => {
-  const { races } = useContext(RaceContext);
+  const { races } = useContext(RaceContext) as IRaceContext;
   //getRacesJSX henter inn race fra context og lager en liste med races som blir burkt av item
   const getRacesJSX = () => 
-    races.map((race) => (
+    races.map((race: IRace) => (
       <RaceItem
         key={`race-item-${race.id}`}
+        id={race.id}
         winnerName={race.winnerName}
         winnerTime={race.winnerTime}
         grandPrix={race.grandPrix}

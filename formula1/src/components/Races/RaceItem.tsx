@@ -1,8 +1,9 @@
-import React from "react";
+import {FC} from "react";
 import '../../css/RacePage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { IRace } from "../../interfaces/Races/IRace";
 
-const RaceItem = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
+const RaceItem: FC<IRace> = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
   return (
     <div className="col-md-4 container">
         <article className="race-card-article">

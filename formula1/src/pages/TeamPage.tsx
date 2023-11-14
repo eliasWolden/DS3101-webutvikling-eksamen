@@ -3,7 +3,7 @@ import TeamList from "../components/Teams/TeamList";
 const TeamPage = () => {
   return (
     <section>
-      <TeamList/>
+      <TeamList selectedDriver={undefined}/>
     </section>
   );
 };
