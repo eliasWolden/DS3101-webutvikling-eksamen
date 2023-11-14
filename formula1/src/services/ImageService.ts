@@ -1,16 +1,18 @@
 import axios from "axios";
 
-const imageUploadService = () => {
+const imageUploadService = (
+    () => {
 
     const imagecontroller = 'http://localhost:5257/api/Image/Driver';
 
-    const uploadImage = async (imageFile, imageName) => {
+    const uploadImage = async (image: File) => {
         //lager formdata
         const formData = new FormData();
-        formData.append('file', imageFile, imageName);
+        formData.append('file', image);
 
         // sender formdata til api
         const result = await axios({
+            url : imagecontroller,
             method: 'POST',
             data: formData,
             headers: {'Content-Type': 'multipart/form-data',},
@@ -20,7 +22,8 @@ const imageUploadService = () => {
     }
     return {
         uploadImage
+        }
     }
-}
+)();
 
 export default imageUploadService;
