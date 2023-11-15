@@ -133,12 +133,12 @@ public async Task<IActionResult> CreateTeam([FromBody] Team newTeam)
 }
 
 // Update (PUT)
-[HttpPut("{id}")]
-public async Task<ActionResult<Race>> UpdateTeam(int id, [FromBody] Team updatedTeam)
+[HttpPut]
+public async Task<ActionResult<Race>> UpdateTeam(Team updatedTeam)
 {
     try
     {
-        Team currentTeam = await context.Teams.FindAsync(id);
+        Team currentTeam = await context.Teams.FindAsync();
 
         if (currentTeam == null)
         {

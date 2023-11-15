@@ -148,13 +148,13 @@ public async Task<IActionResult> CreateDriver([FromBody] Driver newDriver)
 
 
 // Update (PUT)
-[HttpPut("{id}")]
-public async Task<ActionResult<Driver>> UpdateDriver(int id, [FromBody] Driver updatedDriver)
+[HttpPut]
+public async Task<ActionResult<Driver>> UpdateDriver(Driver updatedDriver)
 {
     try
     {
         // Find the existing driver by ID
-        Driver currentDriver = await context.Drivers.FindAsync(id);
+        Driver currentDriver = await context.Drivers.FindAsync();
 
         if (currentDriver == null)
         {

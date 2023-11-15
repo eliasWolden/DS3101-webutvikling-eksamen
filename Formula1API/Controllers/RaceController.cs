@@ -142,13 +142,13 @@ public async Task<IActionResult> CreateRace([FromBody] Race newRace)
 }
 
 // Update (PUT)
-[HttpPut("{id}")]
-public async Task<ActionResult<Race>> UpdateRace(int id, [FromBody] Race updatedRace)
+[HttpPut]
+public async Task<ActionResult<Race>> UpdateRace(Race updatedRace)
 {
     try
     {
         // Find the existing driver by ID
-        Race currentRace = await context.Races.FindAsync(id);
+        Race currentRace = await context.Races.FindAsync();
 
         if (currentRace == null)
         {
