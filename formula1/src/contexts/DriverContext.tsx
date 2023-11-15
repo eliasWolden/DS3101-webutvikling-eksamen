@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import DriverService from '../services/DriverService';
+import ImageService from '../services/ImageService';
 import { IDriver } from '../interfaces/Drivers/IDriver';
 import { IDriverContext } from '../interfaces/Drivers/IDriverContext';
 import { IProps } from '../interfaces/Iprops';
@@ -30,7 +31,21 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
      catch (error) {
        console.log(`error deleting driver with name ${name}`, error);
     }
+  };
+  const postDriver = async (newDriver: IDriver): Promise<void> => {
+    try {
+      await DriverService.postDriver(newDriver);
+    } catch (error) {
+      console.log('Error adding driver', error);
     }
+  };
+  const postImage = async (image: File): Promise<void> => {
+    try {
+      await ImageService.postImage(image);
+    } catch (error) {
+      console.log('Error adding image', error);
+    }
+  };
 
   useEffect(() => {
     getAllDriversFromService();
@@ -40,8 +55,11 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     drivers: drivers!,
     getAllDriversFromService,
     deleteDriver,
+    postDriver,
+    postImage,
   };
 
-  return <DriverContext.Provider value={contextValue}>{children}</DriverContext.Provider>;
 
+  return <DriverContext.Provider value={contextValue}>{children}</DriverContext.Provider>;
+  
 };

@@ -3,9 +3,9 @@ import axios from "axios";
 const imageUploadService = (
     () => {
 
-    const imagecontroller = 'http://localhost:5257/api/Image/Driver';
+    const imagecontroller = 'http://localhost:5257/api/Image';
 
-    const uploadImage = async (image: File) => {
+    const postImage = async (image: File) => {
         //lager formdata
         const formData = new FormData();
         formData.append('file', image);
@@ -20,8 +20,9 @@ const imageUploadService = (
 
         formData.delete("file");
     }
+
     return {
-        uploadImage
+        postImage
         }
     }
 )();

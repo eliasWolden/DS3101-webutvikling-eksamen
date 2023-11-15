@@ -1,20 +1,18 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
+namespace Formula1Api.Controllers;
 
-namespace SeriesAPI.Controllers
-{
+using Microsoft.AspNetCore.Mvc;
+
+
 [ApiController]
 [Route("api/[controller]")]
-    public class ImageController : ControllerBase
-    {
-        private readonly IWebHostEnvironment _environment;
+public class ImageController : ControllerBase
+{
+private readonly IWebHostEnvironment hosting;
 
-        public ImageController(IWebHostEnvironment environment)
-        {
-            _environment = environment;
-        }
+public ImageController(IWebHostEnvironment _hosting)
+{
+hosting = _hosting;
+}
 
 
 // Get image by imageType ("driver","race", "emblem", "car") and imageName.
@@ -71,7 +69,7 @@ namespace SeriesAPI.Controllers
             if (subfolder == null)
                 return BadRequest("Invalid image type.");
 
-            string webRootPath = _environment.WebRootPath;
+            string webRootPath = hosting.WebRootPath;
             string imagePath = Path.Combine(webRootPath, "images", subfolder, imageName);
 
             if (System.IO.File.Exists(imagePath))
@@ -87,12 +85,24 @@ namespace SeriesAPI.Controllers
             return StatusCode(500);
         }
     }
-}
+
 
 // Post an image
-//[HttpPost]
+[HttpPost]
 
+public IActionResult SaveImage(IFormFile file)
+{
+    string webRootPath = hosting.WebRootPath;
+    string absolutePath = Path.Combine($"{webRootPath}/images/Drivers/{file.FileName}");
+
+    using(var fileStream = new FileStream(absolutePath, FileMode.Create))
+    {
+        file.CopyTo(fileStream);
+    }
+
+    return Ok();
+}
+ 
 // Delete an image
 //[HttpDelete]
-
 }

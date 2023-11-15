@@ -1,31 +1,72 @@
-import { useState, ChangeEvent } from 'react';
-import ImageService from '../../../services/ImageService';
-import "bootstrap/dist/css/bootstrap.css?inline";
+import { FC, useState, ChangeEvent, useContext } from 'react';
+import { IDriver } from '../../../interfaces/Drivers/IDriver';
+import { DriverContext } from '../../../contexts/DriverContext';
+
+const AddDriver: FC = () => {
+//fornavn og etternavn blir til navnet til sjaføren med mellomrom
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const fullName = `${firstName} ${lastName}`;
 
 
-const uploadDriver = () => {
+  const [age, setAge] = useState<number>(Number);
+  const [nationality, setNationality] = useState('');
+  const [teamid, setTeamid] = useState<number>(Number);
   const [image, setImage] = useState<File | null>(null);
-  const [firstName, setName] = useState<string>('');
-  const [lastName, setLastName] = useState<string>('');
-  const [age, setAge] = useState<string>('');
-  const [nationality, setNationality] = useState<string>('');
-  const [team, setTeam] = useState<string>('');
 
+  const context = useContext(DriverContext);
 
-  const setImageHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    const {files} = event.target;
-      if (files != null) {
-        const file = files[0];
-        setImage(file);
+    const setHandler = (e: ChangeEvent<any>) => {
+      const { name, value, files } = e.target;
+
+      switch (name) {
+        case 'Firstname':
+          setFirstName(value);
+          break;
+        case 'Lastname':
+          setLastName(value);
+          break;
+        case 'Age':
+          setAge(Number(value));
+          break;
+        case 'nationality':
+          setNationality(value);
+          break;
+        case 'teamid':
+          setTeamid(parseInt(value));
+          break;
+        case 'image':
+          if (files != null) {
+            const file = files[0];
+            setImage(file);
+          }
+          break;
       }
-  }
+    };
 
-  const uploadImage = () => {
-    if (image !== null) {
-      ImageService.uploadImage(image);
+    const saveDriver = () => {
+      const newDriver: IDriver = {
+        name: fullName,
+        age: age,
+        nationality: nationality,
+        image: image!.name,
+        teamid: teamid,
+      }
+      handleAdd(newDriver, image!);
+      console.log(newDriver);
+    };
+
+    const handleAdd = async (newDriver: IDriver, image : File) => {
+      try {
+        if(context) {
+          await context.postDriver(newDriver);
+          await context.postImage(image);
+        }
+
+      } catch (error) {
+        console.log('Error adding driver', error);
+      }
     }
-  }
-
 
 
   return (
@@ -34,62 +75,57 @@ const uploadDriver = () => {
 
       <div className='row'>
         <div className='form-group col-md-4'>
-          <label htmlFor="exampleFormControlInput1">Firstname</label>
+          <label>Firstname</label>
           <input
+            name='Firstname'
             type="text"
             className='form-control'
-            id='exampleFormControlInput1'
             placeholder='Firstname'
-            value={firstName}
-            onChange={(e) => setName(e.target.value)}
+            onChange={setHandler}
           />
         </div>
 
         <div className='form-group col-md-4'>
-          <label htmlFor='exampleControlInput2'>LastName</label>
+          <label>LastName</label>
           <input
+            name='Lastname'
             type="text"
             className='form-control'
-            id='exampleFormControlInput2'
             placeholder='Lastname'
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            onChange={setHandler}
           />
         </div>
       </div>
 
       <div className='form-group col-md-2'>
-        <label htmlFor='exampleControlInput3'>Age</label>
+        <label>Age</label>
         <input
+          name='Age'
           type="text"
           className='form-control'
-          id='exampleFormControlInput3'
           placeholder='Age'
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
+          onChange={setHandler}
         />
       </div>
 
       <div className='form-group col-md-2'>
-        <label htmlFor='exampleControlInput4'>Nationality</label>
+        <label>Nationality</label>
         <input
+          name='nationality'
           type="text"
           className='form-control'
-          id='exampleFormControlInput4'
           placeholder='Nationality'
-          value={nationality}
-          onChange={(e) => setNationality(e.target.value)}
+          onChange={setHandler}
         />
       </div>
 
       <div className='row'>
         <div className='form-group col-md-2'>
-          <label htmlFor="exampleFormControlSelect1">Team</label>
+          <label>Team</label>
           <select
+            name='teamid'
             className='form-control'
-            id='exampleFormControlSelect1'
-            value={team}
-            onChange={(e) => setTeam(e.target.value)}
+            onChange={setHandler}
           >
             <option value="1">Red bull</option>
             <option value="2">Mercedes</option>
@@ -107,13 +143,13 @@ const uploadDriver = () => {
 
       <div className='row'>
         <div className='form-group col-md-4 mb-2'>
-          <label htmlFor="exampleFormControlFile1">Upload image</label>
+          <label>Upload image</label>
           <div className="custom-file">
             <input
+              name='image'
               type="file"
               className='custom-file-input'
-              id='exampleFormControlFile1'
-              onChange={setImageHandler}
+              onChange={setHandler}
             />
           </div>
         </div>
@@ -121,12 +157,11 @@ const uploadDriver = () => {
 
       <div className='row'>
         <div className='form-group col-md-4'>
-          <input type="submit" className='btn btn-primary' onClick={uploadDriver} value="Create driver" />
+          <input type="button" className='btn btn-primary' value="Create driver" onClick={saveDriver}/>
         </div>
       </div>
-
     </form>
   );
 };
 
-export default uploadDriver;
+export default AddDriver;

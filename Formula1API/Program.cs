@@ -59,7 +59,7 @@ public class IncludeOnlySpecificTypesFilter : IDocumentFilter
     public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
     {
         // Get the names of types to include in Swagger.
-        var includeTypes = new[] { "Driver", "Race", "Team" };
+        var includeTypes = new[] { "Driver", "Race", "Team", "Image" };
 
         // Remove paths (schemas) not related to included types.
         var pathsToRemove = swaggerDoc.Paths.Keys

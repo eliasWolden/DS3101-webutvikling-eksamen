@@ -4,7 +4,6 @@ import { IDriver } from "../interfaces/Drivers/IDriver";
 const DriverService = (
     () => {
     const driverController = "http://localhost:5257/api/Driver";
-    const imageController = 'http://localhost:5257/api/Image/Driver';
 
 
     const getAllDrivers = async () => {
@@ -58,29 +57,30 @@ const DriverService = (
 
 
     // POST:
-    const postDriver = async (newDriver: IDriver, image: File) => {
+    const postDriver = async (newDriver: IDriver) => {
+        try {
+            const result = await axios.post(driverController, newDriver);
+            const postDriverResult = result.data;
 
-        const formData = new FormData();
-        formData.append("file", image);
-
-        const result = await axios.post(driverController, newDriver);
-
-        const resultImageUpload = await axios ({
-            url: imageController,
-            method: "POST",
-            data: formData,
-            headers: {"Content-Type": "multipart/form-data"}
-        });
-
-        formData.delete("file");
-
+            return {
+                postDriverResult
+            }
+        }
+        catch {
+            return {
+                postDriverResult: []
+            }
+        }
     }
+
+    // DELETE:
 
     const deleteDriver = async (name: string) => {
         try {
             const result = await axios.delete(`${driverController}/${name}`);
             console.log(`Driver with ID ${name} deleted successfully`, result);
-        } catch (error){
+        } 
+        catch (error){
             console.log(`Error deleting driver with ID ${name}`, error);
             throw error;
         };
