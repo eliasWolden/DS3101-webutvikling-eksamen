@@ -1,5 +1,5 @@
 import { FC, createContext, useEffect, useState } from 'react';
-import MediaService from '../services/MediaService';
+import DriverService from '../services/DriverService';
 import { IDriver } from '../interfaces/Drivers/IDriver';
 import { IDriverContext } from '../interfaces/Drivers/IDriverContext';
 import { IProps } from '../interfaces/Iprops';
@@ -13,7 +13,7 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
 
   const getAllDriversFromService = async () => {
     try {
-      const driversFromService = await MediaService.getAllDrivers();
+      const driversFromService = await DriverService.getAllDrivers();
       if (driversFromService.drivers) {
         setDrivers(driversFromService.drivers);
       }

@@ -1,5 +1,5 @@
 import { FC, useState, createContext, useEffect } from 'react';
-import MediaService from '../services/MediaService';
+import RaceService from '../services/RaceService';
 import { IRaceContext } from '../interfaces/Races/IRaceContext';
 import { IProps } from '../interfaces/Iprops';
 import { IRace } from '../interfaces/Races/IRace';
@@ -11,7 +11,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
 
   const getAllRacesFromService = async () => {
     try {
-      const racesFromService = await MediaService.getAllRaces();
+      const racesFromService = await RaceService.getAllRaces();
       if (racesFromService.races) {
         setRaces(racesFromService.races);
       }

@@ -1,5 +1,5 @@
 export interface ITeam {
-    id: number;
+    id?: number;
     manufacturer: string;
     image: string;
     driver1: string;

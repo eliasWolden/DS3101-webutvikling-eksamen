@@ -1,5 +1,5 @@
 import { FC, createContext, useEffect, useState } from 'react';
-import MediaService from '../services/MediaService';
+import TeamService from '../services/TeamService';
 import { ITeam } from '../interfaces/Teams/ITeam';
 import { ITeamContext } from '../interfaces/Teams/ITeamContext';
 import { IProps } from '../interfaces/Iprops';
@@ -11,7 +11,7 @@ export const TeamProvider: FC<IProps> = ({ children }) => {
 
   const getAllTeamsFromService = async () => {
     try {
-      const teamsFromService = await MediaService.getAllTeams();
+      const teamsFromService = await TeamService.getAllTeams();
       if (teamsFromService.teams) {
         setTeams(teamsFromService.teams);
       }

@@ -1,5 +1,5 @@
 export interface IRace {
-    id: number;
+    id?: number;
     winnerName: string;
     winnerTime: number;
     grandPrix: string;

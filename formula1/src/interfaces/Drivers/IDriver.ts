@@ -1,5 +1,5 @@
 export interface IDriver {
-    id: string;
+    id?: number;
     name: string;
     age: number;
     nationality: string;
