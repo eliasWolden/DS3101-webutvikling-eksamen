@@ -5,8 +5,7 @@ import "bootstrap/dist/css/bootstrap.css?inline";
 
 const uploadDriver = () => {
   const [image, setImage] = useState<File | null>(null);
-// variabler for å lagre input fra bruker
-  const [name, setName] = useState<string>('');
+  const [firstName, setName] = useState<string>('');
   const [lastName, setLastName] = useState<string>('');
   const [age, setAge] = useState<string>('');
   const [nationality, setNationality] = useState<string>('');
@@ -41,7 +40,7 @@ const uploadDriver = () => {
             className='form-control'
             id='exampleFormControlInput1'
             placeholder='Firstname'
-            value={name}
+            value={firstName}
             onChange={(e) => setName(e.target.value)}
           />
         </div>

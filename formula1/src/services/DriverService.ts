@@ -76,9 +76,14 @@ const DriverService = (
 
     }
 
-    const deleteDriver = async (id: Number) => {
-        const result = await axios.delete(`${driverController}/${id}`);
-        
+    const deleteDriver = async (name: string) => {
+        try {
+            const result = await axios.delete(`${driverController}/${name}`);
+            console.log(`Driver with ID ${name} deleted successfully`, result);
+        } catch (error){
+            console.log(`Error deleting driver with ID ${name}`, error);
+            throw error;
+        };
     }
 
 

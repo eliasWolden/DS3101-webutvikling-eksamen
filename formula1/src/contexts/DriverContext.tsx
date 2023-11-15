@@ -1,11 +1,11 @@
-import { FC, createContext, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import DriverService from '../services/DriverService';
 import { IDriver } from '../interfaces/Drivers/IDriver';
 import { IDriverContext } from '../interfaces/Drivers/IDriverContext';
 import { IProps } from '../interfaces/Iprops';
 
 
-export const DriverContext = createContext<IDriverContext | null>(null);
+export const DriverContext = React.createContext<IDriverContext | null>(null);
 
 
 export const DriverProvider: FC<IProps> = ({ children }) => {
@@ -22,6 +22,16 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     }
   };
 
+  const deleteDriver = async (name: string) => {
+    try {
+    const deleteDriverFromService= await DriverService.deleteDriver(name);
+    return deleteDriverFromService;  
+    }
+     catch (error) {
+       console.log(`error deleting driver with name ${name}`, error);
+    }
+    }
+
   useEffect(() => {
     getAllDriversFromService();
   }, []);
@@ -29,7 +39,9 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
   const contextValue: IDriverContext = {
     drivers: drivers!,
     getAllDriversFromService,
+    deleteDriver,
   };
 
   return <DriverContext.Provider value={contextValue}>{children}</DriverContext.Provider>;
+
 };
