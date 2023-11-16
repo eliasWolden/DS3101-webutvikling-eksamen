@@ -1,22 +1,22 @@
 .driver-card {
-    background-color: #8b0000;
-    margin: 40px auto 20px auto;
-    height: 60vh;
-    width: 30vw;
-    border: 2px solid #000;
-  }
-  
-  .driver-image {
-    height: 75%;
-    object-fit: cover;
-  }
-  
-  .card-title-driver,
-  .card-text-driver {
-    color: #fff;
-  }
-.driver-card:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
+  background-color: #8b0000;
+  margin: 40px auto 20px auto;
+  height: 60vh;
+  width: 30vw;
+  border: 2px solid #000;
+}
+
+.driver-image {
+  height: 75%;
+  object-fit: cover;
+}
+
+.card-title-driver,
+.card-text-driver {
+  color: #fff;
+}
+.driver-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }

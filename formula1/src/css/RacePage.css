@@ -1,81 +1,81 @@
-.race-card-article{
-    position: relative;
-    overflow: hidden;
+.race-card-article {
+  position: relative;
+  overflow: hidden;
 }
-.race-card-image-size-race{
-    width: 100%;
-    border-radius: 1rem;
+.race-card-image-size-race {
+  width: 100%;
+  border-radius: 1rem;
 }
-.race-card-info{
-    width: 280px;
-    background-color: white;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-    border-radius: 1rem;
-    position: absolute;
-    bottom: -9rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    opacity: 0;
-    transition: opacity 1s 1s;
+.race-card-info {
+  width: 300px;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
 }
-.race-card-description{
-    display: block;
-    margin-bottom: .25rem;
+.race-card-description {
+  display: block;
+  margin-bottom: 0.25rem;
 }
-.race-card-text-info{
-    font-weight: 500;
-    margin-bottom: .75rem;
+.race-card-text-info {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
 }
 
 /* animasjonsnavm */
-.race-card-article:hover .race-card-info{
-    animation: show-info 1s forwards;
-    opacity: 1;
-    transition: opacity .3s;
+.race-card-article:hover .race-card-info {
+  animation: show-info 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
-.race-card-article:hover{
-    animation: remove-overflow 2s forwards;
+.race-card-article:hover {
+  animation: remove-overflow 2s forwards;
 }
-.race-card-article:not(:hover){
-    animation: show-overflow 2s forwards;
+.race-card-article:not(:hover) {
+  animation: show-overflow 2s forwards;
 }
-.race-card-article:not(:hover) .race-card-info{
-    animation: remove-info 1s forwards;
+.race-card-article:not(:hover) .race-card-info {
+  animation: remove-info 1s forwards;
 }
 
 /* animasjoner */
-@keyframes show-info{
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(-7rem);
-    }
+@keyframes show-info {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
 }
-@keyframes remove-overflow{
-    to{
-        overflow: initial;
-    }
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
 }
-@keyframes remove-info{
-    0%{
-        transform: translateY(-7rem);
-    }
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(.5rem);
-    }
+@keyframes remove-info {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
 }
-@keyframes show-overflow{
-    0%{
-        overflow: initial;
-        pointer-events: none;
-    }
-    50%{
-        overflow: hidden;
-    }
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
 }
