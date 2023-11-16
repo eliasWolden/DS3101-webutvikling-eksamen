@@ -1,4 +1,4 @@
-import { FC, useState, useContext, ChangeEvent } from "react";
+import { FC, useState, useContext } from "react";
 import { DriverContext } from "../../../contexts/DriverContext";
 
 const DeleteDriver : FC = () => {

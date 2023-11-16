@@ -4,5 +4,5 @@ export interface IDriver {
     age: number;
     nationality: string;
     image: string;
-    teamid: number;
+    teamId: number;
 }

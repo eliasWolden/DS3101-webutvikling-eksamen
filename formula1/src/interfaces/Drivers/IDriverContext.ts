@@ -7,4 +7,6 @@ export interface IDriverContext {
     deleteDriver: (name : string) => Promise<void>;
     postDriver: (newDriver : IDriver) => Promise<void>;
     postImage: (image : File) => Promise<void>;
+    getDriversById: (id : number) => Promise<void>;
+    putDriver: (driverToUpdate : IDriver) => Promise<void>;
   }

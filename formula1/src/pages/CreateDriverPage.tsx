@@ -1,5 +1,6 @@
 import CreateDriver from "../components/CRUD/Driver/CreateDriver";
 import DeleteDriver from "../components/CRUD/Driver/DeleteDriver";
+import GetDriverById from "../components/CRUD/Driver/GetDriverById";
 
 
 const CreateDriverPage = () => {
@@ -11,6 +12,10 @@ const CreateDriverPage = () => {
 
         <section>
           <DeleteDriver/>
+        </section>
+
+        <section>
+          <GetDriverById/>
         </section>
       </div>
     );

@@ -23,7 +23,7 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     }
   };
 
-  const deleteDriver = async (name: string) => {
+  const deleteDriver = async (name: string) : Promise<void> => {
     try {
     const deleteDriverFromService= await DriverService.deleteDriver(name);
     return deleteDriverFromService;  
@@ -46,6 +46,25 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.log('Error adding image', error);
     }
   };
+  const getDriversById = async (id : number) : Promise<void> => {
+    try {
+      const driversById = await DriverService.getDriversById(id);
+      if (driversById.driversById) {
+        setDrivers(driversById.driversById);
+      } else {
+        setDrivers([]);
+      }
+    } catch (error) {
+      console.error('Error fetching drivers:', error);
+    }
+  };
+  const putDriver = async (driversToUpdate: IDriver): Promise<void> => {
+  try {
+    await DriverService.putDriver( driversToUpdate );
+  } catch (error) {
+    console.log('Error editing driver', error);
+  }
+};
 
   useEffect(() => {
     getAllDriversFromService();
@@ -57,6 +76,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     deleteDriver,
     postDriver,
     postImage,
+    getDriversById,
+    putDriver,
   };
 
 
