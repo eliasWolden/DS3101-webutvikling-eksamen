@@ -46,21 +46,19 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.log('Error adding image', error);
     }
   };
-  const getDriversById = async (id : number) : Promise<void> => {
+  const getById = async (id : string): Promise<any> => {
     try {
-      const driversById = await DriverService.getDriversById(id);
-      if (driversById.driversById) {
-        setDrivers(driversById.driversById);
-      } else {
-        setDrivers([]);
+      const driversToUpdate = await DriverService.getDriversById(id);
+      return driversToUpdate;
       }
-    } catch (error) {
+     catch (error) {
       console.error('Error fetching drivers:', error);
     }
   };
-  const putDriver = async (driversToUpdate: IDriver): Promise<void> => {
+  const editDrivers = async (driversToUpdate: any): Promise<void> => {
   try {
     await DriverService.putDriver( driversToUpdate );
+    getAllDriversFromService();
   } catch (error) {
     console.log('Error editing driver', error);
   }
@@ -76,8 +74,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     deleteDriver,
     postDriver,
     postImage,
-    getDriversById,
-    putDriver,
+    getById,
+    editDrivers,
   };
 
 

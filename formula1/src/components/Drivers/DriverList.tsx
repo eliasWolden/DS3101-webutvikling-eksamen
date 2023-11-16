@@ -19,7 +19,7 @@ const DriverList = () => {
         age={driver.age}
         nationality={driver.nationality}
         image={`http://localhost:5257/api/Image/driver/${driver.image}`}
-        teamid={driver.teamid}
+        teamId={driver.teamId}
       />
     ));
 
