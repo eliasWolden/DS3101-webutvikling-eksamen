@@ -7,10 +7,10 @@ const DriverPage = () => {
   return (
     <div>
       <section>
-        <DriverList/>
+        <DriverList />
       </section>
-      <section className="d-flex justify-content-center text-center">
-        <TeamList/>
+      <section>
+        <TeamList />
       </section>
     </div>
   );

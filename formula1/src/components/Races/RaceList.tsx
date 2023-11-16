@@ -1,4 +1,5 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
+import Carousel from "react-multi-carousel";
 import RaceItem from "./RaceItem";
 import { RaceContext } from "../../contexts/RaceContext";
 import { IRaceContext } from "../../interfaces/Races/IRaceContext";
@@ -6,8 +7,8 @@ import { IRace } from "../../interfaces/Races/IRace";
 
 const RaceList = () => {
   const { races } = useContext(RaceContext) as IRaceContext;
-  //getRacesJSX henter inn race fra context og lager en liste med races som blir burkt av item
-  const getRacesJSX = () => 
+
+  const getRacesJSX = () =>
     races.map((race: IRace) => (
       <RaceItem
         key={`race-item-${race.id}`}
@@ -20,10 +21,26 @@ const RaceList = () => {
       />
     ));
 
+  const responsive = {
+    superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+  };
+
   return (
-    <section className="row g-3">
-      {getRacesJSX()}
-    </section>
+    <div className="p-5">
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        containerClass="carousel-container center"
+        showDots={true}
+        draggable={false}
+        itemClass="race-carousel-item"
+      >
+        {getRacesJSX()}
+      </Carousel>
+    </div>
   );
 };
 

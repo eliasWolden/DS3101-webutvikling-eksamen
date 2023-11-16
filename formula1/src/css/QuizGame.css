@@ -7,15 +7,9 @@
 }
 
 .options-container button {
-  background-color: rgb(236, 107, 95);
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
   width: 200px;
-  margin: 0 auto;
 }
 
 .options-container button:hover {
@@ -27,7 +21,7 @@
   background-color: #ddd;
   height: 20px;
   border-radius: 10px;
-  margin-bottom: 15px;
+
   overflow: hidden;
   margin: auto;
 }
