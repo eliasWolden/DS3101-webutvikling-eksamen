@@ -134,31 +134,25 @@ public async Task<IActionResult> CreateTeam([FromBody] Team newTeam)
 
 // Update (PUT)
 [HttpPut]
-public async Task<ActionResult<Race>> UpdateTeam(Team updatedTeam)
+public async Task<IActionResult> Put(Team updatedTeam)
 {
     try
     {
-        Team currentTeam = await context.Teams.FindAsync();
+        Team? currentTeam = await context.Teams.FirstOrDefaultAsync(t => t.Id == updatedTeam.Id);
 
         if (currentTeam == null)
         {
             return NotFound();
         }
 
-        // Update the properties of the existing driver with the values from the updatedDriver
-        currentTeam.Manufacturer = updatedTeam.Manufacturer;
-        //existingDriver.Team = updatedDriver.Team;
-        // Update other properties as needed
-
         await context.SaveChangesAsync();
 
-        return Ok(currentTeam);
+        return NoContent();
     }
     catch (Exception ex)
     {
         return StatusCode(500, $"Error: {ex.Message}");
     }
 }
-
 
 }

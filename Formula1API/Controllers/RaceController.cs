@@ -143,29 +143,20 @@ public async Task<IActionResult> CreateRace([FromBody] Race newRace)
 
 // Update (PUT)
 [HttpPut]
-public async Task<ActionResult<Race>> UpdateRace(Race updatedRace)
+public async Task<IActionResult> Put(Race updatedRace)
 {
     try
     {
-        // Find the existing driver by ID
-        Race? currentRace = await context.Races.FindAsync();
+        Race? currentRace = await context.Races.FirstOrDefaultAsync(r => r.Id == updatedRace.Id);
 
         if (currentRace == null)
         {
-            // If the driver with the given ID is not found, return a 404 Not Found response
             return NotFound();
         }
 
-        // Update the properties of the existing driver with the values from the updatedDriver
-        currentRace.GrandPrix = updatedRace.GrandPrix;
-        //existingDriver.Team = updatedDriver.Team;
-        // Update other properties as needed
-
-        // Save changes to the database
         await context.SaveChangesAsync();
 
-        // Return the updated driver along with a 200 OK status
-        return Ok(currentRace);
+        return NoContent();
     }
     catch (Exception ex)
     {

@@ -148,18 +148,16 @@ public async Task<IActionResult> CreateDriver(Driver newDriver)
 
 // Update (PUT)
 [HttpPut]
-public async Task<IActionResult> Put([FromBody] Driver updatedDriver)
+public async Task<IActionResult> Put(Driver updatedDriver)
 {
     try
     {
-        var existingDriver = await context.Drivers.FindAsync(updatedDriver.Id);
+        Driver? existingDriver = await context.Drivers.FirstOrDefaultAsync(d => d.Id == updatedDriver.Id);
 
         if (existingDriver == null)
         {
             return NotFound();
         }
-
-        context.Entry(existingDriver).CurrentValues.SetValues(updatedDriver);
 
         await context.SaveChangesAsync();
 
@@ -167,8 +165,9 @@ public async Task<IActionResult> Put([FromBody] Driver updatedDriver)
     }
     catch (Exception ex)
     {
-        return StatusCode(500, $"Internal Server Error: {ex.Message}");
+        return StatusCode(500, $"Error: {ex.Message}");
     }
 }
+
 
 }
