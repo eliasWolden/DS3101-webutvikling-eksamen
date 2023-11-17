@@ -1,15 +1,14 @@
 /* Update your TeamCarousel.css file */
 
 .team-card {
-  background-color: #434444; /* Choose your desired background color */
   margin: 40px auto 20px auto;
   height: 60vh;
-
-  border: 2px solid #000;
+  border: 2px solid #871717;
   position: relative;
 }
 
 .team-image {
+  
 }
 
 .image-size-car {
@@ -18,11 +17,11 @@
 }
 
 .card-title-team {
-  color: #fff;
+  color: #871717
 }
 
 .card-text-team {
-  color: #fff;
+  color: #871717
 }
 
 .team-card:hover {
