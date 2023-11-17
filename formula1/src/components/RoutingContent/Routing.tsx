@@ -5,6 +5,7 @@ import { DriverProvider } from "../../contexts/DriverContext";
 import { RaceProvider } from "../../contexts/RaceContext";
 import { TeamProvider } from "../../contexts/TeamContext";
 import CreateDriverPage from "../../pages/CreateDriverPage";
+import CreateRacePage from "../../pages/CreateRacePage";
 
 function Routing() {
   return (
@@ -52,6 +53,11 @@ function Routing() {
                     DriverPage
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link to="/CreateRacePage" className="nav-link">
+                    RacePage
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -62,6 +68,7 @@ function Routing() {
           <Route path="/RacePage" element={<RacePage />} />
           <Route path="/TeamPage" element={<TeamPage />} />
           <Route path="/CreateDriverPage" element={<CreateDriverPage />} />
+          <Route path="/CreateRacePage" element={<CreateRacePage />} />
         </Routes>
           </TeamProvider>
           </RaceProvider>

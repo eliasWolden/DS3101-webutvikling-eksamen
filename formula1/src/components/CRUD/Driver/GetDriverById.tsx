@@ -2,7 +2,7 @@ import { ChangeEvent, FC, useContext, useState } from 'react';
 import { DriverContext } from '../../../contexts/DriverContext';
 
 const EditDrivers: FC = () => {
-    const [id, setid] = useState<number>(0);
+    const [id, setId] = useState<number>(0);
     const [driverToUpdate, setDriverToUpdate] = useState<any>({
         firstName: "",
         lastName: "",
@@ -19,7 +19,7 @@ const EditDrivers: FC = () => {
             console.log(name, value);
         switch (name) {
             case 'id':
-                setid(Number(value));
+                setId(Number(value));
                 break;
             case 'firstname':
                 setDriverToUpdate({ ...driverToUpdate, firstName: value });
@@ -42,7 +42,7 @@ const EditDrivers: FC = () => {
     const GetDriversById = async () => {
         try {
             if (context) {
-                
+            
                 await context.getDriversById(id);
                 const drivers = context.drivers;
     
@@ -82,7 +82,7 @@ const EditDrivers: FC = () => {
 
     return (
         <form className="bg-light p-4 m-4 border rounded shadow-lg">
-            <h2>Find driver by id</h2>
+            <h2>Get driver by id</h2>
 
             <div className='form-group col-md-4'>
                 <label>Id</label>

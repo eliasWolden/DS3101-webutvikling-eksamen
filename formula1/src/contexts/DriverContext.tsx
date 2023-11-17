@@ -8,10 +8,10 @@ import { IProps } from '../interfaces/Iprops';
 
 export const DriverContext = React.createContext<IDriverContext | null>(null);
 
-
 export const DriverProvider: FC<IProps> = ({ children }) => {
   const [drivers, setDrivers] = useState<IDriver[]>([]);
 
+  // GET ALL
   const getAllDriversFromService = async () => {
     try {
       const driversFromService = await DriverService.getAllDrivers();
@@ -23,29 +23,7 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     }
   };
 
-  const deleteDriver = async (name: string) : Promise<void> => {
-    try {
-    const deleteDriverFromService= await DriverService.deleteDriver(name);
-    return deleteDriverFromService;  
-    }
-     catch (error) {
-       console.log(`error deleting driver with name ${name}`, error);
-    }
-  };
-  const postDriver = async (newDriver: IDriver): Promise<void> => {
-    try {
-      await DriverService.postDriver(newDriver);
-    } catch (error) {
-      console.log('Error adding driver', error);
-    }
-  };
-  const postImage = async (image: File): Promise<void> => {
-    try {
-      await ImageService.postImage(image);
-    } catch (error) {
-      console.log('Error adding image', error);
-    }
-  };
+  // GET BY ID
   const getDriversById = async (id : number) : Promise<void> => {
     try {
       const driversById = await DriverService.getDriversById(id);
@@ -58,6 +36,37 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.error('Error fetching drivers:', error);
     }
   };
+
+  // DELETE
+  const deleteDriver = async (name: string) : Promise<void> => {
+    try {
+    await DriverService.deleteDriver(name);
+    }
+     catch (error) {
+       console.log(`error deleting driver with name ${name}`, error);
+    }
+  };
+
+  // POST
+  const postDriver = async (newDriver: IDriver): Promise<void> => {
+    try {
+      await DriverService.postDriver(newDriver);
+    } catch (error) {
+      console.log('Error adding driver', error);
+    }
+  };
+
+
+  const postImage = async (image: File): Promise<void> => {
+    try {
+      await ImageService.postImage(image);
+    } catch (error) {
+      console.log('Error adding image', error);
+    }
+  };
+
+  
+  // PUT
   const putDriver = async (driversToUpdate: IDriver): Promise<void> => {
   try {
     await DriverService.putDriver( driversToUpdate );

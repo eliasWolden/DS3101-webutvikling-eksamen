@@ -70,7 +70,7 @@ public async Task<ActionResult<List<Driver>>> GetByName(string name)
 {
     try
     {
-        Driver driver = await context.Drivers.FirstOrDefaultAsync(d => d.Name == name);
+        Driver? driver = await context.Drivers.FirstOrDefaultAsync(d => d.Name == name);
         
         if (driver != null)
         {
@@ -95,8 +95,7 @@ public async Task<ActionResult<Driver>> DeleteByName(string name)
 {
     try
     {
-        // Find the driver by name
-        Driver driver = await context.Drivers.FirstOrDefaultAsync(d => d.Name == name);
+        Driver? driver = await context.Drivers.FirstOrDefaultAsync(d => d.Name == name);
 
         if (driver != null)
         {
@@ -125,7 +124,7 @@ public async Task<ActionResult<Driver>> DeleteByName(string name)
 
 // Create Driver (POST)
 [HttpPost]
-public async Task<IActionResult> CreateDriver([FromBody] Driver newDriver)
+public async Task<IActionResult> CreateDriver(Driver newDriver)
 //The [FromBody] attribute tells ASP.NET Core to deserialize this JSON data into a Driver object and bind it to the newDriver parameter
 {
     try
@@ -149,34 +148,27 @@ public async Task<IActionResult> CreateDriver([FromBody] Driver newDriver)
 
 // Update (PUT)
 [HttpPut]
-public async Task<ActionResult<Driver>> UpdateDriver(Driver updatedDriver)
+public async Task<IActionResult> Put([FromBody] Driver updatedDriver)
 {
     try
     {
-        // Find the existing driver by ID
-        Driver currentDriver = await context.Drivers.FindAsync();
+        var existingDriver = await context.Drivers.FindAsync(updatedDriver.Id);
 
-        if (currentDriver == null)
+        if (existingDriver == null)
         {
-            // If the driver with the given ID is not found, return a 404 Not Found response
             return NotFound();
         }
 
-        // Update the properties of the existing driver with the values from the updatedDriver
-        currentDriver.Name = updatedDriver.Name;
-        //existingDriver.Team = updatedDriver.Team;
-        // Update other properties as needed
+        context.Entry(existingDriver).CurrentValues.SetValues(updatedDriver);
 
-        // Save changes to the database
         await context.SaveChangesAsync();
 
-        // Return the updated driver along with a 200 OK status
-        return Ok(currentDriver);
+        return NoContent();
     }
     catch (Exception ex)
     {
-        // If an exception occurs, return a 500 Internal Server Error with the exception message
-        return StatusCode(500, $"Error: {ex.Message}");
+        return StatusCode(500, $"Internal Server Error: {ex.Message}");
     }
 }
+
 }
