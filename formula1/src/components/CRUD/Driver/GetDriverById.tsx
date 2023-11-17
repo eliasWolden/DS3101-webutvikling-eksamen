@@ -1,6 +1,7 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import { DriverContext } from '../../../contexts/DriverContext';
 import { IDriver } from '../../../interfaces/Drivers/IDriver';
+import '../../../css/main.css';
 
 const EditDriver = () => {
     const [id, setId] = useState<string>("1");
@@ -69,8 +70,10 @@ const EditDriver = () => {
   return (
     <form className="bg-light p-4 m-4 border rounded shadow-lg">
       <h2>Edit driver</h2>
+      <div className='row'>
+        <div className='col'>
 
-        <div className='form-group col-md-4'>
+        <div className='form-group col-md-6'>
           <label>id</label>
           <input
             name='id'
@@ -81,7 +84,7 @@ const EditDriver = () => {
           />
         </div>
 
-        <div className='form-group col-md-4'>
+        <div className='form-group col-md-6'>
           <label>Name</label>
           <input
             name='name'
@@ -93,7 +96,7 @@ const EditDriver = () => {
           />
         </div>
 
-      <div className='form-group col-md-4'>
+      <div className='form-group col-md-6'>
         <label>Age</label>
         <input
           name='Age'
@@ -106,7 +109,7 @@ const EditDriver = () => {
         />
       </div>
 
-      <div className='form-group col-md-4'>
+      <div className='form-group col-md-6'>
         <label>Nationality</label>
         <input
           name='nationality'
@@ -118,7 +121,7 @@ const EditDriver = () => {
         />
       </div>
 
-        <div className='form-group col-md-4'>
+        <div className='form-group col-md-6'>
           <label>Team</label>
           <input
             name='teamid'
@@ -141,6 +144,19 @@ const EditDriver = () => {
           <input type="button" className='btn btn-danger' value="save driver" onClick={saveChanges}/>
         </div>
       </div>
+
+      </div>
+      <div className='col'>
+        <img className='image-size-medium'
+          src={`http://localhost:5257/api/Image/driver/${driversToUpdate.image}`}
+          alt='Not found'
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = "public/images/uknown.png"; // Adjust the path based on your project structure
+          }}
+          />
+      </div>
+    </div>
     </form>
   );
 };

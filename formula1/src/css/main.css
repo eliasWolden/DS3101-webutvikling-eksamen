@@ -9,6 +9,16 @@
 .selected-team {
     width: 800px;
 }
+.image-size-medium {
+    width: 400px;
+    object-fit: cover;
+    border: solid 1px black;
+    background-color: rgb(193, 203, 39);
+
+}
+
+
+
 /* navbar css */
 .large-box {
     position: fixed;
