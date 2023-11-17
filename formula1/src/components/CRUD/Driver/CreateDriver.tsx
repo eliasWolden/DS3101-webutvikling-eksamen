@@ -50,7 +50,7 @@ const AddDriver: FC = () => {
         age: age,
         nationality: nationality,
         image: image!.name,
-        teamid: teamid,
+        teamId: teamid,
       }
       handleAdd(newDriver, image!);
       console.log(newDriver);

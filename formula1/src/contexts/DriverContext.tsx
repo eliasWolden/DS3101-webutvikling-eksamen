@@ -65,11 +65,9 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     }
   };
 
-  
-  // PUT
-  const putDriver = async (driversToUpdate: IDriver): Promise<void> => {
   try {
     await DriverService.putDriver( driversToUpdate );
+    getAllDriversFromService();
   } catch (error) {
     console.log('Error editing driver', error);
   }
@@ -85,8 +83,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     deleteDriver,
     postDriver,
     postImage,
-    getDriversById,
-    putDriver,
+    getById,
+    editDrivers,
   };
 
 

@@ -1,18 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../css/QuizGame.css";
-
-interface Question {
-  question: string;
-  options: string[];
-  correctAnswer: string;
-}
-
-interface QuizState {
-  score: number;
-  currentQuestion: number;
-  quizStarted: boolean;
-  quizCompleted: boolean;
-}
+import { Question, QuizState } from "../../interfaces/Quiz/IQuiz";
 
 const Quiz: React.FC = () => {
   const initialQuizState: QuizState = {
@@ -133,11 +120,12 @@ const Quiz: React.FC = () => {
 
   const progress =
     Math.min((quizState.currentQuestion + 1) / questions.length, 1) * 100;
+  console.log(progress);
 
   return (
     <div className="quiz-container">
       {!quizState.quizStarted ? (
-        <div className="quiz-start text-center bg-secondary p-3 rounded">
+        <div className="quiz-start text-center bg-secondary p-4 rounded">
           <h2 className="mb-4 text-white">Formula 1 Special Quiz</h2>
           <button className="btn btn-primary" onClick={startQuiz}>
             Take the Quiz
@@ -158,7 +146,7 @@ const Quiz: React.FC = () => {
             {currentShuffledQuestion.options.map((option, index) => (
               <button
                 key={index}
-                className="btn btn-danger"
+                className="btn btn-danger p-3 ms-3"
                 onClick={() => handleAnswer(option)}
               >
                 {option}
@@ -169,7 +157,7 @@ const Quiz: React.FC = () => {
       ) : (
         <div className="quiz-results bg-primary text-white rounded p-4 mt-4 text-center">
           <h3 className="mb-4">Quiz Completed!</h3>
-          <p className="bg-dark p-3 rounded">
+          <p>
             Your Score: {quizState.score}/{questions.length}
           </p>
           <button className="btn btn-danger" onClick={retakeQuiz}>

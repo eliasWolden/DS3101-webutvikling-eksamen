@@ -1,15 +1,16 @@
 import { useContext } from "react";
-import TeamItem from "./TeamItem";
+import Carousel from "react-multi-carousel";
 import { TeamContext } from "../../contexts/TeamContext";
+import TeamItem from "./TeamItem";
+import "react-multi-carousel/lib/styles.css";
+import "../../css/TeamCarousel.css";
 import { ITeam } from "../../interfaces/Teams/ITeam";
 import { ITeamContext } from "../../interfaces/Teams/ITeamContext";
-
 
 const TeamList = () => {
   const { teams } = useContext(TeamContext) as ITeamContext;
 
   const getTeamsJSX = () => {
-  
     return teams.map((team: ITeam) => (
       <TeamItem
         key={`team-item-${team.id}`}
@@ -21,11 +22,27 @@ const TeamList = () => {
       />
     ));
   };
-  
-  
-  
 
-  return <section className="row g-3">{getTeamsJSX()}</section>;
+  const responsive = {
+    superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 4 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+  };
+
+  return (
+    <div className="p-5">
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        containerClass="carousel-container center"
+        showDots={true}
+        draggable={false}
+      >
+        {getTeamsJSX()}
+      </Carousel>
+    </div>
+  );
 };
 
 export default TeamList;

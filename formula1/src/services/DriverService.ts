@@ -22,7 +22,7 @@ const DriverService = (
         }
     };
 
-    const getDriversById = async (id: number) => {
+    const getDriversById = async (id: string) => {
         try {
             const driverResult = await axios.get(`${driverController}/id/${id}`);
             const driversById = driverResult.data;

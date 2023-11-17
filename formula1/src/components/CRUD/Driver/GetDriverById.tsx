@@ -1,167 +1,146 @@
-import { ChangeEvent, FC, useContext, useState } from 'react';
+import { useState, ChangeEvent, useContext } from 'react';
 import { DriverContext } from '../../../contexts/DriverContext';
+import { IDriver } from '../../../interfaces/Drivers/IDriver';
 
-const EditDrivers: FC = () => {
-    const [id, setId] = useState<number>(0);
-    const [driverToUpdate, setDriverToUpdate] = useState<any>({
-        firstName: "",
-        lastName: "",
-        age: "",
-        nationality: "",
-        teamId: "",
-    });
-    
 
-    const context = useContext(DriverContext);
+const EditDriver = () => {
+    const [id, setId] = useState<string>("1");
 
-    const setHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = e.target;
-            console.log(name, value);
-        switch (name) {
-            case 'id':
-                setId(Number(value));
-                break;
-            case 'firstname':
-                setDriverToUpdate({ ...driverToUpdate, firstName: value });
-                break;
-            case 'lastname':
-                setDriverToUpdate({ ...driverToUpdate, lastName: value });
-                break;
-            case 'age':
-            case 'teamId':
-                setDriverToUpdate({ ...driverToUpdate, teamId: value });
-                break;
-            case 'nationality':
-                setDriverToUpdate({ ...driverToUpdate, [name]: value });
-                break;
-            default:
-                break;
+
+
+  const context = useContext(DriverContext);
+
+/*     const setHandler = (e: ChangeEvent<any>) => {
+      switch (e.currentTarget.name) {
+        case 'id':
+            setId(e.currentTarget.value);
+            break;
+        case 'name':
+          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
+          break;
+        case 'Age':
+          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
+          break;
+        case 'nationality':
+          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
+          break;
+        case 'teamid':
+          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
+          break;
+      }
+    }; */
+    const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({ name: "", age: 0, nationality: "", image: "", teamId: 0 });
+
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+      switch (e.currentTarget.name) {
+        case "id":
+          setId(e.currentTarget.value);
+          break;
+        case "name":
+          setDriversToUpdate({ ...driversToUpdate, name: e.currentTarget.value });
+          break;
+        case "Age":
+          setDriversToUpdate({ ...driversToUpdate, age: parseInt(e.currentTarget.value) });
+          break;
+        case "nationality":
+          setDriversToUpdate({ ...driversToUpdate, nationality: e.currentTarget.value });
+          break;
+        case "teamid":
+          setDriversToUpdate({ ...driversToUpdate, teamId: parseInt(e.currentTarget.value) });
+          break;
+      }
+    };
+
+    const getByIdFromContext = async () => {
+        const driversFromContext = await context?.getById(id);
+        setDriversToUpdate(driversFromContext.driversById);
+        console.log(driversFromContext.driversById);
+
+    };
+
+
+    const saveChanges = () => {
+        if(context){
+        context.editDrivers(driversToUpdate);
         }
     };
 
-    const GetDriversById = async () => {
-        try {
-            if (context) {
-            
-                await context.getDriversById(id);
-                const drivers = context.drivers;
-    
-                if (drivers.length > 0) {
-                    const selectedDriver = drivers[id - 1];
-    
-                    // deler opp navnet i to deler, og setter de i hver sin variabel
-                    const fullName = selectedDriver.name;
-                    const [firstName, ...lastNameArray] = fullName.split(' ');
-                    const lastName = lastNameArray.join(' ');
+  return (
+    <form className="bg-light p-4 m-4 border rounded shadow-lg">
+      <h2>Edit driver</h2>
 
-    
-                    setDriverToUpdate({
-                        firstName: firstName || "", // Set default value if firstName is falsy
-                        lastName: lastName || "",   // Set default value if lastName is falsy
-                        age: selectedDriver.age || "",
-                        nationality: selectedDriver.nationality || "",
-                        teamId: selectedDriver.teamId || "",
-                    });
-                    console.log(id);
-                }
-            }
-        } catch (error) {
-            console.log('Error getting driver', error);
-            // Handle the error as needed (e.g., show an error message to the user)
-            setDriverToUpdate({
-                firstName: "",
-                lastName: "",
-                age: "",
-                nationality: "",
-                teamId: "",
-            });
+        <div className='form-group col-md-4'>
+          <label>id</label>
+          <input
+            name='id'
+            type="text"
+            className='form-control'
+            placeholder='id'
+            onChange={handleChange}
+          />
+        </div>
 
-        }
-    };
-    
+        <div className='form-group col-md-4'>
+          <label>Name</label>
+          <input
+            name='name'
+            type="text"
+            className='form-control'
+            placeholder='name'
+            value={driversToUpdate?.name}
+            onChange={handleChange}
+          />
+        </div>
 
-    return (
-        <form className="bg-light p-4 m-4 border rounded shadow-lg">
-            <h2>Get driver by id</h2>
+      <div className='form-group col-md-4'>
+        <label>Age</label>
+        <input
+          name='Age'
+          type="text"
+          className='form-control'
+          placeholder='Age'
+          value={driversToUpdate?.age}
+          onChange={handleChange}
+        />
+      </div>
 
-            <div className='form-group col-md-4'>
-                <label>Id</label>
-                <input
-                    name='id'
-                    type="number"
-                    className='form-control'
-                    placeholder='id'
-                    onChange={setHandler}
-                />
-            </div>
-            
-            <div className='form-group col-md-4'>
-                <label>First Name</label>
-                <input
-                    name='firstname'
-                    type="text"
-                    className='form-control'
-                    placeholder='First Name'
-                    value={driverToUpdate.firstName}
-                    onChange={setHandler}
-                />
-            </div>
+      <div className='form-group col-md-4'>
+        <label>Nationality</label>
+        <input
+          name='nationality'
+          type="text"
+          className='form-control'
+          placeholder='Nationality'
+          value={driversToUpdate?.nationality}
+          onChange={handleChange}
+        />
+      </div>
 
-            <div className='form-group col-md-4'>
-                <label>Last Name</label>
-                <input
-                    name='lastname'
-                    type="text"
-                    className='form-control'
-                    placeholder='Last Name'
-                    value={driverToUpdate.lastName}
-                    onChange={setHandler}
-                />
-            </div>
+        <div className='form-group col-md-4'>
+          <label>Team</label>
+          <input
+            name='teamid'
+            type='text'
+            className='form-control'
+            placeholder='Team'
+            value={driversToUpdate?.teamId}
+            onChange={handleChange}
+          />
+        </div>
 
-            <div className='form-group col-md-4'>
-                <label>Age</label>
-                <input
-                    name='age'
-                    type="text"
-                    className='form-control'
-                    placeholder="age"
-                    value={driverToUpdate.age}
-                    onChange={setHandler}
-                />
-            </div>
-
-            <div className='form-group col-md-4'>
-                <label>Team</label>
-                <input
-                    name='teamId'
-                    type="text"
-                    className='form-control'
-                    placeholder="teamId"
-                    value={driverToUpdate.teamId}
-                    onChange={setHandler}
-                />
-            </div>
-
-            <div className='form-group col-md-4'>
-                <label>Nationality</label>
-                <input
-                    name='nationality'
-                    type="text"
-                    className='form-control'
-                    placeholder="Nationality"
-                    value={driverToUpdate.nationality}
-                    onChange={setHandler}
-                />
-            </div>
-
-            <div className='row'>
-                <div className='form-group col-md-4'>
-                    <input type='button' className='btn btn-primary' value="Find driver by id" onClick={GetDriversById}/>
-                </div>
-            </div>
-        </form>
-    );
+      <div className='row'>
+        <div className='form-group col-md-4'>
+          <input type="button" className='btn btn-primary' value="get driver" onClick={getByIdFromContext}/>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='form-group col-md-4'>
+          <input type="button" className='btn btn-danger' value="save driver" onClick={saveChanges}/>
+        </div>
+      </div>
+    </form>
+  );
 };
 
-export default EditDrivers;
+
+export default EditDriver;
