@@ -5,16 +5,19 @@ const DeleteDriver : FC = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const name = firstName + " " + lastName;
+    const [deleteStatus, setDeleteStatus] = useState("");
 
     const context  = useContext(DriverContext);
     
     const handleDelete = async () => {
         try {
-
             if(context) {
             await context.deleteDriver(name);
             setFirstName('');
             setLastName('');
+            setDeleteStatus("You deleted a driver")
+            } else {
+                setDeleteStatus("Something went wrong with deleting..");
             }
             
         } catch (error) {
@@ -35,6 +38,7 @@ return (
             placeholder="Firstname"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}/>
+            
         </div>
         <div className="form-group col-md-4">
             <label htmlFor="exampleFormControlInput6">Lastname</label>
@@ -49,7 +53,8 @@ return (
 
         <div className='row'>
             <div className='form-group col-md-4'>
-                <input type="submit" className='btn btn-danger' onClick={handleDelete} value="Delete driver" />
+                <input type="button" className='btn btn-danger' onClick={handleDelete} value="Delete driver" />
+                <span className="">{deleteStatus}</span>
             </div>
         </div>
 

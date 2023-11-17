@@ -6,6 +6,7 @@ const RaceService = (
 
     const raceController = "http://localhost:5257/api/Race";
 
+    // Get all
     const getAllRaces = async () => {
         try {
             const result = await axios.get(raceController);
@@ -22,25 +23,44 @@ const RaceService = (
         }
     };
 
-    const getRacesById = async (id: Number) => {
+    // Get by id
+    const getRaceByName = async (name: string) => {
         try {
-            const result = await axios.get(`${raceController}/${id}`);
-            const racesById = result.data;
+            const result = await axios.get(`${raceController}/${name}`);
+            const racesByName = result.data;
 
             return {
-                racesById
+                racesByName
             }
         }
         catch {
             return {
-                racesById: []
+                racesByName: []
             };
         }
     }
 
+    // DELETE:
+    const deleteRace = async (id: number) => {
+        try {
+            const result = await axios.delete(`${raceController}/${id}`);
+            console.log(`Race with ID${id}is now deleted`, result);
+            return true;
+        }
+        catch {
+            console.log(`Error deleting race with ID ${id}`);
+            return false;
+        };
+    }
+
+    
+
+    
+
     return {
         getAllRaces,
-        getRacesById
+        getRaceByName,
+        deleteRace
     }
     }) ();
 

@@ -8,10 +8,10 @@ import { IProps } from '../interfaces/Iprops';
 
 export const DriverContext = React.createContext<IDriverContext | null>(null);
 
-
 export const DriverProvider: FC<IProps> = ({ children }) => {
   const [drivers, setDrivers] = useState<IDriver[]>([]);
 
+  // GET ALL
   const getAllDriversFromService = async () => {
     try {
       const driversFromService = await DriverService.getAllDrivers();
@@ -23,15 +23,31 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     }
   };
 
+  // GET BY ID
+  const getDriversById = async (id : number) : Promise<void> => {
+    try {
+      const driversById = await DriverService.getDriversById(id);
+      if (driversById.driversById) {
+        setDrivers(driversById.driversById);
+      } else {
+        setDrivers([]);
+      }
+    } catch (error) {
+      console.error('Error fetching drivers:', error);
+    }
+  };
+
+  // DELETE
   const deleteDriver = async (name: string) : Promise<void> => {
     try {
-    const deleteDriverFromService= await DriverService.deleteDriver(name);
-    return deleteDriverFromService;  
+    await DriverService.deleteDriver(name);
     }
      catch (error) {
        console.log(`error deleting driver with name ${name}`, error);
     }
   };
+
+  // POST
   const postDriver = async (newDriver: IDriver): Promise<void> => {
     try {
       await DriverService.postDriver(newDriver);
@@ -39,6 +55,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.log('Error adding driver', error);
     }
   };
+
+
   const postImage = async (image: File): Promise<void> => {
     try {
       await ImageService.postImage(image);
@@ -46,16 +64,7 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.log('Error adding image', error);
     }
   };
-  const getById = async (id : string): Promise<any> => {
-    try {
-      const driversToUpdate = await DriverService.getDriversById(id);
-      return driversToUpdate;
-      }
-     catch (error) {
-      console.error('Error fetching drivers:', error);
-    }
-  };
-  const editDrivers = async (driversToUpdate: any): Promise<void> => {
+
   try {
     await DriverService.putDriver( driversToUpdate );
     getAllDriversFromService();

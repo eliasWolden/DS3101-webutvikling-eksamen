@@ -5,6 +5,7 @@ import { DriverProvider } from "../../contexts/DriverContext";
 import { RaceProvider } from "../../contexts/RaceContext";
 import { TeamProvider } from "../../contexts/TeamContext";
 import CreateDriverPage from "../../pages/CreateDriverPage";
+import CreateRacePage from "../../pages/CreateRacePage";
 
 function Routing() {
   return (
@@ -18,6 +19,7 @@ function Routing() {
                   <Link to="/" className="navbar-brand">
                     Home
                   </Link>
+
                   <button
                     className="navbar-toggler"
                     type="button"

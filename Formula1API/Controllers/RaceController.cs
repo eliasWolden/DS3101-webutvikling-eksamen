@@ -69,7 +69,7 @@ public async Task<ActionResult<List<Race>>> GetByName(string grandPrix)
 {
     try
     {
-        Race race = await context.Races.FirstOrDefaultAsync(r => r.GrandPrix == grandPrix);
+        Race? race = await context.Races.FirstOrDefaultAsync(r => r.GrandPrix == grandPrix);
         if (race != null)
         {
             return Ok(race);
@@ -92,7 +92,7 @@ public async Task<ActionResult<Race>> DeleteByName(string grandPrix)
     try
     {
         // Find the driver by name
-        Race race = await context.Races.FirstOrDefaultAsync(r => r.GrandPrix == grandPrix);
+        Race? race = await context.Races.FirstOrDefaultAsync(r => r.GrandPrix == grandPrix);
 
         if (race != null)
         {
@@ -148,7 +148,7 @@ public async Task<ActionResult<Race>> UpdateRace(Race updatedRace)
     try
     {
         // Find the existing driver by ID
-        Race currentRace = await context.Races.FindAsync();
+        Race? currentRace = await context.Races.FindAsync();
 
         if (currentRace == null)
         {
