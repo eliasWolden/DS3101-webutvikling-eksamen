@@ -100,7 +100,8 @@ const EditDriver = () => {
           type="text"
           className='form-control'
           placeholder='Age'
-          value={driversToUpdate?.age}
+          value={isNaN(driversToUpdate?.age) ? '' : Number(driversToUpdate?.age)}
+
           onChange={handleChange}
         />
       </div>
@@ -123,10 +124,11 @@ const EditDriver = () => {
             name='teamid'
             type='text'
             className='form-control'
-            placeholder='Team'
-            value={driversToUpdate?.teamId}
+            placeholder='Age'
+            value={isNaN(driversToUpdate?.teamId) ? '' : Number(driversToUpdate?.teamId)}
             onChange={handleChange}
           />
+
         </div>
 
       <div className='row'>
