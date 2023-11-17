@@ -8,4 +8,118 @@
 }
 .selected-team {
     width: 800px;
-  }
+}
+
+  .large-box {
+    position: fixed; /* or 'absolute' depending on your needs */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    z-index: 2000;
+}
+.right-box{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 66vw;
+    z-index: inherit;
+}
+.left-box {
+    position: relative;
+    height: 100vh;
+    width: 33vw;
+    z-index: inherit;
+}
+
+.left-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 26, 23, 0.59);
+    filter: blur(10px);
+    z-index: -1; /* Place the pseudo-element behind the content of .left-box */
+}
+
+.list-box {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height: 80%;
+    padding: 70px;
+    background: transparent;
+    z-index: inherit;
+    color: black;
+    font-family: 'Monument Grotesk Mono', monospace; /* Use the font in your styles */
+
+}
+
+.list-1-in-box {
+    font-size: 32px;
+}
+
+.list-2-in-box {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.list-1-in-box,
+.list-2-in-box {
+    list-style-type: none;
+}
+
+.list-text-1,
+.list-text-2 {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+.list-text-1:hover,
+.list-text-2:hover {
+    position: relative;
+    background-position: right center; /* Adjust the positioning as needed */
+    cursor: pointer; /* Change cursor on hover, optional */
+    background-image: url('public/images/raceCar.png');
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: 20%; /* Make the background image 50% of its original size */
+    filter: invert(100%); /* Make the image appear white by inverting its colors */
+}
+.list-text-2:hover {
+    background-size: 10%; /* Make the background image 50% of its original size */
+
+}
+
+/* button css */
+.image-button {
+    background: none;
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 10px; /* Adjust padding for a smaller size */
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 10000;
+}
+
+.image-button img {
+    border-radius: 50%;
+    width: 30px; /* Adjust the width for a smaller size */
+    height: 30px; /* Set the height to maintain a circular appearance */
+}
+
+.image-button:hover {
+    filter: invert(100%);
+}
+.open-button{
+  position: fixed; /* or 'absolute' depending on your needs */
+  top: 5%;
+  left: 1%;
+  z-index: 10000; /* Adjust the z-index as needed to ensure it's above other elements */
+}
