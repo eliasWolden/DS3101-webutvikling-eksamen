@@ -53,6 +53,11 @@ function Routing() {
                           DriverPage
                         </Link>
                       </li>
+                      <li>
+                        <Link to="/CreateRacePage" className="nav-link">
+                          CreateRacePage
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -62,6 +67,7 @@ function Routing() {
                 <Route path="/DriverPage" element={<DriverPage />} />
                 <Route path="/RacePage" element={<RacePage />} />
                 <Route path="/TeamPage" element={<TeamPage />} />
+                <Route path="/CreateRacePage" element={<CreateRacePage />} />
                 <Route
                   path="/CreateDriverPage"
                   element={<CreateDriverPage />}
