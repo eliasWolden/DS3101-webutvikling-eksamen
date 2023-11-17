@@ -2,7 +2,6 @@ import { useState, ChangeEvent, useContext } from 'react';
 import { DriverContext } from '../../../contexts/DriverContext';
 import { IDriver } from '../../../interfaces/Drivers/IDriver';
 
-
 const EditDriver = () => {
     const [id, setId] = useState<string>("1");
 
@@ -58,12 +57,14 @@ const EditDriver = () => {
 
     };
 
-
     const saveChanges = () => {
         if(context){
         context.editDrivers(driversToUpdate);
         }
     };
+  
+  
+
 
   return (
     <form className="bg-light p-4 m-4 border rounded shadow-lg">
