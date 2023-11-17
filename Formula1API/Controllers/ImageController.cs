@@ -89,9 +89,9 @@ hosting = _hosting;
 
 // Post an image
 [HttpPost]
-
 public IActionResult SaveImage(IFormFile file)
 {
+    try {
     string webRootPath = hosting.WebRootPath;
     string absolutePath = Path.Combine($"{webRootPath}/images/Drivers/{file.FileName}");
 
@@ -101,8 +101,34 @@ public IActionResult SaveImage(IFormFile file)
     }
 
     return Ok();
+    }
+    catch {
+        return StatusCode(500);
+    }
 }
  
+ 
 // Delete an image
-//[HttpDelete]
+[HttpDelete("{imageName}")]
+public IActionResult DeleteImage(string imageName)
+{
+    try
+    {
+        string webRootPath = hosting.WebRootPath;
+        string imagePath = Path.Combine(webRootPath, "images", "Drivers", imageName);
+
+        if (System.IO.File.Exists(imagePath))
+        {
+            System.IO.File.Delete(imagePath);
+            return Ok();
+        }
+
+        return NotFound("Image not found");
+    }
+    catch (Exception)
+    {
+        return StatusCode(500);
+    }
+}
+
 }

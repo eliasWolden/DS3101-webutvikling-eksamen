@@ -12,11 +12,11 @@ const DriverItem: FC<IDriver> = ({ name, age, nationality, image, teamId }) => {
         alt="bilde av sjafør"
         className="card-img-top mx-auto d-block driver-image"
       />
+      
       <div className="card-body">
         <h2 className="card-title-driver">{name}</h2>
-        <p className="card-text-driver">{nationality}</p>
+        <p className="card-text-driver">Nationality: {nationality}</p>
         <p className="card-text-driver">Age: {age}</p>
-        <p className="card-text-driver">Team {teamId}</p>
       </div>
     </div>
   );

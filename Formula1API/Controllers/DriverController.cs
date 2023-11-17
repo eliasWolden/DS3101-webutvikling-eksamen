@@ -65,7 +65,7 @@ public async Task<ActionResult<List<Driver>>> GetById(int id)
 // Get by name
 [HttpGet]
 [Route("name/{name}")]
-// In order to be able to add Get methods beyond the standard Get (to retrieve all of something) and Get by id, one must use [Route]
+// In order to be able to add Get methods beyond the standard Get (to retrieve all of something) and Get by id, we must use [Route]
 public async Task<ActionResult<List<Driver>>> GetByName(string name)
 {
     try
@@ -125,7 +125,6 @@ public async Task<ActionResult<Driver>> DeleteByName(string name)
 // Create Driver (POST)
 [HttpPost]
 public async Task<IActionResult> CreateDriver(Driver newDriver)
-//The [FromBody] attribute tells ASP.NET Core to deserialize this JSON data into a Driver object and bind it to the newDriver parameter
 {
     try
     {

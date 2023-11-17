@@ -3,29 +3,46 @@
 .team-card {
   margin: 40px auto 20px auto;
   height: 60vh;
-  border: 2px solid #871717;
-  position: relative;
+  border: 2px solid #000000;
 }
 
-.team-image {
-  
+.image-size-emblem {
+  width: 20%;
 }
+
 
 .image-size-car {
   width: 100%;
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 .card-title-team {
-  color: #871717
+  color: #000000;
+  margin: 3%;
+  padding: 5%;
+  border-left: 3px solid black;
+  border-bottom: 1px solid rgb(148, 148, 152);
 }
 
-.card-text-team {
-  color: #871717
+#drivers {
+  border-bottom: 1px solid rgb(148, 148, 152);
+  color: #000000;
+  margin: 3%;
+  text-align: center;
 }
+
+#driver-1-image {
+  width: 30%;
+}
+
+#driver-2-image {
+width: 30%;
+}
+
 
 .team-card:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.5s ease;
+  border: 3px solid #8b0000;
 }

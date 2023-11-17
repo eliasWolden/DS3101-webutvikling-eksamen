@@ -32,6 +32,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
        console.log(`error deleting driver with name ${name}`, error);
     }
   };
+
+
   const postDriver = async (newDriver: IDriver): Promise<void> => {
     try {
       await DriverService.postDriver(newDriver);
@@ -39,6 +41,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.log('Error adding driver', error);
     }
   };
+
+
   const postImage = async (image: File): Promise<void> => {
     try {
       await ImageService.postImage(image);
@@ -46,6 +50,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.log('Error adding image', error);
     }
   };
+
+
   const getById = async (id : string): Promise<any> => {
     try {
       const driversToUpdate = await DriverService.getDriversById(id);
@@ -55,6 +61,8 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
       console.error('Error fetching drivers:', error);
     }
   };
+
+  
   const editDrivers = async (driversToUpdate: any): Promise<void> => {
   try {
     await DriverService.putDriver( driversToUpdate );
