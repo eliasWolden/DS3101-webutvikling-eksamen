@@ -6,40 +6,51 @@ import { TeamProvider } from "../../contexts/TeamContext";
 import CreateDriverPage from "../../pages/CreateDriverPage";
 import CreateRacePage from "../../pages/CreateRacePage";
 import '../../css/main.css';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Routing() {
   const [open, setOpen] = useState(false);
-  
+
+  useEffect(() => {
+// Add or remove the 'no-scroll' class to the body based on the 'open' state
+  if (open) {
+      document.body.classList.add("no-scroll");
+} else {
+      document.body.classList.remove("no-scroll");
+}
+// Clean up by removing the 'no-scroll' class when the component is unmounted
+  return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [open]);
+
   return (
     <>
-      <BrowserRouter>
-        <DriverProvider>
-          <RaceProvider>
-            <TeamProvider>
-{!open &&
-<div className="open-button">
-  <button className="image-button" onClick={() => setOpen(!open)}>
-    <img src={"public/images/open.jpg"} alt="poen button"/>
-  </button>
-</div>
-}
+    <BrowserRouter>
+      <DriverProvider>
+        <RaceProvider>
+          <TeamProvider>
+            {!open && (
+                <button className="image-button open-button" onClick={() => setOpen(!open)}>
+                  <img src={"public/images/open.jpg"} alt="open button" />
+                </button>
+            )}
 
-{open && (
-<div className="large-box">
-  <div className="right-box" onClick={() => setOpen(!open)}></div>
-  <div className="left-box">
-    <button className="image-button" onClick={() => setOpen(!open)}>
-      <img src={"public/images/close.png"} alt="close button"/>
-    </button>
+            {open && (
+              <div className={`large-box ${open ? 'open' : ''}`}>
+                <div className="right-box" onClick={() => setOpen(!open)}></div>
+                <div className="left-box">
+                  <button className="image-button close-button" onClick={() => setOpen(!open)}>
+                    <img src={"public/images/close.png"} alt="close button" />
+                  </button>
 
-  <div className="list-box">
-    <ul className="list-1-in-box">
-      <li className="list-text-1">
-        <Link to="/" className="navbar-brand">
-          Home
-          </Link>
-      </li>
+                  <div className="list-box">
+                    <ul className="list-1-in-box">
+                      <li className="list-text-1">
+                        <Link to="/" className="navbar-brand">
+                          Home
+                        </Link>
+                      </li>
       <li className="list-text-1">
           <Link to="/DriverPage" className="nav-link">
             Driver
