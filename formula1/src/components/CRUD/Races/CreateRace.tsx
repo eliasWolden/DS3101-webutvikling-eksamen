@@ -148,7 +148,7 @@ const AddRace: FC = () => {
 
       <div className='row'>
         <div className='form-group col-md-4'>
-          <input type="button" className='btn btn-primary' value="Create driver" onClick={saveDriver}/>
+          <input type="button" className='btn btn-primary' value="Create race" onClick={saveDriver}/>
         </div>
       </div>
     </form>
