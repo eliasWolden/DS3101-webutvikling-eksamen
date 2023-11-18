@@ -34,8 +34,9 @@ const RaceList = () => {
         responsive={responsive}
         infinite={true}
         containerClass="carousel-container center"
-        showDots={true}
-        draggable={false}
+        showDots={false}
+        draggable={true}
+        arrows={false}
         itemClass="race-carousel-item"
       >
         {getRacesJSX()}

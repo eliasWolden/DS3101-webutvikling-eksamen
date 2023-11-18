@@ -17,6 +17,7 @@ const RaceItem: FC<IRace> = ({
           className="race-card-image-size-race"
           src={image}
           alt={grandPrix}
+          draggable={false}
         />
         <div className="race-card-info">
           <span className="race-card-description">{winnerName}</span>
