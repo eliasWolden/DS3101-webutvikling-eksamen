@@ -141,7 +141,7 @@ const EditDriver = () => {
       </div>
       <div className='row'>
         <div className='form-group col-md-4'>
-          <input type="button" className='btn btn-danger' value="save driver" onClick={saveChanges}/>
+          <input type="button" className='btn btn-warning' value="save driver" onClick={saveChanges}/>
         </div>
       </div>
 
