@@ -1,22 +1,68 @@
 .driver-card {
-  background-color: #8b0000;
-  margin: 40px auto 20px auto;
-  height: 60vh;
-  width: 30vw;
-  border: 2px solid #000;
+  background-color: transparent;
+  height: 70vh;
+  padding: 10px;
 }
 
 .driver-image {
-  height: 75%;
-  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
 }
 
 .card-title-driver,
 .card-text-driver {
-  color: #fff;
+  font-family: 'Monument Grotesk Mono', monospace;
+  color: white;
 }
-.driver-card:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+.card-text-driver:hover {
+  color: orange;
+}
+.card-title-driver:hover{
+  color: orange;
+}
+
+
+.card-title-driver {
+  text-align: center;
+}
+
+.driver-card-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative; /* Add position: relative to create a stacking context */
+}
+
+.driver-card-text-body {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  max-width: 100%; /* Set max-width to 100% */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  z-index: 1; /* Set a lower z-index for the text body */
+}
+
+.driver-card-image {
+  height: 100%;
   transition: transform 0.5s ease;
+  background: rgb(43, 29, 29);
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative; /* Add position: relative to the image */
+  z-index: 2; /* Set a higher z-index for the image */
+}
+
+.driver-card:hover .driver-card-image {
+  transform: translateY(-32%);
+}
+
+/* Adjusted the styles for better readability */
+.driver-card-text-body h2,
+.driver-card-text-body p {
+  margin: 10px;
 }

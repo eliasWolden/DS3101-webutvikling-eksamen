@@ -29,7 +29,7 @@ const RaceList = () => {
   };
 
   return (
-    <div className="p-5">
+    <div className="driver-carousel-container">
       <Carousel
         responsive={responsive}
         infinite={true}
