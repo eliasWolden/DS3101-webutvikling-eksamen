@@ -1,6 +1,6 @@
-import React, { FC, useState, createContext, useEffect } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import RaceService from '../services/RaceService';
-import imageService from '../services/ImageService';
+import ImageService from '../services/ImageService';
 import { IRaceContext } from '../interfaces/Races/IRaceContext';
 import { IProps } from '../interfaces/Iprops';
 import { IRace } from '../interfaces/Races/IRace';
@@ -46,6 +46,23 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
       console.log(`Error deleting race with id ${id}`);
     }
   };
+  //POST
+  const postRace = async (newRace: IRace): Promise<void> => {
+    try {
+      await RaceService.postRace(newRace);
+    } catch (error) {
+      console.log('Error adding driver', error);
+    }
+  };
+
+
+  const postImage = async (image: File): Promise<void> => {
+    try {
+      await ImageService.postImage(image);
+    } catch (error) {
+      console.log('Error adding image', error);
+    }
+  };
 
   useEffect(() => {
     getAllRacesFromService();
@@ -55,7 +72,9 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
     races: races!,
     getAllRacesFromService,
     deleteRace,
-    getRaceByName
+    getRaceByName,
+    postRace,
+    postImage,
   };
 
   return <RaceContext.Provider value={contextValue}>{children}</RaceContext.Provider>;

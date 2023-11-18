@@ -52,6 +52,22 @@ const RaceService = (
             return false;
         };
     }
+    // POST:
+    const postRace = async (newRace: IRace) => {
+        try {
+            const result = await axios.post(raceController, newRace);
+            const postRaceResult = result.data;
+    
+         return {
+             postRaceResult
+         }
+        }
+        catch {
+            return {
+                postRaceResult: []
+            }
+        }
+    }
 
     
 
@@ -60,7 +76,8 @@ const RaceService = (
     return {
         getAllRaces,
         getRaceByName,
-        deleteRace
+        deleteRace,
+        postRace
     }
     }) ();
 
