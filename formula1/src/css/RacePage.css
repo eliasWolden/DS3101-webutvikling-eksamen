@@ -7,7 +7,8 @@
   border-radius: 1rem;
 }
 .race-card-info {
-  width: 300px;
+  text-align: center;
+  width: 600px;
   background-color: white;
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
@@ -18,7 +19,7 @@
   right: 0;
   margin-inline: auto;
   opacity: 0;
-  transition: opacity 1s 1s;
+  transition: opacity 0.5s 0.5s;
 }
 .race-card-description {
   display: block;
@@ -33,7 +34,7 @@
 .race-card-article:hover .race-card-info {
   animation: show-info 1s forwards;
   opacity: 1;
-  transition: opacity 0.3s;
+  transition: opacity 0s;
 }
 .race-card-article:hover {
   animation: remove-overflow 2s forwards;
