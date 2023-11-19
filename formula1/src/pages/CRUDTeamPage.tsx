@@ -1,3 +1,4 @@
+import DeleteTeam from "../components/CRUD/Teams/DeleteTeam";
 import EditTeam from "../components/CRUD/Teams/EditTeam";
 
 
@@ -9,7 +10,7 @@ const CRUDTeamPage = () => {
 
         <section>
         </section>
-
+          <DeleteTeam/>
         <section>
           <EditTeam/>
         </section>

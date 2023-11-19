@@ -64,7 +64,7 @@ public async Task<ActionResult<List<Team>>> GetByName(string manufacturer)
 {
     try
     {
-        Team team = await context.Teams.FirstOrDefaultAsync(t => t.Manufacturer == manufacturer);
+        Team? team = await context.Teams.FirstOrDefaultAsync(t => t.Manufacturer == manufacturer);
         if (team != null)
         {
             return Ok(team);
@@ -88,7 +88,7 @@ public async Task<ActionResult<TeamController>> DeleteByName(string manufacturer
     try
     {
         // Find the driver by name
-        Team team = await context.Teams.FirstOrDefaultAsync(t => t.Manufacturer == manufacturer);
+        Team? team = await context.Teams.FirstOrDefaultAsync(t => t.Manufacturer == manufacturer);
 
         if (team != null)
         {
