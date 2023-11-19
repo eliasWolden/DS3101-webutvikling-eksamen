@@ -16,11 +16,33 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
         src={`http://localhost:5257/api/Image/emblem/${id}.png`}
         className="image-size-emblem"
         alt={"Team Emblem"}
-      /></h5>
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.src = "public/images/amateur.png";
+        }}
+        />
+      </h5>
+      
       <div className="row">
-        <p className="col-md-4">{driver1} <img id="driver-1-image" src={`http://localhost:5257/api/Image/driver/${modified_driver1}.png`}></img></p>
-        <p className="col-md-4">{driver2}<img id="driver-2-image" src={`http://localhost:5257/api/Image/driver/${modified_driver2}.png`}></img></p>
-      </div>
+        <p className="col-md-4">{driver1} 
+        <img id="driver-1-image" 
+        src={`http://localhost:5257/api/Image/driver/${modified_driver1}.png`}
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.src = "public/images/uknown.png";
+        }}
+        />
+        </p>
+          <p className="col-md-4">{driver2}
+            <img id="driver-2-image" 
+            src={`http://localhost:5257/api/Image/driver/${modified_driver2}.png`}
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "public/images/uknown.png";
+            }}
+            />
+          </p>
+        </div>
       </div>
       <img src={image} className="image-size-car" />
     </div>
