@@ -1,47 +1,45 @@
 import { useState, ChangeEvent, useContext } from 'react';
-import { DriverContext } from '../../../contexts/DriverContext';
-import { IDriver } from '../../../interfaces/Drivers/IDriver';
+import { TeamContext } from '../../../contexts/TeamContext';
 import '../../../css/main.css';
+import { ITeam } from '../../../interfaces/Teams/ITeam';
 
-const EditDriver = () => {
+const EditTeam = () => {
     const [id, setId] = useState<string>("1");
 
 
 
-  const context = useContext(DriverContext);
+  const context = useContext(TeamContext);
 
-    const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({ name: "", age: 0, nationality: "", image: "", teamId: 0 });
+    const [teamsToUpdate, setteamsToUpdate] = useState<ITeam>({ manufacturer: "", image: "", driver1: "", driver2: ""});
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       switch (e.currentTarget.name) {
         case "id":
           setId(e.currentTarget.value);
           break;
-        case "name":
-          setDriversToUpdate({ ...driversToUpdate, name: e.currentTarget.value });
+        case "manufacturer":
+          setteamsToUpdate({ ...teamsToUpdate, manufacturer: e.currentTarget.value });
           break;
-        case "Age":
-          setDriversToUpdate({ ...driversToUpdate, age: parseInt(e.currentTarget.value) });
+        case "Driver1":
+          setteamsToUpdate({ ...teamsToUpdate, driver1: (e.currentTarget.value) });
           break;
-        case "nationality":
-          setDriversToUpdate({ ...driversToUpdate, nationality: e.currentTarget.value });
-          break;
-        case "teamid":
-          setDriversToUpdate({ ...driversToUpdate, teamId: parseInt(e.currentTarget.value) });
+        case "Driver2":
+          setteamsToUpdate({ ...teamsToUpdate, driver2: e.currentTarget.value });
           break;
       }
     };
 
     const getByIdFromContext = async () => {
-        const driversFromContext = await context?.getById(id);
-        setDriversToUpdate(driversFromContext.driversById);
-        console.log(driversFromContext.driversById);
+        const teamsFromContext = await context?.getById(id);
+        setteamsToUpdate(teamsFromContext.teamsById);
+        console.log(teamsFromContext.teamsById);
 
     };
 
     const saveChanges = () => {
         if(context){
-        context.editDrivers(driversToUpdate);
+        context.editTeams(teamsToUpdate);
+        console.log(teamsToUpdate);
         }
     };
   
@@ -50,7 +48,7 @@ const EditDriver = () => {
 
   return (
     <form className="bg-light p-4 m-4 border rounded shadow-lg">
-      <h2>Edit driver</h2>
+      <h2>Edit team</h2>
       <div className='row'>
         <div className='col'>
 
@@ -66,70 +64,67 @@ const EditDriver = () => {
         </div>
 
         <div className='form-group col-md-6'>
-          <label>Name</label>
+          <label>Manufacturer</label>
           <input
-            name='name'
+            name='manufacturer'
             type="text"
             className='form-control'
-            placeholder='name'
-            value={driversToUpdate?.name}
+            placeholder='Manufacturer'
+            value={teamsToUpdate?.manufacturer}
             onChange={handleChange}
           />
         </div>
 
       <div className='form-group col-md-6'>
-        <label>Age</label>
+        <label>Driver 1</label>
         <input
-          name='Age'
+          name='Driver1'
           type="text"
           className='form-control'
-          placeholder='Age'
-          value={isNaN(driversToUpdate?.age) ? '' : Number(driversToUpdate?.age)}
+          placeholder='Driver 1'
+          value={teamsToUpdate?.driver1}
 
           onChange={handleChange}
         />
       </div>
 
       <div className='form-group col-md-6'>
-        <label>Nationality</label>
+        <label>Driver 2</label>
         <input
-          name='nationality'
+          name='Driver2'
           type="text"
           className='form-control'
-          placeholder='Nationality'
-          value={driversToUpdate?.nationality}
+          placeholder='Driver 2'
+          value={teamsToUpdate?.driver2}
           onChange={handleChange}
         />
       </div>
 
-        <div className='form-group col-md-6'>
-          <label>Team</label>
-          <input
-            name='teamid'
-            type='text'
-            className='form-control'
-            placeholder='Age'
-            value={isNaN(driversToUpdate?.teamId) ? '' : Number(driversToUpdate?.teamId)}
-            onChange={handleChange}
-          />
-
-        </div>
-
       <div className='row'>
         <div className='form-group col-md-4'>
-          <input type="button" className='btn btn-primary' value="get driver" onClick={getByIdFromContext}/>
+          <input type="button" className='btn btn-primary' value="get team" onClick={getByIdFromContext}/>
         </div>
       </div>
       <div className='row'>
         <div className='form-group col-md-4'>
-          <input type="button" className='btn btn-warning' value="save driver" onClick={saveChanges}/>
+          <input type="button" className='btn btn-warning' value="save team" onClick={saveChanges}/>
         </div>
       </div>
 
       </div>
       <div className='col'>
-        <img className='image-size-medium'
-          src={`http://localhost:5257/api/Image/driver/${driversToUpdate.image}`}
+        <img className='image-size-car'
+          src={`http://localhost:5257/api/Image/car/${teamsToUpdate.image}`}
+          alt='Not found'
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = "public/images/uknown.png"; // Adjust the path based on your project structure
+          }}
+          />
+      </div>
+      <div className='col'>
+        <img className='image-size-emblem'
+          src={`http://localhost:5257/api/Image/emblem/${teamsToUpdate.id}.png`}
           alt='Not found'
           onError={(e) => {
             const target = e.target as HTMLImageElement;
@@ -143,4 +138,4 @@ const EditDriver = () => {
 };
 
 
-export default EditDriver;
+export default EditTeam;

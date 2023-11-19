@@ -3,10 +3,11 @@ import { DriverPage, HomePage, RacePage, TeamPage } from "../../pages";
 import { DriverProvider } from "../../contexts/DriverContext";
 import { RaceProvider } from "../../contexts/RaceContext";
 import { TeamProvider } from "../../contexts/TeamContext";
-import CreateDriverPage from "../../pages/CreateDriverPage";
-import CreateRacePage from "../../pages/CreateRacePage";
+import CRUDDriverPage from "../../pages/CRUDDriverPage";
+import CRUDRacePage from "../../pages/CRUDRacePage";
 import '../../css/main.css';
 import { useEffect, useState } from "react";
+import CRUDTeamPage from "../../pages/CRUDTeamPage";
 
 function Routing() {
   const [open, setOpen] = useState(false);
@@ -61,22 +62,27 @@ function Routing() {
             Race
           </Link>
       </li>
-    </ul>
-
-    <ul className="list-2-in-box">
-      <li className="list-text-2">
+      <li className="list-text-1">
         <Link to="/TeamPage" className="nav-link">
           Team
         </Link>
       </li>
+    </ul>
+
+    <ul className="list-2-in-box">
       <li className="list-text-2">
-        <Link to="/CreateDriverPage" className="nav-link">
-          DriverPage
+        <Link to="/CRUDDriverPage" className="nav-link">
+          CRUD Driver
         </Link>
       </li>
       <li className="list-text-2">
-        <Link to="/CreateRacePage" className="nav-link">
-          CreateRacePage
+        <Link to="/CRUDRacePage" className="nav-link">
+          CRUD Race
+        </Link>
+      </li>
+      <li className="list-text-2">
+        <Link to="/CRUDTeamPAge" className="nav-link">
+          CRUD Team
         </Link>
       </li>
     </ul>
@@ -89,11 +95,9 @@ function Routing() {
                 <Route path="/DriverPage" element={<DriverPage />} />
                 <Route path="/RacePage" element={<RacePage />} />
                 <Route path="/TeamPage" element={<TeamPage />} />
-                <Route path="/CreateRacePage" element={<CreateRacePage />} />
-                <Route
-                  path="/CreateDriverPage"
-                  element={<CreateDriverPage />}
-                />
+                <Route path="/CRUDRacePage" element={<CRUDRacePage />} />
+                <Route path="/CRUDDriverPage" element={<CRUDDriverPage />}/>
+                <Route path="/CRUDTeamPage" element={<CRUDTeamPage />}/>
               </Routes>
             </TeamProvider>
           </RaceProvider>

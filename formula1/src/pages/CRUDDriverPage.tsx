@@ -3,7 +3,7 @@ import DeleteDriver from "../components/CRUD/Driver/DeleteDriver";
 import EditDriver from "../components/CRUD/Driver/GetDriverById";
 
 
-const CreateDriverPage = () => {
+const CRUDDriverPage = () => {
     return (
       <div>
         <section>
@@ -21,5 +21,5 @@ const CreateDriverPage = () => {
     );
   };
   
-  export default CreateDriverPage;
+  export default CRUDDriverPage;
   

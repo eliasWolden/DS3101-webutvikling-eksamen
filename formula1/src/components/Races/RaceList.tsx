@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Carousel from "react-multi-carousel";
 import RaceItem from "./RaceItem";
 import { RaceContext } from "../../contexts/RaceContext";

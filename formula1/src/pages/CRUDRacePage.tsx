@@ -2,7 +2,7 @@ import AddRace from "../components/CRUD/Races/CreateRace";
 import DeleteRace from "../components/CRUD/Races/DeleteRace";
 import GetRaceByName from "../components/CRUD/Races/GetRaceByName";
 
-const CreateRacePage = () => {
+const CRUDRacePage = () => {
     return(
         <div>
             <section>
@@ -18,4 +18,4 @@ const CreateRacePage = () => {
     )
 }
 
-export default CreateRacePage;
+export default CRUDRacePage;
