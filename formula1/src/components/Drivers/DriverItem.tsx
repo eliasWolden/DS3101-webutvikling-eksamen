@@ -13,6 +13,10 @@ const DriverItem: FC<IDriver> = ({ name, age, nationality, image, teamId }) => {
               alt="bilde av sjafør"
               className="driver-image"
               draggable="false"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "public/images/uknown.png";
+              }}
             />
         </div>
 

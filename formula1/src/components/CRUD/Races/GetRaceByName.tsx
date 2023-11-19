@@ -118,7 +118,7 @@ const EditRace = () => {
            alt='Not found'
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.src = "public/images/uknown.png"; // Adjust the path based on your project structure
+            target.src = "public/images/uknown.png";
           }}
           />
       </div>
