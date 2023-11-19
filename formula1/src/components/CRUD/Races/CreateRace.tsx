@@ -71,7 +71,7 @@ const AddRace: FC = () => {
 
   return (
     <form className="bg-light p-4 m-4 border rounded shadow-lg">
-      <h2>Create race FUNKER IKKE BTW</h2>
+      <h2>Create race</h2>
 
       <div className='row'>
         <h3>Name of Winner</h3>
