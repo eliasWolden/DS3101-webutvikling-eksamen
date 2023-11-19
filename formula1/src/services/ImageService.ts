@@ -17,6 +17,7 @@ const imageUploadService = (
             data: formData,
             headers: {'Content-Type': 'multipart/form-data',},
         });
+        console.log(result);
 
         formData.delete("file");
     }
