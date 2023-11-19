@@ -14,11 +14,9 @@ const AddTeam: FC = () => {
 
 
   const [manufacturer, setManufacturer] = useState('');
-
   const [selectedCar, setSelectedCar] = useState('');
 
 
-  const [image, setImage] = useState<File | null>(null);
 
   const context = useContext(TeamContext);
 
@@ -45,12 +43,6 @@ const AddTeam: FC = () => {
         case 'selectedCar':
           setSelectedCar(value);
           break;
-        case 'image':
-          if (files != null) {
-            const file = files[0];
-            setImage(file);
-          }
-          break;
       }
     };
 
@@ -61,15 +53,14 @@ const AddTeam: FC = () => {
         driver1: driver1FullName,
         driver2: driver2FullName,
       }
-      handleAdd(newTeam, image!);
+      handleAdd(newTeam);
       console.log(newTeam);
     };
 
-    const handleAdd = async (newTeam: ITeam, image : File) => {
+    const handleAdd = async (newTeam: ITeam) => {
       try {
         if(context) {
           await context.postTeam(newTeam);
-          await context.postImage(image);
         }
 
       } catch (error) {
@@ -161,20 +152,6 @@ const AddTeam: FC = () => {
             <option value="car-alfa-romeo.png">Alfa Romeo</option>
             <option value="car-haas-f1-team.png">Haas F1</option>
           </select>
-        </div>
-      </div>
-
-      <div className='row'>
-        <div className='form-group col-md-4 mb-2'>
-          <label>Upload image</label>
-          <div className="custom-file">
-            <input
-              name='image'
-              type="file"
-              className='custom-file-input'
-              onChange={setHandler}
-            />
-          </div>
         </div>
       </div>
 
