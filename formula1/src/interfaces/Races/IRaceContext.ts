@@ -5,8 +5,9 @@ export interface IRaceContext {
     // må ha promise void for å kunne bruke await
     getAllRacesFromService: (race : IRace) => Promise<void>;
     deleteRace: (id: number) => Promise<void>;
-    getRaceByName: (name: string) => Promise<void>;
-    postRace: (newDriver : IRace) => Promise<void>;
+    getByName: (grandPrix: string) => Promise<any>;
+    postRace: (newRace : IRace) => Promise<void>;
     postImage: (image : File) => Promise<void>;
+    editRaces: (raceToUpdate : any) => Promise<void>;
 
   }

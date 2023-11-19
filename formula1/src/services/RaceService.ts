@@ -23,10 +23,10 @@ const RaceService = (
         }
     };
 
-    // Get by id
-    const getRaceByName = async (name: string) => {
+    // Get by name
+    const getByName = async (grandPrix: string) => {
         try {
-            const result = await axios.get(`${raceController}/${name}`);
+            const result = await axios.get(`${raceController}/grandPrix/${grandPrix}`);
             const racesByName = result.data;
 
             return {
@@ -68,6 +68,22 @@ const RaceService = (
             }
         }
     }
+    //PUT
+        const putRace = async (raceToUpdate: IRace) => {
+        try {
+            const result = await axios.put(raceController, raceToUpdate);
+            const putRaceResult = result.data;
+
+            return {
+                putRaceResult
+            }
+        }
+        catch {
+            return {
+                putRaceResult: []
+            } 
+        }
+    }
 
     
 
@@ -75,9 +91,10 @@ const RaceService = (
 
     return {
         getAllRaces,
-        getRaceByName,
+        getByName,
         deleteRace,
-        postRace
+        postRace,
+        putRace
     }
     }) ();
 
