@@ -86,13 +86,13 @@ public async Task<ActionResult<List<Race>>> GetByName(string grandPrix)
 }
 
 // Delete by name 
-[HttpDelete("{grandPrix}")]
-public async Task<ActionResult<Race>> DeleteByName(string grandPrix)
+[HttpDelete("{id}")]
+public async Task<ActionResult<Race>> DeleteById(int id)
 {
     try
     {
         // Find the driver by name
-        Race? race = await context.Races.FirstOrDefaultAsync(r => r.GrandPrix == grandPrix);
+        Race? race = await context.Races.FirstOrDefaultAsync(r => r.Id == id);
 
         if (race != null)
         {

@@ -58,14 +58,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
 };
 
   // DELETE
-  const deleteRace = async (id: number): Promise<void> => {
-    try {
-      await RaceService.deleteRace(id);
-    }
-    catch(error) {
-      console.log(`Error deleting race with id ${id}`);
-    }
-  };
+
   //POST
   const postRace = async (newRace: IRace): Promise<void> => {
     try {
@@ -81,6 +74,16 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
       await ImageService.postImage(image);
     } catch (error) {
       console.log('Error adding image', error);
+    }
+
+  };
+  const deleteRace = async (id: number) : Promise<void> => {
+    try {
+    const deleteRaceFromService= await RaceService.deleteById(id);
+    return deleteRaceFromService;  
+    }
+     catch (error) {
+       console.log(`error deleting driver with name ${id}}`, error);
     }
   };
 

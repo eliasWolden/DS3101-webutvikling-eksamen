@@ -41,15 +41,13 @@ const RaceService = (
     }
 
     // DELETE:
-    const deleteRace = async (id: number) => {
+    const deleteById = async (id: number) => {
         try {
             const result = await axios.delete(`${raceController}/${id}`);
             console.log(`Race with ID${id}is now deleted`, result);
-            return true;
         }
         catch {
             console.log(`Error deleting race with ID ${id}`);
-            return false;
         };
     }
     // POST:
@@ -92,7 +90,7 @@ const RaceService = (
     return {
         getAllRaces,
         getByName,
-        deleteRace,
+        deleteById,
         postRace,
         putRace
     }

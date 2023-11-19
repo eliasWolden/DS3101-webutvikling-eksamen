@@ -1,48 +1,51 @@
-import { FC, useState, useContext, ChangeEvent} from "react";
+import { FC, useState, useContext } from "react";
 import { RaceContext } from "../../../contexts/RaceContext";
 
 const DeleteRace : FC = () => {
-
-    const context = useContext(RaceContext);
-    const [id, setId] = useState<number>(0);
+    const [id, setId] = useState(0);
     const [deleteStatus, setDeleteStatus] = useState("");
+
+    const context  = useContext(RaceContext);
     
-    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setId(Number(e.target.value));
-    };
-
-
-    const handleClick =  async () => {
+    const handleDelete = async () => {
+        console.log(id);
         try {
-            const result = await context?.deleteRace(id);
-            if(result) { 
-                setDeleteStatus(`You deleted a race with ID ${id}`);
+            if(context) {
+            await context.deleteRace(id);
+            setDeleteStatus("You deleted a Race")
             } else {
-                setDeleteStatus("Error deleting race");
+                setDeleteStatus("Something went wrong with deleting..");
             }
-        } catch (error){
-            console.log("Error deleting race", error);
-            setDeleteStatus("Error deleting race");
+            
+        } catch (error) {
+            console.log('Error deleting Race', error);
         }
+        
     }
-
 return (
-        <form className="bg-light p-4 m-4 border rounded shadow-lg" >
-        <h3>Delete Race By Id</h3>
+    <form className="bg-light p-4 m-4 border rounded shadow-lg">
+        <h2>Delete Race</h2>
+
         <div className="form-group col-md-4">
-            <label htmlFor="exampleFormControlInput5">Id</label>
-            <input  
-            name='id' 
-            type="number"
-            className="form-control"
-            onChange={handleChange}
-            />
+            <label>Id</label>
+            <input 
+            type="text" 
+            className="form-control" 
+            placeholder="id"
+            value={id}
+            onChange={(e) => setId(parseInt(e.target.value))}
+            />            
         </div>
-        <br />
-        <input onClick={handleClick} type="button" className='btn btn-danger' value="Delete race"/>
-        <span>{deleteStatus}</span>
+
+        <div className='row'>
+            <div className='form-group col-md-4'>
+                <input type="button" className='btn btn-danger' onClick={handleDelete} value="Delete Race" />
+                <span className="">{deleteStatus}</span>
+            </div>
+        </div>
+
     </form>
-);
+    );
 }
 
 export default DeleteRace;
