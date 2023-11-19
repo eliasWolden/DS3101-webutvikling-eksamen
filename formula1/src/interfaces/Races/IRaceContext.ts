@@ -7,7 +7,7 @@ export interface IRaceContext {
     deleteRace: (id: number) => Promise<void>;
     getByName: (grandPrix: string) => Promise<any>;
     postRace: (newRace : IRace) => Promise<void>;
-    postImage: (image : File) => Promise<void>;
+    postImage: (image : File, subfolder : string) => Promise<void>;
     editRaces: (raceToUpdate : any) => Promise<void>;
 
   }

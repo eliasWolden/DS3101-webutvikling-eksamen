@@ -14,6 +14,9 @@ const AddDriver: FC = () => {
   const [teamid, setTeamid] = useState<number>(Number);
   const [image, setImage] = useState<File | null>(null);
 
+  const subfolder = "Drivers";
+
+
   const context = useContext(DriverContext);
 
     const setHandler = (e: ChangeEvent<any>) => {
@@ -52,15 +55,15 @@ const AddDriver: FC = () => {
         image: image!.name,
         teamId: teamid,
       }
-      handleAdd(newDriver, image!);
+      handleAdd(newDriver, image!, subfolder);
       console.log(newDriver);
     };
 
-    const handleAdd = async (newDriver: IDriver, image : File) => {
+    const handleAdd = async (newDriver: IDriver, image : File, subfolder : string) => {
       try {
         if(context) {
           await context.postDriver(newDriver);
-          await context.postImage(image);
+          await context.postImage(image, subfolder);
         }
 
       } catch (error) {

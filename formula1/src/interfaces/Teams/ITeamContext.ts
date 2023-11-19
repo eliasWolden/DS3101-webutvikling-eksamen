@@ -6,7 +6,7 @@ export interface ITeamContext {
     getAllTeamsFromService: (Team : ITeam) => Promise<void>;
     deleteTeam: (name : string) => Promise<void>;
     postTeam: (newTeam : ITeam) => Promise<void>;
-    postImage: (image : File) => Promise<void>;
+    postImage: (image : File, subfolder : string) => Promise<void>;
     getById: (id : string) => Promise<any>;
     editTeams: (TeamToUpdate : any) => Promise<void>;
   }

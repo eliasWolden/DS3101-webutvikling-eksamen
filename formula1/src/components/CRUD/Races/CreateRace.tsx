@@ -7,6 +7,8 @@ const AddRace: FC = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const fullName = `${firstName} ${lastName}`;
+  const subfolder = "Races";
+
 
 
   const [winnerTime, setWinnerTime] = useState<number>(Number);
@@ -52,15 +54,15 @@ const AddRace: FC = () => {
         image: image!.name,
         numberOfLaps: numberOfLaps,
       }
-      handleAdd(newDriver, image!);
+      handleAdd(newDriver, image!, subfolder);
       console.log(newDriver);
     };
 
-    const handleAdd = async (newRace: IRace, image : File) => {
+    const handleAdd = async (newRace: IRace, image : File, subfolder : string) => {
       try {
         if(context) {
           await context.postRace(newRace);
-          await context.postImage(image);
+          await context.postImage(image, subfolder);
         }
 
       } catch (error) {

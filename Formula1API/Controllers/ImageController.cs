@@ -88,12 +88,13 @@ hosting = _hosting;
 
 
 // Post an image
-[HttpPost]
-public IActionResult SaveImage(IFormFile file)
+[HttpPost("{subfolder}/")]
+public IActionResult SaveImage(IFormFile file, string subfolder)
 {
     try {
     string webRootPath = hosting.WebRootPath;
-    string absolutePath = Path.Combine($"{webRootPath}/images/Drivers/{file.FileName}");
+    string absolutePath = Path.Combine(webRootPath, "images", subfolder, file.FileName);
+
 
     using(var fileStream = new FileStream(absolutePath, FileMode.Create))
     {

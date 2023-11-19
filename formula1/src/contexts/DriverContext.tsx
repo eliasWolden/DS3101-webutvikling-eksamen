@@ -43,9 +43,9 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
   };
 
 
-  const postImage = async (image: File): Promise<void> => {
+  const postImage = async (image: File, subfolder: string): Promise<void> => {
     try {
-      await ImageService.postImage(image);
+      await ImageService.postImage(image, subfolder);
     } catch (error) {
       console.log('Error adding image', error);
     }
