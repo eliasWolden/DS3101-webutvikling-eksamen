@@ -19,6 +19,7 @@ const GetRaceByName: FC = () => {
             if(races.length > 0) {
                 const selectedRace = races[0];
                 console.log("You just got a race by name")
+                console.log(selectedRace);
                 return selectedRace;
             }
         }
@@ -34,7 +35,7 @@ const GetRaceByName: FC = () => {
             <h3>Get Race By Name</h3>
             <input type="text" value={name} onChange={handleNameChange} />
             <br />
-            <button className='btn btn-primary' onClick={handleGetRace}> Get Race </button>
+            <button type='button' className='btn btn-primary' onClick={handleGetRace}> Get Race </button>
         </div>
 
         <div>

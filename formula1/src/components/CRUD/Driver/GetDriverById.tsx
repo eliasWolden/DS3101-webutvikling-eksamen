@@ -10,25 +10,6 @@ const EditDriver = () => {
 
   const context = useContext(DriverContext);
 
-/*     const setHandler = (e: ChangeEvent<any>) => {
-      switch (e.currentTarget.name) {
-        case 'id':
-            setId(e.currentTarget.value);
-            break;
-        case 'name':
-          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
-          break;
-        case 'Age':
-          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
-          break;
-        case 'nationality':
-          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
-          break;
-        case 'teamid':
-          setDriversToUpdate({ ...driversToUpdate, driver: e.currentTarget.value });
-          break;
-      }
-    }; */
     const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({ name: "", age: 0, nationality: "", image: "", teamId: 0 });
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
