@@ -1,156 +1,148 @@
-.image-size-emblem{
-    width: 50px;
-    object-fit: cover;
+.image-size-emblem {
+  width: 50px;
+  object-fit: cover;
 }
-.image-size-car{
-    width: 400px;
-    object-fit: cover;
+.image-size-car {
+  width: 400px;
+  object-fit: cover;
 }
 .selected-team {
-    width: 800px;
+  width: 800px;
 }
 .image-size-medium {
-    width: 400px;
-    object-fit: cover;
-    border: solid 1px black;
-    background-color: rgb(193, 203, 39);
-
+  width: 400px;
+  object-fit: cover;
+  border: solid 1px black;
+  background-color: rgb(193, 203, 39);
 }
-
-
 
 /* navbar css */
 .large-box {
-    position: fixed;
-    top: 0;
-    left: -33vw;
-    height: 110vh;
-    width: 100vw;
-    background-color: rgba(56, 51, 51, 0.804);
-    z-index: 2000;
-    transition: left 1s ease;
+  position: fixed;
+  top: 0;
+  left: -33vw;
+  height: 110vh;
+  width: 100vw;
+  background-color: rgba(56, 51, 51, 0.804);
+  z-index: 2000;
+  transition: left 1s ease;
 }
-  
+
 .large-box.open {
-    left: 0;
+  left: 0;
 }
-.right-box{
-    position: absolute;
-    right: 0;
-    height: 110vh;
-    width: 66vw;
-    z-index: inherit;
+.right-box {
+  position: absolute;
+  right: 0;
+  height: 110vh;
+  width: 66vw;
+  z-index: inherit;
 }
 .left-box {
-    position: relative;
-    height: 110vh;
-    width: 33vw;
-    z-index: inherit;
-    overflow: hidden;
-
+  position: relative;
+  height: 110vh;
+  width: 33vw;
+  z-index: inherit;
+  overflow: hidden;
 }
 
 .left-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(119, 47, 47);
-    filter: blur(2px);
-    z-index: -1;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(119, 47, 47);
+  filter: blur(2px);
+  z-index: -1;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
 }
 
 .list-box {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 100%;
-    height: 80%;
-    padding: 70px;
-    background: transparent;
-    z-index: inherit;
-    color: black;
-    font-family: 'Monument Grotesk Mono', monospace;
-
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  height: 80%;
+  padding: 70px;
+  background: transparent;
+  z-index: inherit;
+  color: black;
+  font-family: "Monument Grotesk Mono", monospace;
 }
 
 .list-1-in-box {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .list-2-in-box {
-    width: 80%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .list-1-in-box,
 .list-2-in-box {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .list-text-1,
 .list-text-2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .list-text-1:hover,
 .list-text-2:hover {
-    position: relative;
-    background-position: right center;
-    cursor: pointer;
-    background-image: url('public/images/raceCar.png');
-    background-repeat: no-repeat;
-    background-size: 20%;
-    filter: invert(100%);
+  position: relative;
+  background-position: right center;
+  cursor: pointer;
+  background-image: url("public/images/raceCar.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  filter: invert(100%);
 }
 .list-text-2:hover {
-    background-size: 10%; 
-
+  background-size: 10%;
 }
 
 /* button css */
 .image-button {
-    background: none;
-    padding: 10px; 
-    cursor: pointer;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    z-index: 10000;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 10000;
 }
 
 .image-button img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px; 
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
 .close-button:hover {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 .open-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .close-button {
-    border: solid 1px black;
-    border-radius: 50%;
-
-
+  border: solid 1px black;
+  border-radius: 50%;
 }
-.open-button{
-  position: fixed;
+.open-button {
+  position: absolute;
   border: none;
-  top: 5%;
+  top: 0;
   left: 1%;
   z-index: 10000;
 }
 /* stopper scrolling når navbar er åpen */
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }

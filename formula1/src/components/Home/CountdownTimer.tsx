@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../../css/HomePage.css";
 
-const CountdownTimer: React.FC = () => {
+const CountdownTimer = () => {
   const eventDate = new Date("2023-12-31T18:00:00");
 
   interface TimeLeft {

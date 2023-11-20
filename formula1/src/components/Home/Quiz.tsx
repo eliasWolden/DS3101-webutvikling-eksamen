@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Question, QuizState } from "../../interfaces/Quiz/IQuiz";
+import "../../css/QuizGame.css";
 
-const Quiz: React.FC = () => {
+const Quiz = () => {
   const initialQuizState: QuizState = {
     score: 0,
     currentQuestion: 0,
@@ -14,7 +15,7 @@ const Quiz: React.FC = () => {
   });
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
 
-  const questions = [
+  const questions: Question[] = [
     {
       question: "Who won the Formula 1 World Championship in 2022?",
       options: [
@@ -120,7 +121,6 @@ const Quiz: React.FC = () => {
 
   const progress =
     Math.min((quizState.currentQuestion + 1) / questions.length, 1) * 100;
-  console.log(progress);
 
   return (
     <div className="quiz-container">
@@ -132,28 +132,32 @@ const Quiz: React.FC = () => {
           </button>
         </div>
       ) : currentQuestion < questions.length ? (
-        <>
+        <div className="quiz-question-container">
           <h3 className="text-center p-3">
             {currentShuffledQuestion.question}
           </h3>
-          <div className="progress-bar-container">
+          <div className="progress">
             <div
               className="progress-bar"
+              role="progressbar"
               style={{ width: `${progress}%` }}
+              aria-valuenow={progress}
+              aria-valuemin={0}
+              aria-valuemax={100}
             ></div>
           </div>
           <div className="options-container text-center p-3">
             {currentShuffledQuestion.options.map((option, index) => (
               <button
                 key={index}
-                className="btn btn-danger p-3 ms-3"
+                className="btn btn-outline-danger p-3 ms-3"
                 onClick={() => handleAnswer(option)}
               >
                 {option}
               </button>
             ))}
           </div>
-        </>
+        </div>
       ) : (
         <div className="quiz-results bg-primary text-white rounded p-4 mt-4 text-center">
           <h3 className="mb-4">Quiz Completed!</h3>
