@@ -36,7 +36,7 @@ const RaceList = () => {
         containerClass="carousel-container center"
         showDots={false}
         draggable={true}
-        arrows={true}
+        arrows={false}
         itemClass="race-carousel-item"
       >
         {getRacesJSX()}

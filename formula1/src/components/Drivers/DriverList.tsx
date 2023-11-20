@@ -41,7 +41,7 @@ const DriverList = () => {
         infinite={true}
         containerClass="carousel-container center"
         draggable={true}
-        arrows={true}
+        arrows={false}
         itemClass="driver-carousel-item"
       >
         {getDriversJSX()}

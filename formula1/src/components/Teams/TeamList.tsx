@@ -38,7 +38,7 @@ const TeamList = () => {
         containerClass="carousel-container center"
         showDots={false}
         draggable={true}
-        arrows={true}
+        arrows={false}
       >
         {getTeamsJSX()}
       </Carousel>
