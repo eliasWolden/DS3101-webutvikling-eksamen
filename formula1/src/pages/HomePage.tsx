@@ -1,24 +1,18 @@
-import React from "react";
 import VideoBackground from "../components/Home/VideoBackground";
 import Header from "../components/Home/Header";
 import Content from "../components/Home/Content";
 import Footer from "../components/Home/Footer";
-import CountdownTimer from "../components/Home/CountdownTimer";
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
     <div className="container-fluid">
       <Header />
       <div className="row">
         <div className="col g-0">
-          <CountdownTimer />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col g-0">
           <VideoBackground />
         </div>
       </div>
+
       <div className="row">
         <div className="col g-0">
           <Content />
