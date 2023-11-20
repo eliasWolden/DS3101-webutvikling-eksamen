@@ -154,6 +154,12 @@ public async Task<IActionResult> Put(Race updatedRace)
             return NotFound();
         }
 
+        currentRace.WinnerName = updatedRace.WinnerName;
+        currentRace.WinnerTime = updatedRace.WinnerTime;
+        currentRace.GrandPrix = updatedRace.GrandPrix;
+        currentRace.NumberOfLaps = updatedRace.NumberOfLaps;
+        currentRace.Image = updatedRace.Image;
+
         await context.SaveChangesAsync();
 
         return NoContent();
