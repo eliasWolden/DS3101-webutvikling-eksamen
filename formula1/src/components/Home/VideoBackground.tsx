@@ -9,7 +9,9 @@ const VideoBackground = () => {
           <source src="./videos/Formula1Video.mp4" type="video/mp4" />
         </video>
         <div className="docs-button position-absolute start-0 translate-middle-y ms-3">
-          <button className="btn btn-secondary">Docs</button>
+          <a href="http://localhost:5257/index.html">
+            <button className="btn btn-secondary">Docs</button>
+          </a>
         </div>
       </div>
     </section>
