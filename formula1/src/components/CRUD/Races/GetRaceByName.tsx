@@ -10,7 +10,7 @@ const EditRace = () => {
 
   const context = useContext(RaceContext);
 
-    const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ grandPrix: "",  winnerName: "", winnerTime: 0, numberOfLaps: 0, image: ""});
+    const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ grandPrix: "",  winnerName: "", winnerTime: "", numberOfLaps: 0, image: ""});
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       switch (e.currentTarget.name) {
@@ -21,7 +21,7 @@ const EditRace = () => {
           setRacesToUpdate({ ...RacesToUpdate, winnerName: e.currentTarget.value });
           break;
         case "winnerTime":
-          setRacesToUpdate({ ...RacesToUpdate, winnerTime: parseInt(e.currentTarget.value) });
+          setRacesToUpdate({ ...RacesToUpdate, winnerTime: e.currentTarget.value });
           break;
         case "numberOfLaps":
             setRacesToUpdate({ ...RacesToUpdate, numberOfLaps: parseInt(e.currentTarget.value) });
@@ -82,7 +82,7 @@ const EditRace = () => {
           type="text"
           className='form-control'
           placeholder='Winner time'
-          value={isNaN(RacesToUpdate?.winnerTime) ? '' : Number(RacesToUpdate?.winnerTime)}
+          value={RacesToUpdate?.winnerTime}
 
           onChange={handleChange}
         />
