@@ -16,6 +16,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
         src={`http://localhost:5257/api/Image/emblem/${id}.png`}
         className="image-size-emblem"
         alt={"Team Emblem"}
+        draggable="false"
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.src = "public/images/amateur.png";
@@ -27,6 +28,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
         <p className="col-md-4">{driver1} 
         <img id="driver-1-image" 
         src={`http://localhost:5257/api/Image/driver/${modified_driver1}.png`}
+        draggable="false"
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.src = "public/images/uknown.png";
@@ -36,6 +38,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
           <p className="col-md-4">{driver2}
             <img id="driver-2-image" 
             src={`http://localhost:5257/api/Image/driver/${modified_driver2}.png`}
+            draggable="false"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.src = "public/images/uknown.png";
@@ -44,7 +47,9 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
           </p>
         </div>
       </div>
-      <img src={image} className="image-size-car" />
+      <img src={image} className="image-size-car"
+        draggable="false"
+        />
     </div>
   );
 };
