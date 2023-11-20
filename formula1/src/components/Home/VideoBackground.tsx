@@ -1,7 +1,6 @@
-import React from "react";
 import "../../css/HomePage.css";
 
-const VideoBackground: React.FC = () => {
+const VideoBackground = () => {
   return (
     <div className="video-background position-relative">
       <video className="w-100" autoPlay muted loop>

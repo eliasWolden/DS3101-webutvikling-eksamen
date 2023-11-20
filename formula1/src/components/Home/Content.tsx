@@ -1,4 +1,3 @@
-import React from "react";
 import "../../css/HomePage.css";
 import TeamList from "../Teams/TeamList";
 import DriverList from "../Drivers/DriverList";
@@ -6,7 +5,7 @@ import RaceList from "../Races/RaceList";
 import Quiz from "./Quiz";
 import "../../css/QuizGame.css";
 
-const Content: React.FC = () => {
+const Content = () => {
   return (
     <article>
       <section>
