@@ -24,19 +24,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
 
   
   // GET BY NAME
-/*   const getRaceByName = async (name: string): Promise<void> => {
-    try {
-      const racesByName = await RaceService.getRaceByName(name);
-      if(racesByName.racesByName) {
-        setRaces(racesByName.racesByName);
-      } else {
-        setRaces([]);
-      }
-    } catch (error) {
-      console.log(`error fetching races`, error);
-    }
-  }; */
-  //PUT
+
   const getByName = async (grandPrix : string): Promise<any> => {
     try {
       const driversToUpdate = await RaceService.getByName(grandPrix);
@@ -47,7 +35,8 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
     }
   };
 
-  
+
+  // PUT:
   const editRaces = async (racesToUpdate: any): Promise<void> => {
   try {
     await RaceService.putRace( racesToUpdate );
@@ -57,7 +46,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
   }
 };
 
-  // DELETE
+  
 
   //POST
   const postRace = async (newRace: IRace): Promise<void> => {
@@ -78,6 +67,8 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
     }
 
   };
+
+  // DELETE
   const deleteRace = async (id: number) : Promise<void> => {
     try {
     const deleteRaceFromService= await RaceService.deleteById(id);
