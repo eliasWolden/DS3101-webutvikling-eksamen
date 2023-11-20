@@ -158,6 +158,12 @@ public async Task<IActionResult> Put(Driver updatedDriver)
             return NotFound();
         }
 
+        existingDriver.Name = updatedDriver.Name; 
+        existingDriver.Age = updatedDriver.Age;   
+        existingDriver.Nationality = updatedDriver.Nationality;   
+        existingDriver.Image = updatedDriver.Image;   
+        existingDriver.TeamId = updatedDriver.TeamId;   
+
         await context.SaveChangesAsync();
 
         return NoContent();

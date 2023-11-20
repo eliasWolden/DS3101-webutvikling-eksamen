@@ -145,6 +145,11 @@ public async Task<IActionResult> Put(Team updatedTeam)
             return NotFound();
         }
 
+        currentTeam.Manufacturer = updatedTeam.Manufacturer;
+        currentTeam.Image = updatedTeam.Image;
+        currentTeam.Driver1 = updatedTeam.Driver1;
+        currentTeam.Driver2 = updatedTeam.Driver2;
+
         await context.SaveChangesAsync();
 
         return NoContent();
