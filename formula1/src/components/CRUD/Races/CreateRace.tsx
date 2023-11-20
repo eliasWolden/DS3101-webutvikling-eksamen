@@ -11,7 +11,7 @@ const AddRace: FC = () => {
 
 
 
-  const [winnerTime, setWinnerTime] = useState<number>(Number);
+  const [winnerTime, setWinnerTime] = useState('');
   const [grandPrix, setGrandPrix] = useState('');
   const [numberOfLaps, setNumberOfLaps] = useState<number>(Number);
   const [image, setImage] = useState<File | null>(null);
@@ -29,7 +29,7 @@ const AddRace: FC = () => {
           setLastName(value);
           break;
         case 'winnerTime':
-          setWinnerTime(Number(value));
+          setWinnerTime(value);
           break;
         case 'grandPrix':
           setGrandPrix(value);
