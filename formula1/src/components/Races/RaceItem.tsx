@@ -3,13 +3,7 @@ import "../../css/RacePage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { IRace } from "../../interfaces/Races/IRace";
 
-const RaceItem: FC<IRace> = ({
-  winnerName,
-  winnerTime,
-  grandPrix,
-  numberOfLaps,
-  image,
-}) => {
+const RaceItem: FC<IRace> = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
   return (
     <div className="col-md-4 mb-4 w-75 container">
       <article className="race-card-article">
