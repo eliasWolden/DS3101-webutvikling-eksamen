@@ -22,7 +22,7 @@ const RaceItem: FC<IRace> = ({
         <div className="race-card-info">
           <span className="race-card-description">{winnerName}</span>
           <p className="race-card-text-info">
-            Winner Time: {winnerTime} seconds
+            Winner Time: {winnerTime}
           </p>
           <p className="race-card-text-info">Number of Laps: {numberOfLaps}</p>
           <a href="#" className="btn btn-success race-card-button">

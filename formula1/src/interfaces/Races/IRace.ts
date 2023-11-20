@@ -1,7 +1,7 @@
 export interface IRace {
     id?: number;
     winnerName: string;
-    winnerTime: number;
+    winnerTime: string;
     grandPrix: string;
     numberOfLaps: number;
     image: string;

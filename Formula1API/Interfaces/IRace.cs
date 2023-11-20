@@ -3,7 +3,7 @@ public interface IRace
 {
     int Id {get; set;}
     string? WinnerName {get; set;}
-    int WinnerTime {get; set;}
+    string? WinnerTime {get; set;}
     string? GrandPrix {get; set;}
     int NumberOfLaps {get; set;}
     string? Image {get; set;}
