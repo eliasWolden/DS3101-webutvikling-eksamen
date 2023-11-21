@@ -60,7 +60,9 @@ const AddTeam: FC = () => {
     const handleAdd = async (newTeam: ITeam) => {
       try {
         if(context) {
+          if(driver1FirstName != "" && driver1LastName != "")
           await context.postTeam(newTeam);
+        
         }
 
       } catch (error) {
