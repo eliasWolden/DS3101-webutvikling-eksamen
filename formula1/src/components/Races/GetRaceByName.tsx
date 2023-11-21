@@ -4,10 +4,8 @@ import { IRace } from '../../interfaces/Races/IRace';
 import '../../css/main.css';
 
 const EditRace = () => {
-    const [GrandPrix, setGrandPrix] = useState<string>("");
-
-
-
+  const [GrandPrix, setGrandPrix] = useState<string>("");
+  const [Status, setStatus] = useState("");
   const context = useContext(RaceContext);
 
     const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ grandPrix: "",  winnerName: "", winnerTime: "", numberOfLaps: 0, image: ""});
@@ -30,16 +28,27 @@ const EditRace = () => {
     };
 
     const getByGrandPrixFromContext = async () => {
-        const RacesFromContext = await context?.getByName(GrandPrix);
-        setRacesToUpdate(RacesFromContext.racesByName);
-        console.log(RacesFromContext.racesByName);
-
-    };
-
+      try {
+          if (context) {
+            if (GrandPrix !== "") {
+            const RacesFromContext = await context?.getByName(GrandPrix);
+            setRacesToUpdate(RacesFromContext.racesByName);
+            } 
+            else {
+              setStatus("Please enter a name");
+            }
+          }
+          } catch (error) {
+          setStatus("Grand Prix not found");
+          }
+        };
+      
     const saveChanges = () => {
         if(context){
         context.editRaces(RacesToUpdate);
         console.log(RacesToUpdate);
+        } else{
+            setStatus("Error saving changes");
         }
     };
   
@@ -108,6 +117,7 @@ const EditRace = () => {
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save Race" onClick={saveChanges}/>
+          <span>{Status}</span>
         </div>
       </div>
 

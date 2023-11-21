@@ -19,6 +19,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
       }
     } catch (error) {
       console.error("Error fetching races:", error);
+      throw error;
     }
   };
 
@@ -32,6 +33,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
       }
      catch (error) {
       console.error('Error fetching drivers:', error);
+      throw error;
     }
   };
 
@@ -43,6 +45,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
     getAllRacesFromService();
   } catch (error) {
     console.log('Error editing driver', error);
+    throw error;
   }
 };
 
@@ -54,6 +57,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
       await RaceService.postRace(newRace);
     } catch (error) {
       console.log('Error adding driver', error);
+      throw error;
     }
   };
 
@@ -63,7 +67,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
       await ImageService.postImage(image, subfolder);
     } catch (error) {
       console.log('Error adding image', error);
-      console.log(subfolder);
+      throw error;
     }
 
   };

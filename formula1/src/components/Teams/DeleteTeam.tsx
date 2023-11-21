@@ -3,7 +3,7 @@ import { TeamContext } from "../../contexts/TeamContext";
 
 const DeleteTeam : FC = () => {
     const [manufacturer, setManufacturer] = useState('');
-    const [deleteStatus, setDeleteStatus] = useState("");
+    const [Status, setStatus] = useState("");
 
     const context  = useContext(TeamContext);
     
@@ -12,14 +12,14 @@ const DeleteTeam : FC = () => {
             if(context) {
                 if(manufacturer !== "") {
             await context.deleteTeam(manufacturer);
-            setDeleteStatus("You deleted a Team")
+            setStatus("You deleted a Team")
             }
             else {
-                setDeleteStatus("Please enter a manufacturer")
+                setStatus("Please enter a manufacturer")
             }
         }
         } catch(error){
-            setDeleteStatus("Something went wrong with deleting...");
+            setStatus("Something went wrong with deleting...");
         }
         
     }
@@ -42,7 +42,7 @@ return (
         <div className='row'>
             <div className='form-group col-md-4'>
                 <input type="button" className='btn btn-danger' onClick={handleDelete} value="Delete Team" />
-                <span className="">{deleteStatus}</span>
+                <span>{Status}</span>
             </div>
         </div>
 
