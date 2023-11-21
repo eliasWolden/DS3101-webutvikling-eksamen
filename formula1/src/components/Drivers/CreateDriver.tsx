@@ -7,6 +7,8 @@ const AddDriver: FC = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const fullName = `${firstName} ${lastName}`;
+  const [Status, setStatus] = useState("");
+
 
 
   const [age, setAge] = useState<number>(Number);
@@ -48,6 +50,7 @@ const AddDriver: FC = () => {
     };
 
     const saveDriver = () => {
+      if(image != null) {
       const newDriver: IDriver = {
         name: fullName,
         age: age,
@@ -56,7 +59,11 @@ const AddDriver: FC = () => {
         teamId: teamid,
       }
       handleAdd(newDriver, image!, subfolder);
+      setStatus("Driver created");
       console.log(newDriver);
+    } else {
+      setStatus("Please fill out all fields");
+    }
     };
 
     const handleAdd = async (newDriver: IDriver, image : File, subfolder : string) => {
@@ -161,6 +168,7 @@ const AddDriver: FC = () => {
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-primary' value="Create driver" onClick={saveDriver}/>
+          <span>{Status}</span>
         </div>
       </div>
     </form>

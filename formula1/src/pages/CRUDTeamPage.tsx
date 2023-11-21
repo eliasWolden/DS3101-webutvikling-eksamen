@@ -1,4 +1,4 @@
-import AddTeam from "../components/Teams/AddTeam";
+import AddTeam from "../components/Teams/CreateTeam";
 import DeleteTeam from "../components/Teams/DeleteTeam";
 import EditTeam from "../components/Teams/EditTeam";
 
