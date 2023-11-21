@@ -3,7 +3,7 @@
 .team-card {
   margin: 40px auto 20px auto;
   height: 60vh;
-  border: 2px solid #000000;
+  padding: 5%;
   border-radius: 10%;
   background: rgb(43, 29, 29);
   filter: brightness(150%);
@@ -22,8 +22,8 @@
   color: #ffffff;
   margin: 3%;
   padding: 5%;
-  border-left: 3px solid black;
-  border-bottom: 1px solid rgb(148, 148, 152);
+  border-left: 3px solid #8b0000;
+  border-bottom: 1px solid #8b0000;
 }
 
 #drivers {
@@ -35,6 +35,7 @@
 
 #driver-1-image, #driver-2-image {
   width: 50%;
+  border: 1px solid #8b0000;
   border-radius: 50%;
   margin: 10px;
 }
