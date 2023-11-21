@@ -76,6 +76,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
     }
      catch (error) {
        console.log(`error deleting race with id ${id}}`, error);
+       throw error;
     }
   };
 

@@ -20,7 +20,7 @@ const DeleteRace : FC = () => {
             }
         }  
         }
-        catch{
+        catch(error){
             setDeleteStatus("Something went wrong with deleting..");
         }
     }

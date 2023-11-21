@@ -27,6 +27,7 @@ const DeleteDriver : FC = () => {
         } 
         catch (error) {
             console.log('Error deleting driver', error);
+            setDeleteStatus("Error deleting driver");
         }
         
     }

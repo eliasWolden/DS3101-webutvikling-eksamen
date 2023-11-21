@@ -30,6 +30,7 @@ export const DriverProvider: FC<IProps> = ({ children }) => {
     }
      catch (error) {
        console.log(`error deleting driver with name ${name}`, error);
+       throw error;
     }
   };
 

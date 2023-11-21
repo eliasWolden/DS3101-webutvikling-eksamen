@@ -18,7 +18,7 @@ const DeleteTeam : FC = () => {
                 setDeleteStatus("Please enter a manufacturer")
             }
         }
-        } catch{
+        } catch(error){
             setDeleteStatus("Something went wrong with deleting...");
         }
         

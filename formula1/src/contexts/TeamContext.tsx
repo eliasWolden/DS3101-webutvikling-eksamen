@@ -30,6 +30,7 @@ export const TeamProvider: FC<IProps> = ({ children }) => {
     }
      catch (error) {
        console.log(`error deleting Team with manufacturer ${name}`, error);
+       throw error;
     }
   };
 

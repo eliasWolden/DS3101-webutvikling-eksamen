@@ -46,8 +46,9 @@ const RaceService = (
             const result = await axios.delete(`${raceController}/${id}`);
             console.log(`Race with ID${id}is now deleted`, result);
         }
-        catch {
+        catch(error) {
             console.log(`Error deleting race with ID ${id}`);
+            throw error;
         };
     }
     // POST:

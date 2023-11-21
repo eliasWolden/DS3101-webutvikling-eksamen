@@ -75,14 +75,14 @@ const DriverService = (
 
     // DELETE:
 
-    const deleteDriver = async (name: string) => {
+    const deleteDriver = async (name: string): Promise<void> => {
         try {
             const result = await axios.delete(`${driverController}/${name}`);
             console.log(`Driver with name ${name} deleted successfully`, result);
         } 
         catch (error){
             console.log(`Error deleting driver with name ${name}`, error);
-            throw error;
+            throw error; // Rethrow the error to be caught in the component        
         };
     }
 
