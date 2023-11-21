@@ -7,5 +7,7 @@
 			"path": "formula1"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Formula1API"
+	}
 }

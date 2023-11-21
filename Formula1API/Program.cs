@@ -27,20 +27,20 @@ builder.Services.AddControllers();
 
 // Configure Swagger/OpenAPI.
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(/* c =>
+builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Your API", Version = "v1" });
 
     // Apply a filter to include only specific types (Driver, Race, and Team).
     c.DocumentFilter<IncludeOnlySpecificTypesFilter>();
-} */);
+});
 
 var app = builder.Build();
 
-DefaultFilesOptions options = new DefaultFilesOptions();
+/* DefaultFilesOptions options = new DefaultFilesOptions();
 options.DefaultFileNames.Add("index.html");
 app.UseDefaultFiles(options);
-
+ */
 app.UseStaticFiles();
 
 app.UseCors("AllowAll");
