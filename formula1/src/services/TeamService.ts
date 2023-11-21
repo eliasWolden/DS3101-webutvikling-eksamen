@@ -15,10 +15,9 @@ const teamService = (
                 teams
             };
         } 
-        catch {
-            return {
-                teams: []
-            };
+        catch(error) {
+            console.log("Error getting all teams", error);
+            throw error;
         }
     };
 
@@ -31,12 +30,11 @@ const teamService = (
                 teamsById
             }
         }
-        catch {
-            return {
-                teamsById: []
-            };
-        }
+        catch(error) {
+            console.log("Error getting teams by id", error);
+            throw error;
     }
+}
 
     // PUT:
     const putTeam = async (teamToUpdate: ITeam) => {
@@ -48,10 +46,9 @@ const teamService = (
                 putteamResult
             }
         }
-        catch {
-            return {
-                putteamResult: []
-            } 
+        catch(error){
+            console.log("Error editing team...", error);
+           throw error; 
         }
     }
 
@@ -66,10 +63,9 @@ const teamService = (
                 postteamResult
             }
         }
-        catch {
-            return {
-                postteamResult: []
-            }
+        catch(error) {
+            console.log("Error posting team...", error);
+            throw error;
         }
     }
 
@@ -85,6 +81,7 @@ const teamService = (
             throw error;
         };
     }
+
 
 
   return {
