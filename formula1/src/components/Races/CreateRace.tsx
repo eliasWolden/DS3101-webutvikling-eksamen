@@ -50,7 +50,7 @@ const AddRace: FC = () => {
     };
 
     const saveDriver = () => {
-      if(context) {
+      if(image != null) {
         const newDriver: IRace = {
         winnerName: fullName,
         winnerTime: winnerTime,
