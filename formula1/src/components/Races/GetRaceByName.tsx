@@ -1,7 +1,7 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import { RaceContext } from '../../contexts/RaceContext';
 import { IRace } from '../../interfaces/Races/IRace';
-import '../../../css/main.css';
+import '../../css/main.css';
 
 const EditRace = () => {
     const [GrandPrix, setGrandPrix] = useState<string>("");

@@ -1,7 +1,7 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import { DriverContext } from '../../contexts/DriverContext';
 import { IDriver } from '../../interfaces/Drivers/IDriver';
-import '../../../css/main.css';
+import '../../css/main.css';
 
 const EditDriver = () => {
     const [id, setId] = useState<string>("1");

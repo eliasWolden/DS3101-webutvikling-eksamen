@@ -1,6 +1,6 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import { TeamContext } from '../../contexts/TeamContext';
-import '../../../css/main.css';
+import '../../css/main.css';
 import { ITeam } from '../../interfaces/Teams/ITeam';
 
 const EditTeam = () => {
