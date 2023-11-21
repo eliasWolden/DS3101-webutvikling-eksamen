@@ -16,8 +16,6 @@
 
     /* header styling */
     header {
-      position: sticky;
-      top: 0;
       width: 100%;
       z-index: 5000;
     }
@@ -30,7 +28,7 @@
       max-height: 5%;
       padding: 10px;
       border-bottom: solid 1px black;
-      background-color: white;
+      background-color: rgb(199, 196, 196);
     }
 
     /* Adjust the styling for the first, second, and last items */
@@ -59,6 +57,8 @@
       flex: 1;
       padding: 10px;
       width: 100%;
+      background-color: rgb(84, 80, 80);
+      color: white;
     }
 
     section {
@@ -67,7 +67,8 @@
     }
 
     .main-section {
-      margin: 8%;
+      margin-left: 8%;
+      margin-right: 8%;
       justify-content: center;
 
     }
@@ -81,11 +82,17 @@
       z-index: 200;
     }
 
-    h1,
-    h2,
-    h3 {
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    h2 {
       font-weight: 800;
       font-size: 1.5rem;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 1.3rem;
     }
 
     /* table styling */
@@ -104,13 +111,13 @@
     /* aside list styling */
     aside {
       position: sticky;
-      top: 10%;
+      top: 0%;
       left: 0%;
       height: 100vh;
       min-width: 20vw;
       max-width: 20vw;
       padding: 10px;
-      background-color: white;
+      background-color: rgb(207, 125, 125);
       border-right: solid 1px black;
       display: flex;
       flex-direction: column;
@@ -223,10 +230,11 @@
         </h1>
       </a>
 
-      <ol>
-        <a href="index.html#introduction">Docs
+        <a href="index.html#introduction">
+          <h4>
+            Docs
+          </h4>
         </a>
-      </ol>
 
 
 
@@ -977,7 +985,7 @@
   </main>
 
   <footer>
-    <p>Footer content goes here.</p>
+    <h4>Formula 1 API</4>
   </footer>
 </body>
 
