@@ -4,9 +4,8 @@ import '../../css/main.css';
 import { ITeam } from '../../interfaces/Teams/ITeam';
 
 const EditTeam = () => {
-    const [id, setId] = useState<string>("1");
-
-
+  const [id, setId] = useState<string>("1");
+  const [Status, setStatus] = useState("");
 
   const context = useContext(TeamContext);
 
@@ -33,15 +32,21 @@ const EditTeam = () => {
         const teamsFromContext = await context?.getById(id);
         setteamsToUpdate(teamsFromContext.teamsById);
         console.log(teamsFromContext.teamsById);
-
     };
 
     const saveChanges = () => {
+      try {
         if(context){
         context.editTeams(teamsToUpdate);
         console.log(teamsToUpdate);
-        }
-    };
+        setStatus("You´ve edited a team")
+      }
+    } 
+    catch (error) {
+      setStatus("Error editing team");
+    }
+  }
+
   
   
 
@@ -108,6 +113,7 @@ const EditTeam = () => {
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save team" onClick={saveChanges}/>
+          <span>{Status}</span>
         </div>
       </div>
 
@@ -118,7 +124,7 @@ const EditTeam = () => {
           alt='Not found'
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.src = "public/images/uknown.png"; // Adjust the path based on your project structure
+            target.src = "public/images/uknown.png"; 
           }}
           />
       </div>
@@ -128,7 +134,7 @@ const EditTeam = () => {
           alt='Not found'
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.src = "public/images/uknown.png"; // Adjust the path based on your project structure
+            target.src = "public/images/uknown.png"; 
           }}
           />
       </div>

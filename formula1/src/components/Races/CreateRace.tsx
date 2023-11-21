@@ -10,10 +10,6 @@ const AddRace: FC = () => {
   const subfolder = "Races";
 
   const [Status, setStatus] = useState("");
-
-
-
-
   const [winnerTime, setWinnerTime] = useState('');
   const [grandPrix, setGrandPrix] = useState('');
   const [numberOfLaps, setNumberOfLaps] = useState<number>(Number);
@@ -74,7 +70,7 @@ const AddRace: FC = () => {
 
       } catch (error) {
         console.log('Error adding driver', error);
-        setStatus("Something went wrong with adding..")
+        setStatus("Something went wrong with adding...")
 
       }
     }

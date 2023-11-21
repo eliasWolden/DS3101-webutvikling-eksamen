@@ -15,6 +15,7 @@ const AddTeam: FC = () => {
 
   const [manufacturer, setManufacturer] = useState('');
   const [selectedCar, setSelectedCar] = useState('');
+  const [Status, setStatus] = useState("");
 
 
 
@@ -47,6 +48,8 @@ const AddTeam: FC = () => {
     };
 
     const saveTeam = () => {
+      if(driver1FirstName != "" && driver1LastName != ""){
+
       const newTeam: ITeam = {
         manufacturer: manufacturer,
         image: selectedCar,
@@ -54,21 +57,25 @@ const AddTeam: FC = () => {
         driver2: driver2FullName,
       }
       handleAdd(newTeam);
+      setStatus("You added a team!")
       console.log(newTeam);
+    } else {
+        setStatus("Please enter a name");
     };
+  }
 
     const handleAdd = async (newTeam: ITeam) => {
       try {
-        if(context) {
+        if(context) 
           await context.postTeam(newTeam);
         }
-
-      } catch (error) {
+       catch (error) {
         console.log('Error adding Team', error);
+        setStatus("Something went wrong with adding...")
       }
     }
-
-
+    
+    
   return (
     <form className="bg-light p-4 m-4 border rounded shadow-lg">
       <h2>Create Team</h2>
@@ -158,6 +165,7 @@ const AddTeam: FC = () => {
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-primary' value="Create Team" onClick={saveTeam}/>
+          <span>{Status}</span>
         </div>
       </div>
     </form>
