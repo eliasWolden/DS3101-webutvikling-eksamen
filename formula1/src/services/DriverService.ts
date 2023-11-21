@@ -15,10 +15,9 @@ const DriverService = (
                 drivers
             };
         } 
-        catch {
-            return {
-                drivers: []
-            };
+        catch (error) {
+            console.log("Error getting all drivers", error);
+            throw error;
         }
     };
 
@@ -31,10 +30,9 @@ const DriverService = (
                 driversById
             }
         }
-        catch {
-            return {
-                driversById: []
-            };
+        catch (error){
+            console.log("Error getting driver by ID", error);
+            throw error;
         }
     }
 
@@ -48,10 +46,9 @@ const DriverService = (
                 putDriverResult
             }
         }
-        catch {
-            return {
-                putDriverResult: []
-            } 
+        catch(error) {
+            console.log("Error editing driver", error);
+            throw error;
         }
     }
 
@@ -66,10 +63,9 @@ const DriverService = (
                 postDriverResult
             }
         }
-        catch {
-            return {
-                postDriverResult: []
-            }
+        catch(error) {
+            console.log("Error posting driver", error);
+            throw error;
         }
     }
 
