@@ -78,10 +78,10 @@ const teamService = (
     const deleteTeam = async (name: string) => {
         try {
             const result = await axios.delete(`${teamController}/${name}`);
-            console.log(`team with ID ${name} deleted successfully`, result);
+            console.log(`team with manufacturer ${name} deleted successfully`, result);
         } 
         catch (error){
-            console.log(`Error deleting team with ID ${name}`, error);
+            console.log(`Error deleting team with manufacturer ${name}`, error);
             throw error;
         };
     }

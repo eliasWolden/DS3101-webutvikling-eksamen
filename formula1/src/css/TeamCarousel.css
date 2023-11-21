@@ -4,6 +4,9 @@
   margin: 40px auto 20px auto;
   height: 60vh;
   border: 2px solid #000000;
+  border-radius: 10%;
+  background: rgb(43, 29, 29);
+  filter: brightness(150%);
 }
 
 .image-size-emblem {
@@ -16,7 +19,7 @@
 }
 
 .card-title-team {
-  color: #000000;
+  color: #ffffff;
   margin: 3%;
   padding: 5%;
   border-left: 3px solid black;
@@ -37,7 +40,7 @@
 }
 
 #driver-1-title, #driver-2-title {
-  color: #8b0000; 
+  color: #ffffff;
   font-weight: bold;
   margin-top: 5px;
 }

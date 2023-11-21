@@ -75,7 +75,7 @@ export const RaceProvider: FC<IProps> = ({ children }) => {
     return deleteRaceFromService;  
     }
      catch (error) {
-       console.log(`error deleting driver with name ${id}}`, error);
+       console.log(`error deleting race with id ${id}}`, error);
     }
   };
 

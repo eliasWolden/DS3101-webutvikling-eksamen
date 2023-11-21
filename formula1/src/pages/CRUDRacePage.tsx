@@ -1,6 +1,6 @@
-import AddRace from "../components/CRUD/Races/CreateRace";
-import DeleteRace from "../components/CRUD/Races/DeleteRace";
-import GetRaceByName from "../components/CRUD/Races/GetRaceByName";
+import AddRace from "../components/Races/CreateRace";
+import DeleteRace from "../components/Races/DeleteRace";
+import GetRaceByName from "../components/Races/GetRaceByName";
 
 const CRUDRacePage = () => {
     return(

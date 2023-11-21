@@ -29,7 +29,7 @@ export const TeamProvider: FC<IProps> = ({ children }) => {
     return deleteTeamFromService;  
     }
      catch (error) {
-       console.log(`error deleting Team with name ${name}`, error);
+       console.log(`error deleting Team with manufacturer ${name}`, error);
     }
   };
 

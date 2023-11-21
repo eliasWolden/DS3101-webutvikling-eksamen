@@ -1,6 +1,6 @@
-import AddTeam from "../components/CRUD/Teams/AddTeam";
-import DeleteTeam from "../components/CRUD/Teams/DeleteTeam";
-import EditTeam from "../components/CRUD/Teams/EditTeam";
+import AddTeam from "../components/Teams/AddTeam";
+import DeleteTeam from "../components/Teams/DeleteTeam";
+import EditTeam from "../components/Teams/EditTeam";
 
 
 const CRUDTeamPage = () => {

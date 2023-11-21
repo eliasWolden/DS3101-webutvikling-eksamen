@@ -1,6 +1,6 @@
-import CreateDriver from "../components/CRUD/Driver/CreateDriver";
-import DeleteDriver from "../components/CRUD/Driver/DeleteDriver";
-import EditDriver from "../components/CRUD/Driver/GetDriverById";
+import CreateDriver from "../components/Drivers/CreateDriver";
+import DeleteDriver from "../components/Drivers/DeleteDriver";
+import EditDriver from "../components/Drivers/GetDriverById";
 
 
 const CRUDDriverPage = () => {
