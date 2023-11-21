@@ -33,10 +33,8 @@ const RaceService = (
                 racesByName
             }
         }
-        catch {
-            return {
-                racesByName: []
-            };
+        catch(error) {
+            throw error;
         }
     }
 
@@ -61,10 +59,8 @@ const RaceService = (
              postRaceResult
          }
         }
-        catch {
-            return {
-                postRaceResult: []
-            }
+        catch(error) {
+            throw error;
         }
     }
     //PUT
@@ -77,10 +73,8 @@ const RaceService = (
                 putRaceResult
             }
         }
-        catch {
-            return {
-                putRaceResult: []
-            } 
+        catch(error) {
+            throw error;
         }
     }
 

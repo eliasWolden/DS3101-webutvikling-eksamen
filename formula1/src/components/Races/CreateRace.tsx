@@ -9,6 +9,9 @@ const AddRace: FC = () => {
   const fullName = `${firstName} ${lastName}`;
   const subfolder = "Races";
 
+  const [Status, setStatus] = useState("");
+
+
 
 
   const [winnerTime, setWinnerTime] = useState('');
@@ -47,7 +50,8 @@ const AddRace: FC = () => {
     };
 
     const saveDriver = () => {
-      const newDriver: IRace = {
+      if(context) {
+        const newDriver: IRace = {
         winnerName: fullName,
         winnerTime: winnerTime,
         grandPrix: grandPrix,
@@ -55,18 +59,23 @@ const AddRace: FC = () => {
         numberOfLaps: numberOfLaps,
       }
       handleAdd(newDriver, image!, subfolder);
+      setStatus("Race created");
       console.log(newDriver);
+    } else {
+      setStatus("Please fill out all fields");
     };
+  }
 
     const handleAdd = async (newRace: IRace, image : File, subfolder : string) => {
       try {
-        if(context) {
+        if(context)
           await context.postRace(newRace);
-          await context.postImage(image, subfolder);
-        }
+          await context?.postImage(image, subfolder);
 
       } catch (error) {
         console.log('Error adding driver', error);
+        setStatus("Something went wrong with adding..")
+
       }
     }
 
@@ -151,6 +160,7 @@ const AddRace: FC = () => {
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-primary' value="Create race" onClick={saveDriver}/>
+          <span>{Status}</span>
         </div>
       </div>
     </form>

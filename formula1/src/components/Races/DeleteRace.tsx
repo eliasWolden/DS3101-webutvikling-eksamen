@@ -3,7 +3,7 @@ import { RaceContext } from "../../contexts/RaceContext";
 
 const DeleteRace : FC = () => {
     const [id, setId] = useState(0);
-    const [deleteStatus, setDeleteStatus] = useState("");
+    const [Status, setStatus] = useState("");
 
     const context  = useContext(RaceContext);
     
@@ -13,15 +13,15 @@ const DeleteRace : FC = () => {
             if(context) {
                 if(id !== 0) {  
             await context.deleteRace(id);
-            setDeleteStatus("You deleted a Race")
+            setStatus("You deleted a Race")
             } 
             else {
-                setDeleteStatus("Please enter an ID");
+                setStatus("Please enter an ID");
             }
         }  
         }
         catch(error){
-            setDeleteStatus("Something went wrong with deleting..");
+            setStatus("Something went wrong with deleting..");
         }
     }
 return (
@@ -41,7 +41,7 @@ return (
         <div className='row'>
             <div className='form-group col-md-4'>
                 <input type="button" className='btn btn-danger' onClick={handleDelete} value="Delete Race" />
-                <span className="">{deleteStatus}</span>
+                <span>{Status}</span>
             </div>
         </div>
 
