@@ -62,7 +62,8 @@
     }
 
     section {
-      width: 90%;
+      width: 100%;
+      margin-bottom: 20vh;
     }
 
     .main-section {
@@ -217,14 +218,13 @@
       </a>
 
       <a href="http://localhost:5173/">
-        Formula 1 API
+        <h1>
+          Formula 1 API
+        </h1>
       </a>
 
       <ol>
         <a href="index.html#introduction">Docs
-        </a>
-
-        <a href="">About
         </a>
       </ol>
 
@@ -312,13 +312,79 @@
             </li>
           </ul>
         </li>
+        </li>
+        <li class="list-section">
+          <a class="list-section-title" href="index.html#image">Image</a>
+          <ul class="list-items">
+            <li>
+              <a href="index.html#image-getById">Get images by name</a>
+            </li>
+            <li>
+              <a href="index.html#image-delete">Delete images</a>
+            </li>
+            <li>
+              <a href="index.html#image-create">Create images</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </aside>
 
     <section class="main-section">
       <section>
-        <h2 id="introduction">Documentation</h2>
-        <p>Information of Documentation</p>
+        <h1 id="introduction">Documentation</h1>
+        <h2>Introduction</h2>
+        <p>This page will help you get familiar with our Formula 1 API, and show you how its used.</p>
+
+        <article>
+          <h3>Web API</h3>
+          <p>Base url: http://localhost:5257/api</p>
+          <p>The url has information about Formula 1. THe requests are <code class="text-code">GET</code>, 
+            <code class="text-code">POST</code>, <code class="text-code">PUT</code>, 
+            and <code class="text-code">DELETE</code> requests. They go over <code class="text-code">HTTP</code> and return <code class="text-code">JSON</code> data.</p>
+          </p>
+            <pre class="code-wrap">
+                  <code>
+                    <div class="top-code">
+                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api</span>
+                    </div>
+                    <p class="json-response">
+                      {
+                        <span class="json-key">"Driver":</span> <span class="json-string">"http://localhost:5257/api/driver"</span>,
+                        <span class="json-key">"Race":</span> <span class="json-string">"http://localhost:5257/api/race"</span>,
+                        <span class="json-key">"Team":</span> <span class="json-string">"http://localhost:5257/api/team"</span>,
+                        <span class="json-key">"Image":</span> <span class="json-string">"http://localhost:5257/api/Image""</span>,
+                      },
+                    </p>
+                  </code>
+                </pre>
+
+                <p>There are four types available.</p>
+
+                <ul>
+                  <a href="index.html#driver">
+                  <li>
+                    Driver: used to get all drivers
+                  </li>
+                </a>
+                  
+                  <a href="index.html#race">
+                    <li>
+                      Race: used to get all races.
+                    </li>
+                  </a>
+                  <a href="index.html#team">
+                    <li>
+                      Team: used to get all teams.
+                    </li>               
+                  </a>
+                  <a href="index.html#image">
+                    <li>
+                      Image: used to get all images.
+                    </li>
+                  </a>
+                </ul>
+        </article>
       </section>
 
       <section>
@@ -742,7 +808,7 @@
           <pre class="code-wrap">
                   <code>
                     <div class="top-code">
-                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Race/1</span>
+                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Team/1</span>
                     </div>
                     <p class="json-response">
                       {
@@ -766,7 +832,7 @@
           <pre class="code-wrap">
                   <code>
                     <div class="top-code">
-                      <span class="http-method">DELETE</span> <span class="api-endpoint">http://localhost:5257/api/Race/Mercedes</span>
+                      <span class="http-method">DELETE</span> <span class="api-endpoint">http://localhost:5257/api/Team/Mercedes</span>
                     </div>
                     <p class="json-response">
                       {
@@ -791,7 +857,7 @@
           <pre class="code-wrap">
                   <code>
                     <div class="top-code">
-                      <span class="http-method">POST</span> <span class="api-endpoint">http://localhost:5257/api/Race</span>
+                      <span class="http-method">POST</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
                     </div>
                     <p class="json-response">
                       {
@@ -816,7 +882,7 @@
           <pre class="code-wrap">
                   <code>
                     <div class="top-code">
-                      <span class="http-method">PUT</span> <span class="api-endpoint">http://localhost:5257/api/Race</span>
+                      <span class="http-method">PUT</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
                     </div>
                     <p class="json-response">
                       {
@@ -837,64 +903,39 @@
       </section>
 
       <section>
-        <h2 id="team">Image</h2>
-        <p>We have a total of <code class="text-code">10</code> teams.</p>
+        <h2 id="image">Image</h2>
+        <p>We have a total of <code class="text-code">62</code> images.</p>
         <article>
-          <h3 id="team-schema">Team schema</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Key</th>
-                <th>Type</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>id</td>
-                <td>int</td>
-                <td>The id of the team</td>
-              </tr>
-              <tr>
-                <td>manufacturer</td>
-                <td>string</td>
-                <td>The producer of the car</td>
-              </tr>
-              <tr>
-                <td>image</td>
-                <td>string</td>
-                <td>Image of the team</td>
-              </tr>
-              <tr>
-                <td>driver1</td>
-                <td>string</td>
-                <td>The main driver</td>
-              </tr>
-              <tr>
-                <td>driver2</td>
-                <td>string</td>
-                <td>The supporting driver</td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
-
-        <article>
-          <h3 id="team-getAll">Get all teams</h3>
-          <p>You can access the list of teams by using the <code class="text-code">/Team</code> endpoint.</p>
+          <h3 id="image-getById">Get image</h3>
+          <p>You can get an image by using <code class="text-code">{imageType}(Driver, Race, Emblem, Car)</code> and <code class="text-code">{imageName}</code> as a parameter: <code
+              class="text-code">/image/Driver/max-verstappen.png</code></p>
           <pre class="code-wrap">
                   <code>
                     <div class="top-code">
-                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
+                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Image/Driver/max-verstappen.png</span>
+                    </div>
+                    <figure>
+                      <img src="./images/Drivers/max-verstappen.png" alt="max-verstappen">
+                    </figure>
+                  </code>
+                </pre>
+
+
+        </article>
+
+        <article>
+          <h3 id="image-delete">Delete imange</h3>
+          <p>You can delete a image by using their <code class="text-code">{imageType}</code> and <code class="text-code">{imageName}</code> as a parameter: <code
+              class="text-code">/Image/Driver/pierre-gasly.png</code></p>
+          <pre class="code-wrap">
+                  <code>
+                    <div class="top-code">
+                      <span class="http-method">DELETE</span> <span class="api-endpoint">http://localhost:5257/api/Image/Driver/pierre-gasly.png</span>
                     </div>
                     <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">3</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"Ferrari"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"car-ferrari.png"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"Charles Leclerc"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"Carlos Sainz"</span>
-                      },
+                      
+                                              Success:
+                      
                     </p>
                   </code>
                 </pre>
@@ -903,22 +944,17 @@
         </article>
 
         <article>
-          <h3 id="team-getById">Get team by id</h3>
-          <p>You can get a team by using <code class="text-code">id</code> as a parameter: <code
-              class="text-code">/team/1</code></p>
+          <h3 id="image-create">Create</h3>
+          <p>You can create a new image by using <code class="text-code">{imageType}</code> as a parameter: <code class="text-code">/Image/Driver/</code></p>
           <pre class="code-wrap">
                   <code>
                     <div class="top-code">
-                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Race/1</span>
+                      <span class="http-method">POST</span> <span class="api-endpoint">http://localhost:5257/api/Image/Driver/newDriver.png</span>
                     </div>
                     <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">1</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"Red Bull Racing"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"car-red-bull.png"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"Max Verstappen"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"Sergio Perez"</span>
-                      }
+                        
+                                            Success:
+
                     </p>
                   </code>
                 </pre>
@@ -926,79 +962,7 @@
 
         </article>
 
-        <article>
-          <h3 id="team-delete">Delete by manufacturer</h3>
-          <p>You can delete a team by using their <code class="text-code">manufacturer</code> as a parameter: <code
-              class="text-code">/Team/Mercedes</code></p>
-          <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">DELETE</span> <span class="api-endpoint">http://localhost:5257/api/Race/Mercedes</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">2</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"Mercedes"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"car-mercedes.png"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"Lewis Hamilton"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"George Russell"</span>
-                      }
-                    </p>
-                  </code>
-                </pre>
 
-
-        </article>
-
-        <article>
-          <h3 id="team-create">Create</h3>
-          <p>You can create a new team by giving it a new <code class="text-code">manufacturer</code>, <code
-              class="text-code">image</code>, <code class="text-code">driver1</code>, and a <code
-              class="text-code">driver2</code></p>
-          <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">POST</span> <span class="api-endpoint">http://localhost:5257/api/Race</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">11</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"new manufacturer"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"new image"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"new driver1"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"new driver2"</span>
-                      }
-                    </p>
-                  </code>
-                </pre>
-
-
-        </article>
-
-        <article>
-          <h3 id="team-update">Update a team</h3>
-          <p>You can update a team by using their <code class="text-code">id</code> to get their information, then edit
-            that information(<code class="text-code">manufacturer</code>, <code class="text-code">image</code>, <code
-              class="text-code">driver1</code>, and a <code class="text-code">driver2</code>) and save it.</p>
-          <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">PUT</span> <span class="api-endpoint">http://localhost:5257/api/Race</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">8</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"edit"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"edit.png"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"edit"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"edit"</span>
-                      }
-                    </p>
-                  </code>
-                </pre>
-
-
-        </article>
 
 
       </section>
