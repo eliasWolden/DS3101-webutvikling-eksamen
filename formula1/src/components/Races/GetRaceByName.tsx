@@ -34,6 +34,7 @@ const EditRace = () => {
             if (GrandPrix !== "") {
             const RacesFromContext = await context?.getByName(GrandPrix);
             setRacesToUpdate(RacesFromContext);
+            console.log(RacesFromContext);
             } 
             else {
               setStatus("Please enter a name");
