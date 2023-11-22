@@ -1,14 +1,16 @@
 import { useContext } from "react";
 import Carousel from "react-multi-carousel";
-import { TeamContext } from "../../contexts/TeamContext";
 import TeamItem from "./TeamItem";
 import "react-multi-carousel/lib/styles.css";
 import "../../css/TeamCarousel.css";
 import { ITeam } from "../../interfaces/Teams/ITeam";
-import { ITeamContext } from "../../interfaces/Teams/ITeamContext";
+import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IService } from "../../interfaces/IService";
+import { EntityContext } from "../../contexts/EntityContext";
 
 const TeamList = () => {
-  const { teams } = useContext(TeamContext) as ITeamContext;
+  const context = useContext(EntityContext) as IEntityContext<IService<ITeam>>;
+    const teams = context.items as [];
 
   const getTeamsJSX = () => {
     return teams.map((team: ITeam) => (

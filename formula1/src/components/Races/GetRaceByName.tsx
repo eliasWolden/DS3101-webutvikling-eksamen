@@ -1,12 +1,13 @@
 import { useState, ChangeEvent, useContext } from 'react';
-import { RaceContext } from '../../contexts/RaceContext';
 import { IRace } from '../../interfaces/Races/IRace';
 import '../../css/main.css';
+import { IEntityContext } from '../../interfaces/IEntityContext';
+import { EntityContext } from '../../contexts/EntityContext';
 
 const EditRace = () => {
   const [GrandPrix, setGrandPrix] = useState<string>("");
   const [Status, setStatus] = useState("");
-  const context = useContext(RaceContext);
+  const context = useContext(EntityContext) as IEntityContext<IRace>;
 
     const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ grandPrix: "",  winnerName: "", winnerTime: "", numberOfLaps: 0, image: ""});
 
@@ -32,7 +33,7 @@ const EditRace = () => {
           if (context) {
             if (GrandPrix !== "") {
             const RacesFromContext = await context?.getByName(GrandPrix);
-            setRacesToUpdate(RacesFromContext.racesByName);
+            setRacesToUpdate(RacesFromContext);
             } 
             else {
               setStatus("Please enter a name");
@@ -45,7 +46,7 @@ const EditRace = () => {
       
     const saveChanges = () => {
         if(context){
-        context.editRaces(RacesToUpdate);
+        context.editItem(RacesToUpdate);
         console.log(RacesToUpdate);
         } else{
             setStatus("Error saving changes");

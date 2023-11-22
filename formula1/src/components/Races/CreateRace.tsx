@@ -1,6 +1,7 @@
 import { FC, useState, ChangeEvent, useContext } from 'react';
 import { IRace } from '../../interfaces/Races/IRace';
-import { RaceContext } from '../../contexts/RaceContext';
+import { IEntityContext } from '../../interfaces/IEntityContext';
+import { EntityContext } from '../../contexts/EntityContext';
 
 const AddRace: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom
@@ -15,7 +16,7 @@ const AddRace: FC = () => {
   const [numberOfLaps, setNumberOfLaps] = useState<number>(Number);
   const [image, setImage] = useState<File | null>(null);
 
-  const context = useContext(RaceContext);
+  const context = useContext(EntityContext) as IEntityContext<IRace>;
 
     const setHandler = (e: ChangeEvent<any>) => {
       const { name, value, files } = e.target;
@@ -65,7 +66,7 @@ const AddRace: FC = () => {
     const handleAdd = async (newRace: IRace, image : File, subfolder : string) => {
       try {
         if(context)
-          await context.postRace(newRace);
+          await context.postItem(newRace);
           await context?.postImage(image, subfolder);
 
       } catch (error) {

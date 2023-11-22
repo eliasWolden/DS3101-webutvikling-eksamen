@@ -2,9 +2,12 @@ import { FC } from "react";
 import "../../css/RacePage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { IRace } from "../../interfaces/Races/IRace";
+import { EntityProvider } from "../../contexts/EntityProvider";
+import { RaceService } from "../../services/CreateService";
 
 const RaceItem: FC<IRace> = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
   return (
+    <EntityProvider service={RaceService}>
     <div className="col-md-4 mb-4 w-75 container">
       <article className="race-card-article">
         <img
@@ -25,6 +28,7 @@ const RaceItem: FC<IRace> = ({ winnerName, winnerTime, grandPrix, numberOfLaps, 
         </div>
       </article>
     </div>
+    </EntityProvider>
   );
 };
 

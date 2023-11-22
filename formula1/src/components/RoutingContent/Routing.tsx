@@ -1,13 +1,12 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { DriverPage, HomePage, RacePage, TeamPage } from "../../pages";
-import { DriverProvider } from "../../contexts/DriverContext";
-import { RaceProvider } from "../../contexts/RaceContext";
-import { TeamProvider } from "../../contexts/TeamContext";
 import CRUDDriverPage from "../../pages/CRUDDriverPage";
 import CRUDRacePage from "../../pages/CRUDRacePage";
 import "../../css/main.css";
 import { useEffect, useState } from "react";
 import CRUDTeamPage from "../../pages/CRUDTeamPage";
+import { EntityProvider } from "../../contexts/EntityProvider";
+import { DriverService, RaceService, TeamService } from "../../services/CreateService";
 
 function Routing() {
   const [open, setOpen] = useState(false);
@@ -28,9 +27,9 @@ function Routing() {
   return (
     <>
       <BrowserRouter>
-        <DriverProvider>
-          <RaceProvider>
-            <TeamProvider>
+        <EntityProvider service={DriverService}>
+          <EntityProvider service={RaceService}>
+            <EntityProvider service={TeamService}>
               {!open && (
                 <button
                   className="image-button open-button"
@@ -108,9 +107,9 @@ function Routing() {
                 <Route path="/CRUDDriverPage" element={<CRUDDriverPage />} />
                 <Route path="/CRUDTeamPage" element={<CRUDTeamPage />} />
               </Routes>
-            </TeamProvider>
-          </RaceProvider>
-        </DriverProvider>
+            </EntityProvider>
+          </EntityProvider>
+        </EntityProvider>
       </BrowserRouter>
     </>
   );

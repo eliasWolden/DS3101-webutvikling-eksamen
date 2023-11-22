@@ -4,6 +4,8 @@ import DriverList from "../Drivers/DriverList";
 import RaceList from "../Races/RaceList";
 import Quiz from "./Quiz";
 import "../../css/QuizGame.css";
+import { EntityProvider } from "../../contexts/EntityProvider";
+import { DriverService, RaceService, TeamService } from "../../services/CreateService";
 
 const Content = () => {
   return (
@@ -14,7 +16,9 @@ const Content = () => {
             Formula 1 Drivers
           </h3>
         </div>
+        <EntityProvider service={DriverService}>
         <DriverList />
+        </EntityProvider>
       </section>
       <section>
         <div>
@@ -22,7 +26,9 @@ const Content = () => {
             Formula 1 Teams
           </h3>
         </div>
+        <EntityProvider service={TeamService}>
         <TeamList />
+        </EntityProvider>
       </section>
       <section>
         <div>
@@ -30,7 +36,9 @@ const Content = () => {
             Formula 1 Races
           </h3>
         </div>
+        <EntityProvider service={RaceService}>
         <RaceList />
+        </EntityProvider>
       </section>
       <section>
         <div>

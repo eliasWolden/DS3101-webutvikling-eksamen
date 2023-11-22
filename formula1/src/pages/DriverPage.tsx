@@ -1,18 +1,16 @@
 import DriverList from "../components/Drivers/DriverList";
-import TeamList from "../components/Teams/TeamList";
+import { EntityProvider } from "../contexts/EntityProvider";
+import { DriverService } from "../services/CreateService";
 
 const DriverPage = () => {
   /* velger sjaførs sitt lag */
 
   return (
-    <div>
+    <EntityProvider service={DriverService}>
       <section>
         <DriverList />
       </section>
-      <section>
-        <TeamList />
-      </section>
-    </div>
+    </EntityProvider>
   );
 };
 

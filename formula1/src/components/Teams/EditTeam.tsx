@@ -1,43 +1,46 @@
 import { useState, ChangeEvent, useContext } from 'react';
-import { TeamContext } from '../../contexts/TeamContext';
 import '../../css/main.css';
 import { ITeam } from '../../interfaces/Teams/ITeam';
+import { IEntityContext } from '../../interfaces/IEntityContext';
+import { EntityContext } from '../../contexts/EntityContext';
 
 const EditTeam = () => {
-  const [id, setId] = useState<string>("1");
+  const [id, setId] = useState<number>(1);
   const [Status, setStatus] = useState("");
 
-  const context = useContext(TeamContext);
+  const context = useContext(EntityContext) as IEntityContext<ITeam>;
 
-    const [teamsToUpdate, setteamsToUpdate] = useState<ITeam>({ manufacturer: "", image: "", driver1: "", driver2: ""});
+  const [teamsToUpdate, setTeamsToUpdate] = useState<ITeam>({ manufacturer: "", image: "", driver1: "", driver2: ""});
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       switch (e.currentTarget.name) {
         case "id":
-          setId(e.currentTarget.value);
+          setId(parseInt(e.currentTarget.value));
           break;
         case "manufacturer":
-          setteamsToUpdate({ ...teamsToUpdate, manufacturer: e.currentTarget.value });
+          setTeamsToUpdate({ ...teamsToUpdate, manufacturer: e.currentTarget.value });
           break;
         case "Driver1":
-          setteamsToUpdate({ ...teamsToUpdate, driver1: (e.currentTarget.value) });
+          setTeamsToUpdate({ ...teamsToUpdate, driver1: (e.currentTarget.value) });
           break;
         case "Driver2":
-          setteamsToUpdate({ ...teamsToUpdate, driver2: e.currentTarget.value });
+          setTeamsToUpdate({ ...teamsToUpdate, driver2: e.currentTarget.value });
           break;
       }
     };
 
     const getByIdFromContext = async () => {
         const teamsFromContext = await context?.getById(id);
-        setteamsToUpdate(teamsFromContext.teamsById);
-        console.log(teamsFromContext.teamsById);
+        if(teamsFromContext != null){
+        setTeamsToUpdate(teamsFromContext);
+        console.log(teamsFromContext);
+        }
     };
 
     const saveChanges = () => {
       try {
         if(context){
-        context.editTeams(teamsToUpdate);
+        context.editItem(teamsToUpdate);
         console.log(teamsToUpdate);
         setStatus("You´ve edited a team")
       }
@@ -61,7 +64,7 @@ const EditTeam = () => {
           <label>id</label>
           <input
             name='id'
-            type="text"
+            type="number"
             className='form-control'
             placeholder='id'
             onChange={handleChange}

@@ -1,6 +1,7 @@
 import { FC, useState, ChangeEvent, useContext } from 'react';
 import { IDriver } from '../../interfaces/Drivers/IDriver';
-import { DriverContext } from '../../contexts/DriverContext';
+import { IEntityContext } from '../../interfaces/IEntityContext';
+import { EntityContext } from '../../contexts/EntityContext';
 
 const AddDriver: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom
@@ -19,7 +20,7 @@ const AddDriver: FC = () => {
   const subfolder = "Drivers";
 
 
-  const context = useContext(DriverContext);
+  const context = useContext(EntityContext) as IEntityContext<IDriver>;
 
     const setHandler = (e: ChangeEvent<any>) => {
       const { name, value, files } = e.target;
@@ -66,10 +67,10 @@ const AddDriver: FC = () => {
     }
     };
 
-    const handleAdd = async (newDriver: IDriver, image : File, subfolder : string) => {
+    const handleAdd = async (newItem : IDriver,  image : File, subfolder : string) => {
       try {
         if(context) {
-          await context.postDriver(newDriver);
+          await context.postItem(newItem);
           await context.postImage(image, subfolder);
         }
 

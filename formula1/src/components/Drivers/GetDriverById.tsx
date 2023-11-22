@@ -1,21 +1,20 @@
 import { useState, ChangeEvent, useContext } from 'react';
-import { DriverContext } from '../../contexts/DriverContext';
 import { IDriver } from '../../interfaces/Drivers/IDriver';
 import '../../css/main.css';
+import { IEntityContext } from '../../interfaces/IEntityContext';
+import { EntityContext } from '../../contexts/EntityContext';
 
 const EditDriver = () => {
-    const [id, setId] = useState<string>("1");
+    const [id, setId] = useState<number>(1);
 
-
-
-  const context = useContext(DriverContext);
+    const context = useContext(EntityContext) as IEntityContext<IDriver>;
 
     const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({ name: "", age: 0, nationality: "", image: "", teamId: 0 });
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       switch (e.currentTarget.name) {
         case "id":
-          setId(e.currentTarget.value);
+          setId(parseInt(e.currentTarget.value));
           break;
         case "name":
           setDriversToUpdate({ ...driversToUpdate, name: e.currentTarget.value });
@@ -33,15 +32,14 @@ const EditDriver = () => {
     };
 
     const getByIdFromContext = async () => {
-        const driversFromContext = await context?.getById(id);
-        setDriversToUpdate(driversFromContext.driversById);
-        console.log(driversFromContext.driversById);
+        const driversToUpdate = await context?.getById(id);
+        setDriversToUpdate(driversToUpdate);
+        console.log(driversToUpdate);
 
     };
-
     const saveChanges = () => {
         if(context){
-        context.editDrivers(driversToUpdate);
+        context.editItem(driversToUpdate);
         }
     };
   
@@ -58,7 +56,7 @@ const EditDriver = () => {
           <label>id</label>
           <input
             name='id'
-            type="text"
+            type="number"
             className='form-control'
             placeholder='id'
             onChange={handleChange}
@@ -129,7 +127,7 @@ const EditDriver = () => {
       </div>
       <div className='col'>
         <img className='image-size-medium'
-          src={`http://localhost:5257/api/Image/driver/${driversToUpdate.image}`}
+          src={`http://localhost:5257/api/Image/driver/${driversToUpdate?.image}`}
           alt='Not found'
           onError={(e) => {
             const target = e.target as HTMLImageElement;

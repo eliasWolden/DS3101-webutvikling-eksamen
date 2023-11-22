@@ -1,17 +1,20 @@
 import { useContext } from "react";
 import Carousel from "react-multi-carousel";
-import { DriverContext } from "../../contexts/DriverContext";
 import DriverItem from "./DriverItem";
 import "react-multi-carousel/lib/styles.css";
 import "../../css/DriverCarousel.css";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { IDriverContext } from "../../interfaces/Drivers/IDriverContext";
+import { EntityContext } from "../../contexts/EntityContext";
+import { IService } from "../../interfaces/IService";
+import { IEntityContext } from "../../interfaces/IEntityContext";
 
 const DriverList = () => {
-  const { drivers } = useContext(DriverContext) as IDriverContext;
-
+  
+  const context = useContext(EntityContext) as IEntityContext<IService<IDriver>>;
+    const drivers = context.items as [];
+    
   const getDriversJSX = () =>
-    drivers.map((driver: IDriver) => (
+  drivers.map((driver: IDriver) => (
       <DriverItem
         key={driver.id}
         id={driver.id}

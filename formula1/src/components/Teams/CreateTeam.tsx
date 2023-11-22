@@ -1,6 +1,7 @@
 import { FC, useState, ChangeEvent, useContext } from 'react';
 import { ITeam } from '../../interfaces/Teams/ITeam';
-import { TeamContext } from '../../contexts/TeamContext';
+import { IEntityContext } from '../../interfaces/IEntityContext';
+import { EntityContext } from '../../contexts/EntityContext';
 
 const AddTeam: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom
@@ -19,7 +20,7 @@ const AddTeam: FC = () => {
 
 
 
-  const context = useContext(TeamContext);
+  const context = useContext(EntityContext) as IEntityContext<ITeam>;
 
     const setHandler = (e: ChangeEvent<any>) => {
       const { name, value, files } = e.target;
@@ -67,7 +68,7 @@ const AddTeam: FC = () => {
     const handleAdd = async (newTeam: ITeam) => {
       try {
         if(context) 
-          await context.postTeam(newTeam);
+          await context.postItem(newTeam);
         }
        catch (error) {
         console.log('Error adding Team', error);

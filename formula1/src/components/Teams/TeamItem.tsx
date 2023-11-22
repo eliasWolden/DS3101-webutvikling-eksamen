@@ -3,6 +3,8 @@ import "../../css/main.css";
 import "../../css/TeamCarousel.css";
 import { ITeam } from "../../interfaces/Teams/ITeam";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { TeamService } from "../../services/CreateService";
+import { EntityProvider } from "../../contexts/EntityProvider";
 
 
 //laget til sjaføren gjør det mulig å bruke isSelected for å finne rett lag
@@ -10,6 +12,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
   const modified_driver1=driver1.replace(" ","-");
   const modified_driver2=driver2.replace(" ","-");
   return (
+    <EntityProvider service={TeamService}>
     <div className="col-md-4 mb-4 w-75 team-card">
       <div className="card-body">
         <h5 className="card-title-team">{manufacturer} <img
@@ -51,6 +54,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
         draggable="false"
         />
     </div>
+    </EntityProvider>
   );
 };
 export default TeamItem;

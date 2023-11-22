@@ -1,5 +1,7 @@
 import { FC, useState, useContext } from "react";
-import { DriverContext } from "../../contexts/DriverContext";
+import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IDriver } from "../../interfaces/Drivers/IDriver";
+import { EntityContext } from "../../contexts/EntityContext";
 
 const DeleteDriver : FC = () => {
     const [firstName, setFirstName] = useState('');
@@ -7,13 +9,13 @@ const DeleteDriver : FC = () => {
     const name = firstName + " " + lastName;
     const [deleteStatus, setDeleteStatus] = useState("");
 
-    const context  = useContext(DriverContext);
+    const context = useContext(EntityContext) as IEntityContext<IDriver>;
     
     const handleDelete = async () => {
         try {
             if(context) {
                 if(firstName !== '' && lastName != '') {
-            await context.deleteDriver(name);
+            await context.deleteItemByName(name);
             setFirstName('');
             setLastName('');
             setDeleteStatus("You deleted a driver")

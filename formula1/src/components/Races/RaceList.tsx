@@ -1,13 +1,15 @@
 import { useContext } from "react";
 import Carousel from "react-multi-carousel";
 import RaceItem from "./RaceItem";
-import { RaceContext } from "../../contexts/RaceContext";
-import { IRaceContext } from "../../interfaces/Races/IRaceContext";
 import { IRace } from "../../interfaces/Races/IRace";
+import { EntityContext } from "../../contexts/EntityContext";
+import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IService } from "../../interfaces/IService";
 
 const RaceList = () => {
-  const { races } = useContext(RaceContext) as IRaceContext;
-
+  const context = useContext(EntityContext) as IEntityContext<IService<IRace>>;
+    const races = context.items as [];
+    
   const getRacesJSX = () =>
     races.map((race: IRace) => (
       <RaceItem

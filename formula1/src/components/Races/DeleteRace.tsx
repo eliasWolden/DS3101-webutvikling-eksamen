@@ -1,18 +1,20 @@
 import { FC, useState, useContext } from "react";
-import { RaceContext } from "../../contexts/RaceContext";
+import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IRace } from "../../interfaces/Races/IRace";
+import { EntityContext } from "../../contexts/EntityContext";
 
 const DeleteRace : FC = () => {
     const [id, setId] = useState(0);
     const [Status, setStatus] = useState("");
 
-    const context  = useContext(RaceContext);
+    const context = useContext(EntityContext) as IEntityContext<IRace>;
     
     const handleDelete = async () => {
         console.log(id);
         try {
             if(context) {
                 if(id !== 0) {  
-            await context.deleteRace(id);
+            await context.deleteItemById(id);
             setStatus("You deleted a Race")
             } 
             else {

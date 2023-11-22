@@ -1,17 +1,19 @@
 import { FC, useState, useContext } from "react";
-import { TeamContext } from "../../contexts/TeamContext";
+import { ITeam } from "../../interfaces/Teams/ITeam";
+import { IEntityContext } from "../../interfaces/IEntityContext";
+import { EntityContext } from "../../contexts/EntityContext";
 
 const DeleteTeam : FC = () => {
     const [manufacturer, setManufacturer] = useState('');
     const [Status, setStatus] = useState("");
 
-    const context  = useContext(TeamContext);
+    const context = useContext(EntityContext) as IEntityContext<ITeam>;
     
     const handleDelete = async () => {
         try {
             if(context) {
                 if(manufacturer !== "") {
-            await context.deleteTeam(manufacturer);
+            await context.deleteItemByName(manufacturer);
             setStatus("You deleted a Team")
             }
             else {
