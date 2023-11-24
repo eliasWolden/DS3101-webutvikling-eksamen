@@ -18,7 +18,7 @@ const DeleteDriver : FC = () => {
             await context.deleteItemByName(name);
             setFirstName('');
             setLastName('');
-            setDeleteStatus("You deleted a driver")
+            setDeleteStatus("Driver deleted")
             }
             else {
                 setDeleteStatus("Please enter both Firstname and Lastname");
@@ -62,7 +62,7 @@ return (
         <div className='row'>
             <div className='form-group col-md-4'>
                 <input type="button" className='btn btn-danger' onClick={handleDelete} value="Delete driver" />
-                <span className="">{deleteStatus}</span>
+          <span className={deleteStatus === 'Driver deleted' ? 'success-message' : 'text-danger'}>{deleteStatus}</span>
             </div>
         </div>
 

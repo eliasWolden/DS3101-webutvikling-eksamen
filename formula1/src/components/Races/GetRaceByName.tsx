@@ -9,7 +9,13 @@ const EditRace = () => {
   const [Status, setStatus] = useState("");
   const context = useContext(EntityContext) as IEntityContext<IRace>;
 
-    const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ grandPrix: "",  winnerName: "", winnerTime: "", numberOfLaps: 0, image: ""});
+    const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ 
+      grandPrix: "",
+      winnerName: "",
+      winnerTime: "",
+      numberOfLaps: 0,
+      image: ""
+    });
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       switch (e.currentTarget.name) {
@@ -35,9 +41,10 @@ const EditRace = () => {
             const RacesFromContext = await context?.getByName(GrandPrix);
             setRacesToUpdate(RacesFromContext);
             console.log(RacesFromContext);
+            setStatus('Your race!');
             } 
             else {
-              setStatus("Please enter a name");
+              setStatus("Please enter a GrandPrix");
             }
           }
           } catch (error) {
@@ -119,7 +126,7 @@ const EditRace = () => {
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save Race" onClick={saveChanges}/>
-          <span>{Status}</span>
+          <span className={Status=== 'Your race!' ? 'success-message' : 'text-danger'}>{Status}</span>
         </div>
       </div>
 

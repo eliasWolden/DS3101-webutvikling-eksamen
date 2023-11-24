@@ -5,9 +5,11 @@ import { IEntityContext } from '../../interfaces/IEntityContext';
 import { EntityContext } from '../../contexts/EntityContext';
 
 const EditDriver = () => {
-    const [id, setId] = useState<number>(1);
+    const [id, setId] = useState<number>(0);
 
     const context = useContext(EntityContext) as IEntityContext<IDriver>;
+    const [Status, setStatus] = useState("");
+
 
     const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({ name: "", age: 0, nationality: "", image: "", teamId: 0 });
 
@@ -32,9 +34,19 @@ const EditDriver = () => {
     };
 
     const getByIdFromContext = async () => {
+      if(id === 0) {
+        setStatus("Please enter an id");
+        return;
+      }
+      try {
         const driversToUpdate = await context?.getById(id);
         setDriversToUpdate(driversToUpdate);
         console.log(driversToUpdate);
+        setStatus('');
+      }
+      catch {
+        setStatus("Error getting driver");
+      }
 
     };
     const saveChanges = () => {
@@ -43,8 +55,6 @@ const EditDriver = () => {
         }
     };
   
-  
-
 
   return (
     <form className="bg-light p-4 m-4 border rounded shadow-lg">
@@ -61,6 +71,7 @@ const EditDriver = () => {
             placeholder='id'
             onChange={handleChange}
           />
+          <span className={Status === 'Please enter an id' ? 'text-danger' : 'success-message'}>{Status}</span>
         </div>
 
         <div className='form-group col-md-6'>

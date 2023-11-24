@@ -15,7 +15,7 @@ const DeleteRace : FC = () => {
             if(context) {
                 if(id !== 0) {  
             await context.deleteItemById(id);
-            setStatus("You deleted a Race")
+            setStatus("Race deleted")
             } 
             else {
                 setStatus("Please enter an ID");
@@ -43,7 +43,7 @@ return (
         <div className='row'>
             <div className='form-group col-md-4'>
                 <input type="button" className='btn btn-danger' onClick={handleDelete} value="Delete Race" />
-                <span>{Status}</span>
+                <span className={Status === 'Race deleted' ? 'success-message' : 'text-danger'}>{Status}</span>
             </div>
         </div>
 

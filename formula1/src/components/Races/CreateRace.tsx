@@ -46,18 +46,18 @@ const AddRace: FC = () => {
       }
     };
 
-    const saveDriver = () => {
-      if(image != null) {
-        const newDriver: IRace = {
+    const saveRace = () => {
+      if(firstName && lastName && winnerTime && grandPrix && numberOfLaps && image) {
+        const newRace: IRace = {
         winnerName: fullName,
         winnerTime: winnerTime,
         grandPrix: grandPrix,
-        image: image!.name,
+        image: image.name,
         numberOfLaps: numberOfLaps,
       }
-      handleAdd(newDriver, image!, subfolder);
+      handleAdd(newRace, image, subfolder);
       setStatus("Race created");
-      console.log(newDriver);
+      console.log(newRace);
     } else {
       setStatus("Please fill out all fields");
     };
@@ -67,12 +67,11 @@ const AddRace: FC = () => {
       try {
         if(context)
           await context.postItem(newRace);
-          await context?.postImage(image, subfolder);
+          await context.postImage(image, subfolder);
 
       } catch (error) {
-        console.log('Error adding driver', error);
+        console.log('Error adding race', error);
         setStatus("Something went wrong with adding...")
-
       }
     }
 
@@ -110,7 +109,7 @@ const AddRace: FC = () => {
         <label>Race time</label>
         <input
           name='winnerTime'
-          type="text"
+          
           className='form-control'
           placeholder='Race time'
           onChange={setHandler}
@@ -156,8 +155,8 @@ const AddRace: FC = () => {
 
       <div className='row'>
         <div className='form-group col-md-4'>
-          <input type="button" className='btn btn-primary' value="Create race" onClick={saveDriver}/>
-          <span>{Status}</span>
+          <input type="button" className='btn btn-primary' value="Create race" onClick={saveRace}/>
+          <span className={Status === 'Race created' ? 'success-message' : 'text-danger'}>{Status}</span>
         </div>
       </div>
     </form>
