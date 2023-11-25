@@ -1,12 +1,11 @@
 import { FC } from "react";
 import '../../css/DriverCarousel.css'; // Import the CSS file
 import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { Link } from "react-router-dom";
 
 // Define the DriverItem component
-const DriverItem: FC<IDriver> = ({id, name, age, nationality, image, teamId }) => {
+const SelectedDriverItem: FC<IDriver> = ({ name, age, nationality, image, teamId }) => {
   return (
-    <div key={id} className="driver-card">
+    <div className="driver-card">
       <div className="driver-card-wrapper">
           <div className="driver-card-image">
             <img
@@ -21,10 +20,8 @@ const DriverItem: FC<IDriver> = ({id, name, age, nationality, image, teamId }) =
             />
         </div>
 
-            <div className="driver-card-text-body">
-          <Link to={`/DriverPage/${name}`}>
+          <div className="driver-card-text-body">
             <h2 className="card-title-driver">{name}</h2>
-          </Link>
             <p className="card-text-driver">Nationality: {nationality}</p>
             <p className="card-text-driver">Age: {age}</p>
             <p className="card-text-driver"> Team {teamId}</p>
@@ -34,4 +31,4 @@ const DriverItem: FC<IDriver> = ({id, name, age, nationality, image, teamId }) =
   );
 };
 
-export default DriverItem;
+export default SelectedDriverItem;

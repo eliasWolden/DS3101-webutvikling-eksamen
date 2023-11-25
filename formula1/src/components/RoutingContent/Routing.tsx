@@ -100,7 +100,7 @@ function Routing() {
               )}
               <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/DriverPage" element={<DriverPage />} />
+                <Route path="/DriverPage/:name" element={<DriverPage />} />
                 <Route path="/RacePage" element={<RacePage />} />
                 <Route path="/TeamPage" element={<TeamPage />} />
                 <Route path="/CRUDRacePage" element={<CRUDRacePage />} />

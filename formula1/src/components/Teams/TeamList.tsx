@@ -15,7 +15,7 @@ const TeamList = () => {
   const getTeamsJSX = () => {
     return teams.map((team: ITeam) => (
       <TeamItem
-        key={`team-item-${team.id}`}
+        key={`team-item-${team.id+team.manufacturer}`}
         id={team.id}
         manufacturer={team.manufacturer}
         driver1={team.driver1}

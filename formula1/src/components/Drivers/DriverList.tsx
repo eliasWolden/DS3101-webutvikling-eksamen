@@ -23,7 +23,7 @@ const DriverList = () => {
         nationality={driver.nationality}
         image={`http://localhost:5257/api/Image/driver/${driver.image}`}
         teamId={driver.teamId}
-      />
+        />
     ));
 
   const responsive = {

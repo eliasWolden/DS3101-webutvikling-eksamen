@@ -2,13 +2,11 @@ import { FC } from "react";
 import "../../css/RacePage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { IRace } from "../../interfaces/Races/IRace";
-import { EntityProvider } from "../../contexts/EntityProvider";
-import { RaceService } from "../../services/CreateService";
+import { Link } from "react-router-dom";
 
-const RaceItem: FC<IRace> = ({ winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
+const RaceItem: FC<IRace> = ({id, winnerName, winnerTime, grandPrix, numberOfLaps, image }) => {
   return (
-    <EntityProvider service={RaceService}>
-    <div className="col-md-4 mb-4 w-75 container">
+    <div key={id} className="col-md-4 mb-4 w-75 container">
       <article className="race-card-article">
         <img
           className="race-card-image-size-race"
@@ -22,13 +20,13 @@ const RaceItem: FC<IRace> = ({ winnerName, winnerTime, grandPrix, numberOfLaps, 
             Winner Time: {winnerTime}
           </p>
           <p className="race-card-text-info">Number of Laps: {numberOfLaps}</p>
-          <a href="#" className="btn btn-success race-card-button">
-            Les mer om {winnerName}
-          </a>
+
+          <Link to={`/DriverPage/${winnerName}`}>
+            <button className="btn btn-primary">Read more</button>
+          </Link>
         </div>
       </article>
     </div>
-    </EntityProvider>
   );
 };
 
