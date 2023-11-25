@@ -25,15 +25,17 @@ const SelectedDriverList: React.FC<SelectedDriverListProps> = ({ name }) => {
 
   return (
 <div className="selected-driver">
-  <h2>Driver</h2>
-    <p>{selectedDriver?.name}</p>
-    <img
+  <div className="selected-driver-image-container">
+    <div className="selected-content">
+        <img
         src={`http://localhost:5257/api/Image/driver/${selectedDriver?.image}`}
         alt="bilde av sjafør"
         className=""
         draggable="false"
-      />        
+        />        
+      </div>
   </div>
+</div>
   );
 };
 

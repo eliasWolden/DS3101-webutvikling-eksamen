@@ -1,16 +1,23 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { IRace } from "../../interfaces/Races/IRace";
 import { EntityContext } from "../../contexts/EntityContext";
 import { IEntityContext } from "../../interfaces/IEntityContext";
 import { IService } from "../../interfaces/IService";
-import { SelectedDriverListProps } from "../../interfaces/ISelectedDriverListProps";
 import SelectedRaceItem from "./SelectedRaceItem";
+import Carousel from "react-multi-carousel";
+import { SelectedRaceListProps } from "../../interfaces/ISelectedRaceListProps";
 
-const SelectedRaceList: React.FC<SelectedDriverListProps> = ({ name }) => {
+const SelectedRaceList: React.FC<SelectedRaceListProps> = ({ name, updateAmountOfWins }) => {
     const context = useContext(EntityContext) as IEntityContext<IService<IRace>>;
     const racesFromContext = (context.items as unknown) as IRace[];
 
     const races = racesFromContext.filter((race) => race.winnerName.toLowerCase() === name);
+
+    const amountOfWins = races.length;
+
+    useEffect(() => {
+      updateAmountOfWins(amountOfWins);
+    }, [amountOfWins, updateAmountOfWins]);
 
     const getRacesJSX = () =>
         races.map((race: IRace) => (
@@ -26,9 +33,26 @@ const SelectedRaceList: React.FC<SelectedDriverListProps> = ({ name }) => {
             </div>
         ));
 
-    return (
-        <div className="row selected-race-container">
+        const responsive = {
+            superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 1 },
+            desktop: { breakpoint: { max: 3000, min: 1024 }, items: 1 },
+            tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+            mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+          };
+        
+          return (
+            <div className="selected-race-container">
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                showDots={false}
+                draggable={true}
+                arrows={false}
+                autoPlay={true}
+                itemClass="race-carousel-item"
+              >
             {getRacesJSX()}
+                </Carousel>
         </div>
     );
 };

@@ -13,7 +13,7 @@ const SelectedTeamList: React.FC<SelectedDriverListProps> = ({ name }) => {
     const Teams = TeamsFromContext.filter((Team) => Team.driver1.toLowerCase() === name || Team.driver2.toLowerCase() === name);
     const getTeamsJSX = () =>
         Teams.map((team: ITeam) => (
-            <div key={team.id} className="col-md-6">
+            <div key={team.id}>
                 <SelectedTeamItem
                   id={team.id}
                   manufacturer={team.manufacturer}
