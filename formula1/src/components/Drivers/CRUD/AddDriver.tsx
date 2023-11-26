@@ -1,13 +1,12 @@
-import { FC, useState, ChangeEvent, useContext } from "react";
-import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { IGeneralContext } from "../../interfaces/IGeneralContext";
-import { GeneralContext } from "../../contexts/GeneralProvider";
-import "../../css/CRUD.css";
-import DriverForm from "./DriverForm";
-import TeamSelect from "./TeamSelect";
-import ImageUpload from "../Shared/ImageUpload";
-import StatusMessage from "../Shared/StatusMessage";
-import DriverInfoForm from "./DriverInfoForm";
+import { ChangeEvent, FC, useContext, useState } from "react";
+import { IGeneralContext } from "../../../interfaces/IGeneralContext";
+import { IDriver } from "../../../interfaces/Drivers/IDriver";
+import { GeneralContext } from "../../../contexts/GeneralProvider";
+import DriverForm from "../Forms/DriverForm";
+import DriverInfoForm from "../Forms/DriverInfoForm";
+import TeamSelect from "../Forms/TeamSelect";
+import ImageUpload from "../../Shared/ImageUpload";
+import StatusMessage from "../../Shared/StatusMessage";
 
 const AddDriver: FC = () => {
   const [firstName, setFirstName] = useState("");

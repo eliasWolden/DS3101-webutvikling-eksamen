@@ -1,6 +1,6 @@
 import { FC } from "react";
-import "../../css/DriverCarousel.css";
-import { IDriver } from "../../interfaces/Drivers/IDriver";
+import "../../../css/DriverCarousel.css";
+import { IDriver } from "../../../interfaces/Drivers/IDriver";
 import { Link } from "react-router-dom";
 
 const DriverItem: FC<IDriver> = ({
