@@ -1,4 +1,3 @@
-// DriverDetailsInputs.tsx
 import React from "react";
 
 interface DriverDetailsInputsProps {

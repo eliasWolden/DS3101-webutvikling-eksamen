@@ -5,7 +5,7 @@ import { GeneralContext } from "../../contexts/GeneralProvider";
 import "../../css/CRUD.css";
 import DriverForm from "./DriverForm";
 import TeamSelect from "./TeamSelect";
-import ImageUpload from "./ImageUpload";
+import ImageUpload from "../Shared/ImageUpload";
 import StatusMessage from "../Shared/StatusMessage";
 import DriverInfoForm from "./DriverInfoForm";
 
