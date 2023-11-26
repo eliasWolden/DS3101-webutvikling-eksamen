@@ -66,7 +66,16 @@ const DeleteDriver: FC = () => {
               onClick={handleDelete}
               value="Delete driver"
             />
-            <span className={deleteStatus === "Driver deleted"? "success-message": "text-danger"}> {deleteStatus}</span>
+            <span
+              className={
+                deleteStatus === "Driver deleted"
+                  ? "success-message"
+                  : "text-danger"
+              }
+            >
+              {" "}
+              {deleteStatus}
+            </span>
           </div>
         </div>
       </form>

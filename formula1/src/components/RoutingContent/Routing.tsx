@@ -6,7 +6,11 @@ import "../../css/main.css";
 import { useEffect, useState } from "react";
 import CRUDTeamPage from "../../pages/CRUDTeamPage";
 import { GeneralProvider } from "../../contexts/GeneralProvider";
-import { DriverService, RaceService, TeamService } from "../../services/CreateService";
+import {
+  DriverService,
+  RaceService,
+  TeamService,
+} from "../../services/CreateService";
 
 function Routing() {
   const [open, setOpen] = useState(false);
@@ -79,7 +83,10 @@ function Routing() {
 
                       <ul className="list-2-in-box">
                         <li>
-                          <Link to="http://localhost:5257/index.html" className="nav-link">
+                          <Link
+                            to="http://localhost:5257/index.html"
+                            className="nav-link"
+                          >
                             Docs
                           </Link>
                         </li>

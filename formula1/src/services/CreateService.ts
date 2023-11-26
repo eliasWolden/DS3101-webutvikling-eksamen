@@ -5,11 +5,10 @@ import { IRace } from "../interfaces/Races/IRace";
 import { ITeam } from "../interfaces/Teams/ITeam";
 
 const createService = <T>(controller: string) => {
-  
   const getAll = async (): Promise<{ items: T[] }> => {
     try {
       const result = await axios.get(controller);
-      const items = result.data.items || result.data; // Adjust this line based on your API response structure
+      const items = result.data.items || result.data;
       return { items };
     } catch (error) {
       console.log(`Error getting all items from ${controller}`, error);
@@ -60,13 +59,16 @@ const createService = <T>(controller: string) => {
       throw error;
     }
   };
-  
+
   const deleteItemById = async (id: number): Promise<void> => {
     try {
       await axios.delete(`${controller}/${id}`);
       console.log(`Item with ID ${id} deleted successfully from ${controller}`);
     } catch (error) {
-      console.log(`Error deleting item with ID ${id} from ${controller}`, error);
+      console.log(
+        `Error deleting item with ID ${id} from ${controller}`,
+        error
+      );
       throw error;
     }
   };
@@ -74,25 +76,35 @@ const createService = <T>(controller: string) => {
   const deleteItemByName = async (name: string): Promise<void> => {
     try {
       await axios.delete(`${controller}/${name}`);
-      console.log(`Item with name ${name} deleted successfully from ${controller}`);
+      console.log(
+        `Item with name ${name} deleted successfully from ${controller}`
+      );
     } catch (error) {
-      console.log(`Error deleting item with ID ${name} from ${controller}`, error);
+      console.log(
+        `Error deleting item with ID ${name} from ${controller}`,
+        error
+      );
       throw error;
     }
   };
 
-
   return {
     getAll,
-    getById, 
+    getById,
     getByName,
-    post, 
-    put, 
+    post,
+    put,
     deleteItemById,
     deleteItemByName,
   } as IService<T>;
 };
 
-export const DriverService = createService<IDriver>("http://localhost:5257/api/Driver");
-export const RaceService = createService<IRace>("http://localhost:5257/api/Race");
-export const TeamService = createService<ITeam>("http://localhost:5257/api/team");
+export const DriverService = createService<IDriver>(
+  "http://localhost:5257/api/Driver"
+);
+export const RaceService = createService<IRace>(
+  "http://localhost:5257/api/Race"
+);
+export const TeamService = createService<ITeam>(
+  "http://localhost:5257/api/team"
+);

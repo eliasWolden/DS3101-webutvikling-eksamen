@@ -5,7 +5,11 @@ import RaceList from "../Races/RaceList";
 import Quiz from "./Quiz";
 import "../../css/QuizGame.css";
 import { GeneralProvider } from "../../contexts/GeneralProvider";
-import { DriverService, RaceService, TeamService } from "../../services/CreateService";
+import {
+  DriverService,
+  RaceService,
+  TeamService,
+} from "../../services/CreateService";
 
 const Content = () => {
   return (
@@ -17,7 +21,7 @@ const Content = () => {
           </h3>
         </div>
         <GeneralProvider service={DriverService}>
-        <DriverList />
+          <DriverList />
         </GeneralProvider>
       </section>
       <section>
@@ -27,7 +31,7 @@ const Content = () => {
           </h3>
         </div>
         <GeneralProvider service={TeamService}>
-        <TeamList />
+          <TeamList />
         </GeneralProvider>
       </section>
       <section>
@@ -37,7 +41,7 @@ const Content = () => {
           </h3>
         </div>
         <GeneralProvider service={RaceService}>
-        <RaceList />
+          <RaceList />
         </GeneralProvider>
       </section>
       <section>
