@@ -23,14 +23,12 @@
 }
 
 @media (min-width: 768px) {
-  /* For tablets and larger screens */
   .race-card-info {
     width: 600px;
   }
 }
 
 @media (min-width: 992px) {
-  /* For medium-sized desktops and larger screens */
   .race-card-info {
     width: 800px;
   }
