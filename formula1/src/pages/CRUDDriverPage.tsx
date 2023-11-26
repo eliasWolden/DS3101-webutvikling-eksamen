@@ -1,16 +1,16 @@
-import CreateDriver from "../components/Drivers/CreateDriver";
 import DeleteDriver from "../components/Drivers/DeleteDriver";
 import EditDriver from "../components/Drivers/GetDriverById";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import { DriverService } from "../services/CreateService";
 import "../css/CRUD.css";
+import AddDriver from "../components/Drivers/AddDriver";
 
 const CRUDDriverPage = () => {
   return (
     <GeneralProvider service={DriverService}>
       <div className="section">
         <section>
-          <CreateDriver />
+          <AddDriver />
         </section>
 
         <section>
