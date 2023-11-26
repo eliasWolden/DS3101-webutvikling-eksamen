@@ -27,7 +27,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
       
       <div className="row">
       <Link to={`/DriverPage/${driver1}`}>
-        <p className="col-md-4" id="driver-1-title">{driver1} 
+        <p className="col-md-4" id="driver-1-title"> {driver1}
         <img id="driver-1-image" 
         src={`http://localhost:5257/api/Image/driver/${modified_driver1}.png`}
         draggable="false"
@@ -40,7 +40,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
         </Link>
 
         <Link to={`/DriverPage/${driver2}`}>
-          <p className="col-md-4" id="driver-2-title">{driver2}
+          <p className="col-md-4" id="driver-2-title"> {driver2}
             <img id="driver-2-image" 
             src={`http://localhost:5257/api/Image/driver/${modified_driver2}.png`}
             draggable="false"
@@ -54,9 +54,7 @@ const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
 
         </div>
       </div>
-      <img src={image} className="image-size-car"
-        draggable="false"
-        />
+      
     </div>
   );
 };

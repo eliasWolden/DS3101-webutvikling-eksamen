@@ -17,7 +17,6 @@ const AddDriver: FC = () => {
 
   const subfolder = "Drivers";
 
-
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
 
     const setHandler = (e: ChangeEvent<any>) => {

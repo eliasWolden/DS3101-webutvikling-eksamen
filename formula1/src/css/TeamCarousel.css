@@ -16,18 +16,18 @@
 
 .image-size-car {
   width: 100%;
+
 }
 
 .card-title-team {
   color: #ffffff;
   margin: 3%;
   padding: 5%;
-  border-left: 3px solid #8b0000;
-  border-bottom: 1px solid #8b0000;
+  border-left: 3px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 #drivers {
-  border-bottom: 1px solid rgb(148, 148, 152);
   color: #000000;
   margin: 3%;
   text-align: center;
@@ -35,7 +35,7 @@
 
 #driver-1-image, #driver-2-image {
   width: 50%;
-  border: 1px solid #8b0000;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   margin: 10px;
 }
