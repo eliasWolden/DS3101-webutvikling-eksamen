@@ -38,15 +38,15 @@ const EditRace = () => {
     const getByGrandPrixFromContext = async () => {
       try {
           if (context) {
-            if (GrandPrix !== "") {
+            if (GrandPrix.toLowerCase() !== "") {
             const RacesFromContext = await context?.getByName(GrandPrix);
             setRacesToUpdate(RacesFromContext);
             console.log(RacesFromContext);
-            setStatus('Your race!');
             setDriverObtained(true);
             } 
             else {
               setStatus("Please enter a GrandPrix");
+              setDriverObtained(false);
             }
           }
           } catch (error) {
@@ -60,7 +60,6 @@ const EditRace = () => {
         console.log(RacesToUpdate);
         setStatus("You´ve edited a race");
         setDriverObtained(false);
-
         } else{
             setStatus("Error saving changes");
         }
@@ -129,11 +128,18 @@ const EditRace = () => {
         </div>
       </div>
 
+      {!driverObtained && (
+  <div className='row'>
+    <div className='form-group col-md-4'>
+      <span className='text-danger'>{Status}</span>
+    </div>
+  </div>
+)}
+
       {driverObtained && (
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save Race" onClick={saveChanges}/>
-          <span className={Status=== 'Your race!' ? 'success-message' : 'text-danger'}>{Status}</span>
         </div>
       </div>
       )}
