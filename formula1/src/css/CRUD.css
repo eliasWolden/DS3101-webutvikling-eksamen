@@ -1,0 +1,9 @@
+.section {
+  background-image: linear-gradient(
+    rgb(255, 0, 0),
+    rgb(218, 218, 218),
+    rgb(209, 209, 209)
+  );
+
+  padding: 100px;
+}

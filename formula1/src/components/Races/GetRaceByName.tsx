@@ -1,8 +1,9 @@
-import { useState, ChangeEvent, useContext } from 'react';
-import { IRace } from '../../interfaces/Races/IRace';
-import '../../css/main.css';
-import { IGeneralContext } from '../../interfaces/IGeneralContext';
-import { GeneralContext } from '../../contexts/GeneralProvider';
+import { useState, ChangeEvent, useContext } from "react";
+import { IRace } from "../../interfaces/Races/IRace";
+import "../../css/main.css";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
+import { GeneralContext } from "../../contexts/GeneralProvider";
+import "../../css/CRUD.css";
 
 const EditRace = () => {
   const context = useContext(GeneralContext) as IGeneralContext<IRace>;
@@ -63,39 +64,51 @@ const EditRace = () => {
         } else{
             setStatus("Error saving changes");
         }
-    };
-  
-  
+      }
+    } catch (error) {
+      setStatus("Grand Prix not found");
+    }
+  };
 
+  const saveChanges = () => {
+    if (context) {
+      context.editItem(RacesToUpdate);
+      console.log(RacesToUpdate);
+      setStatus("You´ve edited a race");
+      setDriverObtained(false);
+    } else {
+      setStatus("Error saving changes");
+    }
+  };
 
   return (
-    <form className="bg-light p-4 m-4 border rounded shadow-lg">
-      <h2>Edit Race</h2>
-      <div className='row'>
-        <div className='col'>
+    <section className="d-flex justify-content-center">
+      <form className="bg-light p-4 border shadow w-75 rounded mb-3">
+        <h2>Edit Race</h2>
+        <div className="row">
+          <div className="col">
+            <div className="form-group form-group col-md-8">
+              <label>GrandPrix</label>
+              <input
+                name="grandPrix"
+                type="text"
+                className="form-control"
+                placeholder="GrandPrix"
+                onChange={handleChange}
+              />
+            </div>
 
-        <div className='form-group col-md-6'>
-          <label>GrandPrix</label>
-          <input
-            name='grandPrix'
-            type="text"
-            className='form-control'
-            placeholder='GrandPrix'
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className='form-group col-md-6'>
-          <label>Name</label>
-          <input
-            name='winnerName'
-            type="text"
-            className='form-control'
-            placeholder='winnerName'
-            value={RacesToUpdate?.winnerName}
-            onChange={handleChange}
-          />
-        </div>
+            <div className="form-group col-md-6">
+              <label>Name</label>
+              <input
+                name="winnerName"
+                type="text"
+                className="form-control"
+                placeholder="winnerName"
+                value={RacesToUpdate?.winnerName}
+                onChange={handleChange}
+              />
+            </div>
 
       <div className='form-group col-md-6'>
         <label>Winner time</label>
@@ -155,10 +168,9 @@ const EditRace = () => {
           }}
           />
       </div>
-    </div>
     </form>
+ </section>
   );
 };
-
 
 export default EditRace;
