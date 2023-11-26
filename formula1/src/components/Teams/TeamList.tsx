@@ -9,13 +9,15 @@ import { IService } from "../../interfaces/IService";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const TeamList = () => {
-  const context = useContext(GeneralContext) as IGeneralContext<IService<ITeam>>;
-    const teams = context.items as [];
+  const context = useContext(GeneralContext) as IGeneralContext<
+    IService<ITeam>
+  >;
+  const teams = context.items as [];
 
   const getTeamsJSX = () => {
     return teams.map((team: ITeam) => (
       <TeamItem
-        key={`team-item-${team.id+team.manufacturer}`}
+        key={`team-item-${team.id + team.manufacturer}`}
         id={team.id}
         manufacturer={team.manufacturer}
         driver1={team.driver1}

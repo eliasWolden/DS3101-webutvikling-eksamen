@@ -16,7 +16,6 @@ public DriverController(Formula1Context _context)
     context = _context;
 }
 
-// Get all
 [HttpGet]
 public async Task<ActionResult<List<Driver>>> Get()
 {
@@ -38,8 +37,6 @@ public async Task<ActionResult<List<Driver>>> Get()
     }
 }
 
-
-// Get by Id:
 [HttpGet("id/{id}")]
 
 public async Task<ActionResult<List<Driver>>> GetById(int id)
@@ -62,10 +59,8 @@ public async Task<ActionResult<List<Driver>>> GetById(int id)
     }
 }
 
-// Get by name
 [HttpGet]
 [Route("name/{name}")]
-// In order to be able to add Get methods beyond the standard Get (to retrieve all of something) and Get by id, we must use [Route]
 public async Task<ActionResult<List<Driver>>> GetByName(string name)
 {
     try
@@ -89,7 +84,6 @@ public async Task<ActionResult<List<Driver>>> GetByName(string name)
 }
 
 
-// Delete by name 
 [HttpDelete("{name}")]
 public async Task<ActionResult<Driver>> DeleteByName(string name)
 {
@@ -99,13 +93,10 @@ public async Task<ActionResult<Driver>> DeleteByName(string name)
 
         if (driver != null)
         {
-            // Remove the driver from the context
             context.Drivers.Remove(driver);
 
-            // Save changes to the database
             await context.SaveChangesAsync();
 
-            // Return the deleted driver
             return Ok(driver);
         }
         else
@@ -115,37 +106,29 @@ public async Task<ActionResult<Driver>> DeleteByName(string name)
     }
     catch (Exception ex)
     {
-        // If an exception occurs, return a 500 Internal Server Error with the exception message
         return StatusCode(500, $"Error: {ex.Message}");
     }
 }
 
 
-
-// Create Driver (POST)
 [HttpPost]
 public async Task<IActionResult> CreateDriver(Driver newDriver)
 {
     try
     {
-        // Add the new driver to the context
         context.Drivers.Add(newDriver);
 
-        // Save changes to the database
         await context.SaveChangesAsync();
 
-        // Return a 201 Created status with the newly created driver
         return Created($"/api/Driver/{newDriver.Id}", newDriver);
     }
     catch (Exception ex)
     {
-        // If an exception occurs, return a 500 Internal Server Error with the exception message
         return StatusCode(500, $"Error: {ex.Message}");
     }
 }
 
 
-// Update (PUT)
 [HttpPut]
 public async Task<IActionResult> Put(Driver updatedDriver)
 {

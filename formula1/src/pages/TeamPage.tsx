@@ -5,9 +5,9 @@ import { TeamService } from "../services/CreateService";
 const TeamPage = () => {
   return (
     <GeneralProvider service={TeamService}>
-    <section>
-      <TeamList/>
-    </section>
+      <section>
+        <TeamList />
+      </section>
     </GeneralProvider>
   );
 };

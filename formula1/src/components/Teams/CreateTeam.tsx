@@ -4,7 +4,6 @@ import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const AddTeam: FC = () => {
-  //fornavn og etternavn blir til navnet til sjaføren med mellomrom
   const [driver1FirstName, setDriver1FirstName] = useState("");
   const [driver1LastName, setDriver1LastName] = useState("");
   const driver1FullName = `${driver1FirstName} ${driver1LastName}`;
@@ -76,7 +75,7 @@ const AddTeam: FC = () => {
         <h2 className="text-center mb-4">Create Team</h2>
 
         <div className="row mb-3">
-          <div className="form-group col-md-4">
+          <div className="col-md-4">
             <label>Driver 1 firstname</label>
             <input
               name="driver1FirstName"

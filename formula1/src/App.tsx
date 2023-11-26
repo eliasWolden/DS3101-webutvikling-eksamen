@@ -1,9 +1,7 @@
 import Routing from "./components/RoutingContent/Routing.jsx";
 
 function App() {
-  return (
-      <Routing />
-  );
+  return <Routing />;
 }
 
 export default App;

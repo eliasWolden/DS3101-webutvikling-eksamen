@@ -5,7 +5,6 @@ import { GeneralContext } from "../../contexts/GeneralProvider";
 import "../../css/CRUD.css";
 
 const AddDriver: FC = () => {
-  //fornavn og etternavn blir til navnet til sjaføren med mellomrom
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const fullName = `${firstName} ${lastName}`;
