@@ -16,7 +16,7 @@ public TeamController(Formula1Context _context)
     context = _context;
 }
 
-// Get all
+
 [HttpGet]
 public async Task<ActionResult<List<Team>>> Get()
 {
@@ -32,10 +32,7 @@ public async Task<ActionResult<List<Team>>> Get()
 }
 
 
-
-// Get by id
 [HttpGet("id/{id}")]
-
 public async Task<ActionResult<List<Team>>> GetById(int id)
 {
     try
@@ -57,7 +54,6 @@ public async Task<ActionResult<List<Team>>> GetById(int id)
 }
 
 
-// Get by name
 [HttpGet]
 [Route("manufacturer/{manufacturer}")]
 public async Task<ActionResult<List<Team>>> GetByName(string manufacturer)
@@ -81,13 +77,11 @@ public async Task<ActionResult<List<Team>>> GetByName(string manufacturer)
 }
 
 
-// Delete by name 
 [HttpDelete("{manufacturer}")]
 public async Task<ActionResult<TeamController>> DeleteByName(string manufacturer)
 {
     try
     {
-        // Find the driver by name
         Team? team = await context.Teams.FirstOrDefaultAsync(t => t.Manufacturer == manufacturer);
 
         if (team != null)
@@ -109,30 +103,23 @@ public async Task<ActionResult<TeamController>> DeleteByName(string manufacturer
     }
 }
 
-// Create Team (POST)
 [HttpPost]
 public async Task<IActionResult> CreateTeam([FromBody] Team newTeam)
-//The [FromBody] attribute tells ASP.NET Core to deserialize this JSON data into a Driver object and bind it to the newDriver parameter
 {
     try
     {
-        // Add the new driver to the context
         context.Teams.Add(newTeam);
 
-        // Save changes to the database
         await context.SaveChangesAsync();
 
-        // Return a 201 Created status with the newly created driver
         return Created($"/api/Team/{newTeam.Id}", newTeam);
     }
     catch (Exception ex)
     {
-        // If an exception occurs, return a 500 Internal Server Error with the exception message
         return StatusCode(500, $"Error: {ex.Message}");
     }
 }
 
-// Update (PUT)
 [HttpPut]
 public async Task<IActionResult> Put(Team updatedTeam)
 {
