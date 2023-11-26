@@ -34,7 +34,7 @@ const SelectedTeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image
               />
               <div className="card-body">
                 <h5 className="card-title">{driver2}</h5>
-                <p className="card-text">Driver 1</p>
+                <p className="card-text">Driver 2</p>
               </div> 
             </div>
           </div>
