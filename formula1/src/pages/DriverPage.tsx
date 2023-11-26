@@ -36,9 +36,7 @@ const DriverPage: React.FC = () => {
       <GeneralProvider service={DriverService}>
         <section className="selected-driver-section selected-team-text">
           <h1 className="selected-title">Driver information</h1>
-
             <p className="selected-text selected-text-background">{driverName} has won {amountOfWins} races.</p>
-
           <SelectedDriverList name={driverName} />
         </section>
       </GeneralProvider>
@@ -54,6 +52,7 @@ const DriverPage: React.FC = () => {
       <br />
       <GeneralProvider service={TeamService}>
         <section>
+        <h1 className="selected-title">Team:</h1>
           <SelectedTeamList name={driverName} />
         </section>
       </GeneralProvider>
