@@ -20,7 +20,7 @@ const DeleteDriver: FC = () => {
           await context.deleteItemByName(name);
           setFirstName("");
           setLastName("");
-          setStatus("Driver deleted");
+          setStatus("Registered");
         } else {
           setStatus("Please enter both Firstname and Lastname");
         }
@@ -52,7 +52,6 @@ const DeleteDriver: FC = () => {
         <h2>Delete driver</h2>
 
          <DriverForm setHandler={setHandler} />
-
 
         <div className="row">
           <div className="form-group col-md-4 p-3">
