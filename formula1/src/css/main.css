@@ -30,6 +30,7 @@
 .large-box.open {
   left: 0;
 }
+
 .right-box {
   position: absolute;
   right: 0;
@@ -93,6 +94,10 @@
   margin-bottom: 10px;
 }
 
+.list-text-2 {
+  font-size:20px;
+}
+
 .list-text-1:hover,
 .list-text-2:hover {
   position: relative;
@@ -103,11 +108,11 @@
   background-size: 20%;
   filter: invert(100%);
 }
+
 .list-text-2:hover {
   background-size: 10%;
 }
 
-/* button css */
 .image-button {
   background: none;
   padding: 10px;
@@ -141,31 +146,34 @@
   left: 1%;
   z-index: 10000;
 }
-/* stopper scrolling når navbar er åpen */
+
 .no-scroll {
   overflow: hidden;
 }
 
-/* selected items og list css */
 .selected-text-background {
   width: 100vw;
   padding: 10px;
   color: white;
 }
+
 .selected-text {
   font-family: "Monument Grotesk Mono", monospace;
   font-size: 20px;
 }
+
 .selected-text-small {
   font-family: "Monument Grotesk Mono", monospace;
   font-size: 13px;
   margin: 2px;
 }
+
 .selected-title {
   padding: 20px;
   text-align: center;
   font-family: "Monument Grotesk Mono", monospace;
 }
+
 .selected-team-text {
   color: white;
 }
@@ -176,7 +184,7 @@
   width: 30vw;
   height: 40vh;
 }
-/* selected driver css */
+
 .selected-driver {
   height: 100vh;
   width: 100vw;
@@ -193,7 +201,7 @@
 
 .selected-content {
   position: relative;
-  z-index: 1; /* Ensure content appears above the blurred background */
+  z-index: 1; 
 }
 
 .selected-driver-image-container::before {
@@ -208,8 +216,9 @@
   border: solid 1px black;
   border-radius: 10px;
   filter: blur(50px);
-  z-index: -1; /* Place the blurred background behind the content */
+  z-index: -1; 
 }
+
 
 /* selected team css */
 .selected-team-bg{
@@ -227,7 +236,9 @@
 }
 
 
+
 /* brukes denne?? */
+
 .selected-emblem {
   width: 200px;
   height: 200px;
@@ -235,6 +246,8 @@
   border: solid 1px black;
   border-radius: 10px;
 }
+
+
 
 /* brukes denne? */
 .selected-driver-team {
@@ -245,7 +258,7 @@
   border-radius: 10px;
 }
 
-/* race css */
+
 .selected-race-box-left {
   float: left;
   position: relative;

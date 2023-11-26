@@ -12,13 +12,11 @@ function Routing() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    // Add or remove the 'no-scroll' class to the body based on the 'open' state
     if (open) {
       document.body.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");
     }
-    // Clean up by removing the 'no-scroll' class when the component is unmounted
     return () => {
       document.body.classList.remove("no-scroll");
     };
@@ -60,37 +58,29 @@ function Routing() {
                             Home
                           </Link>
                         </li>
-                        <li className="list-text-1">
-                          <Link to="/DriverPage" className="nav-link">
+                        <br />
+                        <p>Register:</p>
+                        <li className="list-text-2">
+                          <Link to="/CRUDDriverPage" className="nav-link">
                             Driver
                           </Link>
                         </li>
-                        <li className="list-text-1">
-                          <Link to="/RacePage" className="nav-link">
+                        <li className="list-text-2">
+                          <Link to="/CRUDRacePage" className="nav-link">
                             Race
                           </Link>
                         </li>
-                        <li className="list-text-1">
-                          <Link to="/TeamPage" className="nav-link">
+                        <li className="list-text-2">
+                          <Link to="/CRUDTeamPAge" className="nav-link">
                             Team
                           </Link>
                         </li>
                       </ul>
 
                       <ul className="list-2-in-box">
-                        <li className="list-text-2">
-                          <Link to="/CRUDDriverPage" className="nav-link">
-                            CRUD Driver
-                          </Link>
-                        </li>
-                        <li className="list-text-2">
-                          <Link to="/CRUDRacePage" className="nav-link">
-                            CRUD Race
-                          </Link>
-                        </li>
-                        <li className="list-text-2">
-                          <Link to="/CRUDTeamPAge" className="nav-link">
-                            CRUD Team
+                        <li>
+                          <Link to="http://localhost:5257/index.html" className="nav-link">
+                            Docs
                           </Link>
                         </li>
                       </ul>
