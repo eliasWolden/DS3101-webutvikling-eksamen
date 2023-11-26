@@ -1,7 +1,7 @@
 import { FC, useState, useContext } from "react";
 import { IEntityContext } from "../../interfaces/IEntityContext";
 import { IRace } from "../../interfaces/Races/IRace";
-import { EntityContext } from "../../contexts/EntityContext";
+import { EntityContext } from "../../contexts/EntityProvider";
 
 const DeleteRace : FC = () => {
     const [id, setId] = useState(0);

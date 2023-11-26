@@ -4,9 +4,9 @@ import DriverItem from "./DriverItem";
 import "react-multi-carousel/lib/styles.css";
 import "../../css/DriverCarousel.css";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { EntityContext } from "../../contexts/EntityContext";
 import { IService } from "../../interfaces/IService";
 import { IEntityContext } from "../../interfaces/IEntityContext";
+import { EntityContext } from "../../contexts/EntityProvider";
 
 const DriverList = () => {
   

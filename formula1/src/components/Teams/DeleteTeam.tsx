@@ -1,7 +1,7 @@
 import { FC, useState, useContext } from "react";
 import { ITeam } from "../../interfaces/Teams/ITeam";
 import { IEntityContext } from "../../interfaces/IEntityContext";
-import { EntityContext } from "../../contexts/EntityContext";
+import { EntityContext } from "../../contexts/EntityProvider";
 
 const DeleteTeam : FC = () => {
     const [manufacturer, setManufacturer] = useState('');

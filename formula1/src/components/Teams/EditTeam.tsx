@@ -2,7 +2,7 @@ import { useState, ChangeEvent, useContext } from 'react';
 import '../../css/main.css';
 import { ITeam } from '../../interfaces/Teams/ITeam';
 import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityContext';
+import { EntityContext } from '../../contexts/EntityProvider';
 
 const EditTeam = () => {
   const [id, setId] = useState<number>(1);

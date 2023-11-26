@@ -1,7 +1,7 @@
 import { FC, useState, useContext } from "react";
 import { IEntityContext } from "../../interfaces/IEntityContext";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { EntityContext } from "../../contexts/EntityContext";
+import { EntityContext } from "../../contexts/EntityProvider";
 
 const DeleteDriver : FC = () => {
     const [firstName, setFirstName] = useState('');

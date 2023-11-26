@@ -2,7 +2,7 @@ import { useState, ChangeEvent, useContext } from 'react';
 import { IRace } from '../../interfaces/Races/IRace';
 import '../../css/main.css';
 import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityContext';
+import { EntityContext } from '../../contexts/EntityProvider';
 
 const EditRace = () => {
   const [GrandPrix, setGrandPrix] = useState<string>("");

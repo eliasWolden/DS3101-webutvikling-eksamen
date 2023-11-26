@@ -1,7 +1,7 @@
 import { FC, useState, ChangeEvent, useContext } from 'react';
 import { IDriver } from '../../interfaces/Drivers/IDriver';
 import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityContext';
+import { EntityContext } from '../../contexts/EntityProvider';
 
 const AddDriver: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom

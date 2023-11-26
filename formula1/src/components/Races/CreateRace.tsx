@@ -1,7 +1,7 @@
 import { FC, useState, ChangeEvent, useContext } from 'react';
 import { IRace } from '../../interfaces/Races/IRace';
 import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityContext';
+import { EntityContext } from '../../contexts/EntityProvider';
 
 const AddRace: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom

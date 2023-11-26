@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { ITeam } from "../../interfaces/Teams/ITeam";
-import { EntityContext } from "../../contexts/EntityContext";
 import { IEntityContext } from "../../interfaces/IEntityContext";
 import { IService } from "../../interfaces/IService";
 import { SelectedDriverListProps } from "../../interfaces/ISelectedDriverListProps";
 import SelectedTeamItem from "./SelectedTeamItem";
+import { EntityContext } from "../../contexts/EntityProvider";
 
 const SelectedTeamList: React.FC<SelectedDriverListProps> = ({ name }) => {
     const context = useContext(EntityContext) as IEntityContext<IService<ITeam>>;

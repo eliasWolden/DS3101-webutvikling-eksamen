@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { IEntityProviderProps } from "../interfaces/IEntityProviderProps";
 import { IEntityContext } from "../interfaces/IEntityContext";
 import imageUploadService from "../services/ImageService";
-import { EntityContext } from "./EntityContext";
+
+export const EntityContext = createContext<IEntityContext<any> | null>(null);
+
 
 export const EntityProvider = <T extends {}>({ children, service }: IEntityProviderProps<T>) => {
   const [items, setItems] = useState<T[]>([]);

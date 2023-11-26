@@ -1,11 +1,11 @@
 import { useContext, useEffect } from "react";
 import { IRace } from "../../interfaces/Races/IRace";
-import { EntityContext } from "../../contexts/EntityContext";
 import { IEntityContext } from "../../interfaces/IEntityContext";
 import { IService } from "../../interfaces/IService";
 import SelectedRaceItem from "./SelectedRaceItem";
 import Carousel from "react-multi-carousel";
 import { SelectedRaceListProps } from "../../interfaces/ISelectedRaceListProps";
+import { EntityContext } from "../../contexts/EntityProvider";
 
 const SelectedRaceList: React.FC<SelectedRaceListProps> = ({ name, updateAmountOfWins }) => {
     const context = useContext(EntityContext) as IEntityContext<IService<IRace>>;

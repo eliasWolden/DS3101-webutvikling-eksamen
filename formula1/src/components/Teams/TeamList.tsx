@@ -6,7 +6,7 @@ import "../../css/TeamCarousel.css";
 import { ITeam } from "../../interfaces/Teams/ITeam";
 import { IEntityContext } from "../../interfaces/IEntityContext";
 import { IService } from "../../interfaces/IService";
-import { EntityContext } from "../../contexts/EntityContext";
+import { EntityContext } from "../../contexts/EntityProvider";
 
 const TeamList = () => {
   const context = useContext(EntityContext) as IEntityContext<IService<ITeam>>;
