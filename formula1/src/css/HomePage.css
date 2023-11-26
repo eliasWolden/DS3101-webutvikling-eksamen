@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 99%;
+  height: 99.5%;
   background: rgba(68, 65, 68, 0.75);
 }
 
@@ -35,7 +35,7 @@
 }
 
 .header-f1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Bare tok en random font-family for now */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .docs-button {
