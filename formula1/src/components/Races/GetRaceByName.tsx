@@ -21,7 +21,7 @@ const EditRace = () => {
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
       switch (e.currentTarget.name) {
         case "grandPrix":
-          setGrandPrix(e.currentTarget.value);
+          setGrandPrix(e.currentTarget.value.toLowerCase());
           break;
         case "winnerName":
           setRacesToUpdate({ ...RacesToUpdate, winnerName: e.currentTarget.value });
@@ -38,7 +38,7 @@ const EditRace = () => {
     const getByGrandPrixFromContext = async () => {
       try {
           if (context) {
-            if (GrandPrix.toLowerCase() !== "") {
+            if (GrandPrix !== "") {
             const RacesFromContext = await context?.getByName(GrandPrix);
             setRacesToUpdate(RacesFromContext);
             console.log(RacesFromContext);

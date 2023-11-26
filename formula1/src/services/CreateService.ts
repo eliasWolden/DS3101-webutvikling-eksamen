@@ -74,7 +74,7 @@ const createService = <T>(controller: string) => {
   const deleteItemByName = async (name: string): Promise<void> => {
     try {
       await axios.delete(`${controller}/${name}`);
-      console.log(`Item with ID ${name} deleted successfully from ${controller}`);
+      console.log(`Item with name ${name} deleted successfully from ${controller}`);
     } catch (error) {
       console.log(`Error deleting item with ID ${name} from ${controller}`, error);
       throw error;

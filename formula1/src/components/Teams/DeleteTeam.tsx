@@ -13,7 +13,7 @@ const DeleteTeam : FC = () => {
         try {
             if(context) {
                 if(manufacturer.toLowerCase() !== "") {
-            await context.deleteItemByName(manufacturer);
+            await context.deleteItemByName(manufacturer.toLowerCase());
             setStatus("You deleted a Team")
             }
             else {
@@ -23,8 +23,8 @@ const DeleteTeam : FC = () => {
         } catch(error){
             setStatus("Something went wrong with deleting...");
         }
-        
     }
+    
 return (
     <form className="bg-light p-4 m-4 border rounded shadow-lg">
         <h2>Delete Team</h2>
