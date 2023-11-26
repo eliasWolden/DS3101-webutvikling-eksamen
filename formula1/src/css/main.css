@@ -6,6 +6,7 @@
   width: 400px;
   object-fit: cover;
 }
+
 .selected-team {
   width: 800px;
 }
@@ -213,124 +214,17 @@
 }
 
 /* selected team css */
-.selected-title-box {
-  position: relative;
-  width: 100vw;
-  height: 20vh;
-
-}
-
-.selected-team-container{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+.selected-card-size {
+  width: 18rem;
 }
 
 .selected-team-background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: -1;
+  height: 100vh;
+  background-image: url('../../../public/images/Backgrounds/5.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.selected-team-box-left {
-  float: left;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 50vw;
-  height: 60vh;
-
-}
-.selected-team-box-right {
-  float: left;
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 50vw;
-  height: 60vh;
-}
-
-.selected-car-box {
-  position: relative;
-  top: 0;
-  left: 5vh;
-  width: 30vw;
-}
-.selected-car-image {
-  background-color: aliceblue;
-  border-radius: 10px;
-  width: 450px;
-}
-
-.selected-emblem-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  height: 120px;
-  width: 120px;
-  background-color: white;
-  border-radius: 10px;
-  border: solid 1px black;
-}
-
-.selected-emblem-image {
-  display: block;
-  width: 100px;
-  height: 100px;
-}
-/* brukes denne?? */
-.selected-emblem {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  border: solid 1px black;
-  border-radius: 10px;
-}
-
-.selected-team-driver2-box {
-  float: left;
-  position: relative;
-  top: 25vh;
-  left: 5vw;
-  width: 20vw;
-  height: 50vh;
-  background-color: aliceblue;
-  border: 1px solid black; /* Border color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle shadow effect */
-  border-radius: 10px;
-  overflow: contain;
-}
-.selected-team-driver-box  {
-  float: right;
-  position: relative;
-  bottom: 0;
-  right: 5vh;
-  width: 20vw;
-  height: 60vh;
-  background-color: aliceblue;
-  border: 1px solid black; /* Border color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle shadow effect */
-  border-radius: 10px;
-  overflow: contain;
-}
-
-.selected-team-driver-image {
-  display: block;
-  margin: auto;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-.selected-team-driver2-image {
-  display: block;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
 /* brukes denne? */
 .selected-driver-team {
   width: 400px;
@@ -400,9 +294,7 @@
   z-index: -1;
 }
 
-section {
-  overflow: hidden;
-}
+
 
 .success-message {
   color: green;
