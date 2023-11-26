@@ -125,7 +125,7 @@ const Quiz = () => {
   return (
     <div className="quiz-container">
       {!quizState.quizStarted ? (
-        <div className="quiz-start text-center bg-secondary p-4 rounded">
+        <div className="quiz-start text-center border p-4 rounded">
           <h2 className="mb-4 text-white">Formula 1 Special Quiz</h2>
           <button className="btn btn-primary" onClick={startQuiz}>
             Take the Quiz
@@ -133,7 +133,7 @@ const Quiz = () => {
         </div>
       ) : currentQuestion < questions.length ? (
         <div className="quiz-question-container">
-          <h3 className="text-center p-3">
+          <h3 className="text-center text-white p-3">
             {currentShuffledQuestion.question}
           </h3>
           <div className="progress">
@@ -159,7 +159,7 @@ const Quiz = () => {
           </div>
         </div>
       ) : (
-        <div className="quiz-results bg-primary text-white rounded p-4 mt-4 text-center">
+        <div className="quiz-results bg-success text-white rounded p-4 mt-4 text-center">
           <h3 className="mb-4">Quiz Completed!</h3>
           <p>
             Your Score: {quizState.score}/{questions.length}
