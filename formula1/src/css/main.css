@@ -95,7 +95,7 @@
 }
 
 .list-text-2 {
-  font-size:20px;
+  font-size: 20px;
 }
 
 .list-text-1:hover,
@@ -201,7 +201,7 @@
 
 .selected-content {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .selected-driver-image-container::before {
@@ -215,11 +215,10 @@
   border: solid 2px black;
   border-radius: 10px;
   filter: blur(50px);
-  z-index: -1; 
+  z-index: -1;
 }
 
-
-.selected-team-bg{
+.selected-team-bg {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -229,9 +228,8 @@
   z-index: -1;
 }
 .selected-team-card-size {
-  width: 18rem;
+  width: 20rem;
 }
-
 
 .selected-emblem {
   width: 200px;
@@ -241,7 +239,6 @@
   border-radius: 10px;
 }
 
-
 .selected-driver-team {
   width: 400px;
   height: 500px;
@@ -249,7 +246,6 @@
   border: solid 1px black;
   border-radius: 10px;
 }
-
 
 .selected-race-box-left {
   float: left;
@@ -291,7 +287,7 @@
 .selected-race-box-full {
   width: 100vw;
   height: 100%;
-  background-color:rgb(119, 47, 47);
+  background-color: rgb(119, 47, 47);
 }
 .selected-driver-section {
   position: relative;
