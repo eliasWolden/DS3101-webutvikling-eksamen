@@ -14,8 +14,6 @@ public ImageController(IWebHostEnvironment _hosting)
 hosting = _hosting;
 }
 
-
-// Get image by imageType ("driver","race", "emblem", "car") and imageName.
 [HttpGet("{imageType}/{imageName}")]
     public IActionResult GetImage(string imageType, string imageName)
     {
@@ -87,7 +85,6 @@ hosting = _hosting;
     }
 
 
-// Post an image
 [HttpPost("{subfolder}/")]
 public IActionResult SaveImage(IFormFile file, string subfolder)
 {
@@ -109,7 +106,6 @@ public IActionResult SaveImage(IFormFile file, string subfolder)
 }
  
  
-// Delete an image
 [HttpDelete("{imageName}")]
 public IActionResult DeleteImage(string imageName)
 {

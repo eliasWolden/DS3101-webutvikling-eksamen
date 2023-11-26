@@ -2,7 +2,7 @@ export interface IGeneralContext<T> {
   items: T[];
   loading: boolean;
   error: string | null;
-  getAllItemsFromService: () => Promise<{ items: T[] }>;  // Corrected return type
+  getAllItemsFromService: () => Promise<{ items: T[] }>;
   getById: (id: number) => Promise<T>;
   getByName: (name: string) => Promise<T>;
   postImage: (image: File, subfolder: string) => Promise<void>;

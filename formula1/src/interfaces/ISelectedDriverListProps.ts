@@ -1,3 +1,3 @@
 export interface SelectedDriverListProps {
-    name: string;
-  }
+  name: string;
+}

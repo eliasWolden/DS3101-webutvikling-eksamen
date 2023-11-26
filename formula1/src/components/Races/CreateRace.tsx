@@ -4,7 +4,6 @@ import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const AddRace: FC = () => {
-  //fornavn og etternavn blir til navnet til sjaføren med mellomrom
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const fullName = `${firstName} ${lastName}`;
