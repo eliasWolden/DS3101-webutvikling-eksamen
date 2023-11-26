@@ -48,19 +48,16 @@ const EditTeam = () => {
 
     const saveChanges = () => {
       try {
-        if(context){
+        if(context != null){
         context.editItem(teamsToUpdate);
         console.log(teamsToUpdate);
         setStatus("You´ve edited a team")
       }
-    } 
+    }
     catch (error) {
       setStatus("Error editing team");
     }
   }
-
-  
-  
 
 
   return (
