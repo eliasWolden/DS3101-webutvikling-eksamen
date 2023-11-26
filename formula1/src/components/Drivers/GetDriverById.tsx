@@ -5,10 +5,10 @@ import { IGeneralContext } from '../../interfaces/IGeneralContext';
 import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const EditDriver = () => {
+  const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
     const [id, setId] = useState<number>(0);
-
-    const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
     const [Status, setStatus] = useState("");
+    const [driverObtained, setDriverObtained] = useState(false);
 
 
     const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({ name: "", age: 0, nationality: "", image: "", teamId: 0 });
@@ -43,6 +43,7 @@ const EditDriver = () => {
         setDriversToUpdate(driversToUpdate);
         console.log(driversToUpdate);
         setStatus('');
+        setDriverObtained(true);
       }
       catch {
         setStatus("Error getting driver");
@@ -54,6 +55,8 @@ const EditDriver = () => {
       try {
         if(context){
         context.editItem(driversToUpdate);
+        setStatus("You´ve edited a driver");
+        setDriverObtained(false);
         }
     }
     catch(error) {
@@ -136,11 +139,14 @@ const EditDriver = () => {
           <input type="button" className='btn btn-primary' value="get driver" onClick={getByIdFromContext}/>
         </div>
       </div>
+
+      {driverObtained && (
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save driver" onClick={saveChanges}/>
         </div>
       </div>
+      )}
 
       </div>
       <div className='col'>
@@ -149,7 +155,7 @@ const EditDriver = () => {
           alt='Not found'
           onError={(e) => {
             const target = e.target as HTMLImageElement;
-            target.src = "public/images/uknown.png"; // Adjust the path based on your project structure
+            target.src = "public/images/uknown.png";
           }}
           />
       </div>
