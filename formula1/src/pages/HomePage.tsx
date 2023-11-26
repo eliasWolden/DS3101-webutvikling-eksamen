@@ -5,7 +5,7 @@ import Footer from "../components/Home/Footer";
 
 const HomePage = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid bg-dark">
       <Header />
       <div className="row">
         <div className="col g-0">
