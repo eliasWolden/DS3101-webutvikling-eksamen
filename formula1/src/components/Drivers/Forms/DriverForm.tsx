@@ -1,8 +1,5 @@
 import React from "react";
-
-interface DriverFormProps {
-  setHandler: (e: React.ChangeEvent<any>) => void;
-}
+import "../../../interfaces/Drivers/IDriverFormProps";
 
 const DriverForm: React.FC<DriverFormProps> = ({ setHandler }) => {
   return (

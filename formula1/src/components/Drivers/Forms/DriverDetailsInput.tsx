@@ -1,12 +1,5 @@
 import React from "react";
-
-interface DriverDetailsInputsProps {
-  name: string;
-  age: number;
-  nationality: string;
-  teamId: number;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+import "../../../interfaces/Drivers/IDriverDetailsInputsProps";
 
 const DriverDetailsInputs: React.FC<DriverDetailsInputsProps> = ({
   name,
