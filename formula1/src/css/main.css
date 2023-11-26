@@ -403,3 +403,7 @@
 section {
   overflow: hidden;
 }
+
+.success-message {
+  color: green;
+}

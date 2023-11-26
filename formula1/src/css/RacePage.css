@@ -46,9 +46,6 @@
   animation: remove-info 1s forwards;
 }
 
-.success-message {
-  color: green;
-}
 
 /* animasjoner */
 @keyframes show-info {

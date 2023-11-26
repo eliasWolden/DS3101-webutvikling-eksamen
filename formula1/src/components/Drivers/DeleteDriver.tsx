@@ -14,7 +14,7 @@ const DeleteDriver : FC = () => {
     const handleDelete = async () => {
         try {
             if(context) {
-                if(firstName !== '' && lastName != '') {
+                if(firstName.toLowerCase() !== '' && lastName.toLowerCase() != '') {
             await context.deleteItemByName(name);
             setFirstName('');
             setLastName('');

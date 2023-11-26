@@ -49,11 +49,18 @@ const EditDriver = () => {
       }
 
     };
+
     const saveChanges = () => {
+      try {
         if(context){
         context.editItem(driversToUpdate);
         }
-    };
+    }
+    catch(error) {
+      setStatus("Error editing driver");
+  }
+  } 
+
   
 
   return (
