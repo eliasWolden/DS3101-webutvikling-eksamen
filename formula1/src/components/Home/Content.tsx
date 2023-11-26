@@ -1,6 +1,6 @@
 import "../../css/HomePage.css";
 import TeamList from "../Teams/TeamList";
-import DriverList from "../Drivers/DriverList";
+import DriverList from "../Drivers/List/DriverList";
 import RaceList from "../Races/RaceList";
 import Quiz from "./Quiz";
 import "../../css/QuizGame.css";

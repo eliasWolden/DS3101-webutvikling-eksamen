@@ -1,17 +1,20 @@
-import { FC, useState, useContext, ChangeEvent } from "react";
-import { IGeneralContext } from "../../interfaces/IGeneralContext";
-import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { GeneralContext } from "../../contexts/GeneralProvider";
-import IdInput from "../Shared/IdInput";
-import DriverImage from "./DriverImage";
-import DriverDetailsInputs from "./DriverDetailsInput";
-import StatusMessage from "../Shared/StatusMessage";
+import { ChangeEvent, FC, useContext, useState } from "react";
+import { GeneralContext } from "../../../contexts/GeneralProvider";
+import { IGeneralContext } from "../../../interfaces/IGeneralContext";
+import { IDriver } from "../../../interfaces/Drivers/IDriver";
+import StatusMessage from "../../Shared/StatusMessage";
+import IdInput from "../../Shared/IdInput";
+import DriverDetailsInputs from "../Forms/DriverDetailsInput";
+import GetImage from "../../Shared/GetImage";
 
 const EditDriver: FC = () => {
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
   const [id, setId] = useState<number>(0);
   const [status, setStatus] = useState("");
   const [driverObtained, setDriverObtained] = useState(false);
+  const subfolder = "Drivers";
+
+  
   const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({
     name: "",
     age: 0,
@@ -118,7 +121,7 @@ const EditDriver: FC = () => {
             )}
           </div>
           <div className="col">
-            <DriverImage imagePath={driversToUpdate?.image || ""} />
+            <GetImage imagePath={driversToUpdate?.image|| ""} subfolder={subfolder} />
           </div>
         </div>
         <StatusMessage status={status} />

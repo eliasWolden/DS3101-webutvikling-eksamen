@@ -1,15 +1,21 @@
 import { useState, ChangeEvent, useContext } from "react";
-import { IRace } from "../../interfaces/Races/IRace";
-import "../../css/main.css";
-import { IGeneralContext } from "../../interfaces/IGeneralContext";
-import { GeneralContext } from "../../contexts/GeneralProvider";
-import "../../css/CRUD.css";
+import { IRace } from "../../../interfaces/Races/IRace";
+import "../../../css/main.css";
+import { IGeneralContext } from "../../../interfaces/IGeneralContext";
+import { GeneralContext } from "../../../contexts/GeneralProvider";
+import '../../../css/CRUD.css';
+import NameInput from "../Form/NameInput";
+import RaceDetailsInputs from "../Form/RaceDetailsInputs";
+import StatusMessage from "../../Shared/StatusMessage";
+import GetImage from "../../Shared/GetImage";
 
 const EditRace = () => {
   const context = useContext(GeneralContext) as IGeneralContext<IRace>;
   const [GrandPrix, setGrandPrix] = useState<string>("");
   const [Status, setStatus] = useState("");
   const [driverObtained, setDriverObtained] = useState(false);
+  const subfolder = "Race";
+
 
   const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({
     grandPrix: "",
@@ -29,18 +35,23 @@ const EditRace = () => {
           ...RacesToUpdate,
           winnerName: e.currentTarget.value,
         });
+        console.log(RacesToUpdate);
         break;
       case "winnerTime":
         setRacesToUpdate({
           ...RacesToUpdate,
           winnerTime: e.currentTarget.value,
         });
+        console.log(RacesToUpdate);
+
         break;
       case "numberOfLaps":
         setRacesToUpdate({
           ...RacesToUpdate,
           numberOfLaps: parseInt(e.currentTarget.value),
         });
+        console.log(RacesToUpdate);
+
         break;
     }
   };
@@ -52,7 +63,7 @@ const EditRace = () => {
           const RacesFromContext = await context?.getByName(GrandPrix);
           setRacesToUpdate(RacesFromContext);
           console.log(RacesFromContext);
-          setStatus("Your race!");
+          setStatus("Completed");
           setDriverObtained(true);
         } else {
           setStatus("Please enter a GrandPrix");
@@ -67,10 +78,11 @@ const EditRace = () => {
     if (context) {
       context.editItem(RacesToUpdate);
       console.log(RacesToUpdate);
-      setStatus("You´ve edited a race");
+      setStatus("Completed");
       setDriverObtained(false);
     } else {
       setStatus("Error saving changes");
+
     }
   };
 
@@ -79,57 +91,17 @@ const EditRace = () => {
       <form className="bg-light p-4 border shadow w-75 rounded mb-3">
         <h2>Edit Race</h2>
         <div className="row">
+          
           <div className="col">
-            <div className="form-group col-md-8">
-              <label>GrandPrix</label>
-              <input
-                name="grandPrix"
-                type="text"
-                className="form-control"
-                placeholder="GrandPrix"
-                onChange={handleChange}
-              />
-            </div>
+          <NameInput grandPrix={GrandPrix} onChange={handleChange} />
 
-            <div className="form-group col-md-6">
-              <label>Name</label>
-              <input
-                name="winnerName"
-                type="text"
-                className="form-control"
-                placeholder="winnerName"
-                value={RacesToUpdate?.winnerName}
-                onChange={handleChange}
-              />
-            </div>
+          <RaceDetailsInputs 
+          winnerName={RacesToUpdate?.winnerName|| ""} 
+          winnerTime={RacesToUpdate?.winnerTime || ""} 
+          numberOfLaps={RacesToUpdate?.numberOfLaps || 0} 
+          onChange={handleChange} />
 
-            <div className="form-group col-md-6">
-              <label>Winner time</label>
-              <input
-                name="winnerTime"
-                type="text"
-                className="form-control"
-                placeholder="Winner time"
-                value={RacesToUpdate?.winnerTime}
-                onChange={handleChange}
-              />
-            </div>
 
-            <div className="form-group col-md-6">
-              <label>Number of laps</label>
-              <input
-                name="numberOfLaps"
-                type="text"
-                className="form-control"
-                placeholder="Number of laps"
-                value={
-                  isNaN(RacesToUpdate?.numberOfLaps)
-                    ? ""
-                    : Number(RacesToUpdate?.numberOfLaps)
-                }
-                onChange={handleChange}
-              />
-            </div>
 
             <div className="row">
               <div className="form-group col-md-4">
@@ -151,30 +123,13 @@ const EditRace = () => {
                     value="save Race"
                     onClick={saveChanges}
                   />
-                  <span
-                    className={
-                      Status === "Your race!"
-                        ? "success-message"
-                        : "text-danger"
-                    }
-                  >
-                    {Status}
-                  </span>
                 </div>
               </div>
             )}
+            <StatusMessage status={Status} />
           </div>
-          <div className="col">
-            <img
-              className="image-size-medium"
-              src={`http://localhost:5257/api/Image/Race/${RacesToUpdate?.image}`}
-              alt="Not found"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "public/images/uknown.png";
-              }}
-            />
-          </div>
+          <GetImage imagePath={RacesToUpdate?.image || ""} subfolder={subfolder} />
+
         </div>
       </form>
     </section>

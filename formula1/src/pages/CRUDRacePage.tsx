@@ -1,6 +1,6 @@
-import AddRace from "../components/Races/CreateRace";
-import DeleteRace from "../components/Races/DeleteRace";
-import GetRaceByName from "../components/Races/GetRaceByName";
+import AddRace from "../components/Races/CRUD/AddRace";
+import DeleteRace from "../components/Races/CRUD/DeleteRace";
+import GetRaceByName from "../components/Races/CRUD/EditRace";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import { RaceService } from "../services/CreateService";
 

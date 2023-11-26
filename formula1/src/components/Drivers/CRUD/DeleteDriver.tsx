@@ -1,12 +1,11 @@
+import { ChangeEvent, FC, useContext, useState } from "react";
+import { GeneralContext } from "../../../contexts/GeneralProvider";
+import { IGeneralContext } from "../../../interfaces/IGeneralContext";
+import { IDriver } from "../../../interfaces/Drivers/IDriver";
+import DriverForm from "../Forms/DriverForm";
+import DeleteButton from "../../Shared/DeleteButton";
+import StatusMessage from "../../Shared/StatusMessage";
 
-import { FC, useState, useContext, ChangeEvent } from "react";
-import { IGeneralContext } from "../../interfaces/IGeneralContext";
-import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { GeneralContext } from "../../contexts/GeneralProvider";
-import DriverForm from "./DriverForm";
-
-import DeleteButton from "../Shared/DeleteButton";
-import StatusMessage from "../Shared/StatusMessage";
 
 
 const DeleteDriver: FC = () => {

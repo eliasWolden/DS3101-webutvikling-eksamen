@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import SelectedDriverList from "../components/Drivers/SelectedDriverList";
+import SelectedDriverList from "../components/Drivers/List/SelectedDriverList";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import {
   DriverService,

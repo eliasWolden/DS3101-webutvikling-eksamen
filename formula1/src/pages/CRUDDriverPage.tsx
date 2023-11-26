@@ -1,9 +1,9 @@
-import DeleteDriver from "../components/Drivers/DeleteDriver";
-import EditDriver from "../components/Drivers/EditDriver";
+import AddDriver from "../components/Drivers/CRUD/AddDriver";
+import DeleteDriver from "../components/Drivers/CRUD/DeleteDriver";
+import EditDriver from "../components/Drivers/CRUD/EditDriver";
 import { GeneralProvider } from "../contexts/GeneralProvider";
-import { DriverService } from "../services/CreateService";
 import "../css/CRUD.css";
-import AddDriver from "../components/Drivers/AddDriver";
+import { DriverService } from "../services/CreateService";
 
 const CRUDDriverPage = () => {
   return (
