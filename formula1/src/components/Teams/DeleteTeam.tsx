@@ -12,7 +12,7 @@ const DeleteTeam : FC = () => {
     const handleDelete = async () => {
         try {
             if(context) {
-                if(manufacturer !== "") {
+                if(manufacturer.toLowerCase() !== "") {
             await context.deleteItemByName(manufacturer);
             setStatus("You deleted a Team")
             }
@@ -44,7 +44,7 @@ return (
         <div className='row'>
             <div className='form-group col-md-4'>
                 <input type="button" className='btn btn-danger' onClick={handleDelete} value="Delete Team" />
-                <span>{Status}</span>
+                <span className={Status === 'Please enter a manufacturer' ? 'text-danger' : 'success-message'}>{Status}</span>
             </div>
         </div>
 

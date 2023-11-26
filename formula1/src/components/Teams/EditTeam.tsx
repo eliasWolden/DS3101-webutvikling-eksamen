@@ -5,7 +5,7 @@ import { IEntityContext } from '../../interfaces/IEntityContext';
 import { EntityContext } from '../../contexts/EntityProvider';
 
 const EditTeam = () => {
-  const [id, setId] = useState<number>(1);
+  const [id, setId] = useState<number>(0);
   const [Status, setStatus] = useState("");
 
   const context = useContext(EntityContext) as IEntityContext<ITeam>;
@@ -30,12 +30,21 @@ const EditTeam = () => {
     };
 
     const getByIdFromContext = async () => {
+      if(id === 0) {
+        setStatus("Please enter an id");
+        return;
+      }
+      try {
         const teamsFromContext = await context?.getById(id);
         if(teamsFromContext != null){
         setTeamsToUpdate(teamsFromContext);
         console.log(teamsFromContext);
+        setStatus('');
         }
-    };
+    } catch{
+      setStatus("Error getting team");
+    }
+  };
 
     const saveChanges = () => {
       try {
@@ -69,6 +78,7 @@ const EditTeam = () => {
             placeholder='id'
             onChange={handleChange}
           />
+          <span className={Status === 'Please enter an id' ? 'text-danger' : 'success-message'}>{Status}</span>
         </div>
 
         <div className='form-group col-md-6'>
@@ -116,7 +126,6 @@ const EditTeam = () => {
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save team" onClick={saveChanges}/>
-          <span>{Status}</span>
         </div>
       </div>
 
