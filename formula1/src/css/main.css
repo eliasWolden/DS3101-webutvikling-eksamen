@@ -220,7 +220,6 @@
 }
 
 
-/* selected team css */
 .selected-team-bg{
   background-image: url("../../public/images/formula1background.jpg");
   background-repeat: no-repeat;
@@ -236,9 +235,6 @@
 }
 
 
-
-/* brukes denne?? */
-
 .selected-emblem {
   width: 200px;
   height: 200px;
@@ -248,8 +244,6 @@
 }
 
 
-
-/* brukes denne? */
 .selected-driver-team {
   width: 400px;
   height: 500px;
