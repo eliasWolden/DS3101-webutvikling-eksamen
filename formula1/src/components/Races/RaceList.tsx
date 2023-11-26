@@ -7,20 +7,22 @@ import { IService } from "../../interfaces/IService";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const RaceList = () => {
-  const context = useContext(GeneralContext) as IGeneralContext<IService<IRace>>;
-    const races = context.items as [];
-    
+  const context = useContext(GeneralContext) as IGeneralContext<
+    IService<IRace>
+  >;
+  const races = context.items as [];
+
   const getRacesJSX = () =>
     races.map((race: IRace) => (
-          <RaceItem
-            key={`race-item-${race.id}`}
-            id={race.id}
-            winnerName={race.winnerName}
-            winnerTime={race.winnerTime}
-            grandPrix={race.grandPrix}
-            numberOfLaps={race.numberOfLaps}
-            image={`http://localhost:5257/api/Image/race/${race.image}`}
-          />
+      <RaceItem
+        key={`race-item-${race.id}`}
+        id={race.id}
+        winnerName={race.winnerName}
+        winnerTime={race.winnerTime}
+        grandPrix={race.grandPrix}
+        numberOfLaps={race.numberOfLaps}
+        image={`http://localhost:5257/api/Image/race/${race.image}`}
+      />
     ));
 
   const responsive = {

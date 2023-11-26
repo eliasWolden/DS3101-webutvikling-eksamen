@@ -1,5 +1,4 @@
 import React from "react";
-
 interface ImageUploadProps {
   setHandler: (e: React.ChangeEvent<any>) => void;
 }

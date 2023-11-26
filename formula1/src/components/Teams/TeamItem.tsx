@@ -5,7 +5,7 @@ import { ITeam } from "../../interfaces/Teams/ITeam";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
-const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2, image }) => {
+const TeamItem: FC<ITeam> = ({ id, manufacturer, driver1, driver2 }) => {
   const modified_driver1 = driver1.replace(" ", "-");
   const modified_driver2 = driver2.replace(" ", "-");
   return (

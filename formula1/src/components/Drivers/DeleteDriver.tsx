@@ -61,6 +61,7 @@ const DeleteDriver: FC = () => {
               onClick={handleDelete}
               value="Delete driver"
             />
+
           </div>
         </div>
       </form>
