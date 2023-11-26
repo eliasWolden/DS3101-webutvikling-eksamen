@@ -5,12 +5,12 @@ import "react-multi-carousel/lib/styles.css";
 import "../../css/DriverCarousel.css";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
 import { IService } from "../../interfaces/IService";
-import { IEntityContext } from "../../interfaces/IEntityContext";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const DriverList = () => {
   
-  const context = useContext(EntityContext) as IEntityContext<IService<IDriver>>;
+  const context = useContext(GeneralContext) as IGeneralContext<IService<IDriver>>;
     const drivers = context.items as [];
     
   const getDriversJSX = () =>

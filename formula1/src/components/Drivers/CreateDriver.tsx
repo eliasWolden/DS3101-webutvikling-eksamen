@@ -1,7 +1,7 @@
 import { FC, useState, ChangeEvent, useContext } from 'react';
 import { IDriver } from '../../interfaces/Drivers/IDriver';
-import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityProvider';
+import { IGeneralContext } from '../../interfaces/IGeneralContext';
+import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const AddDriver: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom
@@ -18,7 +18,7 @@ const AddDriver: FC = () => {
   const subfolder = "Drivers";
 
 
-  const context = useContext(EntityContext) as IEntityContext<IDriver>;
+  const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
 
     const setHandler = (e: ChangeEvent<any>) => {
       const { name, value, files } = e.target;

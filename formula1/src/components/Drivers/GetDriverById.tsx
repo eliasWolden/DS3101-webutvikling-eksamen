@@ -1,13 +1,13 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import { IDriver } from '../../interfaces/Drivers/IDriver';
 import '../../css/main.css';
-import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityProvider';
+import { IGeneralContext } from '../../interfaces/IGeneralContext';
+import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const EditDriver = () => {
     const [id, setId] = useState<number>(0);
 
-    const context = useContext(EntityContext) as IEntityContext<IDriver>;
+    const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
     const [Status, setStatus] = useState("");
 
 

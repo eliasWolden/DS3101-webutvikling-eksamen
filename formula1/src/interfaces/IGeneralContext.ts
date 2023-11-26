@@ -1,4 +1,4 @@
-export interface IEntityContext<T> {
+export interface IGeneralContext<T> {
   items: T[];
   loading: boolean;
   error: string | null;

@@ -1,7 +1,7 @@
 import { FC, useState, useContext } from "react";
-import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const DeleteDriver : FC = () => {
     const [firstName, setFirstName] = useState('');
@@ -9,7 +9,7 @@ const DeleteDriver : FC = () => {
     const name = firstName + " " + lastName;
     const [deleteStatus, setDeleteStatus] = useState("");
 
-    const context = useContext(EntityContext) as IEntityContext<IDriver>;
+    const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
     
     const handleDelete = async () => {
         try {

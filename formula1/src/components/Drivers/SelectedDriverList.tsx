@@ -1,15 +1,14 @@
-// SelectedDriverList.tsx
 import React, { useContext } from "react";
-import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
 import { SelectedDriverListProps } from "../../interfaces/ISelectedDriverListProps";
 import "../../css/main.css";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 
 
 const SelectedDriverList: React.FC<SelectedDriverListProps> = ({ name }) => {
-  const context = useContext(EntityContext) as IEntityContext<IDriver>;
+  const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
 
   const getDriverByNameFromContext = (name: string) => {
     try {

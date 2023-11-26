@@ -4,12 +4,12 @@ import TeamItem from "./TeamItem";
 import "react-multi-carousel/lib/styles.css";
 import "../../css/TeamCarousel.css";
 import { ITeam } from "../../interfaces/Teams/ITeam";
-import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IService } from "../../interfaces/IService";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const TeamList = () => {
-  const context = useContext(EntityContext) as IEntityContext<IService<ITeam>>;
+  const context = useContext(GeneralContext) as IGeneralContext<IService<ITeam>>;
     const teams = context.items as [];
 
   const getTeamsJSX = () => {

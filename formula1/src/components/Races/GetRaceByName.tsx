@@ -1,13 +1,13 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import { IRace } from '../../interfaces/Races/IRace';
 import '../../css/main.css';
-import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityProvider';
+import { IGeneralContext } from '../../interfaces/IGeneralContext';
+import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const EditRace = () => {
   const [GrandPrix, setGrandPrix] = useState<string>("");
   const [Status, setStatus] = useState("");
-  const context = useContext(EntityContext) as IEntityContext<IRace>;
+  const context = useContext(GeneralContext) as IGeneralContext<IRace>;
 
     const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ 
       grandPrix: "",

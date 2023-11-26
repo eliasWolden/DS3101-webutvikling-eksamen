@@ -5,7 +5,7 @@ import CRUDRacePage from "../../pages/CRUDRacePage";
 import "../../css/main.css";
 import { useEffect, useState } from "react";
 import CRUDTeamPage from "../../pages/CRUDTeamPage";
-import { EntityProvider } from "../../contexts/EntityProvider";
+import { GeneralProvider } from "../../contexts/GeneralProvider";
 import { DriverService, RaceService, TeamService } from "../../services/CreateService";
 
 function Routing() {
@@ -27,9 +27,9 @@ function Routing() {
   return (
     <>
       <BrowserRouter>
-        <EntityProvider service={DriverService}>
-          <EntityProvider service={RaceService}>
-            <EntityProvider service={TeamService}>
+        <GeneralProvider service={DriverService}>
+          <GeneralProvider service={RaceService}>
+            <GeneralProvider service={TeamService}>
               {!open && (
                 <button
                   className="image-button open-button"
@@ -107,9 +107,9 @@ function Routing() {
                 <Route path="/CRUDDriverPage" element={<CRUDDriverPage />} />
                 <Route path="/CRUDTeamPage" element={<CRUDTeamPage />} />
               </Routes>
-            </EntityProvider>
-          </EntityProvider>
-        </EntityProvider>
+            </GeneralProvider>
+          </GeneralProvider>
+        </GeneralProvider>
       </BrowserRouter>
     </>
   );

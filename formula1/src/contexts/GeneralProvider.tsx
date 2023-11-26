@@ -1,12 +1,12 @@
 import { createContext, useEffect, useState } from "react";
-import { IEntityProviderProps } from "../interfaces/IEntityProviderProps";
-import { IEntityContext } from "../interfaces/IEntityContext";
+import { IGeneralProviderProps } from "../interfaces/IGeneralProviderProps";
+import { IGeneralContext } from "../interfaces/IGeneralContext";
 import imageUploadService from "../services/ImageService";
 
-export const EntityContext = createContext<IEntityContext<any> | null>(null);
+export const GeneralContext = createContext<IGeneralContext<any> | null>(null);
 
 
-export const EntityProvider = <T extends {}>({ children, service }: IEntityProviderProps<T>) => {
+export const GeneralProvider = <T extends {}>({ children, service }: IGeneralProviderProps<T>) => {
   const [items, setItems] = useState<T[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -97,7 +97,7 @@ export const EntityProvider = <T extends {}>({ children, service }: IEntityProvi
         getAllItemsFromService();
     }, []);
 
-    const contextValue: IEntityContext<T> = {
+    const contextValue: IGeneralContext<T> = {
         items,
         loading,
         error,
@@ -111,6 +111,6 @@ export const EntityProvider = <T extends {}>({ children, service }: IEntityProvi
         deleteItemByName,
 
       };      
-      return <EntityContext.Provider value={contextValue}>{children}</EntityContext.Provider>;
+      return <GeneralContext.Provider value={contextValue}>{children}</GeneralContext.Provider>;
       
     };

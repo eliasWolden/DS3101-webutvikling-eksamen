@@ -1,17 +1,17 @@
 import RaceList from "../components/Races/RaceList";
-import { EntityProvider } from "../contexts/EntityProvider";
+import { GeneralProvider } from "../contexts/GeneralProvider";
 import { RaceService } from "../services/CreateService";
 
 const RacePage = () => {
   return (
-    <EntityProvider service={RaceService}>
+    <GeneralProvider service={RaceService}>
     <div>
       <br />
       <section>
         <RaceList/>
       </section>
     </div>
-    </EntityProvider>
+    </GeneralProvider>
   );
 };
 

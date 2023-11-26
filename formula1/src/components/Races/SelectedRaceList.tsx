@@ -1,14 +1,14 @@
 import { useContext, useEffect } from "react";
 import { IRace } from "../../interfaces/Races/IRace";
-import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IService } from "../../interfaces/IService";
 import SelectedRaceItem from "./SelectedRaceItem";
 import Carousel from "react-multi-carousel";
 import { SelectedRaceListProps } from "../../interfaces/ISelectedRaceListProps";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const SelectedRaceList: React.FC<SelectedRaceListProps> = ({ name, updateAmountOfWins }) => {
-    const context = useContext(EntityContext) as IEntityContext<IService<IRace>>;
+    const context = useContext(GeneralContext) as IGeneralContext<IService<IRace>>;
     const racesFromContext = (context.items as unknown) as IRace[];
 
     const races = racesFromContext.filter((race) => race.winnerName.toLowerCase() === name);

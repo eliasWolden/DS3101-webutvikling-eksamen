@@ -1,7 +1,7 @@
 import { FC, useState, ChangeEvent, useContext } from 'react';
 import { ITeam } from '../../interfaces/Teams/ITeam';
-import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityProvider';
+import { IGeneralContext } from '../../interfaces/IGeneralContext';
+import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const AddTeam: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom
@@ -20,7 +20,7 @@ const AddTeam: FC = () => {
 
 
 
-  const context = useContext(EntityContext) as IEntityContext<ITeam>;
+  const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
 
     const setHandler = (e: ChangeEvent<any>) => {
       const { name, value, files } = e.target;

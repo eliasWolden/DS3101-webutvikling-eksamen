@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SelectedDriverList from "../components/Drivers/SelectedDriverList";
-import { EntityProvider } from "../contexts/EntityProvider";
+import { GeneralProvider } from "../contexts/GeneralProvider";
 import { DriverService, RaceService, TeamService } from "../services/CreateService";
 import SelectedTeamList from "../components/Teams/SelectedTeamList";
 import SelectedRaceList from "../components/Races/SelectedRaceList";
@@ -30,25 +30,25 @@ const DriverPage: React.FC = () => {
 
   return (
     <section>
-      <EntityProvider service={DriverService}>
+      <GeneralProvider service={DriverService}>
         <section className="selected-driver-section selected-team-text">
           <h1 className="selected-title">Driver information</h1>
             <p className="selected-text selected-text-background">{driverName} has won {amountOfWins} races</p>
           <SelectedDriverList name={driverName} />
         </section>
-      </EntityProvider>
+      </GeneralProvider>
       <br />
-      <EntityProvider service={RaceService}>
+      <GeneralProvider service={RaceService}>
         <section>
           <SelectedRaceList name={driverName} updateAmountOfWins={updateAmountOfWins}/>
         </section>
-      </EntityProvider>
+      </GeneralProvider>
       <br />
-      <EntityProvider service={TeamService}>
+      <GeneralProvider service={TeamService}>
         <section>
           <SelectedTeamList name={driverName} />
         </section>
-      </EntityProvider>
+      </GeneralProvider>
       <Footer />
     </section>
     

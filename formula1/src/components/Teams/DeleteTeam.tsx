@@ -1,13 +1,13 @@
 import { FC, useState, useContext } from "react";
 import { ITeam } from "../../interfaces/Teams/ITeam";
-import { IEntityContext } from "../../interfaces/IEntityContext";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const DeleteTeam : FC = () => {
     const [manufacturer, setManufacturer] = useState('');
     const [Status, setStatus] = useState("");
 
-    const context = useContext(EntityContext) as IEntityContext<ITeam>;
+    const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
     
     const handleDelete = async () => {
         try {

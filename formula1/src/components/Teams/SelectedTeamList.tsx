@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { ITeam } from "../../interfaces/Teams/ITeam";
-import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IService } from "../../interfaces/IService";
 import { SelectedDriverListProps } from "../../interfaces/ISelectedDriverListProps";
 import SelectedTeamItem from "./SelectedTeamItem";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const SelectedTeamList: React.FC<SelectedDriverListProps> = ({ name }) => {
-    const context = useContext(EntityContext) as IEntityContext<IService<ITeam>>;
+    const context = useContext(GeneralContext) as IGeneralContext<IService<ITeam>>;
     const TeamsFromContext = (context.items as unknown) as ITeam[];
 
     const Teams = TeamsFromContext.filter((Team) => Team.driver1.toLowerCase() === name || Team.driver2.toLowerCase() === name);

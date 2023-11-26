@@ -1,12 +1,12 @@
 import AddRace from "../components/Races/CreateRace";
 import DeleteRace from "../components/Races/DeleteRace";
 import GetRaceByName from "../components/Races/GetRaceByName";
-import { EntityProvider } from "../contexts/EntityProvider";
+import { GeneralProvider } from "../contexts/GeneralProvider";
 import { RaceService } from "../services/CreateService";
 
 const CRUDRacePage = () => {
     return(
-        <EntityProvider service={RaceService}>
+        <GeneralProvider service={RaceService}>
         <div>
             <section>
                 <AddRace/>
@@ -18,7 +18,7 @@ const CRUDRacePage = () => {
                 <GetRaceByName/>
             </section>
         </div>
-        </EntityProvider>
+        </GeneralProvider>
     )
 }
 

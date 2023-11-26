@@ -1,14 +1,14 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import '../../css/main.css';
 import { ITeam } from '../../interfaces/Teams/ITeam';
-import { IEntityContext } from '../../interfaces/IEntityContext';
-import { EntityContext } from '../../contexts/EntityProvider';
+import { IGeneralContext } from '../../interfaces/IGeneralContext';
+import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const EditTeam = () => {
   const [id, setId] = useState<number>(0);
   const [Status, setStatus] = useState("");
 
-  const context = useContext(EntityContext) as IEntityContext<ITeam>;
+  const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
 
   const [teamsToUpdate, setTeamsToUpdate] = useState<ITeam>({ manufacturer: "", image: "", driver1: "", driver2: ""});
 

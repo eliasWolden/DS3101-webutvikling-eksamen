@@ -1,14 +1,14 @@
 import TeamList from "../components/Teams/TeamList";
-import { EntityProvider } from "../contexts/EntityProvider";
+import { GeneralProvider } from "../contexts/GeneralProvider";
 import { TeamService } from "../services/CreateService";
 
 const TeamPage = () => {
   return (
-    <EntityProvider service={TeamService}>
+    <GeneralProvider service={TeamService}>
     <section>
       <TeamList/>
     </section>
-    </EntityProvider>
+    </GeneralProvider>
   );
 };
 

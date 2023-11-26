@@ -1,13 +1,13 @@
 import { FC, useState, useContext } from "react";
-import { IEntityContext } from "../../interfaces/IEntityContext";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IRace } from "../../interfaces/Races/IRace";
-import { EntityContext } from "../../contexts/EntityProvider";
+import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const DeleteRace : FC = () => {
     const [id, setId] = useState(0);
     const [Status, setStatus] = useState("");
 
-    const context = useContext(EntityContext) as IEntityContext<IRace>;
+    const context = useContext(GeneralContext) as IGeneralContext<IRace>;
     
     const handleDelete = async () => {
         console.log(id);
