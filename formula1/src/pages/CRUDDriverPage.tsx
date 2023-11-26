@@ -1,5 +1,5 @@
 import DeleteDriver from "../components/Drivers/DeleteDriver";
-import EditDriver from "../components/Drivers/GetDriverById";
+import EditDriver from "../components/Drivers/EditDriver";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import { DriverService } from "../services/CreateService";
 import "../css/CRUD.css";

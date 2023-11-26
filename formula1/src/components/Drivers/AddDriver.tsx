@@ -6,7 +6,7 @@ import "../../css/CRUD.css";
 import DriverForm from "./DriverForm";
 import TeamSelect from "./TeamSelect";
 import ImageUpload from "./ImageUpload";
-import StatusMessage from "./StatusMessage";
+import StatusMessage from "../Shared/StatusMessage";
 import DriverInfoForm from "./DriverInfoForm";
 
 const AddDriver: FC = () => {
@@ -69,7 +69,7 @@ const AddDriver: FC = () => {
         teamId: teamid,
       };
       handleAdd(newDriver, image, subfolder);
-      setStatus("Registered");
+      setStatus("Completed");
       console.log(newDriver);
     } else {
       setStatus("Please fill out all fields");
