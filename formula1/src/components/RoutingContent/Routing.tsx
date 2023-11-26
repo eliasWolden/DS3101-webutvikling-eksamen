@@ -33,7 +33,7 @@ function Routing() {
                   className="image-button open-button"
                   onClick={() => setOpen(!open)}
                 >
-                  <img src={"public/images/open.jpg"} alt="open button" />
+                <div className="hamburger"></div>
                 </button>
               )}
 
@@ -48,7 +48,7 @@ function Routing() {
                       className="image-button close-button"
                       onClick={() => setOpen(!open)}
                     >
-                      <img src={"public/images/close.png"} alt="close button" />
+                      <div className="cross"></div>
                     </button>
 
                     <div className="list-box">
