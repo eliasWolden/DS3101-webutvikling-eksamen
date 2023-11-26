@@ -3,27 +3,26 @@ import DeleteDriver from "../components/Drivers/DeleteDriver";
 import EditDriver from "../components/Drivers/GetDriverById";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import { DriverService } from "../services/CreateService";
-
+import "../css/CRUD.css";
 
 const CRUDDriverPage = () => {
-    return (
-      <GeneralProvider service={DriverService}>
-      <div>
+  return (
+    <GeneralProvider service={DriverService}>
+      <div className="section">
         <section>
-          <CreateDriver/>
+          <CreateDriver />
         </section>
 
         <section>
-          <DeleteDriver/>
+          <DeleteDriver />
         </section>
 
         <section>
-          <EditDriver/>
+          <EditDriver />
         </section>
       </div>
-      </GeneralProvider>
-    );
-  };
-  
-  export default CRUDDriverPage;
-  
+    </GeneralProvider>
+  );
+};
+
+export default CRUDDriverPage;

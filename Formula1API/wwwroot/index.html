@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documentation</title>
   <style>
-    /* body styling */
+  
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       min-height: 100vh;
       margin: 0;
-      /* Remove default margin */
     }
 
-    /* header styling */
+
     header {
       width: 100%;
       z-index: 5000;
+      color: white;
     }
 
     nav {
@@ -28,20 +27,21 @@
       max-height: 5%;
       padding: 10px;
       border-bottom: solid 1px black;
-      background-color: rgb(199, 196, 196);
+      background-color: rgb(49, 49, 49);
     }
 
-    /* Adjust the styling for the first, second, and last items */
+    nav h4 {
+      margin-right: 30px;
+    }
+
     nav .first-item {
       justify-content: flex-start;
       margin-right: auto;
-      /* Pushes the second item to the center */
     }
 
     nav .last-item {
       justify-content: flex-end;
       margin-left: auto;
-      /* Pushes the second item to the center */
     }
 
     .image-icon-size {
@@ -49,14 +49,14 @@
       height: 40px;
       border: solid 1px black;
       border-radius: 50%;
+      margin-left: 20px;
     }
 
-    /* main styling */
     main {
       display: flex;
       flex: 1;
       padding: 10px;
-      width: 100%;
+
       background-color: rgb(84, 80, 80);
       color: white;
     }
@@ -73,14 +73,6 @@
 
     }
 
-    footer {
-      padding: 10px;
-      background-color: #f1f1f1;
-      margin-top: auto;
-      clear: both;
-      /* Clear both sides to ensure it stays below the content */
-      z-index: 200;
-    }
 
     h1 {
       font-size: 2rem;
@@ -95,7 +87,6 @@
       font-size: 1.3rem;
     }
 
-    /* table styling */
     table {
       border-collapse: collapse;
       width: 100%;
@@ -108,7 +99,6 @@
       text-align: left;
     }
 
-    /* aside list styling */
     aside {
       position: sticky;
       top: 0%;
@@ -117,7 +107,7 @@
       min-width: 20vw;
       max-width: 20vw;
       padding: 10px;
-      background-color: rgb(207, 125, 125);
+      background-color: rgb(227, 66, 66);
       border-right: solid 1px black;
       display: flex;
       flex-direction: column;
@@ -176,31 +166,26 @@
 
     .http-method {
       color: rgb(231, 167, 47);
-      /* Color for HTTP method (e.g., "GET") */
       font-family: Fira Code, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
     }
 
     .api-endpoint {
       color: rgb(112, 111, 111);
-      /* Color for API endpoint */
       font-family: Fira Code, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
     }
 
     .json-key {
       color: rgb(231, 47, 225);
-      /* Color for JSON keys */
       font-family: Fira Code, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
     }
 
     .json-string {
       color: green;
-      /* Color for JSON strings */
       font-family: Fira Code, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
     }
 
     .json-number {
       color: orange;
-      /* Color for JSON numbers */
       font-family: Fira Code, Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
     }
 
@@ -214,6 +199,47 @@
       border-radius: 5px;
       padding: 0.25rem 0.5rem;
     }
+
+footer {
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 10px; 
+}
+
+.footer-section h3 {
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
   </style>
 </head>
 
@@ -975,18 +1001,32 @@
 
 
         </article>
-
-
-
-
       </section>
 
     </section>
   </main>
 
   <footer>
-    <h4>Formula 1 API</4>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Our API</h3>
+        <p>Explore the capabilities of our API and integrate powerful features into your applications.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Documentation</h3>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#driver">Driver</a></li>
+          <li><a href="#race">Race</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#image">Image</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Formula 1 Special Event. All rights reserved.</p>
+    </div>
   </footer>
+  
 </body>
-
 </html>

@@ -4,24 +4,24 @@ import EditTeam from "../components/Teams/EditTeam";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import { TeamService } from "../services/CreateService";
 
-
 const CRUDTeamPage = () => {
-    return (
-      <GeneralProvider service={TeamService}>
-      <div>
+  return (
+    <GeneralProvider service={TeamService}>
+      <div className="section">
         <section>
+          <AddTeam />
         </section>
-          <AddTeam/>
+
         <section>
+          <DeleteTeam />
         </section>
-          <DeleteTeam/>
+
         <section>
-          <EditTeam/>
+          <EditTeam />
         </section>
       </div>
-      </GeneralProvider>
-    );
-  };
-  
-  export default CRUDTeamPage;
-  
+    </GeneralProvider>
+  );
+};
+
+export default CRUDTeamPage;
