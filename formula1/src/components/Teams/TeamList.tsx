@@ -43,6 +43,7 @@ const TeamList = () => {
         showDots={false}
         draggable={true}
         arrows={false}
+        itemClass="carousel-item-padding-40"
       >
         {getTeamsJSX()}
       </Carousel>

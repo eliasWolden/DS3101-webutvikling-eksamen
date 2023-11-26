@@ -1,15 +1,18 @@
-// DeleteDriver.tsx
+
 import { FC, useState, useContext, ChangeEvent } from "react";
 import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 import DriverForm from "./DriverForm";
+
 import DeleteButton from "../Shared/DeleteButton";
 import StatusMessage from "../Shared/StatusMessage";
+
 
 const DeleteDriver: FC = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+
   const [Status, setStatus] = useState("");
 
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
@@ -35,7 +38,9 @@ const DeleteDriver: FC = () => {
           await context.deleteItemByName(name);
           setFirstName("");
           setLastName("");
+
           setStatus("Completed");
+
         } else {
           setStatus("Please enter both Firstname and Lastname");
         }
@@ -48,16 +53,19 @@ const DeleteDriver: FC = () => {
     }
   };
 
+
   return (
     <section className="d-flex justify-content-center">
       <form className="d-flex flex-column align-items-center bg-light p-4 border shadow w-75 rounded mb-3">
         <h2>Delete driver</h2>
+
 
         <DriverForm setHandler={setHandler} />
 
         <DeleteButton onClick={handleDelete} />
 
         <StatusMessage status={Status} />
+
       </form>
     </section>
   );

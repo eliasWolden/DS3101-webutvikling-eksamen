@@ -1,8 +1,6 @@
-/* Update your TeamCarousel.css file */
-
 .team-card {
-  margin: 40px auto 20px auto;
-  height: 60vh;
+  margin: 20px auto;
+  height: auto;
   padding: 5%;
   border-radius: 10%;
   background: rgb(43, 29, 29);
@@ -10,13 +8,11 @@
 }
 
 .image-size-emblem {
-  width: 20%;
+  width: 50%;
 }
-
 
 .image-size-car {
   width: 100%;
-
 }
 
 .card-title-team {
@@ -33,19 +29,20 @@
   text-align: center;
 }
 
-#driver-1-image, #driver-2-image {
+#driver-1-image,
+#driver-2-image {
   width: 50%;
   border: 1px solid #ffffff;
   border-radius: 50%;
   margin: 10px;
 }
 
-#driver-1-title, #driver-2-title {
+#driver-1-title,
+#driver-2-title {
   color: #ffffff;
   font-weight: bold;
   margin-top: 5px;
 }
-
 
 .team-card:hover {
   cursor: pointer;

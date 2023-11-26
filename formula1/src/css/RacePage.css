@@ -8,7 +8,7 @@
 }
 .race-card-info {
   text-align: center;
-  width: 600px;
+  width: 100%;
   background-color: white;
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
@@ -21,6 +21,19 @@
   opacity: 0;
   transition: opacity 0.5s 0.5s;
 }
+
+@media (min-width: 768px) {
+  .race-card-info {
+    width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .race-card-info {
+    width: 800px;
+  }
+}
+
 .race-card-description {
   display: block;
   margin-bottom: 0.25rem;
@@ -30,7 +43,6 @@
   margin-bottom: 0.75rem;
 }
 
-/* animasjonsnavm */
 .race-card-article:hover .race-card-info {
   animation: show-info 1s forwards;
   opacity: 1;
@@ -46,8 +58,6 @@
   animation: remove-info 1s forwards;
 }
 
-
-/* animasjoner */
 @keyframes show-info {
   50% {
     transform: translateY(-10rem);
