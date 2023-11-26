@@ -4,6 +4,7 @@ import { GeneralProvider } from "../contexts/GeneralProvider";
 import { DriverService } from "../services/CreateService";
 import "../css/CRUD.css";
 import AddDriver from "../components/Drivers/AddDriver";
+import Footer from "../components/Home/Footer";
 
 const CRUDDriverPage = () => {
   return (
@@ -21,6 +22,9 @@ const CRUDDriverPage = () => {
           <EditDriver />
         </section>
       </div>
+      <section>
+        <Footer />
+      </section>
     </GeneralProvider>
   );
 };

@@ -1,3 +1,4 @@
+import Footer from "../components/Home/Footer";
 import AddRace from "../components/Races/CreateRace";
 import DeleteRace from "../components/Races/DeleteRace";
 import GetRaceByName from "../components/Races/GetRaceByName";
@@ -18,6 +19,9 @@ const CRUDRacePage = () => {
           <GetRaceByName />
         </section>
       </div>
+      <section>
+        <Footer />
+      </section>
     </GeneralProvider>
   );
 };
