@@ -5,10 +5,10 @@ import { IGeneralContext } from '../../interfaces/IGeneralContext';
 import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const EditTeam = () => {
+  const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
   const [id, setId] = useState<number>(0);
   const [Status, setStatus] = useState("");
-
-  const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
+  const [driverObtained, setDriverObtained] = useState(false);
 
   const [teamsToUpdate, setTeamsToUpdate] = useState<ITeam>({ manufacturer: "", image: "", driver1: "", driver2: ""});
 
@@ -40,6 +40,7 @@ const EditTeam = () => {
         setTeamsToUpdate(teamsFromContext);
         console.log(teamsFromContext);
         setStatus('');
+        setDriverObtained(true);
         }
     } catch{
       setStatus("Error getting team");
@@ -51,7 +52,8 @@ const EditTeam = () => {
         if(context != null){
         context.editItem(teamsToUpdate);
         console.log(teamsToUpdate);
-        setStatus("You´ve edited a team")
+        setStatus("You´ve edited a team");
+        setDriverObtained(false);
       }
     }
     catch (error) {
@@ -120,11 +122,14 @@ const EditTeam = () => {
           <input type="button" className='btn btn-primary' value="get team" onClick={getByIdFromContext}/>
         </div>
       </div>
+
+      {driverObtained && (
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save team" onClick={saveChanges}/>
         </div>
       </div>
+      )}
 
       </div>
       <div className='col'>

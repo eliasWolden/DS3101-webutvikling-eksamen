@@ -5,9 +5,10 @@ import { IGeneralContext } from '../../interfaces/IGeneralContext';
 import { GeneralContext } from '../../contexts/GeneralProvider';
 
 const EditRace = () => {
+  const context = useContext(GeneralContext) as IGeneralContext<IRace>;
   const [GrandPrix, setGrandPrix] = useState<string>("");
   const [Status, setStatus] = useState("");
-  const context = useContext(GeneralContext) as IGeneralContext<IRace>;
+  const [driverObtained, setDriverObtained] = useState(false);
 
     const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({ 
       grandPrix: "",
@@ -42,6 +43,7 @@ const EditRace = () => {
             setRacesToUpdate(RacesFromContext);
             console.log(RacesFromContext);
             setStatus('Your race!');
+            setDriverObtained(true);
             } 
             else {
               setStatus("Please enter a GrandPrix");
@@ -56,6 +58,9 @@ const EditRace = () => {
         if(context){
         context.editItem(RacesToUpdate);
         console.log(RacesToUpdate);
+        setStatus("You´ve edited a race");
+        setDriverObtained(false);
+
         } else{
             setStatus("Error saving changes");
         }
@@ -123,12 +128,15 @@ const EditRace = () => {
           <input type="button" className='btn btn-primary' value="get Race" onClick={getByGrandPrixFromContext}/>
         </div>
       </div>
+
+      {driverObtained && (
       <div className='row'>
         <div className='form-group col-md-4'>
           <input type="button" className='btn btn-warning' value="save Race" onClick={saveChanges}/>
           <span className={Status=== 'Your race!' ? 'success-message' : 'text-danger'}>{Status}</span>
         </div>
       </div>
+      )}
 
       </div>
       <div className='col'>
