@@ -3,12 +3,13 @@ import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 import DriverForm from "./DriverForm";
+import StatusMessage from "./StatusMessage";
 
 const DeleteDriver: FC = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const name = firstName + " " + lastName;
-  const [deleteStatus, setDeleteStatus] = useState("");
+  const [Status, setStatus] = useState("");
 
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
 
@@ -19,16 +20,16 @@ const DeleteDriver: FC = () => {
           await context.deleteItemByName(name);
           setFirstName("");
           setLastName("");
-          setDeleteStatus("Driver deleted");
+          setStatus("Driver deleted");
         } else {
-          setDeleteStatus("Please enter both Firstname and Lastname");
+          setStatus("Please enter both Firstname and Lastname");
         }
       } else {
-        setDeleteStatus("Something went wrong with deleting..");
+        setStatus("Something went wrong with deleting..");
       }
     } catch (error) {
       console.log("Error deleting driver", error);
-      setDeleteStatus("Error deleting driver");
+      setStatus("Error deleting driver");
     }
   };
 
@@ -61,7 +62,7 @@ const DeleteDriver: FC = () => {
               onClick={handleDelete}
               value="Delete driver"
             />
-
+             <StatusMessage status={Status} />
           </div>
         </div>
       </form>
