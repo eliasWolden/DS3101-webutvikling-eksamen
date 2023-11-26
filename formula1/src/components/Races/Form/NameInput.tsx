@@ -1,9 +1,5 @@
 import React from "react";
-
-interface NameInputProps {
-  grandPrix: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+import "../../../interfaces/Races/INameInputProps";
 
 const NameInput: React.FC<NameInputProps> = ({ grandPrix, onChange }) => {
   return (

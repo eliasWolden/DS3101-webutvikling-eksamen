@@ -1,8 +1,5 @@
 import React from "react";
-
-interface TeamSelectProps {
-  setHandler: (e: React.ChangeEvent<any>) => void;
-}
+import "../../../interfaces/Drivers/ITeamSelectProps";
 
 const TeamSelect: React.FC<TeamSelectProps> = ({ setHandler }) => {
   return (

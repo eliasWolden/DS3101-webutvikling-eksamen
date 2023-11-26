@@ -1,16 +1,9 @@
 import React from "react";
-
-interface RaceFormProps {
-  setHandler: (e: React.ChangeEvent<any>) => void;
-}
+import "../../../interfaces/Races/IRaceFormProps";
 
 const RaceForm: React.FC<RaceFormProps> = ({ setHandler }) => {
   return (
     <>
-
-
-
-
       <div className="row">
         <div className="form-group col-md-4">
           <label>Number of laps</label>
@@ -27,13 +20,13 @@ const RaceForm: React.FC<RaceFormProps> = ({ setHandler }) => {
 
       <div className="form-group col-md-4">
         <label>Race time</label>
-      <input
-        name="winnerTime"
-        className="form-control"
-        placeholder="Race time"
-        onChange={setHandler}
-      />
-    </div>
+        <input
+          name="winnerTime"
+          className="form-control"
+          placeholder="Race time"
+          onChange={setHandler}
+        />
+      </div>
     </>
   );
 };

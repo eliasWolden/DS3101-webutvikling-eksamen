@@ -1,16 +1,10 @@
 import React from "react";
-
-interface RaceDetailsInputsProps {
-  winnerName: string;
-  winnerTime: string;
-  numberOfLaps: number;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+import "../../../interfaces/Races/IRaceDetailsInputsProps";
 
 const RaceDetailsInputs: React.FC<RaceDetailsInputsProps> = ({
-    winnerName,
-    winnerTime,
-    numberOfLaps,
+  winnerName,
+  winnerTime,
+  numberOfLaps,
 
   onChange,
 }) => {
@@ -46,17 +40,15 @@ const RaceDetailsInputs: React.FC<RaceDetailsInputsProps> = ({
 
       <div className="form-group col-md-4">
         <label>Race time</label>
-      <input
-        id="winnerTime"
-        name="winnerTime"
-        value={winnerTime}
-        className="form-control"
-        placeholder="Race time"
-        onChange={onChange}
-      />
-    </div>
-
-
+        <input
+          id="winnerTime"
+          name="winnerTime"
+          value={winnerTime}
+          className="form-control"
+          placeholder="Race time"
+          onChange={onChange}
+        />
+      </div>
     </>
   );
 };
