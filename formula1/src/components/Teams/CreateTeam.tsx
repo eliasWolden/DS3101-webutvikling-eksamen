@@ -2,6 +2,7 @@ import { FC, useState, ChangeEvent, useContext } from 'react';
 import { ITeam } from '../../interfaces/Teams/ITeam';
 import { IGeneralContext } from '../../interfaces/IGeneralContext';
 import { GeneralContext } from '../../contexts/GeneralProvider';
+import '../../css/main.css';
 
 const AddTeam: FC = () => {
 //fornavn og etternavn blir til navnet til sjaføren med mellomrom
@@ -161,6 +162,17 @@ const AddTeam: FC = () => {
             <option value="car-haas-f1-team.png">Haas F1</option>
           </select>
         </div>
+      </div>
+
+      <div className='col-md-3'>
+        <img className='image-size-car'
+          src={`http://localhost:5257/api/Image/car/${selectedCar}`}
+          alt='Not found'
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = "public/images/uknown.png"; 
+          }}
+          />
       </div>
 
       <div className='row'>
