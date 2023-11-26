@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { Question, QuizState } from "../../interfaces/Quiz/IQuiz";
 import "../../css/QuizGame.css";
 
-const Quiz = () => {
+const Quiz: FC = () => {
   const initialQuizState: QuizState = {
     score: 0,
     currentQuestion: 0,

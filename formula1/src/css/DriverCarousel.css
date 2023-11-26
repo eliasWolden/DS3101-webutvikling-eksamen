@@ -13,16 +13,15 @@
 
 .card-title-driver,
 .card-text-driver {
-  font-family: 'Monument Grotesk Mono', monospace;
+  font-family: "Monument Grotesk Mono", monospace;
   color: white;
 }
 .card-text-driver:hover {
   color: orange;
 }
-.card-title-driver:hover{
+.card-title-driver:hover {
   color: orange;
 }
-
 
 .card-title-driver {
   text-align: center;
@@ -31,7 +30,7 @@
 .driver-card-wrapper {
   height: 100%;
   width: 100%;
-  position: relative; /* Add position: relative to create a stacking context */
+  position: relative;
 }
 
 .driver-card-text-body {
@@ -42,9 +41,9 @@
   width: 100%;
   border: 1px solid white;
   border-radius: 10px;
-  max-width: 100%; /* Set max-width to 100% */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
-  z-index: 1; /* Set a lower z-index for the text body */
+  max-width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .driver-card-image {
@@ -53,15 +52,14 @@
   background: rgb(43, 29, 29);
   border: 1px solid white;
   border-radius: 10px;
-  position: relative; /* Add position: relative to the image */
-  z-index: 2; /* Set a higher z-index for the image */
+  position: relative;
+  z-index: 2;
 }
 
 .driver-card:hover .driver-card-image {
   transform: translateY(-32%);
 }
 
-/* Adjusted the styles for better readability */
 .driver-card-text-body h2,
 .driver-card-text-body p {
   margin: 10px;

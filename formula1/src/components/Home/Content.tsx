@@ -10,8 +10,9 @@ import {
   RaceService,
   TeamService,
 } from "../../services/CreateService";
+import { FC } from "react";
 
-const Content = () => {
+const Content: FC = () => {
   return (
     <article>
       <section>

@@ -1,4 +1,6 @@
-const Header = () => {
+import { FC } from "react";
+
+const Header: FC = () => {
   return (
     <div className="container">
       <div className="header text-center text-white text-uppercase">

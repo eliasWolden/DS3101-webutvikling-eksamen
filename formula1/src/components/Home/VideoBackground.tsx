@@ -1,6 +1,7 @@
+import { FC } from "react";
 import "../../css/HomePage.css";
 
-const VideoBackground = () => {
+const VideoBackground: FC = () => {
   return (
     <section>
       <div className="video-background position-relative">
