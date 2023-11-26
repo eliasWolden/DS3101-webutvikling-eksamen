@@ -1,3 +1,4 @@
+import Footer from "../components/Home/Footer";
 import AddTeam from "../components/Teams/CreateTeam";
 import DeleteTeam from "../components/Teams/DeleteTeam";
 import EditTeam from "../components/Teams/EditTeam";
@@ -20,6 +21,9 @@ const CRUDTeamPage = () => {
           <EditTeam />
         </section>
       </div>
+      <section>
+        <Footer />
+      </section>
     </GeneralProvider>
   );
 };

@@ -80,7 +80,11 @@ const Quiz: FC = () => {
   ];
 
   useEffect(() => {
-    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    const shuffled = [...questions].map((question) => ({
+      ...question,
+      options: [...question.options].sort(() => Math.random() - 0.5),
+    }));
+
     setShuffledQuestions(shuffled);
   }, []);
 

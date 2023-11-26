@@ -1,4 +1,3 @@
-// IdInput.tsx
 import React from "react";
 
 interface IdInputProps {
