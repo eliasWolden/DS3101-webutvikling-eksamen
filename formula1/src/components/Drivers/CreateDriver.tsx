@@ -20,29 +20,64 @@ const AddDriver: FC = () => {
 
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
 
-  const setHandler = (e: ChangeEvent<any>) => {
-    const { name, value, files } = e.target;
+    const setHandler = (e: ChangeEvent<any>) => {
+      const { name, value, files } = e.target;
 
-    switch (name) {
-      case "Firstname":
-        setFirstName(value);
-        break;
-      case "Lastname":
-        setLastName(value);
-        break;
-      case "Age":
-        setAge(Number(value));
-        break;
-      case "nationality":
-        setNationality(value);
-        break;
-      case "teamid":
-        setTeamid(parseInt(value));
-        break;
-      case "image":
-        if (files != null) {
-          const file = files[0];
-          setImage(file);
+      switch (name) {
+        case 'Firstname':
+          setFirstName(value);
+          break;
+        case 'Lastname':
+          setLastName(value);
+          break;
+        case 'Age':
+          setAge(Number(value));
+          break;
+        case 'nationality':
+          setNationality(value);
+          break;
+        case 'teamid':
+          setTeamid(parseInt(value));
+          break;
+        case 'image':
+          if (files != null) {
+            const file = files[0];
+
+            const imageFileName = `${firstName}-${lastName}.png`;
+
+            const renamedImage = new File([file], imageFileName, { type: file.type });
+    
+            setImage(renamedImage);
+          }
+          break;
+      }
+    };
+
+
+const saveDriver = () => {
+  if (firstName && lastName && age && nationality && teamid && image) {
+    const newDriver: IDriver = {
+      name: fullName,
+      age: age,
+      nationality: nationality,
+      image: image.name,
+      teamId: teamid,
+    };
+    handleAdd(newDriver, image, subfolder);
+    setStatus("Driver created");
+    console.log(newDriver);
+  } else {
+    setStatus("Please fill out all fields");
+  }
+};
+
+
+    const handleAdd = async (newItem : IDriver,  image : File, subfolder : string) => {
+      try {
+        if(context) {
+          await context.postItem(newItem);
+          await context.postImage(image, subfolder);
+          console.log(image);
         }
         break;
     }
