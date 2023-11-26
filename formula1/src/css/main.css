@@ -220,6 +220,23 @@
 }
 
 
+/* selected team css */
+.selected-team-bg{
+  background-image: url("../../public/images/formula1background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  filter: brightness(90%);
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.selected-team-card-size {
+  width: 18rem;
+}
+
+
+
 /* brukes denne?? */
 
 .selected-emblem {
