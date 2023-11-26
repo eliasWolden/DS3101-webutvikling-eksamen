@@ -37,8 +37,9 @@ const SelectedTeamItem: FC<ITeam> = ({
               />
               <div className="card-body">
                 <h5 className="card-title">{driver2}</h5>
-                <p className="card-text">Driver 1</p>
-              </div>
+
+                <p className="card-text">Driver 2</p>
+              </div> 
             </div>
           </div>
         </div>

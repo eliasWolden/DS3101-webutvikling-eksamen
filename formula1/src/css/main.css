@@ -211,9 +211,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(119, 47, 47);
   object-fit: cover;
-  border: solid 1px black;
+  border: solid 2px black;
   border-radius: 10px;
   filter: blur(50px);
   z-index: -1; 
@@ -221,7 +220,6 @@
 
 
 .selected-team-bg{
-  background-image: url("../../public/images/formula1background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -293,11 +291,11 @@
 .selected-race-box-full {
   width: 100vw;
   height: 100%;
-  background-color: rgba(142, 10, 10, 0.904);
+  background-color:rgb(119, 47, 47);
 }
 .selected-driver-section {
   position: relative;
-  background-image: url("../../public/images/formula1background.jpg");
+  background-color: rgba(56, 51, 51, 0.804);;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
