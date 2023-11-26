@@ -78,7 +78,11 @@ function Routing() {
                       </ul>
 
                       <ul className="list-2-in-box">
-                    {/* Linke til doc siden? */}
+                        <li>
+                          <Link to="http://localhost:5257/index.html" className="nav-link">
+                            Docs
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </div>
