@@ -6,7 +6,9 @@ interface StatusMessageProps {
 
 const StatusMessage: React.FC<StatusMessageProps> = ({ status }) => {
   return (
-    <span className={status === "Registered" ? "success-message" : "text-danger"}>
+    <span
+      className={status === "Registered" ? "success-message" : "text-danger"}
+    >
       {status}
     </span>
   );

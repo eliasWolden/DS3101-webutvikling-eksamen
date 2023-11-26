@@ -9,12 +9,13 @@ import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 
 const DriverList = () => {
-  
-  const context = useContext(GeneralContext) as IGeneralContext<IService<IDriver>>;
-    const drivers = context.items as [];
-    
+  const context = useContext(GeneralContext) as IGeneralContext<
+    IService<IDriver>
+  >;
+  const drivers = context.items as [];
+
   const getDriversJSX = () =>
-  drivers.map((driver: IDriver) => (
+    drivers.map((driver: IDriver) => (
       <DriverItem
         key={driver.id}
         id={driver.id}
@@ -23,7 +24,7 @@ const DriverList = () => {
         nationality={driver.nationality}
         image={`http://localhost:5257/api/Image/driver/${driver.image}`}
         teamId={driver.teamId}
-        />
+      />
     ));
 
   const responsive = {

@@ -17,16 +17,16 @@ const TeamSelect: React.FC<TeamSelectProps> = ({ setHandler }) => {
           className="form-control"
           onChange={setHandler}
         >
-              <option value="1">Red bull</option>
-              <option value="2">Mercedes</option>
-              <option value="3">Ferrari</option>
-              <option value="4">McLaren</option>
-              <option value="5">Aston Martin</option>
-              <option value="6">Alpine</option>
-              <option value="7">Williams</option>
-              <option value="8">AlphaTauri</option>
-              <option value="9">Alfa Romeo</option>
-              <option value="10">Haas F1</option>
+          <option value="1">Red bull</option>
+          <option value="2">Mercedes</option>
+          <option value="3">Ferrari</option>
+          <option value="4">McLaren</option>
+          <option value="5">Aston Martin</option>
+          <option value="6">Alpine</option>
+          <option value="7">Williams</option>
+          <option value="8">AlphaTauri</option>
+          <option value="9">Alfa Romeo</option>
+          <option value="10">Haas F1</option>
         </select>
       </div>
     </div>

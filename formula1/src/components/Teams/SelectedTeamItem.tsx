@@ -15,6 +15,7 @@ const SelectedTeamItem: FC<ITeam> = ({
 
   const driver1FirstName = driver1.split(" ")[0];
   const driver2FirstName = driver2.split(" ")[0];
+
   return (
     <div className="bg-image selected-team-bg">
       <div className="container">
