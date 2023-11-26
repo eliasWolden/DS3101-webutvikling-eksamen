@@ -42,7 +42,12 @@ const AddDriver: FC = () => {
         case 'image':
           if (files != null) {
             const file = files[0];
-            setImage(file);
+
+            const imageFileName = `${firstName}-${lastName}.png`;
+
+            const renamedImage = new File([file], imageFileName, { type: file.type });
+    
+            setImage(renamedImage);
           }
           break;
       }
@@ -72,6 +77,7 @@ const saveDriver = () => {
         if(context) {
           await context.postItem(newItem);
           await context.postImage(image, subfolder);
+          console.log(image);
         }
 
       } catch (error) {
