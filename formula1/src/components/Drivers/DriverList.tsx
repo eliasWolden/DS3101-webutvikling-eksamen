@@ -1,12 +1,12 @@
-import { useContext } from "react";
-import Carousel from "react-multi-carousel";
-import DriverItem from "../Item/DriverItem";
 import "react-multi-carousel/lib/styles.css";
-import "../../../css/DriverCarousel.css";
-import { IDriver } from "../../../interfaces/Drivers/IDriver";
-import { IService } from "../../../interfaces/IService";
-import { IGeneralContext } from "../../../interfaces/IGeneralContext";
-import { GeneralContext } from "../../../contexts/GeneralProvider";
+import "../../css/DriverCarousel.css";
+import { useContext } from "react";
+import { GeneralContext } from "../../contexts/GeneralProvider";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
+import { IService } from "../../interfaces/IService";
+import { IDriver } from "../../interfaces/Drivers/IDriver";
+import DriverItem from "./Item/DriverItem";
+import Carousel from "react-multi-carousel";
 
 const DriverList = () => {
   const context = useContext(GeneralContext) as IGeneralContext<

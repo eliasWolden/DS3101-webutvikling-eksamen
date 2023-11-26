@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { IGeneralContext } from "../../../interfaces/IGeneralContext";
-import { IDriver } from "../../../interfaces/Drivers/IDriver";
-import { SelectedDriverListProps } from "../../../interfaces/ISelectedDriverListProps";
-import "../../../css/main.css";
-import { GeneralContext } from "../../../contexts/GeneralProvider";
+import "../../css/main.css";
+import { SelectedDriverListProps } from "../../interfaces/ISelectedDriverListProps";
+import { GeneralContext } from "../../contexts/GeneralProvider";
+import { IGeneralContext } from "../../interfaces/IGeneralContext";
+import { IDriver } from "../../interfaces/Drivers/IDriver";
 
 const SelectedDriverList: React.FC<SelectedDriverListProps> = ({ name }) => {
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
