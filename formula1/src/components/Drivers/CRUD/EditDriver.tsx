@@ -45,7 +45,7 @@ const EditDriver: FC = () => {
           nationality: e.currentTarget.value,
         });
         break;
-      case "teamid":
+        case "teamId":
         setDriversToUpdate({
           ...driversToUpdate,
           teamId: parseInt(e.currentTarget.value) || 0,
@@ -112,7 +112,7 @@ const EditDriver: FC = () => {
               <div className="form-group col-md-4 p-3">
                 <input
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-warning"
                   value="Get Driver"
                   onClick={getByIdFromContext}
                 />
