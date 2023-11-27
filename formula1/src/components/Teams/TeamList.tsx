@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import Carousel from "react-multi-carousel";
-import TeamItem from "./Item/TeamItem";
 import "react-multi-carousel/lib/styles.css";
 import { ITeam } from "../../interfaces/Teams/ITeam";
 import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { IService } from "../../interfaces/IService";
 import { GeneralContext } from "../../contexts/GeneralProvider";
+import TeamItem from "./item/TeamItem";
 
 const TeamList = () => {
   const context = useContext(GeneralContext) as IGeneralContext<

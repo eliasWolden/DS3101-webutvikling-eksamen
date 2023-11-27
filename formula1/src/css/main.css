@@ -471,3 +471,14 @@ section {
   margin: 10px;
 }
 
+.teams-with-wins {
+    background-image: linear-gradient(
+      rgb(24, 24, 24),
+      rgb(159, 159, 159),
+      rgb(24, 24, 24)
+    );
+  
+    padding: 100px;
+}
+  
+

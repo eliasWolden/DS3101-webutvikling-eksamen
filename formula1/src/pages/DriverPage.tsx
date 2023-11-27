@@ -9,8 +9,8 @@ import {
 import SelectedTeamList from "../components/Teams/SelectedTeamList";
 import SelectedRaceList from "../components/Races/SelectedRaceList";
 import { useParams } from "react-router-dom";
-import "../css/main.css";
 import Footer from "../components/Home/Footer";
+import '../css/main.css';
 
 const DriverPage: React.FC = () => {
   const [driverName, setDriverName] = useState<string>("");
@@ -31,6 +31,9 @@ const DriverPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [driverName]);
 
+  const teamSectionClass = amountOfWins <= 0 ? "teams-with-wins" : "";
+
+
   return (
     <section>
       <GeneralProvider service={DriverService}>
@@ -40,18 +43,16 @@ const DriverPage: React.FC = () => {
           <SelectedDriverList name={driverName} />
         </section>
       </GeneralProvider>
-      <br />
       <GeneralProvider service={RaceService}>
-        <section>
+        <section className={teamSectionClass}>
           <SelectedRaceList
             name={driverName}
             updateAmountOfWins={updateAmountOfWins}
           />
         </section>
       </GeneralProvider>
-      <br />
       <GeneralProvider service={TeamService}>
-        <section>
+        <section className={teamSectionClass}>
         <h1 className="selected-title">Team:</h1>
           <SelectedTeamList name={driverName} />
         </section>
