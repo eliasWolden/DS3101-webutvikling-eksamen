@@ -1,11 +1,11 @@
 import { FC, useState, ChangeEvent, useContext } from "react";
-import { ITeam } from "../../interfaces/Teams/ITeam";
-import { IGeneralContext } from "../../interfaces/IGeneralContext";
-import { GeneralContext } from "../../contexts/GeneralProvider";
-import TeamForm from "./Forms/TeamForm";
-import TeamCarSelect from "./Forms/TeamCarSelect";
-import StatusMessage from "../Shared/StatusMessage";
-import SaveButton from "../Shared/SaveButton";
+import { ITeam } from "../../../interfaces/Teams/ITeam";
+import { IGeneralContext } from "../../../interfaces/IGeneralContext";
+import { GeneralContext } from "../../../contexts/GeneralProvider";
+import TeamForm from "../Forms/TeamForm";
+import TeamCarSelect from "../Forms/TeamCarSelect";
+import StatusMessage from "../../Shared/StatusMessage";
+import SaveButton from "../../Shared/SaveButton";
 
 const AddTeam: FC = () => {
   const [driver1FirstName, setDriver1FirstName] = useState("");

@@ -1,14 +1,13 @@
 import { FC, useState, useContext } from "react";
-import { ITeam } from "../../interfaces/Teams/ITeam";
-import { IGeneralContext } from "../../interfaces/IGeneralContext";
-import { GeneralContext } from "../../contexts/GeneralProvider";
-import StatusMessage from "../Shared/StatusMessage";
-import DeleteButton from "../Shared/DeleteButton";
+import { ITeam } from "../../../interfaces/Teams/ITeam";
+import { IGeneralContext } from "../../../interfaces/IGeneralContext";
+import { GeneralContext } from "../../../contexts/GeneralProvider";
+import StatusMessage from "../../Shared/StatusMessage";
+import DeleteButton from "../../Shared/DeleteButton";
 
 const DeleteTeam: FC = () => {
   const [manufacturer, setManufacturer] = useState("");
   const [Status, setStatus] = useState("");
-
 
   const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
 
@@ -29,7 +28,6 @@ const DeleteTeam: FC = () => {
   return (
     <section className="d-flex justify-content-center">
       <form className="d-flex flex-column align-items-center bg-light p-4 border shadow w-75 rounded mb-3">
-
         <h2>Delete Team</h2>
 
         <div className="form-group col-md-4 mb-4">
@@ -44,10 +42,9 @@ const DeleteTeam: FC = () => {
           />
         </div>
 
-            <DeleteButton onClick={handleDelete} />
+        <DeleteButton onClick={handleDelete} />
 
-            <StatusMessage status={Status} />
-
+        <StatusMessage status={Status} />
       </form>
     </section>
   );

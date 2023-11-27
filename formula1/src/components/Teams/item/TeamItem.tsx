@@ -1,7 +1,7 @@
 import { FC } from "react";
 import "../../css/main.css";
 import "../../css/TeamCarousel.css";
-import { ITeam } from "../../interfaces/Teams/ITeam";
+import { ITeam } from "../../../interfaces/Teams/ITeam";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 

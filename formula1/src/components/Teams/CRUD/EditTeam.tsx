@@ -1,15 +1,15 @@
 import { useState, ChangeEvent, useContext } from "react";
 import "../../css/main.css";
-import { ITeam } from "../../interfaces/Teams/ITeam";
-import { IGeneralContext } from "../../interfaces/IGeneralContext";
-import { GeneralContext } from "../../contexts/GeneralProvider";
+import { ITeam } from "../../../interfaces/Teams/ITeam";
+import { IGeneralContext } from "../../../interfaces/IGeneralContext";
+import { GeneralContext } from "../../../contexts/GeneralProvider";
 import "../../css/CRUD.css";
-import IdInput from "../Shared/IdInput";
-import StatusMessage from "../Shared/StatusMessage";
-import SaveButton from "../Shared/SaveButton";
-import GetImage from "../Shared/GetImage";
-import GetButton from "../Shared/GetButton";
-import TeamInputForm from "./Forms/TeamInputForm";
+import IdInput from "../../Shared/IdInput";
+import StatusMessage from "../../Shared/StatusMessage";
+import SaveButton from "../../Shared/SaveButton";
+import GetImage from "../../Shared/GetImage";
+import GetButton from "../../Shared/GetButton";
+import TeamInputForm from "../Forms/TeamInputForm";
 
 const EditTeam = () => {
   const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
@@ -82,30 +82,21 @@ const EditTeam = () => {
         <div className="row">
           <div className="col">
             <div className="form-group col-md-8">
+              <IdInput id={id} onChange={handleChange} />
 
-            <IdInput id={id} onChange={handleChange} />
-
-            <TeamInputForm onChange={handleChange} manufacturer={""} driver1={""} driver2={""}/>
-
- 
-
+              <TeamInputForm
+                onChange={handleChange}
+                manufacturer={""}
+                driver1={""}
+                driver2={""}
+              />
             </div>
-
-            <GetButton onClick={getByIdFromContext}/>
-
+            <GetButton onClick={getByIdFromContext} />
             <StatusMessage status={Status} />
-
-
-            {driverObtained && (
-              <SaveButton onClick={saveChanges}/>
-
-            )};
+            {driverObtained && <SaveButton onClick={saveChanges} />};
           </div>
           <div className="col">
-            <GetImage
-              imagePath={teamsToUpdate.image || ""}
-              subfolder="car"
-            />
+            <GetImage imagePath={teamsToUpdate.image || ""} subfolder="car" />
           </div>
           <div className="col">
             <GetImage

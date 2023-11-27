@@ -1,7 +1,7 @@
 import Footer from "../components/Home/Footer";
-import AddTeam from "../components/Teams/AddTeam";
-import DeleteTeam from "../components/Teams/DeleteTeam";
-import EditTeam from "../components/Teams/EditTeam";
+import AddTeam from "../components/Teams/CRUD/AddTeam";
+import DeleteTeam from "../components/Teams/CRUD/DeleteTeam";
+import EditTeam from "../components/Teams/CRUD/EditTeam";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import { TeamService } from "../services/CreateService";
 

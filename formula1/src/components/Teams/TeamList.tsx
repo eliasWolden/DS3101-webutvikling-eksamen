@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Carousel from "react-multi-carousel";
-import TeamItem from "./TeamItem";
+import TeamItem from "./item/TeamItem";
 import "react-multi-carousel/lib/styles.css";
 import { ITeam } from "../../interfaces/Teams/ITeam";
 import { IGeneralContext } from "../../interfaces/IGeneralContext";
