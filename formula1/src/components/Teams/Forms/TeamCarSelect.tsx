@@ -1,8 +1,7 @@
 import React from "react";
-import { TeamSelectProps } from "../../Drivers/Forms/TeamSelect";
 
 
-const TeamCarSelect: React.FC<TeamSelectProps> = ({ setHandler }) => {
+const TeamCarSelect: React.FC<DriverFormProps> = ({ setHandler }) => {
   return (
     <div className="row">
     <div className="form-group col-md-2">
