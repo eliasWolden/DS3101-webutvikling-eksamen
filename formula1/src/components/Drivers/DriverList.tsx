@@ -1,5 +1,4 @@
 import "react-multi-carousel/lib/styles.css";
-import "../../css/DriverCarousel.css";
 import { useContext } from "react";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 import { IGeneralContext } from "../../interfaces/IGeneralContext";
@@ -7,6 +6,7 @@ import { IService } from "../../interfaces/IService";
 import { IDriver } from "../../interfaces/Drivers/IDriver";
 import DriverItem from "./Item/DriverItem";
 import Carousel from "react-multi-carousel";
+import '../../css/main.css'
 
 const DriverList = () => {
   const context = useContext(GeneralContext) as IGeneralContext<
