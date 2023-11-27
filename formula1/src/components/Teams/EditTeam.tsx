@@ -4,6 +4,12 @@ import { ITeam } from "../../interfaces/Teams/ITeam";
 import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../contexts/GeneralProvider";
 import "../../css/CRUD.css";
+import IdInput from "../Shared/IdInput";
+import StatusMessage from "../Shared/StatusMessage";
+import TeamDetailsInputs from "./Forms/TeamDetailsInputs";
+import SaveButton from "../Shared/SaveButton";
+import GetImage from "../Shared/GetImage";
+import GetButton from "../Shared/GetButton";
 
 const EditTeam = () => {
   const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
@@ -76,105 +82,35 @@ const EditTeam = () => {
         <div className="row">
           <div className="col">
             <div className="form-group col-md-8">
-              <label>id</label>
-              <input
-                name="id"
-                type="number"
-                className="form-control"
-                placeholder="id"
-                onChange={handleChange}
-              />
-              <span
-                className={
-                  Status === "Please enter an id"
-                    ? "text-danger"
-                    : "success-message"
-                }
-              >
-                {Status}
-              </span>
+
+            <IdInput id={id} onChange={handleChange} />
+
+            <TeamDetailsInputs onChange={handleChange} manufacturer={""} driver1={""} driver2={""}/>
+
+ 
+
             </div>
 
-            <div className="form-group col-md-6">
-              <label>Manufacturer</label>
-              <input
-                name="manufacturer"
-                type="text"
-                className="form-control"
-                placeholder="Manufacturer"
-                value={teamsToUpdate?.manufacturer}
-                onChange={handleChange}
-              />
-            </div>
+            <GetButton onClick={getByIdFromContext}/>
 
-            <div className="form-group col-md-6">
-              <label>Driver 1</label>
-              <input
-                name="Driver1"
-                type="text"
-                className="form-control"
-                placeholder="Driver 1"
-                value={teamsToUpdate?.driver1}
-                onChange={handleChange}
-              />
-            </div>
+            <StatusMessage status={Status} />
 
-            <div className="form-group col-md-6">
-              <label>Driver 2</label>
-              <input
-                name="Driver2"
-                type="text"
-                className="form-control"
-                placeholder="Driver 2"
-                value={teamsToUpdate?.driver2}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="row">
-              <div className="form-group col-md-4 p-3">
-                <input
-                  type="button"
-                  className="btn btn-primary"
-                  value="get team"
-                  onClick={getByIdFromContext}
-                />
-              </div>
-            </div>
 
             {driverObtained && (
-              <div className="row">
-                <div className="form-group col-md-4">
-                  <input
-                    type="button"
-                    className="btn btn-warning"
-                    value="save team"
-                    onClick={saveChanges}
-                  />
-                </div>
-              </div>
-            )}
+              <SaveButton onClick={saveChanges}/>
+
+            )};
           </div>
           <div className="col">
-            <img
-              className="image-size-car"
-              src={`http://localhost:5257/api/Image/car/${teamsToUpdate.image}`}
-              alt="Not found"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "public/images/uknown.png";
-              }}
+            <GetImage
+              imagePath={teamsToUpdate.image || ""}
+              subfolder="car"
             />
           </div>
           <div className="col">
-            <img
-              className="image-size-emblem"
-              src={`http://localhost:5257/api/Image/emblem/${teamsToUpdate.id}.png`}
-              alt="Not found"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "public/images/uknown.png";
-              }}
+            <GetImage
+              imagePath={teamsToUpdate?.id + ".png" || 0}
+              subfolder="emblem"
             />
           </div>
         </div>
