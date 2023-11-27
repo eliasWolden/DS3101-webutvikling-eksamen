@@ -11,8 +11,7 @@ const VideoBackground: FC = () => {
           <track srcLang="en" kind="subtitles" label="English subtitles" />
         </video>
         <div className="docs-button position-absolute start-0 translate-middle-y ms-3">
-          <a href="/docs">
-            {" "}
+          <a href="http://localhost:5257/index.html">
             <button className="btn btn-secondary">Docs</button>
           </a>
         </div>
