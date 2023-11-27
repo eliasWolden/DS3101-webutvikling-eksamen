@@ -10,6 +10,10 @@
   width: 400px;
   object-fit: cover;
 }
+.image-size-races {
+  width: 400px;
+  object-fit: cover;
+}
 .selected-team {
   width: 800px;
 }
