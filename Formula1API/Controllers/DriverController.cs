@@ -16,6 +16,7 @@ public DriverController(Formula1Context _context)
     context = _context;
 }
 
+// Get all
 [HttpGet]
 public async Task<ActionResult<List<Driver>>> Get()
 {
@@ -37,8 +38,8 @@ public async Task<ActionResult<List<Driver>>> Get()
     }
 }
 
+// Get by id
 [HttpGet("id/{id}")]
-
 public async Task<ActionResult<List<Driver>>> GetById(int id)
 {
     try
@@ -59,6 +60,7 @@ public async Task<ActionResult<List<Driver>>> GetById(int id)
     }
 }
 
+// Get by name
 [HttpGet]
 [Route("name/{name}")]
 public async Task<ActionResult<List<Driver>>> GetByName(string name)
@@ -83,7 +85,7 @@ public async Task<ActionResult<List<Driver>>> GetByName(string name)
     
 }
 
-
+// Delete by name
 [HttpDelete("{name}")]
 public async Task<ActionResult<Driver>> DeleteByName(string name)
 {
@@ -111,6 +113,7 @@ public async Task<ActionResult<Driver>> DeleteByName(string name)
 }
 
 
+// Post
 [HttpPost]
 public async Task<IActionResult> CreateDriver(Driver newDriver)
 {
@@ -129,6 +132,7 @@ public async Task<IActionResult> CreateDriver(Driver newDriver)
 }
 
 
+// Put
 [HttpPut]
 public async Task<IActionResult> Put(Driver updatedDriver)
 {
@@ -156,6 +160,4 @@ public async Task<IActionResult> Put(Driver updatedDriver)
         return StatusCode(500, $"Error: {ex.Message}");
     }
 }
-
-
 }

@@ -16,6 +16,7 @@ public RaceController(Formula1Context _context)
     context = _context;
 }
 
+// Get all
 [HttpGet]
 public async Task<ActionResult<List<Race>>> Get()
 {
@@ -38,8 +39,8 @@ public async Task<ActionResult<List<Race>>> Get()
 }
 
 
+//Get by id
 [HttpGet("id/{id}")]
-
 public async Task<ActionResult<List<Race>>> GetById(int id)
 {
     try
@@ -60,7 +61,7 @@ public async Task<ActionResult<List<Race>>> GetById(int id)
     }
 }
 
-
+// Get by grandprix
 [HttpGet]
 [Route("grandPrix/{grandPrix}")]
 public async Task<ActionResult<List<Race>>> GetByName(string grandPrix)
@@ -84,6 +85,7 @@ public async Task<ActionResult<List<Race>>> GetByName(string grandPrix)
 }
 
 
+// Delete
 [HttpDelete("{id}")]
 public async Task<ActionResult<Race>> DeleteById(int id)
 {
@@ -111,6 +113,7 @@ public async Task<ActionResult<Race>> DeleteById(int id)
 }
 
 
+// Post
 [HttpPost]
 public async Task<IActionResult> CreateRace([FromBody] Race newRace)
 {
@@ -128,6 +131,7 @@ public async Task<IActionResult> CreateRace([FromBody] Race newRace)
     }
 }
 
+// Put
 [HttpPut]
 public async Task<IActionResult> Put(Race updatedRace)
 {

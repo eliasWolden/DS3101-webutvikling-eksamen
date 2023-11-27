@@ -14,6 +14,7 @@ public ImageController(IWebHostEnvironment _hosting)
 hosting = _hosting;
 }
 
+// Get
 [HttpGet("{imageType}/{imageName}")]
     public IActionResult GetImage(string imageType, string imageName)
     {
@@ -85,6 +86,7 @@ hosting = _hosting;
     }
 
 
+// Post
 [HttpPost("{subfolder}/")]
 public IActionResult SaveImage(IFormFile file, string subfolder)
 {
@@ -106,6 +108,7 @@ public IActionResult SaveImage(IFormFile file, string subfolder)
 }
  
  
+// Delete
 [HttpDelete("{imageName}")]
 public IActionResult DeleteImage(string imageName)
 {
@@ -127,5 +130,4 @@ public IActionResult DeleteImage(string imageName)
         return StatusCode(500);
     }
 }
-
 }
