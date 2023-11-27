@@ -1,5 +1,5 @@
 import Footer from "../components/Home/Footer";
-import AddTeam from "../components/Teams/CreateTeam";
+import AddTeam from "../components/Teams/AddTeam";
 import DeleteTeam from "../components/Teams/DeleteTeam";
 import EditTeam from "../components/Teams/EditTeam";
 import { GeneralProvider } from "../contexts/GeneralProvider";
