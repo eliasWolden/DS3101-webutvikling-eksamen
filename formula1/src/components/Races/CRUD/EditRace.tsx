@@ -1,20 +1,20 @@
 import { useState, ChangeEvent, useContext } from "react";
 import { IRace } from "../../../interfaces/Races/IRace";
-import "../../../css/main.css";
 import { IGeneralContext } from "../../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../../contexts/GeneralProvider";
-import "../../../css/CRUD.css";
 import NameInput from "../Form/NameInput";
 import RaceDetailsInputs from "../Form/RaceDetailsInputs";
 import StatusMessage from "../../Shared/StatusMessage";
 import GetImage from "../../Shared/GetImage";
+import "../../../css/CRUD.css";
+import '../../../css/main.css'
 
 const EditRace = () => {
   const context = useContext(GeneralContext) as IGeneralContext<IRace>;
   const [grandPrix, setGrandPrix] = useState<string>("");
   const [status, setStatus] = useState("");
   const [raceObtained, setRaceObtained] = useState(false);
-  const subfolder = "Race";
+  const subfolder = "race";
 
   const [raceToUpdate, setRaceToUpdate] = useState<IRace>({
     grandPrix: "",
@@ -122,7 +122,10 @@ const EditRace = () => {
             )}
             <StatusMessage status={status} />
           </div>
-          <GetImage imagePath={raceToUpdate?.image} subfolder={subfolder} />
+          <div className="col">
+          <GetImage imagePath={raceToUpdate.image || ""} 
+          subfolder={subfolder} />
+          </div>
         </div>
       </form>
     </section>
