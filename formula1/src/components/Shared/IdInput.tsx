@@ -14,7 +14,7 @@ const IdInput: React.FC<IdInputProps> = ({ id, onChange }) => {
         type="number"
         className="form-control"
         placeholder="id"
-        value={id}
+        value={isNaN(id) ? "" : id}
         onChange={onChange}
       />
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-interface TeamSelectProps {
+export interface TeamSelectProps {
   setHandler: (e: React.ChangeEvent<any>) => void;
 }
 

@@ -6,13 +6,14 @@ import StatusMessage from "../../Shared/StatusMessage";
 import IdInput from "../../Shared/IdInput";
 import DriverDetailsInputs from "../Forms/DriverDetailsInput";
 import GetImage from "../../Shared/GetImage";
+import SaveButton from "../../Shared/SaveButton";
 
 const EditDriver: FC = () => {
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
   const [id, setId] = useState<number>(0);
   const [status, setStatus] = useState("");
   const [driverObtained, setDriverObtained] = useState(false);
-  const subfolder = "Drivers";
+  const subfolder = "driver";
 
   
   const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({
@@ -108,16 +109,8 @@ const EditDriver: FC = () => {
             </div>
 
             {driverObtained && (
-              <div className="row">
-                <div className="form-group col-md-4">
-                  <input
-                    type="button"
-                    className="btn btn-warning"
-                    value="save driver"
-                    onClick={saveChanges}
-                  />
-                </div>
-              </div>
+              <SaveButton onClick={saveChanges}/>
+
             )}
           </div>
           <div className="col">
