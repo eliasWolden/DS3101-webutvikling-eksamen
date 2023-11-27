@@ -1,6 +1,7 @@
 import AddDriver from "../components/Drivers/CRUD/AddDriver";
 import DeleteDriver from "../components/Drivers/CRUD/DeleteDriver";
 import EditDriver from "../components/Drivers/CRUD/EditDriver";
+import Footer from "../components/Home/Footer";
 import { GeneralProvider } from "../contexts/GeneralProvider";
 import "../css/CRUD.css";
 import { DriverService } from "../services/CreateService";
@@ -21,6 +22,9 @@ const CRUDDriverPage = () => {
           <EditDriver />
         </section>
       </div>
+      <section>
+        <Footer />
+      </section>
     </GeneralProvider>
   );
 };
