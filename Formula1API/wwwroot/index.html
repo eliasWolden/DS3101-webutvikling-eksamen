@@ -752,22 +752,22 @@
             that information(<code class="text-code">manufacturer</code>, <code class="text-code">image</code>, <code
               class="text-code">driver1</code>, and a <code class="text-code">driver2</code>) and save it.</p>
           <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">PUT</span> <span class="api-endpoint">http://localhost:5257/api/Race</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">2</span>,
-                        <span class="json-key">"winnerName":</span> <span class="json-string">"Sergio Perez"</span>,
-                        <span class="json-key">"winnerTime":</span> <span class="json-number">"1:21:14.894"</span>,
-                        <span class="json-key">"grandPrix":</span> <span class="json-string">"Edited race"</span>,
-                        <span class="json-key">"numberOfLaps":</span> <span class="json-number">50</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"Saudi-Arabia-Grand-Prix.png"</span>
-                      }
-                    </p>
-                  </code>
-                </pre>
+          <code>
+            <div class="top-code">
+              <span class="http-method">PUT</span> <span class="api-endpoint">http://localhost:5257/api/Race</span>
+            </div>
+            <p class="json-response">
+              {
+                <span class="json-key">"id":</span> <span class="json-number">2</span>,
+                <span class="json-key">"winnerName":</span> <span class="json-string">"Sergio Perez"</span>,
+                <span class="json-key">"winnerTime":</span> <span class="json-number">"1:21:14.894"</span>,
+                <span class="json-key">"grandPrix":</span> <span class="json-string">"Edited race"</span>,
+                <span class="json-key">"numberOfLaps":</span> <span class="json-number">50</span>,
+                <span class="json-key">"image":</span> <span class="json-string">"Saudi-Arabia-Grand-Prix.png"</span>
+              }
+            </p>
+          </code>
+        </pre>
 
 
         </article>
@@ -822,21 +822,21 @@
           <h3 id="team-getAll">Get all teams</h3>
           <p>You can access the list of teams by using the <code class="text-code">/Team</code> endpoint.</p>
           <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">3</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"Ferrari"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"car-ferrari.png"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"Charles Leclerc"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"Carlos Sainz"</span>
-                      },
-                    </p>
-                  </code>
-                </pre>
+            <code>
+              <div class="top-code">
+                <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
+              </div>
+              <p class="json-response">
+                {
+                  <span class="json-key">"id":</span> <span class="json-number">3</span>,
+                  <span class="json-key">"manufacturer":</span> <span class="json-string">"Ferrari"</span>,
+                  <span class="json-key">"image":</span> <span class="json-string">"car-ferrari.png"</span>,
+                  <span class="json-key">"driver1":</span> <span class="json-string">"Charles Leclerc"</span>,
+                  <span class="json-key">"driver2":</span> <span class="json-string">"Carlos Sainz"</span>
+                },
+              </p>
+            </code>
+          </pre>
 
 
         </article>
@@ -846,21 +846,21 @@
           <p>You can get a team by using <code class="text-code">id</code> as a parameter: <code
               class="text-code">/team/1</code></p>
           <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Team/1</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">1</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"Red Bull Racing"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"car-red-bull.png"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"Max Verstappen"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"Sergio Perez"</span>
-                      }
-                    </p>
-                  </code>
-                </pre>
+              <code>
+                <div class="top-code">
+                  <span class="http-method">GET</span> <span class="api-endpoint">http://localhost:5257/api/Team/1</span>
+                </div>
+                <p class="json-response">
+                  {
+                    <span class="json-key">"id":</span> <span class="json-number">1</span>,
+                    <span class="json-key">"manufacturer":</span> <span class="json-string">"Red Bull Racing"</span>,
+                    <span class="json-key">"image":</span> <span class="json-string">"car-red-bull.png"</span>,
+                    <span class="json-key">"driver1":</span> <span class="json-string">"Max Verstappen"</span>,
+                    <span class="json-key">"driver2":</span> <span class="json-string">"Sergio Perez"</span>
+                  }
+                </p>
+              </code>
+            </pre>
 
 
       </article>
@@ -892,52 +892,47 @@
               class="text-code">image</code>, <code class="text-code">driver1</code>, and a <code
               class="text-code">driver2</code></p>
           <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">POST</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">11</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"new manufacturer"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"new image"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"new driver1"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"new driver2"</span>
-                      }
-                    </p>
-                  </code>
-                </pre>
+           <code>
+             <div class="top-code">
+               <span class="http-method">POST</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
+             </div>
+             <p class="json-response">
+               {
+                 <span class="json-key">"id":</span> <span class="json-number">11</span>,
+                 <span class="json-key">"manufacturer":</span> <span class="json-string">"new manufacturer"</span>,
+                 <span class="json-key">"image":</span> <span class="json-string">"new image"</span>,
+                 <span class="json-key">"driver1":</span> <span class="json-string">"new driver1"</span>,
+                 <span class="json-key">"driver2":</span> <span class="json-string">"new driver2"</span>
+               }
+             </p>
+           </code>
+         </pre>
 
 
-        </article>
-
-        <article>
-          <h3 id="team-update">Update a team</h3>
-          <p>You can update a team by using their <code class="text-code">id</code> to get their information, then edit
-            that information(<code class="text-code">manufacturer</code>, <code class="text-code">image</code>, <code
-              class="text-code">driver1</code>, and a <code class="text-code">driver2</code>) and save it.</p>
-          <pre class="code-wrap">
-                  <code>
-                    <div class="top-code">
-                      <span class="http-method">PUT</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
-                    </div>
-                    <p class="json-response">
-                      {
-                        <span class="json-key">"id":</span> <span class="json-number">8</span>,
-                        <span class="json-key">"manufacturer":</span> <span class="json-string">"edit"</span>,
-                        <span class="json-key">"image":</span> <span class="json-string">"edit.png"</span>,
-                        <span class="json-key">"driver1":</span> <span class="json-string">"edit"</span>,
-                        <span class="json-key">"driver2":</span> <span class="json-string">"edit"</span>
-                      }
-                    </p>
-                  </code>
-                </pre>
-
-
-        </article>
-
-
-      </section>
+      </article>
+      <article>
+        <h3 id="team-update">Update a team</h3>
+        <p>You can update a team by using their <code class="text-code">id</code> to get their information, then edit
+          that information(<code class="text-code">manufacturer</code>, <code class="text-code">image</code>, <code
+            class="text-code">driver1</code>, and a <code class="text-code">driver2</code>) and save it.</p>
+        <pre class="code-wrap">
+          <code>
+            <div class="top-code">
+              <span class="http-method">PUT</span> <span class="api-endpoint">http://localhost:5257/api/Team</span>
+            </div>
+            <p class="json-response">
+              {
+                <span class="json-key">"id":</span> <span class="json-number">8</span>,
+                <span class="json-key">"manufacturer":</span> <span class="json-string">"edit"</span>,
+                <span class="json-key">"image":</span> <span class="json-string">"edit.png"</span>,
+                <span class="json-key">"driver1":</span> <span class="json-string">"edit"</span>,
+                <span class="json-key">"driver2":</span> <span class="json-string">"edit"</span>
+              }
+            </p>
+          </code>
+        </pre>
+      </article>
+    </section>
 
       <section>
         <h2 id="image">Image</h2>
