@@ -17,6 +17,7 @@ public TeamController(Formula1Context _context)
 }
 
 
+// Get all
 [HttpGet]
 public async Task<ActionResult<List<Team>>> Get()
 {
@@ -32,6 +33,7 @@ public async Task<ActionResult<List<Team>>> Get()
 }
 
 
+// Get by id
 [HttpGet("id/{id}")]
 public async Task<ActionResult<List<Team>>> GetById(int id)
 {
@@ -54,6 +56,7 @@ public async Task<ActionResult<List<Team>>> GetById(int id)
 }
 
 
+// Get by manufacturer
 [HttpGet]
 [Route("manufacturer/{manufacturer}")]
 public async Task<ActionResult<List<Team>>> GetByName(string manufacturer)
@@ -77,6 +80,7 @@ public async Task<ActionResult<List<Team>>> GetByName(string manufacturer)
 }
 
 
+// Delete
 [HttpDelete("{manufacturer}")]
 public async Task<ActionResult<TeamController>> DeleteByName(string manufacturer)
 {
@@ -103,6 +107,7 @@ public async Task<ActionResult<TeamController>> DeleteByName(string manufacturer
     }
 }
 
+// Post
 [HttpPost]
 public async Task<IActionResult> CreateTeam([FromBody] Team newTeam)
 {
@@ -120,6 +125,7 @@ public async Task<IActionResult> CreateTeam([FromBody] Team newTeam)
     }
 }
 
+// Put
 [HttpPut]
 public async Task<IActionResult> Put(Team updatedTeam)
 {
@@ -146,5 +152,4 @@ public async Task<IActionResult> Put(Team updatedTeam)
         return StatusCode(500, $"Error: {ex.Message}");
     }
 }
-
 }
