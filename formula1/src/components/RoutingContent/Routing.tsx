@@ -54,7 +54,6 @@ function Routing() {
                     >
                       <div className="cross"></div>
                     </button>
-
                     <div className="list-box">
                       <ul className="list-1-in-box">
                         <li className="list-text-1">
@@ -63,7 +62,7 @@ function Routing() {
                           </Link>
                         </li>
                         <br />
-                        <p>Register:</p>
+                        <h3>Register:</h3>
                         <li className="list-text-2">
                           <Link to="/CRUDDriverPage" className="nav-link">
                             Driver
