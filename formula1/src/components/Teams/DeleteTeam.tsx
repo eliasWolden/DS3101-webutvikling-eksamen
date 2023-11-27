@@ -2,6 +2,8 @@ import { FC, useState, useContext } from "react";
 import { ITeam } from "../../interfaces/Teams/ITeam";
 import { IGeneralContext } from "../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../contexts/GeneralProvider";
+import StatusMessage from "../Shared/StatusMessage";
+import DeleteButton from "../Shared/DeleteButton";
 
 const DeleteTeam: FC = () => {
   const [manufacturer, setManufacturer] = useState("");
@@ -42,25 +44,10 @@ const DeleteTeam: FC = () => {
           />
         </div>
 
-        <div className="row">
-          <div className="form-group col-md-4">
-            <input
-              type="button"
-              className="btn btn-danger"
-              onClick={handleDelete}
-              value="Delete Team"
-            />
-            <span
-              className={
-                Status === "Please enter a manufacturer"
-                  ? "text-danger"
-                  : "success-message"
-              }
-            >
-              {Status}
-            </span>
-          </div>
-        </div>
+            <DeleteButton onClick={handleDelete} />
+
+            <StatusMessage status={Status} />
+
       </form>
     </section>
   );
