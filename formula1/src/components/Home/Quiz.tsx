@@ -10,9 +10,7 @@ const Quiz: FC = () => {
     quizCompleted: false,
   };
 
-  const [quizState, setQuizState] = useState<QuizState>({
-    ...initialQuizState,
-  });
+  const [quizState, setQuizState] = useState<QuizState>(initialQuizState);
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
 
   const questions: Question[] = [
@@ -77,7 +75,7 @@ const Quiz: FC = () => {
       ],
       correctAnswer: "Sebastian Vettel",
     },
-  ];
+  ]; // Your questions array remains unchanged
 
   useEffect(() => {
     const shuffled = [...questions].map((question) => ({

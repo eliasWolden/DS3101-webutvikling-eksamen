@@ -1,3 +1,5 @@
+/* QuizGame.css */
+
 .quiz-container {
   max-width: 800px;
   margin: auto;
@@ -41,15 +43,6 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 15px 0;
-}
-
-.progress-bar-container {
-  width: 100%;
-  background-color: #ddd;
-  height: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 15px;
 }
 
 .progress-bar {
