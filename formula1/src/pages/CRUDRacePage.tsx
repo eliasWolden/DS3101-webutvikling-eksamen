@@ -1,3 +1,4 @@
+import Footer from "../components/Home/Footer";
 import AddRace from "../components/Races/CRUD/AddRace";
 import DeleteRace from "../components/Races/CRUD/DeleteRace";
 import EditRace from "../components/Races/CRUD/EditRace";
@@ -18,6 +19,9 @@ const CRUDRacePage = () => {
           <EditRace />
         </section>
       </div>
+      <section>
+        <Footer />
+      </section>
     </GeneralProvider>
   );
 };

@@ -20,7 +20,6 @@ const AddTeam: FC = () => {
   const [selectedCar, setSelectedCar] = useState("");
   const [Status, setStatus] = useState("");
 
-
   const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
 
   const setHandler = (e: ChangeEvent<any>) => {
