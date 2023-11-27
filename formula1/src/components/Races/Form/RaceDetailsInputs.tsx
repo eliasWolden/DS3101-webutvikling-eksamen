@@ -5,19 +5,18 @@ const RaceDetailsInputs: React.FC<RaceDetailsInputsProps> = ({
   winnerName,
   winnerTime,
   numberOfLaps,
-
   onChange,
 }) => {
   return (
     <>
       <div className="form-group col-md-6">
-        <label>Name</label>
+        <label htmlFor="winnerName">Name</label>
         <input
           id="winnerName"
           name="winnerName"
           type="text"
           className="form-control"
-          placeholder="name"
+          placeholder="Name"
           value={winnerName}
           onChange={onChange}
         />
@@ -25,27 +24,27 @@ const RaceDetailsInputs: React.FC<RaceDetailsInputsProps> = ({
 
       <div className="row">
         <div className="form-group col-md-4">
-          <label>Number of laps</label>
+          <label htmlFor="numberOfLaps">Number of Laps</label>
           <input
             id="numberOfLaps"
-            type="text"
+            type="number"
             name="numberOfLaps"
             value={isNaN(numberOfLaps) ? "" : numberOfLaps}
             className="form-control"
-            placeholder="Number of laps"
+            placeholder="Number of Laps"
             onChange={onChange}
           />
         </div>
       </div>
 
       <div className="form-group col-md-4">
-        <label>Race time</label>
+        <label htmlFor="winnerTime">Race Time</label>
         <input
           id="winnerTime"
           name="winnerTime"
           value={winnerTime}
           className="form-control"
-          placeholder="Race time"
+          placeholder="Race Time"
           onChange={onChange}
         />
       </div>

@@ -3,33 +3,38 @@ import "../../../interfaces/Races/IRaceFormProps";
 
 const WinnerNameInput: React.FC<RaceFormProps> = ({ setHandler }) => {
   return (
-    <div>
+    <fieldset>
+      <legend>Name of Winner</legend>
+
       <div className="row mb-3">
-        <h3>Name of Winner</h3>
         <div className="form-group col-md-4">
-          <label>Firstname</label>
+          <label htmlFor="firstName">First Name</label>
           <input
+            id="firstName"
             name="Firstname"
             type="text"
             className="form-control"
-            placeholder="Firstname"
+            placeholder="First Name"
             onChange={setHandler}
           />
         </div>
 
         <div className="form-group col-md-6">
-          <label>LastName</label>
+          <label htmlFor="lastName">Last Name</label>
           <input
+            id="lastName"
             name="Lastname"
             type="text"
             className="form-control"
-            placeholder="Lastname"
+            placeholder="Last Name"
             onChange={setHandler}
           />
         </div>
+
         <div className="form-group col-md-4">
-          <label>Name of Grand Prix</label>
+          <label htmlFor="grandPrix">Name of Grand Prix</label>
           <input
+            id="grandPrix"
             name="grandPrix"
             type="text"
             className="form-control"
@@ -38,7 +43,7 @@ const WinnerNameInput: React.FC<RaceFormProps> = ({ setHandler }) => {
           />
         </div>
       </div>
-    </div>
+    </fieldset>
   );
 };
 

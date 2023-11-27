@@ -6,24 +6,25 @@ const RaceForm: React.FC<RaceFormProps> = ({ setHandler }) => {
     <>
       <div className="row">
         <div className="form-group col-md-4">
-          <label>Number of laps</label>
+          <label htmlFor="numberOfLaps">Number of Laps</label>
           <input
             id="numberOfLaps"
-            type="text"
+            type="number"
             name="numberOfLaps"
             className="form-control"
-            placeholder="Number of laps"
+            placeholder="Number of Laps"
             onChange={setHandler}
           />
         </div>
       </div>
 
       <div className="form-group col-md-4">
-        <label>Race time</label>
+        <label htmlFor="winnerTime">Race Time</label>
         <input
+          id="winnerTime"
           name="winnerTime"
           className="form-control"
-          placeholder="Race time"
+          placeholder="Race Time"
           onChange={setHandler}
         />
       </div>

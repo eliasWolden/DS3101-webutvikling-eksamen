@@ -8,9 +8,11 @@ const VideoBackground: FC = () => {
         <div className="overlay"></div>
         <video className="w-100" autoPlay muted loop>
           <source src="./videos/Formula1Video.mp4" type="video/mp4" />
+          <track srcLang="en" kind="subtitles" label="English subtitles" />
         </video>
         <div className="docs-button position-absolute start-0 translate-middle-y ms-3">
-          <a href="http://localhost:5257/index.html">
+          <a href="/docs">
+            {" "}
             <button className="btn btn-secondary">Docs</button>
           </a>
         </div>
