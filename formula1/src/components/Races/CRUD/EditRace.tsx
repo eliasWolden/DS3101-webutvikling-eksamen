@@ -27,7 +27,7 @@ const EditRace = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     switch (e.currentTarget.name) {
       case "grandPrix":
-        setGrandPrix(e.currentTarget.value);
+        setGrandPrix(e.currentTarget.value.toLowerCase());
         break;
       case "winnerName":
         setRaceToUpdate({
@@ -122,7 +122,7 @@ const EditRace = () => {
             )}
             <StatusMessage status={status} />
           </div>
-          <GetImage imagePath={""} {...raceToUpdate} subfolder={subfolder} />
+          <GetImage imagePath={raceToUpdate?.image} subfolder={subfolder} />
         </div>
       </form>
     </section>
