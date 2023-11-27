@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, useContext, useState } from "react";
+import React, { ChangeEvent, FC, useContext, useState } from "react";
 import { IGeneralContext } from "../../../interfaces/IGeneralContext";
 import { IDriver } from "../../../interfaces/Drivers/IDriver";
 import { GeneralContext } from "../../../contexts/GeneralProvider";
@@ -9,85 +9,83 @@ import ImageUpload from "../../Shared/ImageUpload";
 import StatusMessage from "../../Shared/StatusMessage";
 
 const AddDriver: FC = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const fullName = `${firstName} ${lastName}`;
-  const [Status, setStatus] = useState("");
-
-  const [age, setAge] = useState<number>(Number);
-  const [nationality, setNationality] = useState("");
-  const [teamid, setTeamid] = useState<number>(Number);
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [age, setAge] = useState<number>(0);
+  const [nationality, setNationality] = useState<string>("");
+  const [teamId, setTeamId] = useState<number>(0);
   const [image, setImage] = useState<File | null>(null);
+  const [status, setStatus] = useState<string>("");
 
   const subfolder = "Drivers";
-
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
 
-  const setHandler = (e: ChangeEvent<any>) => {
+  const setHandler = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value, files } = e.target;
 
     switch (name) {
-      case "Firstname":
+      case "firstname":
         setFirstName(value);
         break;
-      case "Lastname":
+      case "lastname":
         setLastName(value);
         break;
-      case "Age":
+      case "age":
         setAge(Number(value));
         break;
       case "nationality":
         setNationality(value);
         break;
       case "teamid":
-        setTeamid(parseInt(value));
+        setTeamId(parseInt(value));
         break;
       case "image":
         if (files != null) {
           const file = files[0];
-
           const imageFileName = `${firstName}-${lastName}.png`;
-
           const renamedImage = new File([file], imageFileName, {
             type: file.type,
           });
-
           setImage(renamedImage);
         }
+        break;
+      default:
         break;
     }
   };
 
-  const saveDriver = () => {
-    if (firstName && lastName && age && nationality && teamid && image) {
-      const newDriver: IDriver = {
-        name: fullName,
-        age: age,
-        nationality: nationality,
-        image: image.name,
-        teamId: teamid,
-      };
-      handleAdd(newDriver, image, subfolder);
-      setStatus("Completed");
-      console.log(newDriver);
-    } else {
-      setStatus("Please fill out all fields");
+  const saveDriver = async () => {
+    try {
+      if (validateInputs()) {
+        const newDriver: IDriver = {
+          name: `${firstName} ${lastName}`,
+          age: age,
+          nationality: nationality,
+          image: image?.name || "",
+          teamId: teamId,
+        };
+        await context.postItem(newDriver);
+        await context.postImage(image!, subfolder);
+        setStatus("Completed");
+        console.log(newDriver);
+      } else {
+        setStatus("Please fill out all fields");
+      }
+    } catch (error) {
+      console.error("Error adding driver", error);
+      setStatus("Error adding driver");
     }
   };
 
-  const handleAdd = async (
-    newItem: IDriver,
-    image: File,
-    subfolder: string
-  ) => {
-    try {
-      if (context) {
-        await context.postItem(newItem);
-        await context.postImage(image, subfolder);
-      }
-    } catch (error) {
-      console.log("Error adding driver", error);
-    }
+  const validateInputs = () => {
+    return (
+      !!firstName &&
+      !!lastName &&
+      age > 0 &&
+      !!nationality &&
+      teamId > 0 &&
+      !!image
+    );
   };
 
   return (
@@ -108,7 +106,7 @@ const AddDriver: FC = () => {
               value="Create driver"
               onClick={saveDriver}
             />
-            <StatusMessage status={Status} />
+            <StatusMessage status={status} />
           </div>
         </div>
       </form>

@@ -1,10 +1,9 @@
 import React from "react";
+import "../../../interfaces/Drivers/IDriverFormProps";
 
-export interface TeamSelectProps {
-  setHandler: (e: React.ChangeEvent<any>) => void;
-}
 
-const TeamSelect: React.FC<TeamSelectProps> = ({ setHandler }) => {
+const TeamSelect: React.FC<DriverFormProps> = ({ setHandler }) => {
+
   return (
     <div className="row mb-3">
       <div className="col-md-6">

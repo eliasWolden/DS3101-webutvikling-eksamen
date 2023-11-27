@@ -6,11 +6,9 @@ import IdInput from "../../Shared/IdInput";
 import DeleteButton from "../../Shared/DeleteButton";
 import StatusMessage from "../../Shared/StatusMessage";
 
-
-
 const DeleteRace: FC = () => {
-  const [id, setId] = useState(0);
-  const [Status, setStatus] = useState("");
+  const [id, setId] = useState<number>(0);
+  const [status, setStatus] = useState<string>("");
 
   const context = useContext(GeneralContext) as IGeneralContext<IRace>;
 
@@ -21,7 +19,7 @@ const DeleteRace: FC = () => {
         break;
     }
   };
-        
+
   const handleDelete = async () => {
     console.log(id);
     try {
@@ -34,19 +32,23 @@ const DeleteRace: FC = () => {
         }
       }
     } catch (error) {
-      setStatus("Something went wrong with deleting..");
+      console.error("Error deleting race", error);
+      setStatus("Error deleting race");
     }
   };
+
   return (
     <section className="d-flex justify-content-center">
       <form className="d-flex flex-column align-items-center bg-light p-4 border shadow w-75 rounded mb-3">
         <h2>Delete Race</h2>
 
-      <IdInput id={id} onChange={handleChange} />
+        <IdInput id={id} onChange={handleChange} />
 
-      <DeleteButton onClick={handleDelete} />
+        <div className="mt-3">
+          <DeleteButton onClick={handleDelete} />
+        </div>
 
-      <StatusMessage status={Status} />
+        <StatusMessage status={status} />
       </form>
     </section>
   );

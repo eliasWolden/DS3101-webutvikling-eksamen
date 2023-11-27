@@ -3,7 +3,7 @@ import { IRace } from "../../../interfaces/Races/IRace";
 import "../../../css/main.css";
 import { IGeneralContext } from "../../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../../contexts/GeneralProvider";
-import '../../../css/CRUD.css';
+import "../../../css/CRUD.css";
 import NameInput from "../Form/NameInput";
 import RaceDetailsInputs from "../Form/RaceDetailsInputs";
 import StatusMessage from "../../Shared/StatusMessage";
@@ -11,13 +11,12 @@ import GetImage from "../../Shared/GetImage";
 
 const EditRace = () => {
   const context = useContext(GeneralContext) as IGeneralContext<IRace>;
-  const [GrandPrix, setGrandPrix] = useState<string>("");
-  const [Status, setStatus] = useState("");
-  const [driverObtained, setDriverObtained] = useState(false);
+  const [grandPrix, setGrandPrix] = useState<string>("");
+  const [status, setStatus] = useState("");
+  const [raceObtained, setRaceObtained] = useState(false);
   const subfolder = "Race";
 
-
-  const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({
+  const [raceToUpdate, setRaceToUpdate] = useState<IRace>({
     grandPrix: "",
     winnerName: "",
     winnerTime: "",
@@ -31,58 +30,55 @@ const EditRace = () => {
         setGrandPrix(e.currentTarget.value);
         break;
       case "winnerName":
-        setRacesToUpdate({
-          ...RacesToUpdate,
+        setRaceToUpdate({
+          ...raceToUpdate,
           winnerName: e.currentTarget.value,
         });
-        console.log(RacesToUpdate);
         break;
       case "winnerTime":
-        setRacesToUpdate({
-          ...RacesToUpdate,
+        setRaceToUpdate({
+          ...raceToUpdate,
           winnerTime: e.currentTarget.value,
         });
-        console.log(RacesToUpdate);
-
         break;
       case "numberOfLaps":
-        setRacesToUpdate({
-          ...RacesToUpdate,
+        setRaceToUpdate({
+          ...raceToUpdate,
           numberOfLaps: parseInt(e.currentTarget.value),
         });
-        console.log(RacesToUpdate);
-
         break;
     }
   };
 
-  const getByGrandPrixFromContext = async () => {
+  const getRaceByGrandPrixFromContext = async () => {
     try {
       if (context) {
-        if (GrandPrix !== "") {
-          const RacesFromContext = await context?.getByName(GrandPrix);
-          setRacesToUpdate(RacesFromContext);
-          console.log(RacesFromContext);
+        if (grandPrix !== "") {
+          const raceFromContext = await context?.getByName(grandPrix);
+          setRaceToUpdate(raceFromContext);
           setStatus("Completed");
-          setDriverObtained(true);
+          setRaceObtained(true);
         } else {
-          setStatus("Please enter a GrandPrix");
+          setStatus("Please enter a Grand Prix");
         }
       }
     } catch (error) {
-      setStatus("Grand Prix not found");
+      setStatus("Race not found");
     }
   };
 
   const saveChanges = () => {
-    if (context) {
-      context.editItem(RacesToUpdate);
-      console.log(RacesToUpdate);
-      setStatus("Completed");
-      setDriverObtained(false);
-    } else {
-      setStatus("Error saving changes");
-
+    try {
+      if (context) {
+        context.editItem(raceToUpdate);
+        setStatus("Completed");
+        setRaceObtained(false);
+      } else {
+        setStatus("Error saving changes");
+      }
+    } catch (error) {
+      console.error("Error saving race", error);
+      setStatus("Error saving race");
     }
   };
 
@@ -91,45 +87,42 @@ const EditRace = () => {
       <form className="bg-light p-4 border shadow w-75 rounded mb-3">
         <h2>Edit Race</h2>
         <div className="row">
-          
           <div className="col">
-          <NameInput grandPrix={GrandPrix} onChange={handleChange} />
+            <NameInput grandPrix={grandPrix} onChange={handleChange} />
 
-          <RaceDetailsInputs 
-          winnerName={RacesToUpdate?.winnerName|| ""} 
-          winnerTime={RacesToUpdate?.winnerTime || ""} 
-          numberOfLaps={RacesToUpdate?.numberOfLaps || 0} 
-          onChange={handleChange} />
+            <RaceDetailsInputs
+              winnerName={raceToUpdate?.winnerName || ""}
+              winnerTime={raceToUpdate?.winnerTime || ""}
+              numberOfLaps={raceToUpdate?.numberOfLaps || 0}
+              onChange={handleChange}
+            />
 
-
-
-            <div className="row">
+            <div className="row mt-3">
               <div className="form-group col-md-4">
                 <input
                   type="button"
-                  className="btn btn-primary"
-                  value="get Race"
-                  onClick={getByGrandPrixFromContext}
+                  className="btn btn-primary btn-block"
+                  value="Get Race"
+                  onClick={getRaceByGrandPrixFromContext}
                 />
               </div>
             </div>
 
-            {driverObtained && (
-              <div className="row">
+            {raceObtained && (
+              <div className="row mt-3">
                 <div className="form-group col-md-4">
                   <input
                     type="button"
-                    className="btn btn-warning"
-                    value="save Race"
+                    className="btn btn-warning btn-block"
+                    value="Save Race"
                     onClick={saveChanges}
                   />
                 </div>
               </div>
             )}
-            <StatusMessage status={Status} />
+            <StatusMessage status={status} />
           </div>
-          <GetImage imagePath={RacesToUpdate?.image || ""} subfolder={subfolder} />
-
+          <GetImage imagePath={""} {...raceToUpdate} subfolder={subfolder} />
         </div>
       </form>
     </section>

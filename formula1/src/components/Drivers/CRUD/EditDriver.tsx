@@ -11,11 +11,12 @@ import SaveButton from "../../Shared/SaveButton";
 const EditDriver: FC = () => {
   const context = useContext(GeneralContext) as IGeneralContext<IDriver>;
   const [id, setId] = useState<number>(0);
+
   const [status, setStatus] = useState("");
   const [driverObtained, setDriverObtained] = useState(false);
   const subfolder = "driver";
 
-  
+
   const [driversToUpdate, setDriversToUpdate] = useState<IDriver>({
     name: "",
     age: 0,
@@ -32,10 +33,10 @@ const EditDriver: FC = () => {
       case "name":
         setDriversToUpdate({ ...driversToUpdate, name: e.currentTarget.value });
         break;
-      case "Age":
+      case "age":
         setDriversToUpdate({
           ...driversToUpdate,
-          age: parseInt(e.currentTarget.value),
+          age: parseInt(e.currentTarget.value) || 0,
         });
         break;
       case "nationality":
@@ -47,7 +48,7 @@ const EditDriver: FC = () => {
       case "teamid":
         setDriversToUpdate({
           ...driversToUpdate,
-          teamId: parseInt(e.currentTarget.value),
+          teamId: parseInt(e.currentTarget.value) || 0,
         });
         break;
     }
@@ -58,25 +59,35 @@ const EditDriver: FC = () => {
       setStatus("Please enter an id");
       return;
     }
+
     try {
-      const driversToUpdate = await context?.getById(id);
-      setDriversToUpdate(driversToUpdate);
-      console.log(driversToUpdate);
+      const driver = await context?.getById(id);
+      setDriversToUpdate(
+        driver || {
+          name: "",
+          age: 0,
+          nationality: "",
+          image: "",
+          teamId: 0,
+        }
+      );
       setStatus("");
       setDriverObtained(true);
-    } catch {
+    } catch (error) {
+      console.error("Error getting driver", error);
       setStatus("Error getting driver");
     }
   };
 
-  const saveChanges = () => {
+  const saveChanges = async () => {
     try {
       if (context) {
-        context.editItem(driversToUpdate);
+        await context.editItem(driversToUpdate);
         setStatus("Completed");
         setDriverObtained(false);
       }
     } catch (error) {
+      console.error("Error editing driver", error);
       setStatus("Error editing driver");
     }
   };
@@ -87,13 +98,13 @@ const EditDriver: FC = () => {
         <h2 className="text-center mb-4">Edit driver</h2>
         <div className="row">
           <div className="col">
-            <IdInput id={id} onChange={handleChange}/>
+            <IdInput id={id} onChange={handleChange} />
 
             <DriverDetailsInputs
-              name={driversToUpdate?.name}
-              age={driversToUpdate?.age || 0}
-              nationality={driversToUpdate?.nationality || ""}
-              teamId={driversToUpdate?.teamId || 0}
+              name={driversToUpdate.name}
+              age={driversToUpdate.age}
+              nationality={driversToUpdate.nationality}
+              teamId={driversToUpdate.teamId}
               onChange={handleChange}
             />
 
@@ -102,23 +113,27 @@ const EditDriver: FC = () => {
                 <input
                   type="button"
                   className="btn btn-primary"
-                  value="get driver"
+                  value="Get Driver"
                   onClick={getByIdFromContext}
                 />
               </div>
             </div>
 
             {driverObtained && (
+
               <SaveButton onClick={saveChanges}/>
+
 
             )}
           </div>
           <div className="col">
-            <GetImage imagePath={driversToUpdate?.image|| ""} subfolder={subfolder} />
+            <GetImage
+              imagePath={driversToUpdate.image || ""}
+              subfolder={subfolder}
+            />
           </div>
         </div>
         <StatusMessage status={status} />
-
       </form>
     </section>
   );
