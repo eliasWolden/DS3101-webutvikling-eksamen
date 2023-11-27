@@ -6,8 +6,6 @@ import IdInput from "../../Shared/IdInput";
 import DeleteButton from "../../Shared/DeleteButton";
 import StatusMessage from "../../Shared/StatusMessage";
 
-
-
 const DeleteRace: FC = () => {
   const [id, setId] = useState(0);
   const [Status, setStatus] = useState("");
@@ -21,7 +19,7 @@ const DeleteRace: FC = () => {
         break;
     }
   };
-        
+
   const handleDelete = async () => {
     console.log(id);
     try {
@@ -42,11 +40,13 @@ const DeleteRace: FC = () => {
       <form className="d-flex flex-column align-items-center bg-light p-4 border shadow w-75 rounded mb-3">
         <h2>Delete Race</h2>
 
-      <IdInput id={id} onChange={handleChange} />
+        <IdInput id={id} onChange={handleChange} />
 
-      <DeleteButton onClick={handleDelete} />
+        <div className="mt-3">
+          <DeleteButton onClick={handleDelete} />
+        </div>
 
-      <StatusMessage status={Status} />
+        <StatusMessage status={Status} />
       </form>
     </section>
   );

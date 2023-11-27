@@ -7,7 +7,6 @@ import ImageUpload from "../../Shared/ImageUpload";
 import StatusMessage from "../../Shared/StatusMessage";
 import RaceForm from "../Form/RaceForm";
 
-
 const AddRace: FC = () => {
   const [Status, setStatus] = useState("");
   const [image, setImage] = useState<File | null>(null);
@@ -53,7 +52,14 @@ const AddRace: FC = () => {
   };
 
   const saveRace = () => {
-    if (winnerName.firstName && winnerName.lastName && winnerTime && grandPrix && numberOfLaps && image) {
+    if (
+      winnerName.firstName &&
+      winnerName.lastName &&
+      winnerTime &&
+      grandPrix &&
+      numberOfLaps &&
+      image
+    ) {
       const newRace: IRace = {
         winnerName: `${winnerName.firstName} ${winnerName.lastName}`,
         winnerTime: winnerTime,
@@ -66,7 +72,7 @@ const AddRace: FC = () => {
       console.log(newRace);
     } else {
       setStatus("Please fill out all fields");
-      console.log(winnerName, winnerTime, grandPrix, numberOfLaps, image)
+      console.log(winnerName, winnerTime, grandPrix, numberOfLaps, image);
     }
   };
 
@@ -83,7 +89,7 @@ const AddRace: FC = () => {
   return (
     <section className="d-flex justify-content-center align-items-center">
       <form className="bg-light p-4 border shadow w-75 rounded mb-3">
-        <h2 className="text-center mb-4">Create race</h2>
+        <h2 className="text-center">Create race</h2>
 
         <WinnerNameInput setHandler={setHandler} />
 

@@ -3,7 +3,7 @@ import { IRace } from "../../../interfaces/Races/IRace";
 import "../../../css/main.css";
 import { IGeneralContext } from "../../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../../contexts/GeneralProvider";
-import '../../../css/CRUD.css';
+import "../../../css/CRUD.css";
 import NameInput from "../Form/NameInput";
 import RaceDetailsInputs from "../Form/RaceDetailsInputs";
 import StatusMessage from "../../Shared/StatusMessage";
@@ -15,7 +15,6 @@ const EditRace = () => {
   const [Status, setStatus] = useState("");
   const [driverObtained, setDriverObtained] = useState(false);
   const subfolder = "Race";
-
 
   const [RacesToUpdate, setRacesToUpdate] = useState<IRace>({
     grandPrix: "",
@@ -82,7 +81,6 @@ const EditRace = () => {
       setDriverObtained(false);
     } else {
       setStatus("Error saving changes");
-
     }
   };
 
@@ -91,36 +89,34 @@ const EditRace = () => {
       <form className="bg-light p-4 border shadow w-75 rounded mb-3">
         <h2>Edit Race</h2>
         <div className="row">
-          
           <div className="col">
-          <NameInput grandPrix={GrandPrix} onChange={handleChange} />
+            <NameInput grandPrix={GrandPrix} onChange={handleChange} />
 
-          <RaceDetailsInputs 
-          winnerName={RacesToUpdate?.winnerName|| ""} 
-          winnerTime={RacesToUpdate?.winnerTime || ""} 
-          numberOfLaps={RacesToUpdate?.numberOfLaps || 0} 
-          onChange={handleChange} />
+            <RaceDetailsInputs
+              winnerName={RacesToUpdate?.winnerName || ""}
+              winnerTime={RacesToUpdate?.winnerTime || ""}
+              numberOfLaps={RacesToUpdate?.numberOfLaps || 0}
+              onChange={handleChange}
+            />
 
-
-
-            <div className="row">
+            <div className="row mt-3">
               <div className="form-group col-md-4">
                 <input
                   type="button"
-                  className="btn btn-primary"
-                  value="get Race"
+                  className="btn btn-primary btn-block"
+                  value="Get Race"
                   onClick={getByGrandPrixFromContext}
                 />
               </div>
             </div>
 
             {driverObtained && (
-              <div className="row">
+              <div className="row mt-3">
                 <div className="form-group col-md-4">
                   <input
                     type="button"
-                    className="btn btn-warning"
-                    value="save Race"
+                    className="btn btn-warning btn-block"
+                    value="Save Race"
                     onClick={saveChanges}
                   />
                 </div>
@@ -128,8 +124,10 @@ const EditRace = () => {
             )}
             <StatusMessage status={Status} />
           </div>
-          <GetImage imagePath={RacesToUpdate?.image || ""} subfolder={subfolder} />
-
+          <GetImage
+            imagePath={RacesToUpdate?.image || ""}
+            subfolder={subfolder}
+          />
         </div>
       </form>
     </section>
