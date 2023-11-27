@@ -1,9 +1,9 @@
 import { useState, ChangeEvent, useContext } from "react";
-import "../../css/main.css";
+import "../../../css/main.css";
 import { ITeam } from "../../../interfaces/Teams/ITeam";
 import { IGeneralContext } from "../../../interfaces/IGeneralContext";
 import { GeneralContext } from "../../../contexts/GeneralProvider";
-import "../../css/CRUD.css";
+import "../../../css/CRUD.css";
 import IdInput from "../../Shared/IdInput";
 import StatusMessage from "../../Shared/StatusMessage";
 import SaveButton from "../../Shared/SaveButton";
