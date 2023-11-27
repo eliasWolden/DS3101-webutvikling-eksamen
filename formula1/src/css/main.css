@@ -6,6 +6,10 @@
   width: 400px;
   object-fit: cover;
 }
+.image-size-driver {
+  width: 400px;
+  object-fit: cover;
+}
 .selected-team {
   width: 800px;
 }

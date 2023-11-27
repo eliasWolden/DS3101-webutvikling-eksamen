@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../interfaces/Drivers/IDriverDetailsInputsProps";
+import { DriverDetailsInputsProps } from "../../../interfaces/Drivers/IDriverDetailsInputsProps";
 
 const DriverDetailsInputs: React.FC<DriverDetailsInputsProps> = ({
   name,

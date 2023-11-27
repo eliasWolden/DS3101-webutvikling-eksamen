@@ -1,4 +1,4 @@
-interface DriverDetailsInputsProps {
+export interface DriverDetailsInputsProps {
   name: string;
   age: number;
   nationality: string;

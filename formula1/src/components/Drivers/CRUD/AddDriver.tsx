@@ -7,6 +7,7 @@ import DriverInfoForm from "../Forms/DriverInfoForm";
 import TeamSelect from "../Forms/TeamSelect";
 import ImageUpload from "../../Shared/ImageUpload";
 import StatusMessage from "../../Shared/StatusMessage";
+import SaveButton from "../../Shared/SaveButton";
 
 const AddDriver: FC = () => {
   const [firstName, setFirstName] = useState<string>("");
@@ -97,18 +98,8 @@ const AddDriver: FC = () => {
         <DriverInfoForm setHandler={setHandler} />
         <TeamSelect setHandler={setHandler} />
         <ImageUpload setHandler={setHandler} />
-
-        <div className="row">
-          <div className="col-md-6">
-            <input
-              type="button"
-              className="btn btn-primary"
-              value="Create driver"
-              onClick={saveDriver}
-            />
-            <StatusMessage status={status} />
-          </div>
-        </div>
+        <SaveButton onClick={saveDriver} />
+        <StatusMessage status={status} />
       </form>
     </section>
   );
