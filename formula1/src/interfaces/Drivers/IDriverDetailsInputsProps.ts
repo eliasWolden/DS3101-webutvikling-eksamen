@@ -3,5 +3,5 @@ export interface DriverDetailsInputsProps {
   age: number;
   nationality: string;
   teamId: number;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (e: React.ChangeEvent<any>) => void;
 }

@@ -34,8 +34,8 @@ const DriverList = () => {
       step: 3,
     },
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4, step: 3 },
-    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2, step: 3 },
-    mobile: { breakpoint: { max: 464, min: 0 }, items: 1, step: 1 }, // Update step to 1
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2, step: 2 },
+    mobile: { breakpoint: { max: 600, min: 0 }, items: 1, step: 1 },
   };
 
   return (

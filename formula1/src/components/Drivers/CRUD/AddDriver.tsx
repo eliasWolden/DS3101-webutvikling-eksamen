@@ -92,7 +92,7 @@ const AddDriver: FC = () => {
   return (
     <section className="d-flex justify-content-center align-items-center">
       <form className="bg-light p-4 border shadow w-75 rounded mb-3">
-        <h2 className="text-center mb-4">Create driver</h2>
+        <h2 className="text-center mb-4">Register driver</h2>
 
         <DriverForm setHandler={setHandler} />
         <DriverInfoForm setHandler={setHandler} />

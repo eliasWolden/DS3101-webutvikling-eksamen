@@ -6,10 +6,10 @@ import { GeneralContext } from "../../contexts/GeneralProvider";
 import "../../css/CRUD.css";
 import IdInput from "../Shared/IdInput";
 import StatusMessage from "../Shared/StatusMessage";
-import TeamDetailsInputs from "./Forms/TeamDetailsInputs";
 import SaveButton from "../Shared/SaveButton";
 import GetImage from "../Shared/GetImage";
 import GetButton from "../Shared/GetButton";
+import TeamInputForm from "./Forms/TeamInputForm";
 
 const EditTeam = () => {
   const context = useContext(GeneralContext) as IGeneralContext<ITeam>;
@@ -85,7 +85,7 @@ const EditTeam = () => {
 
             <IdInput id={id} onChange={handleChange} />
 
-            <TeamDetailsInputs onChange={handleChange} manufacturer={""} driver1={""} driver2={""}/>
+            <TeamInputForm onChange={handleChange} manufacturer={""} driver1={""} driver2={""}/>
 
  
 

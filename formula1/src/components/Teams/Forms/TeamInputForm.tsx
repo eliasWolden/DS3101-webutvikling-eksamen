@@ -1,7 +1,7 @@
 import React from "react";
 import { TeamDetailsInputsProps } from "../../../interfaces/Teams/ITeamDetailsInputsProps";
 
-const TeamDetailsInputs: React.FC<TeamDetailsInputsProps> = ({
+const TeamInputForm: React.FC<TeamDetailsInputsProps> = ({
     manufacturer,
     driver1,
     driver2,
@@ -49,4 +49,4 @@ const TeamDetailsInputs: React.FC<TeamDetailsInputsProps> = ({
     );
 };
 
-export default TeamDetailsInputs;
+export default TeamInputForm;
