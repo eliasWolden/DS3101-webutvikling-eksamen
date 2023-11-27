@@ -1,7 +1,7 @@
 import React from "react";
-import "../../../interfaces/Races/IWinnerNameInputProps";
+import "../../../interfaces/Races/IRaceFormProps";
 
-const WinnerNameInput: React.FC<WinnerNameInputProps> = ({ setHandler }) => {
+const WinnerNameInput: React.FC<RaceFormProps> = ({ setHandler }) => {
   return (
     <div>
       <div className="row mb-3">
